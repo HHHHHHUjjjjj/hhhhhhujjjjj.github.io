@@ -1,0 +1,5882 @@
+[
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Shorts",
+"cn":"骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Pants",
+"cn":"骑行裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Bib Shorts",
+"cn":"骑行背带短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Bib Shorts",
+"cn":"背带骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Tights",
+"cn":"骑行紧身裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Bike Shorts",
+"cn":"自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Bike Pants",
+"cn":"自行车长裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Mountain Bike Shorts",
+"cn":"山地自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Road Cycling Shorts",
+"cn":"公路骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Triathlon Shorts",
+"cn":"铁人三项骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Compression Cycling Shorts",
+"cn":"压缩骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Padded Cycling Shorts",
+"cn":"带坐垫骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Bib Tights",
+"cn":"骑行背带长裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Winter Cycling Pants",
+"cn":"冬季骑行裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Thermal Cycling Tights",
+"cn":"保暖骑行紧身裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cycling Leggings",
+"cn":"骑行打底裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Bike Riding Shorts",
+"cn":"自行车骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"核心产品词",
+"en":"Cyclist Shorts",
+"cn":"骑行者短裤"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Men's Cycling",
+"cn":"男士骑行"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Men's Bike Shorts",
+"cn":"男士自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Men's Cycling Gear",
+"cn":"男士骑行装备"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Cycling Apparel",
+"cn":"骑行服饰"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Bike Gear",
+"cn":"自行车装备"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Outdoor Sports Wear",
+"cn":"户外运动服"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Athletic Wear",
+"cn":"运动服饰"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Activewear",
+"cn":"运动休闲服"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Sports Clothing",
+"cn":"运动服装"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Performance Wear",
+"cn":"高性能运动服"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Fitness Apparel",
+"cn":"健身服饰"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Workout Clothing",
+"cn":"训练服装"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Summer Sportswear",
+"cn":"夏季运动服"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Professional Cycling",
+"cn":"专业骑行"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Cycling Equipment",
+"cn":"骑行设备"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Slim Fit",
+"cn":"修身版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Skinny Fit",
+"cn":"紧身版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Compression Fit",
+"cn":"压缩贴合版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Stretch Fit",
+"cn":"弹力贴合版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Athletic Fit",
+"cn":"运动修身版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Relaxed Fit",
+"cn":"宽松版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Loose Fit",
+"cn":"宽松剪裁"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"High Stretch Fit",
+"cn":"高弹贴合版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Ergonomic Fit",
+"cn":"人体工程版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"3D Contoured Fit",
+"cn":"3D立体剪裁"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Second Skin Fit",
+"cn":"第二皮肤贴合"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Tight Fit",
+"cn":"紧身剪裁"
+},
+{
+"category":"骑行裤",
+"subCategory":"版型",
+"en":"Regular Fit",
+"cn":"标准版型"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Men",
+"cn":"男士"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Men's",
+"cn":"男款"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Male Cyclist",
+"cn":"男性骑行者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Professional Cyclist",
+"cn":"专业骑行者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Road Cyclist",
+"cn":"公路骑行爱好者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Mountain Biker",
+"cn":"山地自行车骑手"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Cycling Enthusiast",
+"cn":"骑行爱好者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Outdoor Enthusiast",
+"cn":"户外运动爱好者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Athlete",
+"cn":"运动员"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Fitness Lover",
+"cn":"健身爱好者"
+},
+{
+"category":"骑行裤",
+"subCategory":"目标人群",
+"en":"Beginner Cyclist",
+"cn":"初级骑行者"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Sporty",
+"cn":"运动风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Athletic",
+"cn":"运动型风格"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Casual Sport",
+"cn":"休闲运动风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Professional Racing",
+"cn":"专业竞赛风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Outdoor Style",
+"cn":"户外风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Performance Style",
+"cn":"功能运动风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Minimalist",
+"cn":"极简风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Streetwear",
+"cn":"街头潮流风"
+},
+{
+"category":"骑行裤",
+"subCategory":"风格",
+"en":"Vintage Cycling",
+"cn":"复古骑行风"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Solid Color",
+"cn":"纯色"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Color Block",
+"cn":"撞色拼接"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Gradient",
+"cn":"渐变"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Camouflage",
+"cn":"迷彩图案"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Reflective Print",
+"cn":"反光印花"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Logo Print",
+"cn":"LOGO印花"
+},
+{
+"category":"骑行裤",
+"subCategory":"图案/花色",
+"en":"Graphic Pattern",
+"cn":"图案设计"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Road Cycling",
+"cn":"公路骑行"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Mountain Biking",
+"cn":"山地骑行"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Bike Racing",
+"cn":"自行车比赛"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Cycling Training",
+"cn":"骑行训练"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Daily Cycling",
+"cn":"日常骑行"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Outdoor Sports",
+"cn":"户外运动"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Gym Workout",
+"cn":"健身训练"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Running",
+"cn":"跑步"
+},
+{
+"category":"骑行裤",
+"subCategory":"场景",
+"en":"Fitness Training",
+"cn":"健身训练"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Summer",
+"cn":"夏季"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Spring",
+"cn":"春季"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Fall",
+"cn":"秋季"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Winter",
+"cn":"冬季"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"All Season",
+"cn":"四季适用"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Warm Weather",
+"cn":"温暖天气"
+},
+{
+"category":"骑行裤",
+"subCategory":"季节",
+"en":"Cold Weather",
+"cn":"寒冷天气"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"节日",
+"en":"Christmas",
+"cn":"圣诞节"
+},
+{
+"category":"骑行裤",
+"subCategory":"节日",
+"en":"Black Friday",
+"cn":"黑色星期五"
+},
+{
+"category":"骑行裤",
+"subCategory":"节日",
+"en":"Cyber Monday",
+"cn":"网络星期一"
+},
+{
+"category":"骑行裤",
+"subCategory":"节日",
+"en":"Father's Day",
+"cn":"父亲节"
+},
+{
+"category":"骑行裤",
+"subCategory":"节日",
+"en":"Valentine's Day",
+"cn":"情人节"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Padded",
+"cn":"带坐垫"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Shock Absorbing",
+"cn":"减震缓冲"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Breathable",
+"cn":"透气"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Moisture Wicking",
+"cn":"吸湿排汗"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Quick Dry",
+"cn":"速干"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Sweat Absorbing",
+"cn":"吸汗"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Stretch",
+"cn":"高弹"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"4 Way Stretch",
+"cn":"四向弹力"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Compression",
+"cn":"压力支撑"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Anti Chafing",
+"cn":"防摩擦"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"UV Protection",
+"cn":"防紫外线"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Reflective",
+"cn":"反光"
+},
+{
+"category":"骑行裤",
+"subCategory":"功能特性",
+"en":"Lightweight",
+"cn":"轻量化"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Polyester",
+"cn":"涤纶"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Spandex",
+"cn":"氨纶"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Nylon",
+"cn":"尼龙"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Polyester Spandex Blend",
+"cn":"涤纶氨纶混纺"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Nylon Spandex",
+"cn":"尼龙氨纶"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Mesh Fabric",
+"cn":"网眼面料"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Elastic Fabric",
+"cn":"弹力面料"
+},
+{
+"category":"骑行裤",
+"subCategory":"面料/材质",
+"en":"Breathable Fabric",
+"cn":"透气面料"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Elastic Waist",
+"cn":"松紧腰"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Elastic Waistband",
+"cn":"弹力腰带"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Drawstring Waist",
+"cn":"抽绳腰"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Pull On",
+"cn":"套穿式"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Stretch Waist",
+"cn":"弹力腰围"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Buckle Closure",
+"cn":"扣带闭合"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Zipper Closure",
+"cn":"拉链闭合"
+},
+{
+"category":"骑行裤",
+"subCategory":"闭合方式",
+"en":"Hook And Loop Closure",
+"cn":"魔术贴闭合"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Padded Seat Cushion",
+"cn":"坐垫衬垫"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"3D Gel Padding",
+"cn":"3D凝胶坐垫"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Silicone Leg Grips",
+"cn":"硅胶防滑腿口"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Flatlock Stitching",
+"cn":"平锁缝线"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Seamless Design",
+"cn":"无缝设计"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Reflective Strips",
+"cn":"反光条"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Reflective Logo",
+"cn":"反光LOGO"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Breathable Mesh Panels",
+"cn":"透气网布拼接"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Ventilation Panels",
+"cn":"通风设计"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Ergonomic Padding",
+"cn":"人体工程坐垫"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"Compression Zones",
+"cn":"压力分区"
+},
+{
+"category":"骑行裤",
+"subCategory":"细节",
+"en":"High Elastic Waistband",
+"cn":"高弹腰带"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Short Length",
+"cn":"短款"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Mid Length",
+"cn":"中长款"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Knee Length",
+"cn":"膝上长度"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"3/4 Length",
+"cn":"七分长度"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Full Length",
+"cn":"长款"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Ankle Length",
+"cn":"脚踝长度"
+},
+{
+"category":"骑行裤",
+"subCategory":"长度",
+"en":"Long Pants",
+"cn":"长裤"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"High Waist",
+"cn":"高腰"
+},
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"Mid Rise",
+"cn":"中腰"
+},
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"Low Rise",
+"cn":"低腰"
+},
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"Wide Waistband",
+"cn":"宽腰带设计"
+},
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"Compression Waist",
+"cn":"压力腰设计"
+},
+{
+"category":"骑行裤",
+"subCategory":"腰型",
+"en":"Supportive Waist",
+"cn":"支撑腰部设计"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"套装规格",
+"en":"1 Piece",
+"cn":"单件装"
+},
+{
+"category":"骑行裤",
+"subCategory":"套装规格",
+"en":"2 Pack",
+"cn":"两件套"
+},
+{
+"category":"骑行裤",
+"subCategory":"套装规格",
+"en":"3 Pack",
+"cn":"三件套"
+},
+{
+"category":"骑行裤",
+"subCategory":"套装规格",
+"en":"Multiple Colors",
+"cn":"多色组合"
+},
+{
+"category":"骑行裤",
+"subCategory":"套装规格",
+"en":"Value Pack",
+"cn":"优惠组合装"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Blue",
+"cn":"蓝色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Navy Blue",
+"cn":"藏蓝色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Red",
+"cn":"红色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Orange",
+"cn":"橙色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Yellow",
+"cn":"黄色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Purple",
+"cn":"紫色"
+},
+{
+"category":"骑行裤",
+"subCategory":"颜色",
+"en":"Neon",
+"cn":"荧光色"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Men's Padded Bike Shorts",
+"cn":"男士带坐垫自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Breathable Cycling Shorts",
+"cn":"透气骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Compression Bike Shorts Men",
+"cn":"男士压缩自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Mountain Bike Shorts Men",
+"cn":"男士山地自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Road Bike Shorts Men",
+"cn":"男士公路自行车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Cycling Bib Shorts Men",
+"cn":"男士骑行背带短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Professional Cycling Shorts",
+"cn":"专业骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Padded Bike Shorts For Men",
+"cn":"男士自行车坐垫短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Summer Cycling Shorts",
+"cn":"夏季骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"流量词",
+"en":"Cycling Shorts With Padding",
+"cn":"带坐垫骑行短裤"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Cycling Skinsuit",
+"cn":"骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Cycling Suit",
+"cn":"骑行套装"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Men's Cycling Skinsuit",
+"cn":"男士骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Cycling Bib Suit",
+"cn":"骑行背带连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Triathlon Suit",
+"cn":"铁人三项服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Triathlon Skinsuit",
+"cn":"铁人三项连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Race Suit",
+"cn":"竞赛服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Bike Racing Suit",
+"cn":"自行车比赛服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Aero Cycling Suit",
+"cn":"空气动力骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Road Cycling Suit",
+"cn":"公路骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Mountain Bike Suit",
+"cn":"山地骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Cycling Romper",
+"cn":"骑行连体裤"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Bodysuit",
+"cn":"紧身连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Men's Bodysuit",
+"cn":"男士连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Wrestling Singlet",
+"cn":"摔跤连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Gymnastics Leotard",
+"cn":"体操连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Dance Leotard",
+"cn":"舞蹈练功服"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Workout Bodysuit",
+"cn":"训练连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"核心产品词",
+"en":"Compression Bodysuit",
+"cn":"压力塑形连体衣"
+},
+
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Sportswear",
+"cn":"男士运动服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Athletic Suit",
+"cn":"运动连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Performance Suit",
+"cn":"高性能运动服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Professional Racing Wear",
+"cn":"专业比赛装备"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Cycling Apparel Men",
+"cn":"男士骑行服饰"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Bike Clothing",
+"cn":"自行车服装"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Sports Clothing Men",
+"cn":"男士运动服装"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Outdoor Sports Wear",
+"cn":"户外运动服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Fitness Clothing",
+"cn":"健身服装"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Activewear Men",
+"cn":"男士运动休闲服"
+},
+
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Slim Fit",
+"cn":"修身版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Skin Tight Fit",
+"cn":"紧身贴合版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Compression Fit",
+"cn":"压缩贴合版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Aerodynamic Fit",
+"cn":"空气动力版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Body Hugging Fit",
+"cn":"贴身版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Stretch Fit",
+"cn":"弹力版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Athletic Fit",
+"cn":"运动修身版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Ergonomic Fit",
+"cn":"人体工程版型"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"3D Cut Fit",
+"cn":"3D立体剪裁"
+},
+{
+"category":"连体衣",
+"subCategory":"版型",
+"en":"Race Fit",
+"cn":"竞赛紧身版型"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Men",
+"cn":"男士"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Male Athlete",
+"cn":"男性运动员"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Professional Cyclist",
+"cn":"专业骑行者"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Triathlete",
+"cn":"铁人三项运动员"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Cycling Enthusiast",
+"cn":"骑行爱好者"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Racing Driver",
+"cn":"竞速运动爱好者"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Fitness Athlete",
+"cn":"健身运动者"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Gymnast",
+"cn":"体操运动员"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Dancer",
+"cn":"舞蹈爱好者"
+},
+{
+"category":"连体衣",
+"subCategory":"目标人群",
+"en":"Outdoor Sports Lover",
+"cn":"户外运动爱好者"
+},
+
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Sporty",
+"cn":"运动风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Professional Racing",
+"cn":"专业竞赛风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Performance Style",
+"cn":"功能运动风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Athletic Style",
+"cn":"运动型风格"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Minimalist",
+"cn":"极简风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Modern",
+"cn":"现代风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Streetwear",
+"cn":"街头潮流风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Vintage Racing",
+"cn":"复古赛车风"
+},
+{
+"category":"连体衣",
+"subCategory":"风格",
+"en":"Casual Sport",
+"cn":"休闲运动风"
+},
+
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Solid Color",
+"cn":"纯色"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Color Block",
+"cn":"撞色拼接"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Gradient Pattern",
+"cn":"渐变图案"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Graphic Print",
+"cn":"图案印花"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Geometric Pattern",
+"cn":"几何图案"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Stripe Pattern",
+"cn":"条纹图案"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Camouflage",
+"cn":"迷彩图案"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Abstract Print",
+"cn":"抽象印花"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Logo Print",
+"cn":"LOGO印花"
+},
+{
+"category":"连体衣",
+"subCategory":"图案/花色",
+"en":"Reflective Print",
+"cn":"反光印花"
+},
+
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Road Cycling",
+"cn":"公路骑行"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Bike Racing",
+"cn":"自行车比赛"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Triathlon Training",
+"cn":"铁人三项训练"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Mountain Biking",
+"cn":"山地骑行"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Gymnastics Training",
+"cn":"体操训练"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Dance Practice",
+"cn":"舞蹈练习"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Workout",
+"cn":"健身训练"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Outdoor Sports",
+"cn":"户外运动"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Competition",
+"cn":"比赛竞技"
+},
+{
+"category":"连体衣",
+"subCategory":"场景",
+"en":"Daily Training",
+"cn":"日常训练"
+},
+
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Summer",
+"cn":"夏季"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Spring",
+"cn":"春季"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Fall",
+"cn":"秋季"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Winter",
+"cn":"冬季"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"All Season",
+"cn":"四季适用"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Warm Weather",
+"cn":"温暖天气"
+},
+{
+"category":"连体衣",
+"subCategory":"季节",
+"en":"Cold Weather",
+"cn":"寒冷天气"
+},
+
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Breathable",
+"cn":"透气"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Moisture Wicking",
+"cn":"吸湿排汗"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Quick Dry",
+"cn":"速干"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Compression",
+"cn":"压力支撑"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"High Stretch",
+"cn":"高弹力"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"4 Way Stretch",
+"cn":"四向弹力"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Lightweight",
+"cn":"轻量化"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Aerodynamic",
+"cn":"空气动力设计"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"UV Protection",
+"cn":"防紫外线"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Anti Chafing",
+"cn":"防摩擦"
+},
+{
+"category":"连体衣",
+"subCategory":"功能特性",
+"en":"Seamless",
+"cn":"无缝设计"
+},
+
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Polyester",
+"cn":"涤纶"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Spandex",
+"cn":"氨纶"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Polyester Spandex Blend",
+"cn":"涤纶氨纶混纺"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Nylon",
+"cn":"尼龙"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Mesh Fabric",
+"cn":"网眼面料"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Elastic Fabric",
+"cn":"弹力面料"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Breathable Fabric",
+"cn":"透气面料"
+},
+{
+"category":"连体衣",
+"subCategory":"面料/材质",
+"en":"Quick Dry Fabric",
+"cn":"速干面料"
+}，
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Round Neck",
+"cn":"圆领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Crew Neck",
+"cn":"圆领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"V Neck",
+"cn":"V领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Mock Neck",
+"cn":"半高领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Stand Collar",
+"cn":"立领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"High Neck",
+"cn":"高领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Zip Collar",
+"cn":"拉链领"
+},
+
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Front Zipper",
+"cn":"前置拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Full Zip",
+"cn":"全拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Half Zip",
+"cn":"半拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Back Zipper",
+"cn":"后背拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Invisible Zipper",
+"cn":"隐形拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Snap Closure",
+"cn":"按扣闭合"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Pull On",
+"cn":"套穿式"
+},
+
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Padded Seat",
+"cn":"骑行坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"3D Cushion Pad",
+"cn":"3D立体坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Gel Padding",
+"cn":"凝胶坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Flatlock Seams",
+"cn":"平锁缝线"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Seamless Construction",
+"cn":"无缝结构"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Reflective Details",
+"cn":"反光细节"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Reflective Logo",
+"cn":"反光LOGO"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Mesh Panels",
+"cn":"网布拼接"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Ventilation Design",
+"cn":"通风设计"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Elastic Leg Opening",
+"cn":"弹力腿口"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Silicone Grip",
+"cn":"硅胶防滑"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Ergonomic Cut",
+"cn":"人体工程剪裁"
+},
+
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Short Sleeve",
+"cn":"短款袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Long Sleeve",
+"cn":"长袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Sleeveless",
+"cn":"无袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Short Leg",
+"cn":"短裤腿"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Long Leg",
+"cn":"长裤腿"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Full Body",
+"cn":"全身款"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Three Quarter Length",
+"cn":"七分长度"
+},
+
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Short Sleeve",
+"cn":"短袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Long Sleeve",
+"cn":"长袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Sleeveless",
+"cn":"无袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Cap Sleeve",
+"cn":"盖袖"
+},
+
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"1 Piece",
+"cn":"单件装"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"2 Piece Set",
+"cn":"两件套"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"Cycling Jersey And Shorts Set",
+"cn":"骑行上衣短裤套装"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"Matching Set",
+"cn":"搭配套装"
+},
+
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Blue",
+"cn":"蓝色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Navy",
+"cn":"藏蓝色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Red",
+"cn":"红色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Yellow",
+"cn":"黄色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Neon Green",
+"cn":"荧光绿"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Orange",
+"cn":"橙色"
+},
+
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Cycling Skinsuit",
+"cn":"男士骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Triathlon Suit",
+"cn":"男士铁人三项服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Professional Cycling Suit",
+"cn":"专业骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Aero Cycling Skinsuit",
+"cn":"空气动力骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Compression Cycling Suit Men",
+"cn":"男士压缩骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Racing Suit",
+"cn":"男士赛车服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Cycling Bodysuit Men",
+"cn":"男士骑行连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Bike Racing Suit Men",
+"cn":"男士自行车比赛服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Triathlon Clothing Men",
+"cn":"男士铁三装备"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Round Neck",
+"cn":"圆领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Crew Neck",
+"cn":"圆领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"V Neck",
+"cn":"V领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Mock Neck",
+"cn":"半高领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Stand Collar",
+"cn":"立领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"High Neck",
+"cn":"高领"
+},
+{
+"category":"连体衣",
+"subCategory":"领型",
+"en":"Zip Collar",
+"cn":"拉链领"
+},
+
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Front Zipper",
+"cn":"前置拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Full Zip",
+"cn":"全拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Half Zip",
+"cn":"半拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Back Zipper",
+"cn":"后背拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Invisible Zipper",
+"cn":"隐形拉链"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Snap Closure",
+"cn":"按扣闭合"
+},
+{
+"category":"连体衣",
+"subCategory":"闭合方式",
+"en":"Pull On",
+"cn":"套穿式"
+},
+
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Padded Seat",
+"cn":"骑行坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"3D Cushion Pad",
+"cn":"3D立体坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Gel Padding",
+"cn":"凝胶坐垫"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Flatlock Seams",
+"cn":"平锁缝线"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Seamless Construction",
+"cn":"无缝结构"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Reflective Details",
+"cn":"反光细节"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Reflective Logo",
+"cn":"反光LOGO"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Mesh Panels",
+"cn":"网布拼接"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Ventilation Design",
+"cn":"通风设计"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Elastic Leg Opening",
+"cn":"弹力腿口"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Silicone Grip",
+"cn":"硅胶防滑"
+},
+{
+"category":"连体衣",
+"subCategory":"细节",
+"en":"Ergonomic Cut",
+"cn":"人体工程剪裁"
+},
+
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Short Sleeve",
+"cn":"短款袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Long Sleeve",
+"cn":"长袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Sleeveless",
+"cn":"无袖"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Short Leg",
+"cn":"短裤腿"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Long Leg",
+"cn":"长裤腿"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Full Body",
+"cn":"全身款"
+},
+{
+"category":"连体衣",
+"subCategory":"长度",
+"en":"Three Quarter Length",
+"cn":"七分长度"
+},
+
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Short Sleeve",
+"cn":"短袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Long Sleeve",
+"cn":"长袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Sleeveless",
+"cn":"无袖"
+},
+{
+"category":"连体衣",
+"subCategory":"袖长",
+"en":"Cap Sleeve",
+"cn":"盖袖"
+},
+
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"1 Piece",
+"cn":"单件装"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"2 Piece Set",
+"cn":"两件套"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"Cycling Jersey And Shorts Set",
+"cn":"骑行上衣短裤套装"
+},
+{
+"category":"连体衣",
+"subCategory":"套装规格",
+"en":"Matching Set",
+"cn":"搭配套装"
+},
+
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Blue",
+"cn":"蓝色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Navy",
+"cn":"藏蓝色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Red",
+"cn":"红色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Yellow",
+"cn":"黄色"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Neon Green",
+"cn":"荧光绿"
+},
+{
+"category":"连体衣",
+"subCategory":"颜色",
+"en":"Orange",
+"cn":"橙色"
+},
+
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Cycling Skinsuit",
+"cn":"男士骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Triathlon Suit",
+"cn":"男士铁人三项服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Professional Cycling Suit",
+"cn":"专业骑行连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Aero Cycling Skinsuit",
+"cn":"空气动力骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Compression Cycling Suit Men",
+"cn":"男士压缩骑行服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Men's Racing Suit",
+"cn":"男士赛车服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Cycling Bodysuit Men",
+"cn":"男士骑行连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Bike Racing Suit Men",
+"cn":"男士自行车比赛服"
+},
+{
+"category":"连体衣",
+"subCategory":"流量词",
+"en":"Triathlon Clothing Men",
+"cn":"男士铁三装备"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Bib Overalls",
+"cn":"背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Men's Bib Overalls",
+"cn":"男士背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Overalls",
+"cn":"工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Work Overalls",
+"cn":"工作背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Carpenter Overalls",
+"cn":"木工背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Denim Overalls",
+"cn":"牛仔背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Jean Overalls",
+"cn":"牛仔工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Bib Pants",
+"cn":"背带长裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Bib Trousers",
+"cn":"背带裤装"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Dungarees",
+"cn":"工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Utility Overalls",
+"cn":"功能工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Casual Overalls",
+"cn":"休闲背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Loose Fit Overalls",
+"cn":"宽松背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Cargo Overalls",
+"cn":"工装口袋背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Outdoor Overalls",
+"cn":"户外背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Fishing Bib Pants",
+"cn":"钓鱼背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Snow Bib Pants",
+"cn":"滑雪背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Ski Bib Pants",
+"cn":"滑雪背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"核心产品词",
+"en":"Rain Bib Overalls",
+"cn":"防水背带裤"
+},
+
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Men's Workwear",
+"cn":"男士工装"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Workwear Pants",
+"cn":"工装裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Streetwear Men",
+"cn":"男士街头潮流"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Vintage Clothing",
+"cn":"复古服饰"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Casual Pants Men",
+"cn":"男士休闲裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Outdoor Clothing",
+"cn":"户外服装"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Utility Clothing",
+"cn":"功能服饰"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Fashion Overalls",
+"cn":"时尚背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Hip Hop Style",
+"cn":"嘻哈风格"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Y2K Fashion",
+"cn":"Y2K复古潮流"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Work Clothes Men",
+"cn":"男士工作服"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Mechanic Clothing",
+"cn":"机械工服装"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Farm Workwear",
+"cn":"农场工作服"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Rugged Style",
+"cn":"硬朗风格"
+},
+
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Loose Fit",
+"cn":"宽松版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Relaxed Fit",
+"cn":"休闲宽松版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Regular Fit",
+"cn":"标准版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Slim Fit",
+"cn":"修身版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Straight Leg",
+"cn":"直筒裤型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Wide Leg",
+"cn":"阔腿版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Tapered Fit",
+"cn":"锥形版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Baggy Fit",
+"cn":"街头宽松版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Oversized Fit",
+"cn":"Oversize版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Cargo Fit",
+"cn":"多袋工装版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Athletic Fit",
+"cn":"运动版型"
+},
+{
+"category":"背带裤",
+"subCategory":"版型",
+"en":"Classic Fit",
+"cn":"经典版型"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Men",
+"cn":"男士"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Young Men",
+"cn":"年轻男性"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Adult Men",
+"cn":"成年男性"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Worker",
+"cn":"工人"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Mechanic",
+"cn":"机械维修人员"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Carpenter",
+"cn":"木工"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Farmer",
+"cn":"农场工作者"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Outdoor Enthusiast",
+"cn":"户外爱好者"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Streetwear Lover",
+"cn":"街头潮流爱好者"
+},
+{
+"category":"背带裤",
+"subCategory":"目标人群",
+"en":"Fashion Consumer",
+"cn":"时尚消费者"
+},
+
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Workwear",
+"cn":"工装风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Vintage",
+"cn":"复古风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Streetwear",
+"cn":"街头潮流风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Casual",
+"cn":"休闲风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Outdoor Style",
+"cn":"户外风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Military Style",
+"cn":"军事风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Utility Style",
+"cn":"功能风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Hip Hop",
+"cn":"嘻哈风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Y2K Style",
+"cn":"Y2K潮流风"
+},
+{
+"category":"背带裤",
+"subCategory":"风格",
+"en":"Classic American Style",
+"cn":"美式经典风"
+},
+
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Solid Color",
+"cn":"纯色"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Denim Wash",
+"cn":"牛仔水洗"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Vintage Wash",
+"cn":"复古水洗"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Distressed",
+"cn":"破洞做旧"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Camouflage",
+"cn":"迷彩"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Plaid",
+"cn":"格纹"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Striped",
+"cn":"条纹"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Color Block",
+"cn":"撞色拼接"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Patchwork",
+"cn":"拼接设计"
+},
+{
+"category":"背带裤",
+"subCategory":"图案/花色",
+"en":"Graphic Print",
+"cn":"图案印花"
+},
+
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Work",
+"cn":"工作"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Construction",
+"cn":"建筑施工"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Mechanic Repair",
+"cn":"汽车维修"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Farming",
+"cn":"农业劳动"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Outdoor Activities",
+"cn":"户外活动"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Camping",
+"cn":"露营"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Fishing",
+"cn":"钓鱼"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Hiking",
+"cn":"徒步"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Daily Wear",
+"cn":"日常穿着"
+},
+{
+"category":"背带裤",
+"subCategory":"场景",
+"en":"Street Fashion",
+"cn":"街头穿搭"
+},
+
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Spring",
+"cn":"春季"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Summer",
+"cn":"夏季"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Fall",
+"cn":"秋季"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Winter",
+"cn":"冬季"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"All Season",
+"cn":"四季适用"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Cold Weather",
+"cn":"寒冷天气"
+},
+{
+"category":"背带裤",
+"subCategory":"季节",
+"en":"Warm Weather",
+"cn":"温暖天气"
+},
+
+{
+"category":"背带裤",
+"subCategory":"节日",
+"en":"Christmas",
+"cn":"圣诞节"
+},
+{
+"category":"背带裤",
+"subCategory":"节日",
+"en":"Black Friday",
+"cn":"黑色星期五"
+},
+{
+"category":"背带裤",
+"subCategory":"节日",
+"en":"Cyber Monday",
+"cn":"网络星期一"
+},
+{
+"category":"背带裤",
+"subCategory":"节日",
+"en":"Father's Day",
+"cn":"父亲节"
+},
+{
+"category":"背带裤",
+"subCategory":"节日",
+"en":"Halloween",
+"cn":"万圣节"
+},
+
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Durable",
+"cn":"耐磨"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Heavy Duty",
+"cn":"加强耐用"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Multi Pocket",
+"cn":"多口袋"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Utility Pocket",
+"cn":"功能口袋"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Adjustable Straps",
+"cn":"可调节肩带"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Water Resistant",
+"cn":"防泼水"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Windproof",
+"cn":"防风"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Warm",
+"cn":"保暖"
+},
+{
+"category":"背带裤",
+"subCategory":"功能特性",
+"en":"Breathable",
+"cn":"透气"
+},
+
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Cotton",
+"cn":"棉"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Denim",
+"cn":"牛仔布"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Canvas",
+"cn":"帆布"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Polyester",
+"cn":"涤纶"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Cotton Blend",
+"cn":"棉混纺"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Stretch Denim",
+"cn":"弹力牛仔"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Corduroy",
+"cn":"灯芯绒"
+},
+{
+"category":"背带裤",
+"subCategory":"面料/材质",
+"en":"Nylon",
+"cn":"尼龙"
+},
+{
+"category":"背带裤",
+"subCategory":"领型",
+"en":"Bib Front",
+"cn":"前胸背带设计"
+},
+{
+"category":"背带裤",
+"subCategory":"领型",
+"en":"Square Neck",
+"cn":"方领"
+},
+{
+"category":"背带裤",
+"subCategory":"领型",
+"en":"Straight Neck",
+"cn":"直领"
+},
+{
+"category":"背带裤",
+"subCategory":"领型",
+"en":"High Bib",
+"cn":"高胸围设计"
+},
+{
+"category":"背带裤",
+"subCategory":"领型",
+"en":"Classic Bib",
+"cn":"经典背带款"
+},
+
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Adjustable Buckle",
+"cn":"可调节扣"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Metal Buckle",
+"cn":"金属扣"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Button Closure",
+"cn":"纽扣闭合"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Zipper Fly",
+"cn":"拉链门襟"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Snap Button",
+"cn":"按扣"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Side Button",
+"cn":"侧边纽扣"
+},
+{
+"category":"背带裤",
+"subCategory":"闭合方式",
+"en":"Pull On",
+"cn":"套穿式"
+},
+
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Adjustable Shoulder Straps",
+"cn":"可调节肩带"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Multiple Pockets",
+"cn":"多口袋设计"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Chest Pocket",
+"cn":"胸前口袋"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Side Pockets",
+"cn":"侧袋"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Cargo Pockets",
+"cn":"工装侧袋"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Hammer Loop",
+"cn":"工具挂环"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Reinforced Stitching",
+"cn":"加强缝线"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Vintage Wash",
+"cn":"复古水洗"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Distressed Detail",
+"cn":"做旧细节"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Loose Suspenders",
+"cn":"宽肩带设计"
+},
+{
+"category":"背带裤",
+"subCategory":"细节",
+"en":"Utility Design",
+"cn":"功能设计"
+},
+
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Full Length",
+"cn":"长款"
+},
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Ankle Length",
+"cn":"脚踝长度"
+},
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Cropped Length",
+"cn":"九分长度"
+},
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Short Overalls",
+"cn":"短款背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Long Pants",
+"cn":"长裤"
+},
+{
+"category":"背带裤",
+"subCategory":"长度",
+"en":"Knee Length",
+"cn":"膝盖长度"
+},
+
+{
+"category":"背带裤",
+"subCategory":"腰型",
+"en":"High Waist",
+"cn":"高腰"
+},
+{
+"category":"背带裤",
+"subCategory":"腰型",
+"en":"Mid Waist",
+"cn":"中腰"
+},
+{
+"category":"背带裤",
+"subCategory":"腰型",
+"en":"Elastic Waist",
+"cn":"弹力腰"
+},
+{
+"category":"背带裤",
+"subCategory":"腰型",
+"en":"Relaxed Waist",
+"cn":"宽松腰型"
+},
+{
+"category":"背带裤",
+"subCategory":"腰型",
+"en":"Adjustable Waist",
+"cn":"可调节腰围"
+},
+
+{
+"category":"背带裤",
+"subCategory":"套装规格",
+"en":"1 Piece",
+"cn":"单件装"
+},
+{
+"category":"背带裤",
+"subCategory":"套装规格",
+"en":"2 Piece Set",
+"cn":"两件套"
+},
+{
+"category":"背带裤",
+"subCategory":"套装规格",
+"en":"Overalls With Shirt",
+"cn":"背带裤衬衫套装"
+},
+{
+"category":"背带裤",
+"subCategory":"套装规格",
+"en":"Matching Set",
+"cn":"搭配套装"
+},
+
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Blue Denim",
+"cn":"蓝色牛仔"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Dark Blue",
+"cn":"深蓝色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Light Blue",
+"cn":"浅蓝色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Khaki",
+"cn":"卡其色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Brown",
+"cn":"棕色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"Camouflage",
+"cn":"迷彩色"
+},
+{
+"category":"背带裤",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Men's Denim Overalls",
+"cn":"男士牛仔背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Men's Work Overalls",
+"cn":"男士工作背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Men's Carpenter Pants",
+"cn":"男士木工裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Vintage Denim Bib Overalls",
+"cn":"复古牛仔背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Loose Fit Men's Overalls",
+"cn":"男士宽松背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Streetwear Bib Overalls",
+"cn":"街头潮流背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Utility Workwear Overalls",
+"cn":"功能工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Cargo Bib Pants Men",
+"cn":"男士工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Casual Bib Overalls Men",
+"cn":"男士休闲背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"流量词",
+"en":"Y2K Denim Overalls",
+"cn":"Y2K牛仔背带裤"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Running Vest",
+"cn":"跑步马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Men's Running Vest",
+"cn":"男士跑步马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Cycling Vest",
+"cn":"骑行马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Men's Cycling Vest",
+"cn":"男士骑行马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Sports Vest",
+"cn":"运动马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Athletic Vest",
+"cn":"运动型马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Workout Vest",
+"cn":"训练马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Fitness Vest",
+"cn":"健身马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Outdoor Vest",
+"cn":"户外马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Hiking Vest",
+"cn":"徒步马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Fishing Vest",
+"cn":"钓鱼马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Tactical Vest",
+"cn":"战术马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Utility Vest",
+"cn":"功能马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Work Vest",
+"cn":"工作马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Puffer Vest",
+"cn":"羽绒马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Quilted Vest",
+"cn":"绗缝马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Down Vest",
+"cn":"羽绒背心"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Fleece Vest",
+"cn":"抓绒马甲"
+},
+{
+"category":"马甲",
+"subCategory":"核心产品词",
+"en":"Heated Vest",
+"cn":"加热马甲"
+},
+
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Vest",
+"cn":"男士马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Sleeveless Jacket",
+"cn":"男士无袖夹克"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Sleeveless Jacket Men",
+"cn":"男士无袖外套"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Lightweight Vest Men",
+"cn":"男士轻量马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Outdoor Gear Men",
+"cn":"男士户外装备"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Winter Vest Men",
+"cn":"男士冬季马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Casual Vest Men",
+"cn":"男士休闲马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Fashion Vest Men",
+"cn":"男士时尚马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Streetwear Vest",
+"cn":"街头马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Layering Vest",
+"cn":"叠穿马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Outdoor Clothing Men",
+"cn":"男士户外服装"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Activewear Men",
+"cn":"男士运动服"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Performance Wear",
+"cn":"高性能运动服"
+},
+
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Slim Fit",
+"cn":"修身版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Regular Fit",
+"cn":"标准版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Relaxed Fit",
+"cn":"宽松版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Loose Fit",
+"cn":"宽松剪裁"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Athletic Fit",
+"cn":"运动修身版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Oversized Fit",
+"cn":"Oversize版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Classic Fit",
+"cn":"经典版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Layering Fit",
+"cn":"叠穿版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Lightweight Fit",
+"cn":"轻量版型"
+},
+{
+"category":"马甲",
+"subCategory":"版型",
+"en":"Active Fit",
+"cn":"运动版型"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Men",
+"cn":"男士"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Young Men",
+"cn":"年轻男性"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Adult Men",
+"cn":"成年男性"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Athletes",
+"cn":"运动员"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Runner",
+"cn":"跑步爱好者"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Cyclist",
+"cn":"骑行者"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Hiker",
+"cn":"徒步爱好者"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Fisherman",
+"cn":"钓鱼爱好者"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Outdoor Enthusiast",
+"cn":"户外运动爱好者"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Worker",
+"cn":"工作人群"
+},
+{
+"category":"马甲",
+"subCategory":"目标人群",
+"en":"Traveler",
+"cn":"旅行者"
+},
+
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Sporty",
+"cn":"运动风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Outdoor Style",
+"cn":"户外风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Casual",
+"cn":"休闲风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Streetwear",
+"cn":"街头潮流风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Tactical Style",
+"cn":"战术风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Workwear",
+"cn":"工装风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Minimalist",
+"cn":"极简风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Urban Style",
+"cn":"都市风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Vintage",
+"cn":"复古风"
+},
+{
+"category":"马甲",
+"subCategory":"风格",
+"en":"Classic American Style",
+"cn":"美式经典风"
+},
+
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Solid Color",
+"cn":"纯色"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Color Block",
+"cn":"撞色拼接"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Camouflage",
+"cn":"迷彩图案"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Quilted Pattern",
+"cn":"绗缝纹理"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Diamond Quilt",
+"cn":"菱格纹"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Geometric Pattern",
+"cn":"几何图案"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Stripe Pattern",
+"cn":"条纹图案"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Graphic Print",
+"cn":"图案印花"
+},
+{
+"category":"马甲",
+"subCategory":"图案/花色",
+"en":"Logo Print",
+"cn":"LOGO印花"
+},
+
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Running",
+"cn":"跑步"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Cycling",
+"cn":"骑行"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Hiking",
+"cn":"徒步"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Camping",
+"cn":"露营"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Fishing",
+"cn":"钓鱼"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Travel",
+"cn":"旅行"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Daily Wear",
+"cn":"日常穿着"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Workout",
+"cn":"健身训练"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Work",
+"cn":"工作"
+},
+{
+"category":"马甲",
+"subCategory":"场景",
+"en":"Outdoor Adventure",
+"cn":"户外探险"
+},
+
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Spring",
+"cn":"春季"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Summer",
+"cn":"夏季"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Fall",
+"cn":"秋季"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Winter",
+"cn":"冬季"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"All Season",
+"cn":"四季适用"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Cold Weather",
+"cn":"寒冷天气"
+},
+{
+"category":"马甲",
+"subCategory":"季节",
+"en":"Warm Weather",
+"cn":"温暖天气"
+},
+
+{
+"category":"马甲",
+"subCategory":"节日",
+"en":"Christmas",
+"cn":"圣诞节"
+},
+{
+"category":"马甲",
+"subCategory":"节日",
+"en":"Black Friday",
+"cn":"黑色星期五"
+},
+{
+"category":"马甲",
+"subCategory":"节日",
+"en":"Cyber Monday",
+"cn":"网络星期一"
+},
+{
+"category":"马甲",
+"subCategory":"节日",
+"en":"Father's Day",
+"cn":"父亲节"
+},
+{
+"category":"马甲",
+"subCategory":"节日",
+"en":"Halloween",
+"cn":"万圣节"
+},
+
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Lightweight",
+"cn":"轻量化"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Breathable",
+"cn":"透气"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Quick Dry",
+"cn":"速干"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Moisture Wicking",
+"cn":"吸湿排汗"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Windproof",
+"cn":"防风"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Water Resistant",
+"cn":"防泼水"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Warm",
+"cn":"保暖"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Insulated",
+"cn":"保温填充"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Packable",
+"cn":"可收纳"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Reflective",
+"cn":"反光"
+},
+{
+"category":"马甲",
+"subCategory":"功能特性",
+"en":"Waterproof",
+"cn":"防水"
+},
+
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Polyester",
+"cn":"涤纶"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Nylon",
+"cn":"尼龙"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Fleece",
+"cn":"抓绒"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Down",
+"cn":"羽绒"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Cotton",
+"cn":"棉"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Polyester Blend",
+"cn":"涤纶混纺"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Softshell",
+"cn":"软壳面料"
+},
+{
+"category":"马甲",
+"subCategory":"面料/材质",
+"en":"Mesh Fabric",
+"cn":"网眼面料"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Stand Collar",
+"cn":"立领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Mock Neck",
+"cn":"半高领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"High Neck",
+"cn":"高领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"V Neck",
+"cn":"V领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Round Neck",
+"cn":"圆领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Crew Neck",
+"cn":"圆领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Hooded Collar",
+"cn":"连帽领"
+},
+{
+"category":"马甲",
+"subCategory":"领型",
+"en":"Funnel Neck",
+"cn":"漏斗领"
+},
+
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Full Zip",
+"cn":"全拉链"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Front Zipper",
+"cn":"前拉链"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Half Zip",
+"cn":"半拉链"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Button Closure",
+"cn":"纽扣闭合"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Snap Closure",
+"cn":"按扣闭合"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Pullover",
+"cn":"套头式"
+},
+{
+"category":"马甲",
+"subCategory":"闭合方式",
+"en":"Double Zipper",
+"cn":"双向拉链"
+},
+
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Multiple Pockets",
+"cn":"多口袋设计"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Side Pockets",
+"cn":"侧边口袋"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Chest Pocket",
+"cn":"胸前口袋"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Hidden Pocket",
+"cn":"隐藏口袋"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Zipper Pockets",
+"cn":"拉链口袋"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Reflective Details",
+"cn":"反光细节"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Reflective Logo",
+"cn":"反光LOGO"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Quilted Design",
+"cn":"绗缝设计"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Elastic Hem",
+"cn":"弹力下摆"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Drawstring Hem",
+"cn":"抽绳下摆"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Windproof Layer",
+"cn":"防风层设计"
+},
+{
+"category":"马甲",
+"subCategory":"细节",
+"en":"Insulated Padding",
+"cn":"保暖填充"
+},
+
+{
+"category":"马甲",
+"subCategory":"长度",
+"en":"Short Length",
+"cn":"短款"
+},
+{
+"category":"马甲",
+"subCategory":"长度",
+"en":"Regular Length",
+"cn":"常规长度"
+},
+{
+"category":"马甲",
+"subCategory":"长度",
+"en":"Long Length",
+"cn":"长款"
+},
+{
+"category":"马甲",
+"subCategory":"长度",
+"en":"Hip Length",
+"cn":"臀部长度"
+},
+{
+"category":"马甲",
+"subCategory":"长度",
+"en":"Waist Length",
+"cn":"腰部长度"
+},
+
+{
+"category":"马甲",
+"subCategory":"袖长",
+"en":"Sleeveless",
+"cn":"无袖"
+},
+{
+"category":"马甲",
+"subCategory":"袖长",
+"en":"Vest Style",
+"cn":"背心式"
+},
+
+{
+"category":"马甲",
+"subCategory":"腰型",
+"en":"Regular Waist",
+"cn":"常规腰型"
+},
+{
+"category":"马甲",
+"subCategory":"腰型",
+"en":"Adjustable Waist",
+"cn":"可调节腰围"
+},
+{
+"category":"马甲",
+"subCategory":"腰型",
+"en":"Elastic Waist",
+"cn":"弹力腰"
+},
+{
+"category":"马甲",
+"subCategory":"腰型",
+"en":"Loose Fit Waist",
+"cn":"宽松腰型"
+},
+
+{
+"category":"马甲",
+"subCategory":"套装规格",
+"en":"1 Piece",
+"cn":"单件装"
+},
+{
+"category":"马甲",
+"subCategory":"套装规格",
+"en":"2 Piece Set",
+"cn":"两件套"
+},
+{
+"category":"马甲",
+"subCategory":"套装规格",
+"en":"Vest And Pants Set",
+"cn":"马甲裤子套装"
+},
+{
+"category":"马甲",
+"subCategory":"套装规格",
+"en":"Matching Set",
+"cn":"搭配套装"
+},
+
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Navy",
+"cn":"藏蓝色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Blue",
+"cn":"蓝色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Olive Green",
+"cn":"橄榄绿"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Khaki",
+"cn":"卡其色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Brown",
+"cn":"棕色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Red",
+"cn":"红色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Orange",
+"cn":"橙色"
+},
+{
+"category":"马甲",
+"subCategory":"颜色",
+"en":"Yellow",
+"cn":"黄色"
+},
+
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Lightweight Vest",
+"cn":"男士轻量马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Running Vest Lightweight",
+"cn":"男士轻量跑步马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Cycling Vest Windproof",
+"cn":"男士防风骑行马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Outdoor Vest",
+"cn":"男士户外马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Puffer Vest",
+"cn":"男士羽绒马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Heated Vest",
+"cn":"男士加热马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Tactical Vest",
+"cn":"男士战术马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Work Vest",
+"cn":"男士工作马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Fishing Vest",
+"cn":"男士钓鱼马甲"
+},
+{
+"category":"马甲",
+"subCategory":"流量词",
+"en":"Men's Casual Vest",
+"cn":"男士休闲马甲"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Men's Clothing",
+"cn":"男装"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Men's Apparel",
+"cn":"男士服饰"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Men's Fashion",
+"cn":"男士时尚服装"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Men's Outfit",
+"cn":"男士穿搭"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Men's Wear",
+"cn":"男士服装"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Casual Wear Men",
+"cn":"男士休闲服"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Activewear Men",
+"cn":"男士运动服"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Outdoor Wear Men",
+"cn":"男士户外服"
+},
+{
+"category":"通用",
+"subCategory":"核心产品词",
+"en":"Sportswear Men",
+"cn":"男士运动服饰"
+},
+
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Best Seller",
+"cn":"热销款"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Trending",
+"cn":"热门趋势"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"New Arrival",
+"cn":"新品上市"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Latest Style",
+"cn":"最新款式"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Popular",
+"cn":"热门"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Top Rated",
+"cn":"高评分"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Hot Sale",
+"cn":"热卖"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Must Have",
+"cn":"必备款"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Premium Quality",
+"cn":"高品质"
+},
+{
+"category":"通用",
+"subCategory":"流量词",
+"en":"Affordable",
+"cn":"高性价比"
+},
+
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Casual",
+"cn":"休闲风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Sporty",
+"cn":"运动风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Streetwear",
+"cn":"街头潮流风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Vintage",
+"cn":"复古风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Classic",
+"cn":"经典风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Modern",
+"cn":"现代风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Minimalist",
+"cn":"极简风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Urban",
+"cn":"都市风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"Y2K",
+"cn":"Y2K潮流风"
+},
+{
+"category":"通用",
+"subCategory":"风格",
+"en":"American Style",
+"cn":"美式风格"
+},
+
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Men",
+"cn":"男士"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Young Men",
+"cn":"年轻男性"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Adult Men",
+"cn":"成年男性"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Teen Boys",
+"cn":"青少年男孩"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Athletes",
+"cn":"运动人群"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Outdoor Lovers",
+"cn":"户外爱好者"
+},
+{
+"category":"通用",
+"subCategory":"目标人群",
+"en":"Fitness Enthusiasts",
+"cn":"健身爱好者"
+},
+
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Daily Wear",
+"cn":"日常穿着"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Work",
+"cn":"工作"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Travel",
+"cn":"旅行"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Outdoor Activities",
+"cn":"户外活动"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Sports",
+"cn":"运动"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Fitness",
+"cn":"健身"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Training",
+"cn":"训练"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Weekend",
+"cn":"周末休闲"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Vacation",
+"cn":"度假"
+},
+
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Comfortable",
+"cn":"舒适"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Soft",
+"cn":"柔软"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Durable",
+"cn":"耐用"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Stretch",
+"cn":"弹力"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Lightweight",
+"cn":"轻量"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Breathable",
+"cn":"透气"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Quick Dry",
+"cn":"速干"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Moisture Wicking",
+"cn":"吸湿排汗"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Easy Care",
+"cn":"易护理"
+},
+
+{
+"category":"通用",
+"subCategory":"季节",
+"en":"Summer",
+"cn":"夏季"
+},
+{
+"category":"通用",
+"subCategory":"季节",
+"en":"Spring",
+"cn":"春季"
+},
+{
+"category":"通用",
+"subCategory":"季节",
+"en":"Fall",
+"cn":"秋季"
+},
+{
+"category":"通用",
+"subCategory":"季节",
+"en":"Winter",
+"cn":"冬季"
+},
+{
+"category":"通用",
+"subCategory":"季节",
+"en":"All Season",
+"cn":"四季适用"
+},
+
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Christmas",
+"cn":"圣诞节"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Black Friday",
+"cn":"黑色星期五"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Cyber Monday",
+"cn":"网络星期一"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Valentine's Day",
+"cn":"情人节"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Father's Day",
+"cn":"父亲节"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Halloween",
+"cn":"万圣节"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Black",
+"cn":"黑色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"White",
+"cn":"白色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Gray",
+"cn":"灰色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Dark Gray",
+"cn":"深灰色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Light Gray",
+"cn":"浅灰色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Charcoal",
+"cn":"炭灰色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Blue",
+"cn":"蓝色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Navy Blue",
+"cn":"藏蓝色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Royal Blue",
+"cn":"宝蓝色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Sky Blue",
+"cn":"天蓝色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Red",
+"cn":"红色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Wine Red",
+"cn":"酒红色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Burgundy",
+"cn":"勃艮第红"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Green",
+"cn":"绿色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Olive Green",
+"cn":"橄榄绿"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Army Green",
+"cn":"军绿色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Khaki",
+"cn":"卡其色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Brown",
+"cn":"棕色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Beige",
+"cn":"米色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Camel",
+"cn":"驼色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Orange",
+"cn":"橙色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Yellow",
+"cn":"黄色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Purple",
+"cn":"紫色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Pink",
+"cn":"粉色"
+},
+{
+"category":"通用",
+"subCategory":"颜色",
+"en":"Neon Green",
+"cn":"荧光绿"
+},
+
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Solid Color",
+"cn":"纯色"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Color Block",
+"cn":"撞色拼接"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Stripe",
+"cn":"条纹"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Plaid",
+"cn":"格纹"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Checkered",
+"cn":"方格纹"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Camouflage",
+"cn":"迷彩"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Floral Print",
+"cn":"花卉印花"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Graphic Print",
+"cn":"图案印花"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Logo Print",
+"cn":"LOGO印花"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Geometric Pattern",
+"cn":"几何图案"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Abstract Pattern",
+"cn":"抽象图案"
+},
+{
+"category":"通用",
+"subCategory":"图案/花色",
+"en":"Vintage Print",
+"cn":"复古印花"
+},
+
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"100% Cotton",
+"cn":"100%纯棉"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Organic Cotton",
+"cn":"有机棉"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Cotton Blend",
+"cn":"棉混纺"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Polyester",
+"cn":"涤纶"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Polyester Blend",
+"cn":"涤纶混纺"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Spandex",
+"cn":"氨纶"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Elastane",
+"cn":"弹性纤维"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Nylon",
+"cn":"尼龙"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Denim",
+"cn":"牛仔布"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Canvas",
+"cn":"帆布"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Fleece",
+"cn":"抓绒"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Mesh",
+"cn":"网眼布"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"Jersey Fabric",
+"cn":"针织面料"
+},
+{
+"category":"通用",
+"subCategory":"面料/材质",
+"en":"French Terry",
+"cn":"毛圈布"
+},
+
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Embroidery",
+"cn":"刺绣"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Printed",
+"cn":"印花"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Washed Finish",
+"cn":"水洗工艺"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Vintage Washed",
+"cn":"复古水洗"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Distressed",
+"cn":"做旧"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Patchwork",
+"cn":"拼接"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Reflective Detail",
+"cn":"反光细节"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Breathable Panel",
+"cn":"透气拼接"
+},
+{
+"category":"通用",
+"subCategory":"细节",
+"en":"Flat Seam",
+"cn":"平缝设计"
+},
+
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Comfort Fit",
+"cn":"舒适版型"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Skin Friendly",
+"cn":"亲肤"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Soft Touch",
+"cn":"柔软触感"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Stretch Fabric",
+"cn":"弹力面料"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Easy Wash",
+"cn":"易清洗"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Quick Dry",
+"cn":"快速干燥"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Breathable Fabric",
+"cn":"透气面料"
+},
+{
+"category":"通用",
+"subCategory":"功能特性",
+"en":"Anti Odor",
+"cn":"防异味"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Casual Outdoor Clothing",
+"cn":"男士休闲户外服装"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Lightweight Sportswear",
+"cn":"男士轻量运动服"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Athletic Performance Wear",
+"cn":"男士高性能运动服"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Outdoor Adventure Gear",
+"cn":"男士户外探险装备"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Casual Streetwear Outfit",
+"cn":"男士休闲街头穿搭"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Fashion Trendy Style",
+"cn":"男士潮流时尚风格"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Everyday Essential Clothing",
+"cn":"男士日常必备服装"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Comfortable Casual Wear",
+"cn":"男士舒适休闲服"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Premium Quality Apparel",
+"cn":"男士高品质服饰"
+},
+{
+"category":"通用",
+"subCategory":"标题组合词",
+"en":"Men's Modern Classic Outfit",
+"cn":"男士现代经典穿搭"
+},
+
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Cycling Bib Shorts Padded",
+"cn":"男士带垫骑行背带短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Professional Cycling Shorts",
+"cn":"男士专业骑行短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Breathable Cycling Bib Pants",
+"cn":"男士透气骑行背带裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Road Bike Cycling Gear",
+"cn":"男士公路自行车骑行装备"
+},
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Mountain Bike Shorts",
+"cn":"男士山地车短裤"
+},
+{
+"category":"骑行裤",
+"subCategory":"标题组合词",
+"en":"Men's Quick Dry Cycling Wear",
+"cn":"男士速干骑行服"
+},
+
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's One Piece Jumpsuit Casual",
+"cn":"男士休闲连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's Utility Jumpsuit Workwear",
+"cn":"男士功能工装连体衣"
+},
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's Vintage Work Jumpsuit",
+"cn":"男士复古工作连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's Racing Jumpsuit Costume",
+"cn":"男士赛车连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's Mechanic Coverall",
+"cn":"男士汽修连体服"
+},
+{
+"category":"连体衣",
+"subCategory":"标题组合词",
+"en":"Men's Streetwear Coverall Outfit",
+"cn":"男士街头连体穿搭"
+},
+
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Denim Bib Overalls Casual",
+"cn":"男士休闲牛仔背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Vintage Denim Overalls",
+"cn":"男士复古牛仔背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Carpenter Bib Pants Workwear",
+"cn":"男士木工工装背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Loose Fit Overalls Streetwear",
+"cn":"男士宽松街头背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Utility Work Overalls",
+"cn":"男士功能工作背带裤"
+},
+{
+"category":"背带裤",
+"subCategory":"标题组合词",
+"en":"Men's Casual Bib Pants Outdoor",
+"cn":"男士户外休闲背带裤"
+},
+
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Lightweight Running Vest Breathable",
+"cn":"男士轻量透气跑步马甲"
+},
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Cycling Vest Windproof Outdoor",
+"cn":"男士防风户外骑行马甲"
+},
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Puffer Vest Winter Warm",
+"cn":"男士冬季保暖羽绒马甲"
+},
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Tactical Vest Utility Outdoor",
+"cn":"男士户外功能战术马甲"
+},
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Heated Vest Rechargeable",
+"cn":"男士可充电加热马甲"
+},
+{
+"category":"马甲",
+"subCategory":"标题组合词",
+"en":"Men's Fishing Vest Multi Pocket",
+"cn":"男士多口袋钓鱼马甲"
+},
+
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"New Arrival 2026",
+"cn":"2026新品"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Trending Now",
+"cn":"当前热门"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Limited Time Deal",
+"cn":"限时优惠"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Best Choice",
+"cn":"最佳选择"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Customer Favorite",
+"cn":"消费者喜爱款"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Gift Idea",
+"cn":"礼物推荐"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Holiday Gift",
+"cn":"节日礼物"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Daily Essential",
+"cn":"日常必备"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Wardrobe Essential",
+"cn":"衣橱必备"
+},
+{
+"category":"通用",
+"subCategory":"营销词",
+"en":"Perfect Gift For Men",
+"cn":"男士完美礼物"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Christmas Gift For Men",
+"cn":"男士圣诞礼物"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Christmas Outfit Men",
+"cn":"男士圣诞穿搭"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Black Friday Sale",
+"cn":"黑五促销"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Cyber Monday Deals",
+"cn":"网一优惠"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Father's Day Gift For Dad",
+"cn":"父亲节爸爸礼物"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Valentine Gift For Him",
+"cn":"情人节男士礼物"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Halloween Costume Men",
+"cn":"男士万圣节服装"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Thanksgiving Outfit Men",
+"cn":"男士感恩节穿搭"
+},
+{
+"category":"通用",
+"subCategory":"节日",
+"en":"Holiday Clothing Men",
+"cn":"男士节日服装"
+},
+
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Outdoor Adventure",
+"cn":"户外探险"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Camping Trip",
+"cn":"露营旅行"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Road Trip",
+"cn":"公路旅行"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Mountain Hiking",
+"cn":"山区徒步"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Fishing Trip",
+"cn":"钓鱼活动"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Gym Workout",
+"cn":"健身房训练"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Running Training",
+"cn":"跑步训练"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Cycling Training",
+"cn":"骑行训练"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Daily Casual Wear",
+"cn":"日常休闲穿着"
+},
+{
+"category":"通用",
+"subCategory":"场景",
+"en":"Work Uniform",
+"cn":"工作制服"
+},
+
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"USA Style",
+"cn":"美国风格"
+},
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"American Casual",
+"cn":"美式休闲"
+},
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"Western Style",
+"cn":"西部风格"
+},
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"Urban America Style",
+"cn":"美国都市风"
+},
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"Outdoor Lifestyle",
+"cn":"户外生活方式"
+},
+{
+"category":"通用",
+"subCategory":"美洲市场关键词",
+"en":"Active Lifestyle",
+"cn":"积极生活方式"
+},
+
+{
+"category":"通用",
+"subCategory":"标题组合",
+"en":"Men's + Product + Style + Material",
+"cn":"男士+产品词+风格+材质"
+},
+{
+"category":"通用",
+"subCategory":"标题组合",
+"en":"Men's + Product + Feature + Occasion",
+"cn":"男士+产品词+功能+场景"
+},
+{
+"category":"通用",
+"subCategory":"标题组合",
+"en":"Product + Material + Style + Season",
+"cn":"产品词+材质+风格+季节"
+},
+{
+"category":"通用",
+"subCategory":"标题组合",
+"en":"Product + Function + Target + Occasion",
+"cn":"产品词+功能+人群+场景"
+},
+
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Premium",
+"cn":"高级"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Classic",
+"cn":"经典"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Essential",
+"cn":"必备"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Stylish",
+"cn":"时尚"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Trendy",
+"cn":"潮流"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Comfortable",
+"cn":"舒适"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Durable",
+"cn":"耐用"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Versatile",
+"cn":"多用途"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Functional",
+"cn":"功能型"
+},
+{
+"category":"通用",
+"subCategory":"标题高频修饰词",
+"en":"Classic Fit",
+"cn":"经典版型"
+}
+]
