@@ -26,7 +26,7 @@
             color: var(--text-color);
             line-height: 1.6;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
@@ -74,19 +74,21 @@
         }
 
         .char-counter {
-            font-size: 12px;
+            font-size: 13px;
+            font-weight: bold;
             color: #666;
         }
 
         textarea {
             width: 100%;
-            height: 80px;
-            padding: 10px;
+            height: 90px;
+            padding: 12px;
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            font-size: 14px;
+            font-size: 15px;
             resize: vertical;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
 
         .builder-controls {
@@ -100,7 +102,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
-            transition: background 0.2s;
+            transition: all 0.2s;
         }
 
         .btn-primary {
@@ -128,32 +130,48 @@
             border-radius: 8px;
             margin-bottom: 20px;
             display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
         .search-input {
             flex: 1;
-            min-width: 200px;
-            padding: 8px 12px;
+            min-width: 240px;
+            padding: 9px 14px;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 6px;
             outline: none;
+            font-size: 14px;
         }
 
-        .category-filter {
+        .filter-group {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+            margin-right: 4px;
         }
 
         .filter-btn {
-            background: #f0f0f0;
+            background: #f0f2f5;
             border: 1px solid var(--border-color);
-            padding: 6px 12px;
-            border-radius: 20px;
+            padding: 5px 12px;
+            border-radius: 16px;
             font-size: 13px;
+            color: #444;
         }
 
         .filter-btn.active {
@@ -162,29 +180,44 @@
             border-color: var(--primary-color);
         }
 
+        .stats-bar {
+            font-size: 12px;
+            color: #777;
+            padding-top: 4px;
+        }
+
         /* 词库网格 */
         .keywords-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 18px;
         }
 
         .category-card {
             background: var(--card-bg);
             border-radius: 8px;
-            padding: 15px;
+            padding: 16px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
         }
 
         .category-card h3 {
-            font-size: 16px;
+            font-size: 15px;
             border-bottom: 2px solid var(--tag-bg);
             padding-bottom: 8px;
             margin-bottom: 12px;
-            color: #444;
+            color: var(--primary-color);
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-card h3 .count {
+            font-size: 12px;
+            color: #888;
+            font-weight: normal;
         }
 
         .tag-group {
@@ -196,37 +229,30 @@
         .tag {
             background: var(--tag-bg);
             border: 1px solid #ffd8bf;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 13px;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.15s ease-in-out;
             display: flex;
             flex-direction: column;
         }
 
         .tag:hover {
             border-color: var(--primary-color);
+            background: #ffe7d6;
             transform: translateY(-1px);
         }
 
         .tag .en {
-            font-weight: bold;
-            color: var(--primary-color);
+            font-weight: 600;
+            color: #222;
         }
 
         .tag .cn {
-            font-size: 10px;
-            color: #777;
-        }
-
-        .hot-badge {
-            font-size: 10px;
-            background: #ff4d4f;
-            color: white;
-            padding: 1px 4px;
-            border-radius: 3px;
-            margin-left: 4px;
+            font-size: 11px;
+            color: #666;
+            margin-top: 2px;
         }
 
         footer {
@@ -234,7 +260,7 @@
             margin-top: 40px;
             padding: 20px 0;
             color: #888;
-            font-size: 12px;
+            font-size: 13px;
             border-top: 1px solid var(--border-color);
         }
     </style>
@@ -261,144 +287,152 @@
 
     <!-- 搜索与筛选区 -->
     <div class="search-section">
-        <input type="text" id="searchInput" class="search-input" placeholder="输入中英文关键词检索 (如: Vest, 骑行, Tactical)..." oninput="filterKeywords()">
-        <div class="category-filter">
-            <button class="filter-btn active" onclick="filterCategory('all', this)">全部</button>
-            <button class="filter-btn" onclick="filterCategory('vest', this)">马甲 (Vests)</button>
-            <button class="filter-btn" onclick="filterCategory('overalls', this)">背带裤 (Overalls)</button>
-            <button class="filter-btn" onclick="filterCategory('cycling', this)">骑行服 (Cycling)</button>
-            <button class="filter-btn" onclick="filterCategory('jumpsuits', this)">连体服 (Jumpsuits)</button>
-            <button class="filter-btn" onclick="filterCategory('general', this)">通用修饰/卖点词</button>
+        <div class="search-row">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 输入中英文关键词检索 (如: Vest, 跑步, Quick Dry)..." oninput="filterKeywords()">
         </div>
+        <div class="filter-group">
+            <span class="filter-label">大类筛选:</span>
+            <div id="categoryFilters" class="filter-group"></div>
+        </div>
+        <div class="filter-group">
+            <span class="filter-label">词属性筛选:</span>
+            <div id="subCategoryFilters" class="filter-group"></div>
+        </div>
+        <div class="stats-bar" id="statsBar">加载中...</div>
     </div>
 
     <!-- 关键词展示区 -->
     <div class="keywords-grid" id="keywordsGrid">
-        <!-- 动态渲染关键词列表 -->
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">正在读取 keywords.json 词库数据...</div>
     </div>
 
     <footer>
-        <p>© 2026 TEMU Men's Apparel Operations | 专为欧美市场高转化标题打造</p>
+        <p>© 2026 TEMU Men's Apparel Operations | 静态词库架构 - 支持一键通过 Excel 转换为 JSON 更新</p>
     </footer>
 
     <script>
-        // 核心词库数据
-        const keywordData = [
-            {
-                category: "vest",
-                categoryName: "🎽 马甲 (Vests & Waistcoats)",
-                words: [
-                    { en: "Men's Vest", cn: "男士马甲", hot: true },
-                    { en: "Tactical Vest", cn: "战术马甲", hot: true },
-                    { en: "Puffer Vest", cn: "羽绒/棉马甲", hot: true },
-                    { en: "Cargo Vest", cn: "工装多口袋马甲", hot: true },
-                    { en: "Suit Waistcoat", cn: "正装西装马甲", hot: false },
-                    { en: "Fleece Vest", cn: "抓绒马甲", hot: false },
-                    { en: "Heated Vest", cn: "电加热马甲", hot: true },
-                    { en: "Sleeveless Jacket", cn: "无袖外套", hot: false },
-                    { en: "Fishing Vest", cn: "钓鱼/户外马甲", hot: false }
-                ]
-            },
-            {
-                category: "overalls",
-                categoryName: "👖 背带裤 (Overalls & Dungarees)",
-                words: [
-                    { en: "Men's Overalls", cn: "男士背带裤", hot: true },
-                    { en: "Denim Overalls", cn: "牛仔背带裤", hot: true },
-                    { en: "Cargo Overalls", cn: "工装背带裤", hot: true },
-                    { en: "Bib Overalls", cn: "护胸背带裤", hot: false },
-                    { en: "Workwear Dungarees", cn: "工作服背带裤", hot: false },
-                    { en: "Relaxed Fit Bibs", cn: "宽松版型背带裤", hot: false },
-                    { en: "Adjustable Straps", cn: "可调节肩带", hot: false }
-                ]
-            },
-            {
-                category: "cycling",
-                categoryName: "🚴 骑行服 (Cycling Wear)",
-                words: [
-                    { en: "Cycling Jersey", cn: "骑行上衣/上装", hot: true },
-                    { en: "Cycling Shorts", cn: "骑行短裤", hot: true },
-                    { en: "Bike Bib Shorts", cn: "背带骑行裤", hot: true },
-                    { en: "Bicycle Suit", cn: "骑行套装", hot: false },
-                    { en: "Padded Cycling Shorts", cn: "带硅胶垫骑行裤", hot: true },
-                    { en: "MTB Riding Apparel", cn: "山地车骑行服", hot: false },
-                    { en: "Windproof Cycling Jacket", cn: "防风骑行外套", hot: false }
-                ]
-            },
-            {
-                category: "jumpsuits",
-                categoryName: "👔 连体服 (Jumpsuits & Coveralls)",
-                words: [
-                    { en: "Men's Jumpsuit", cn: "男士连体裤/服", hot: true },
-                    { en: "Work Coveralls", cn: "防护/工作防护服", hot: true },
-                    { en: "One-Piece Romper", cn: "连体短裤/休闲连体服", hot: false },
-                    { en: "Flight Suit", cn: "飞行服连体裤", hot: false },
-                    { en: "Short Sleeve Jumpsuit", cn: "短袖连体服", hot: false },
-                    { en: "Streetwear Romper", cn: "街头风连体服", hot: true }
-                ]
-            },
-            {
-                category: "general",
-                categoryName: "✨ 欧美热搜修饰与卖点词",
-                words: [
-                    { en: "Quick Dry", cn: "速干", hot: true },
-                    { en: "Breathable", cn: "透气", hot: true },
-                    { en: "Multi-Pockets", cn: "多口袋", hot: true },
-                    { en: "Lightweight", cn: "轻量", hot: false },
-                    { en: "Heavy Duty", cn: "耐磨/重磅", hot: true },
-                    { en: "Water Resistant", cn: "防泼水", hot: false },
-                    { en: "Slim Fit", cn: "修身", hot: false },
-                    { en: "Loose Fit / Oversized", cn: "宽松/大码", hot: true },
-                    { en: "Vintage Casual", cn: "复古休闲", hot: false },
-                    { en: "Outdoor Performance", cn: "户外运动", hot: false }
-                ]
-            }
-        ];
-
-        let currentCategory = 'all';
+        let rawData = [];
+        let selectedCategory = 'all';
+        let selectedSubCategory = 'all';
 
         // 页面初始化
         document.addEventListener("DOMContentLoaded", () => {
-            renderKeywords();
-            
+            loadKeywords();
             const textarea = document.getElementById("titleInput");
             textarea.addEventListener("input", updateCounter);
         });
 
-        // 渲染关键词
+        // Fetch JSON 数据
+        async function loadKeywords() {
+            try {
+                const response = await fetch('keywords.json?v=' + new Date().getTime());
+                if (!response.ok) {
+                    throw new Error("无法读取 keywords.json 文件");
+                }
+                rawData = await response.json();
+                buildFilters();
+                renderKeywords();
+            } catch (error) {
+                document.getElementById("keywordsGrid").innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: red;">
+                        ⚠️ 加载词库失败！请确保仓库根目录下已提交 <b>keywords.json</b> 文件。<br>错误原因: ${error.message}
+                    </div>`;
+            }
+        }
+
+        // 动态构建筛选按钮
+        function buildFilters() {
+            // 品类（大类）
+            const categories = ['all', ...new Set(rawData.map(item => item.category))];
+            const catContainer = document.getElementById("categoryFilters");
+            catContainer.innerHTML = categories.map(cat => {
+                const name = cat === 'all' ? '全部品类' : cat;
+                return `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="selectCategory('${cat}', this)">${name}</button>`;
+            }).join('');
+
+            // 分类（词属性）
+            const subCategories = ['all', ...new Set(rawData.map(item => item.subCategory))];
+            const subCatContainer = document.getElementById("subCategoryFilters");
+            subCatContainer.innerHTML = subCategories.map(sub => {
+                const name = sub === 'all' ? '全部属性' : sub;
+                return `<button class="filter-btn ${sub === 'all' ? 'active' : ''}" onclick="selectSubCategory('${sub}', this)">${name}</button>`;
+            }).join('');
+        }
+
+        function selectCategory(cat, btn) {
+            selectedCategory = cat;
+            btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderKeywords();
+        }
+
+        function selectSubCategory(sub, btn) {
+            selectedSubCategory = sub;
+            btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderKeywords();
+        }
+
+        // 渲染关键词列表
         function renderKeywords() {
             const grid = document.getElementById("keywordsGrid");
-            const filterText = document.getElementById("searchInput").value.toLowerCase();
+            const filterText = document.getElementById("searchInput").value.toLowerCase().trim();
+
+            // 过滤数据
+            let filtered = rawData.filter(item => {
+                const matchCat = (selectedCategory === 'all' || item.category === selectedCategory);
+                const matchSub = (selectedSubCategory === 'all' || item.subCategory === selectedSubCategory);
+                const matchText = !filterText || 
+                                  item.en.toLowerCase().includes(filterText) || 
+                                  item.cn.toLowerCase().includes(filterText);
+                return matchCat && matchSub && matchText;
+            });
+
+            document.getElementById("statsBar").innerText = `当前展示 ${filtered.length} 个关键词 (总计 ${rawData.length} 个词汇)`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">未找到匹配的关键词</div>`;
+                return;
+            }
+
+            // 按 (品类 + 属性) 分组
+            const groups = {};
+            filtered.forEach(item => {
+                const groupKey = `${item.category} - ${item.subCategory}`;
+                if (!groups[groupKey]) groups[groupKey] = [];
+                groups[groupKey].push(item);
+            });
+
             grid.innerHTML = "";
 
-            keywordData.forEach(cat => {
-                if (currentCategory !== 'all' && cat.category !== currentCategory) return;
-
-                // 过滤词汇
-                const filteredWords = cat.words.filter(w => 
-                    w.en.toLowerCase().includes(filterText) || 
-                    w.cn.includes(filterText)
-                );
-
-                if (filteredWords.length === 0) return;
-
+            Object.keys(groups).forEach(groupKey => {
                 const card = document.createElement("div");
                 card.className = "category-card";
                 
-                let tagsHTML = filteredWords.map(w => `
-                    <div class="tag" onclick="appendWord('${w.en}')">
-                        <span class="en">${w.en}${w.hot ? '<span class="hot-badge">HOT</span>' : ''}</span>
-                        <span class="cn">${w.cn}</span>
+                const wordsHTML = groups[groupKey].map(w => `
+                    <div class="tag" onclick="appendWord('${escapeQuotes(w.en)}')">
+                        <span class="en">${escapeHTML(w.en)}</span>
+                        <span class="cn">${escapeHTML(w.cn)}</span>
                     </div>
                 `).join("");
 
                 card.innerHTML = `
-                    <h3>${cat.categoryName}</h3>
-                    <div class="tag-group">${tagsHTML}</div>
+                    <h3><span>${escapeHTML(groupKey)}</span><span class="count">${groups[groupKey].length}个</span></h3>
+                    <div class="tag-group">${wordsHTML}</div>
                 `;
 
                 grid.appendChild(card);
             });
+        }
+
+        function escapeQuotes(str) {
+            return str.replace(/'/g, "\'");
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
         }
 
         // 追加关键词到标题文本框
@@ -444,14 +478,6 @@
         function clearTitle() {
             document.getElementById("titleInput").value = "";
             updateCounter();
-        }
-
-        // 分类筛选
-        function filterCategory(cat, btn) {
-            currentCategory = cat;
-            document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            renderKeywords();
         }
 
         // 搜索框筛选
