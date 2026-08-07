@@ -1,156 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMU Men's SEO Center | 男装 SEO 关键词与标题优化中心</title>
+    <style>
+        :root {
+            --primary-color: #fb7701; /* TEMU Brand Orange */
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e1e4e8;
+            --tag-bg: #fff3eb;
+        }
 
-<meta charset="UTF-8">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-<title>TEMU Men's SEO Center</title>
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
 
-<link rel="stylesheet" href="assets/css/style.css">
+        header h1 {
+            color: var(--primary-color);
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
 
+        header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* 标题拼装工作区 */
+        .builder-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 2px solid var(--primary-color);
+        }
+
+        .builder-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .builder-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+
+        .char-counter {
+            font-size: 12px;
+            color: #666;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+        .builder-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e06800;
+        }
+
+        .btn-secondary {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* 搜索与筛选区 */
+        .search-section {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .category-filter {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #f0f0f0;
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* 词库网格 */
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .category-card h3 {
+            font-size: 16px;
+            border-bottom: 2px solid var(--tag-bg);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            border: 1px solid #ffd8bf;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tag:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        .tag .en {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .tag .cn {
+            font-size: 10px;
+            color: #777;
+        }
+
+        .hot-badge {
+            font-size: 10px;
+            background: #ff4d4f;
+            color: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            margin-left: 4px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            color: #888;
+            font-size: 12px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="sidebar">
-
-<div class="logo">
-
-<h2>TEMU</h2>
-
-<p>Men's SEO Center</p>
-
-</div>
-
-<nav>
-
-<a href="index.html" class="active">🏠 Dashboard</a>
-
-<a href="generator.html">✨ Title Generator</a>
-
-<a href="keywords.html">🔍 Keywords</a>
-
-<a href="title-library.html">🔥 Title Library</a>
-
-<a href="prompt-center.html">🤖 Prompt Center</a>
-
-<a href="festivals.html">🎉 Festival</a>
-
-<a href="season.html">🌤 Season</a>
-
-<a href="material.html">🧵 Material</a>
-
-<a href="eu-label.html">🏷 EU Label</a>
-
-<a href="sop.html">📚 SOP</a>
-
-</nav>
-
-</div>
-
-<div class="main">
-
-<header>
-
-<input
-
-id="search"
-
-type="text"
-
-placeholder="Search anything..."
-
->
-
-<button id="themeBtn">
-
-🌙
-
-</button>
-
-</header>
-
-<section class="hero">
-
-<h1>
-
-TEMU Men's SEO Center
-
-</h1>
-
-<p>
-
-Professional SEO Toolkit For TEMU Men's Fashion
-
-</p>
-
-</section>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Title Generator</h3>
-
-<p>
-
-Generate SEO titles automatically.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Keyword Center</h3>
-
-<p>
-
-Thousands of SEO keywords.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Prompt Center</h3>
-
-<p>
-
-One-click AI Prompt Copy.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Marketing Calendar</h3>
-
-<p>
-
-Festival & Season Planning.
-
-</p>
-
-</div>
-
-</div>
-
-<footer>
-
-Version 1.0.0
-
-</footer>
-
-</div>
-
-<script src="assets/js/app.js"></script>
-
+    <header>
+        <h1>TEMU Men's SEO Center</h1>
+        <p>TEMU 男装类目 SEO 标题构建与关键词检索中心（马甲 | 背带裤 | 骑行服 | 连体服）</p>
+    </header>
+
+    <!-- 标题拼装工作区 -->
+    <div class="builder-card">
+        <div class="builder-header">
+            <span class="builder-title">🛠️ 标题拼装生成器 (点击下方的关键词可直接插入)</span>
+            <span class="char-counter" id="charCounter">字符数: 0 / 180 (建议 60-120 字符)</span>
+        </div>
+        <textarea id="titleInput" placeholder="点击下方的关键词，或在此处直接编辑你的商品标题..."></textarea>
+        <div class="builder-controls">
+            <button class="btn-primary" onclick="copyTitle()">📋 一键复制标题</button>
+            <button class="btn-secondary" onclick="clearTitle()">🗑️ 清空内容</button>
+        </div>
+    </div>
+
+    <!-- 搜索与筛选区 -->
+    <div class="search-section">
+        <input type="text" id="searchInput" class="search-input" placeholder="输入中英文关键词检索 (如: Vest, 骑行, Tactical)..." oninput="filterKeywords()">
+        <div class="category-filter">
+            <button class="filter-btn active" onclick="filterCategory('all', this)">全部</button>
+            <button class="filter-btn" onclick="filterCategory('vest', this)">马甲 (Vests)</button>
+            <button class="filter-btn" onclick="filterCategory('overalls', this)">背带裤 (Overalls)</button>
+            <button class="filter-btn" onclick="filterCategory('cycling', this)">骑行服 (Cycling)</button>
+            <button class="filter-btn" onclick="filterCategory('jumpsuits', this)">连体服 (Jumpsuits)</button>
+            <button class="filter-btn" onclick="filterCategory('general', this)">通用修饰/卖点词</button>
+        </div>
+    </div>
+
+    <!-- 关键词展示区 -->
+    <div class="keywords-grid" id="keywordsGrid">
+        <!-- 动态渲染关键词列表 -->
+    </div>
+
+    <footer>
+        <p>© 2026 TEMU Men's Apparel Operations | 专为欧美市场高转化标题打造</p>
+    </footer>
+
+    <script>
+        // 核心词库数据
+        const keywordData = [
+            {
+                category: "vest",
+                categoryName: "🎽 马甲 (Vests & Waistcoats)",
+                words: [
+                    { en: "Men's Vest", cn: "男士马甲", hot: true },
+                    { en: "Tactical Vest", cn: "战术马甲", hot: true },
+                    { en: "Puffer Vest", cn: "羽绒/棉马甲", hot: true },
+                    { en: "Cargo Vest", cn: "工装多口袋马甲", hot: true },
+                    { en: "Suit Waistcoat", cn: "正装西装马甲", hot: false },
+                    { en: "Fleece Vest", cn: "抓绒马甲", hot: false },
+                    { en: "Heated Vest", cn: "电加热马甲", hot: true },
+                    { en: "Sleeveless Jacket", cn: "无袖外套", hot: false },
+                    { en: "Fishing Vest", cn: "钓鱼/户外马甲", hot: false }
+                ]
+            },
+            {
+                category: "overalls",
+                categoryName: "👖 背带裤 (Overalls & Dungarees)",
+                words: [
+                    { en: "Men's Overalls", cn: "男士背带裤", hot: true },
+                    { en: "Denim Overalls", cn: "牛仔背带裤", hot: true },
+                    { en: "Cargo Overalls", cn: "工装背带裤", hot: true },
+                    { en: "Bib Overalls", cn: "护胸背带裤", hot: false },
+                    { en: "Workwear Dungarees", cn: "工作服背带裤", hot: false },
+                    { en: "Relaxed Fit Bibs", cn: "宽松版型背带裤", hot: false },
+                    { en: "Adjustable Straps", cn: "可调节肩带", hot: false }
+                ]
+            },
+            {
+                category: "cycling",
+                categoryName: "🚴 骑行服 (Cycling Wear)",
+                words: [
+                    { en: "Cycling Jersey", cn: "骑行上衣/上装", hot: true },
+                    { en: "Cycling Shorts", cn: "骑行短裤", hot: true },
+                    { en: "Bike Bib Shorts", cn: "背带骑行裤", hot: true },
+                    { en: "Bicycle Suit", cn: "骑行套装", hot: false },
+                    { en: "Padded Cycling Shorts", cn: "带硅胶垫骑行裤", hot: true },
+                    { en: "MTB Riding Apparel", cn: "山地车骑行服", hot: false },
+                    { en: "Windproof Cycling Jacket", cn: "防风骑行外套", hot: false }
+                ]
+            },
+            {
+                category: "jumpsuits",
+                categoryName: "👔 连体服 (Jumpsuits & Coveralls)",
+                words: [
+                    { en: "Men's Jumpsuit", cn: "男士连体裤/服", hot: true },
+                    { en: "Work Coveralls", cn: "防护/工作防护服", hot: true },
+                    { en: "One-Piece Romper", cn: "连体短裤/休闲连体服", hot: false },
+                    { en: "Flight Suit", cn: "飞行服连体裤", hot: false },
+                    { en: "Short Sleeve Jumpsuit", cn: "短袖连体服", hot: false },
+                    { en: "Streetwear Romper", cn: "街头风连体服", hot: true }
+                ]
+            },
+            {
+                category: "general",
+                categoryName: "✨ 欧美热搜修饰与卖点词",
+                words: [
+                    { en: "Quick Dry", cn: "速干", hot: true },
+                    { en: "Breathable", cn: "透气", hot: true },
+                    { en: "Multi-Pockets", cn: "多口袋", hot: true },
+                    { en: "Lightweight", cn: "轻量", hot: false },
+                    { en: "Heavy Duty", cn: "耐磨/重磅", hot: true },
+                    { en: "Water Resistant", cn: "防泼水", hot: false },
+                    { en: "Slim Fit", cn: "修身", hot: false },
+                    { en: "Loose Fit / Oversized", cn: "宽松/大码", hot: true },
+                    { en: "Vintage Casual", cn: "复古休闲", hot: false },
+                    { en: "Outdoor Performance", cn: "户外运动", hot: false }
+                ]
+            }
+        ];
+
+        let currentCategory = 'all';
+
+        // 页面初始化
+        document.addEventListener("DOMContentLoaded", () => {
+            renderKeywords();
+            
+            const textarea = document.getElementById("titleInput");
+            textarea.addEventListener("input", updateCounter);
+        });
+
+        // 渲染关键词
+        function renderKeywords() {
+            const grid = document.getElementById("keywordsGrid");
+            const filterText = document.getElementById("searchInput").value.toLowerCase();
+            grid.innerHTML = "";
+
+            keywordData.forEach(cat => {
+                if (currentCategory !== 'all' && cat.category !== currentCategory) return;
+
+                // 过滤词汇
+                const filteredWords = cat.words.filter(w => 
+                    w.en.toLowerCase().includes(filterText) || 
+                    w.cn.includes(filterText)
+                );
+
+                if (filteredWords.length === 0) return;
+
+                const card = document.createElement("div");
+                card.className = "category-card";
+                
+                let tagsHTML = filteredWords.map(w => `
+                    <div class="tag" onclick="appendWord('${w.en}')">
+                        <span class="en">${w.en}${w.hot ? '<span class="hot-badge">HOT</span>' : ''}</span>
+                        <span class="cn">${w.cn}</span>
+                    </div>
+                `).join("");
+
+                card.innerHTML = `
+                    <h3>${cat.categoryName}</h3>
+                    <div class="tag-group">${tagsHTML}</div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // 追加关键词到标题文本框
+        function appendWord(word) {
+            const textarea = document.getElementById("titleInput");
+            let currentText = textarea.value.trim();
+            
+            if (currentText === "") {
+                textarea.value = word;
+            } else {
+                textarea.value = currentText + " " + word;
+            }
+            updateCounter();
+        }
+
+        // 更新字符计数器
+        function updateCounter() {
+            const textarea = document.getElementById("titleInput");
+            const counter = document.getElementById("charCounter");
+            const length = textarea.value.length;
+            counter.innerText = `字符数: ${length} / 180 (建议 60-120 字符)`;
+            
+            if (length > 180) {
+                counter.style.color = "red";
+            } else {
+                counter.style.color = "#666";
+            }
+        }
+
+        // 一键复制
+        function copyTitle() {
+            const textarea = document.getElementById("titleInput");
+            if (!textarea.value.trim()) {
+                alert("标题内容为空！");
+                return;
+            }
+            textarea.select();
+            document.execCommand("copy");
+            alert("标题已成功复制到剪贴板！");
+        }
+
+        // 清空
+        function clearTitle() {
+            document.getElementById("titleInput").value = "";
+            updateCounter();
+        }
+
+        // 分类筛选
+        function filterCategory(cat, btn) {
+            currentCategory = cat;
+            document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            renderKeywords();
+        }
+
+        // 搜索框筛选
+        function filterKeywords() {
+            renderKeywords();
+        }
+    </script>
 </body>
-
 </html>
