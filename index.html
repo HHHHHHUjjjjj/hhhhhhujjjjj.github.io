@@ -7,11 +7,13 @@
     <style>
         :root {
             --primary-color: #fb7701; /* TEMU Brand Orange */
+            --primary-hover: #e06800;
             --bg-color: #f4f6f8;
             --card-bg: #ffffff;
             --text-color: #333333;
             --border-color: #e1e4e8;
             --tag-bg: #fff3eb;
+            --tag-hover: #ffe7d6;
         }
 
         * {
@@ -25,37 +27,37 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            padding: 20px;
+            padding: 16px;
             max-width: 1400px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 15px;
             background: var(--card-bg);
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         header h1 {
             color: var(--primary-color);
-            font-size: 26px;
-            margin-bottom: 5px;
+            font-size: 24px;
+            margin-bottom: 6px;
         }
 
         header p {
             color: #666;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         /* 标题拼装工作区 */
         .builder-card {
             background: var(--card-bg);
-            padding: 20px;
+            padding: 16px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border: 2px solid var(--primary-color);
         }
@@ -64,17 +66,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-bottom: 10px;
         }
 
         .builder-title {
             font-weight: bold;
             color: var(--primary-color);
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .char-counter {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: bold;
             color: #666;
         }
@@ -85,10 +89,15 @@
             padding: 12px;
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            font-size: 15px;
+            font-size: 14px;
             resize: vertical;
             margin-bottom: 12px;
             line-height: 1.4;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: var(--primary-color);
         }
 
         .builder-controls {
@@ -102,6 +111,7 @@
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
+            font-size: 13px;
             transition: all 0.2s;
         }
 
@@ -111,7 +121,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #e06800;
+            background-color: var(--primary-hover);
         }
 
         .btn-secondary {
@@ -126,9 +136,9 @@
         /* 搜索与筛选区 */
         .search-section {
             background: var(--card-bg);
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -151,6 +161,10 @@
             font-size: 14px;
         }
 
+        .search-input:focus {
+            border-color: var(--primary-color);
+        }
+
         .filter-group {
             display: flex;
             gap: 8px;
@@ -162,15 +176,15 @@
             font-size: 13px;
             font-weight: bold;
             color: #555;
-            margin-right: 4px;
+            min-width: 70px;
         }
 
         .filter-btn {
             background: #f0f2f5;
             border: 1px solid var(--border-color);
-            padding: 5px 12px;
+            padding: 4px 12px;
             border-radius: 16px;
-            font-size: 13px;
+            font-size: 12px;
             color: #444;
         }
 
@@ -189,8 +203,8 @@
         /* 词库网格 */
         .keywords-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
         }
 
         .category-card {
@@ -204,7 +218,7 @@
         }
 
         .category-card h3 {
-            font-size: 15px;
+            font-size: 14px;
             border-bottom: 2px solid var(--tag-bg);
             padding-bottom: 8px;
             margin-bottom: 12px;
@@ -229,24 +243,26 @@
         .tag {
             background: var(--tag-bg);
             border: 1px solid #ffd8bf;
-            padding: 5px 10px;
+            padding: 6px 10px;
             border-radius: 5px;
             font-size: 13px;
             cursor: pointer;
             transition: all 0.15s ease-in-out;
             display: flex;
             flex-direction: column;
+            user-select: none;
         }
 
         .tag:hover {
             border-color: var(--primary-color);
-            background: #ffe7d6;
+            background: var(--tag-hover);
             transform: translateY(-1px);
         }
 
         .tag .en {
             font-weight: 600;
             color: #222;
+            font-size: 13px;
         }
 
         .tag .cn {
@@ -257,11 +273,23 @@
 
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 30px;
             padding: 20px 0;
             color: #888;
-            font-size: 13px;
+            font-size: 12px;
             border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+            }
+            .builder-controls button {
+                flex: 1;
+            }
         }
     </style>
 </head>
@@ -288,7 +316,7 @@
     <!-- 搜索与筛选区 -->
     <div class="search-section">
         <div class="search-row">
-            <input type="text" id="searchInput" class="search-input" placeholder="🔍 输入中英文关键词检索 (如: Vest, 跑步, Quick Dry)..." oninput="filterKeywords()">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 输入中英文关键词检索 (如: Vest, 跑步, Quick Dry)..." oninput="debounceFilter()">
         </div>
         <div class="filter-group">
             <span class="filter-label">大类筛选:</span>
@@ -314,6 +342,7 @@
         let rawData = [];
         let selectedCategory = 'all';
         let selectedSubCategory = 'all';
+        let debounceTimer = null;
 
         // 页面初始化
         document.addEventListener("DOMContentLoaded", () => {
@@ -334,28 +363,26 @@
                 renderKeywords();
             } catch (error) {
                 document.getElementById("keywordsGrid").innerHTML = `
-                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: red;">
-                        ⚠️ 加载词库失败！请确保仓库根目录下已提交 <b>keywords.json</b> 文件。<br>错误原因: ${error.message}
+                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #d9534f;">
+                        ⚠️ 加载词库失败！请确保仓库根目录下已提交 <b>keywords.json</b> 文件。<br>错误原因: ${escapeHTML(error.message)}
                     </div>`;
             }
         }
 
         // 动态构建筛选按钮
         function buildFilters() {
-            // 品类（大类）
             const categories = ['all', ...new Set(rawData.map(item => item.category))];
             const catContainer = document.getElementById("categoryFilters");
             catContainer.innerHTML = categories.map(cat => {
                 const name = cat === 'all' ? '全部品类' : cat;
-                return `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="selectCategory('${cat}', this)">${name}</button>`;
+                return `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="selectCategory('${escapeQuotes(cat)}', this)">${escapeHTML(name)}</button>`;
             }).join('');
 
-            // 分类（词属性）
             const subCategories = ['all', ...new Set(rawData.map(item => item.subCategory))];
             const subCatContainer = document.getElementById("subCategoryFilters");
             subCatContainer.innerHTML = subCategories.map(sub => {
                 const name = sub === 'all' ? '全部属性' : sub;
-                return `<button class="filter-btn ${sub === 'all' ? 'active' : ''}" onclick="selectSubCategory('${sub}', this)">${name}</button>`;
+                return `<button class="filter-btn ${sub === 'all' ? 'active' : ''}" onclick="selectSubCategory('${escapeQuotes(sub)}', this)">${escapeHTML(name)}</button>`;
             }).join('');
         }
 
@@ -378,13 +405,12 @@
             const grid = document.getElementById("keywordsGrid");
             const filterText = document.getElementById("searchInput").value.toLowerCase().trim();
 
-            // 过滤数据
             let filtered = rawData.filter(item => {
                 const matchCat = (selectedCategory === 'all' || item.category === selectedCategory);
                 const matchSub = (selectedSubCategory === 'all' || item.subCategory === selectedSubCategory);
                 const matchText = !filterText || 
-                                  item.en.toLowerCase().includes(filterText) || 
-                                  item.cn.toLowerCase().includes(filterText);
+                                  (item.en && item.en.toLowerCase().includes(filterText)) || 
+                                  (item.cn && item.cn.toLowerCase().includes(filterText));
                 return matchCat && matchSub && matchText;
             });
 
@@ -395,7 +421,6 @@
                 return;
             }
 
-            // 按 (品类 + 属性) 分组
             const groups = {};
             filtered.forEach(item => {
                 const groupKey = `${item.category} - ${item.subCategory}`;
@@ -426,10 +451,12 @@
         }
 
         function escapeQuotes(str) {
-            return str.replace(/'/g, "\'");
+            if (!str) return '';
+            return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
         }
 
         function escapeHTML(str) {
+            if (!str) return '';
             return str.replace(/[&<>'"]/g, 
                 tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
             );
@@ -441,11 +468,12 @@
             let currentText = textarea.value.trim();
             
             if (currentText === "") {
-                textarea.value = word;
+                textarea.value = word + " ";
             } else {
-                textarea.value = currentText + " " + word;
+                textarea.value = currentText + " " + word + " ";
             }
             updateCounter();
+            textarea.focus();
         }
 
         // 更新字符计数器
@@ -456,22 +484,31 @@
             counter.innerText = `字符数: ${length} / 180 (建议 60-120 字符)`;
             
             if (length > 180) {
-                counter.style.color = "red";
+                counter.style.color = "#d9534f";
             } else {
                 counter.style.color = "#666";
             }
         }
 
-        // 一键复制
-        function copyTitle() {
+        // 一键复制 (使用现代 Clipboard API)
+        async function copyTitle() {
             const textarea = document.getElementById("titleInput");
-            if (!textarea.value.trim()) {
+            const textToCopy = textarea.value.trim();
+            if (!textToCopy) {
                 alert("标题内容为空！");
                 return;
             }
-            textarea.select();
-            document.execCommand("copy");
-            alert("标题已成功复制到剪贴板！");
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(textToCopy);
+                } else {
+                    textarea.select();
+                    document.execCommand("copy");
+                }
+                alert("标题已成功复制到剪贴板！");
+            } catch (err) {
+                alert("复制失败，请手动选中复制。");
+            }
         }
 
         // 清空
@@ -480,9 +517,12 @@
             updateCounter();
         }
 
-        // 搜索框筛选
-        function filterKeywords() {
-            renderKeywords();
+        // 搜索框防抖处理
+        function debounceFilter() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                renderKeywords();
+            }, 200);
         }
     </script>
 </body>
