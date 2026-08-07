@@ -508,6 +508,7 @@ Best、Cheap、Luxury、Official等。
 
     <script>
         let rawData = [];
+        let keywordFiles = [];
         let selectedCategory = 'all';
         let selectedSubCategory = 'all';
         let debounceTimer = null;
@@ -520,22 +521,78 @@ Best、Cheap、Luxury、Official等。
         });
 
         // Fetch JSON 数据
-        async function loadKeywords() {
-            try {
-                const response = await fetch('keywords.json?v=' + new Date().getTime());
-                if (!response.ok) {
-                    throw new Error("无法读取 keywords.json 文件");
-                }
-                rawData = await response.json();
-                buildFilters();
-                renderKeywords();
-            } catch (error) {
-                document.getElementById("keywordsGrid").innerHTML = `
-                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #d9534f;">
-                        ⚠️ 加载词库失败！请确保仓库根目录下已提交 <b>keywords.json</b> 文件。<br>错误原因: ${escapeHTML(error.message)}
-                    </div>`;
-            }
+    async function loadKeywords(){
+
+    try{
+
+
+        //读取配置文件
+        const configResponse = await fetch(
+            'keywords/config.json?v=' + Date.now()
+        );
+
+
+        const files = await configResponse.json();
+
+
+        let allKeywords=[];
+
+
+
+        //循环读取多个json
+
+        for(let file of files){
+
+
+            const response = await fetch(
+                'keywords/'+file+'?v='+Date.now()
+            );
+
+
+            const data = await response.json();
+
+
+            allKeywords = allKeywords.concat(data);
+
+
         }
+
+
+        rawData = allKeywords;
+
+
+
+        buildFilters();
+
+        renderKeywords();
+
+
+
+    }catch(error){
+
+
+        document.getElementById("keywordsGrid").innerHTML =
+        `
+
+        <div style="
+        padding:40px;
+        color:red;
+        text-align:center">
+
+        ⚠️ 词库加载失败
+
+        <br>
+
+        ${error.message}
+
+        </div>
+
+        `;
+
+
+    }
+
+}
 
         // 动态构建筛选按钮
         function buildFilters() {
