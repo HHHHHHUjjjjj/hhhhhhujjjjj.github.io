@@ -368,6 +368,26 @@
                 flex: 1;
             }
         }
+        /* 词属性筛选 - 禁用不可选状态 */
+.filter-btn.disabled {
+    opacity: 0.35;
+    background: #e0e0e0 !important;
+    border-color: #d0d0d0 !important;
+    color: #888888 !important;
+    cursor: not-allowed;
+    pointer-events: none; /* 防止点击事件发生 */
+}
+
+/* 标记为通用的属性的小标样式 (可选优化) */
+.filter-btn .common-tag {
+    font-size: 10px;
+    color: #e06800;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.filter-btn.active .common-tag {
+    color: #ffffff; /* 激活时字体变白 */
+}
     </style>
 </head>
     </div>
@@ -505,263 +525,275 @@ Best、Cheap、Luxury、Official等。
     </footer>
 
     <script>
-        let rawData = [];
-        let keywordFiles = [];
-        let selectedCategory = 'all';
-        let selectedSubCategory = 'all';
-        let debounceTimer = null;
+    let rawData = [];
+    let keywordFiles = [];
+    let selectedCategory = 'all';
+    let selectedSubCategory = 'all';
+    let debounceTimer = null;
 
-        // 页面初始化
-        document.addEventListener("DOMContentLoaded", () => {
-            loadKeywords();
-            const textarea = document.getElementById("titleInput");
-            textarea.addEventListener("input", updateCounter);
-        });
-
-        // Fetch JSON 数据
-    async function loadKeywords(){
-
-    try{
-
-
-        //读取配置文件
-        const configResponse = await fetch(
-            'keywords/config.json?v=' + Date.now()
-        );
-
-
-        const files = await configResponse.json();
-
-
-        let allKeywords=[];
-
-
-
-        //循环读取多个json
-
-        for(let file of files){
-
-
-            const response = await fetch(
-                'keywords/'+file+'?v='+Date.now()
-            );
-
-
-            const data = await response.json();
-
-
-            allKeywords = allKeywords.concat(data);
-
-
-        }
-
-
-        rawData = allKeywords;
-
-
-
-        buildFilters();
-
-        renderKeywords();
-
-
-
-    }catch(error){
-
-
-        document.getElementById("keywordsGrid").innerHTML =
-        `
-
-        <div style="
-        padding:40px;
-        color:red;
-        text-align:center">
-
-        ⚠️ 词库加载失败
-
-        <br>
-
-        ${error.message}
-
-        </div>
-
-        `;
-
-
-    }
-
-}
-
-        // 动态构建筛选按钮
-        function buildFilters() {
-            const categories = ['all', ...new Set(rawData.map(item => item.category))];
-            const catContainer = document.getElementById("categoryFilters");
-            catContainer.innerHTML = categories.map(cat => {
-                const name = cat === 'all' ? '全部品类' : cat;
-                return `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="selectCategory('${escapeQuotes(cat)}', this)">${escapeHTML(name)}</button>`;
-            }).join('');
-
-            const subCategories = ['all', ...new Set(rawData.map(item => item.subCategory))];
-            const subCatContainer = document.getElementById("subCategoryFilters");
-            subCatContainer.innerHTML = subCategories.map(sub => {
-                const name = sub === 'all' ? '全部属性' : sub;
-                return `<button class="filter-btn ${sub === 'all' ? 'active' : ''}" onclick="selectSubCategory('${escapeQuotes(sub)}', this)">${escapeHTML(name)}</button>`;
-            }).join('');
-        }
-
-        function selectCategory(cat, btn) {
-            selectedCategory = cat;
-            btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderKeywords();
-        }
-
-        function selectSubCategory(sub, btn) {
-            selectedSubCategory = sub;
-            btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderKeywords();
-        }
-
-        // 渲染关键词列表
-        function renderKeywords() {
-            const grid = document.getElementById("keywordsGrid");
-            const filterText = document.getElementById("searchInput").value.toLowerCase().trim();
-
-            let filtered = rawData.filter(item => {
-                const matchCat = (selectedCategory === 'all' || item.category === selectedCategory);
-                const matchSub = (selectedSubCategory === 'all' || item.subCategory === selectedSubCategory);
-                const matchText = !filterText || 
-                                  (item.en && item.en.toLowerCase().includes(filterText)) || 
-                                  (item.cn && item.cn.toLowerCase().includes(filterText));
-                return matchCat && matchSub && matchText;
-            });
-
-            document.getElementById("statsBar").innerText = `当前展示 ${filtered.length} 个关键词 (总计 ${rawData.length} 个词汇)`;
-
-            if (filtered.length === 0) {
-                grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">未找到匹配的关键词</div>`;
-                return;
-            }
-
-            const groups = {};
-            filtered.forEach(item => {
-                const groupKey = `${item.category} - ${item.subCategory}`;
-                if (!groups[groupKey]) groups[groupKey] = [];
-                groups[groupKey].push(item);
-            });
-
-            grid.innerHTML = "";
-
-            Object.keys(groups).forEach(groupKey => {
-                const card = document.createElement("div");
-                card.className = "category-card";
-                
-                const wordsHTML = groups[groupKey].map(w => `
-                    <div class="tag" onclick="appendWord('${escapeQuotes(w.en)}')">
-                        <span class="en">${escapeHTML(w.en)}</span>
-                        <span class="cn">${escapeHTML(w.cn)}</span>
-                    </div>
-                `).join("");
-
-                card.innerHTML = `
-                    <h3><span>${escapeHTML(groupKey)}</span><span class="count">${groups[groupKey].length}个</span></h3>
-                    <div class="tag-group">${wordsHTML}</div>
-                `;
-
-                grid.appendChild(card);
-            });
-        }
-
-        function escapeQuotes(str) {
-            if (!str) return '';
-            return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
-        }
-
-        function escapeHTML(str) {
-            if (!str) return '';
-            return str.replace(/[&<>'"]/g, 
-                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-            );
-        }
-
-        // 追加关键词到标题文本框
-        function appendWord(word) {
-            const textarea = document.getElementById("titleInput");
-            let currentText = textarea.value.trim();
-            
-            if (currentText === "") {
-                textarea.value = word + " ";
-            } else {
-                textarea.value = currentText + " " + word + " ";
-            }
-            updateCounter();
-            textarea.focus();
-        }
-
-        // 更新字符计数器
-        function updateCounter() {
-            const textarea = document.getElementById("titleInput");
-            const counter = document.getElementById("charCounter");
-            const length = textarea.value.length;
-            counter.innerText = `字符数: ${length} / 180 (建议 60-120 字符)`;
-            
-            if (length > 180) {
-                counter.style.color = "#d9534f";
-            } else {
-                counter.style.color = "#666";
-            }
-        }
-
-        // 一键复制 (使用现代 Clipboard API)
-        async function copyTitle() {
-            const textarea = document.getElementById("titleInput");
-            const textToCopy = textarea.value.trim();
-            if (!textToCopy) {
-                alert("标题内容为空！");
-                return;
-            }
-            try {
-                if (navigator.clipboard && window.isSecureContext) {
-                    await navigator.clipboard.writeText(textToCopy);
-                } else {
-                    textarea.select();
-                    document.execCommand("copy");
-                }
-                alert("标题已成功复制到剪贴板！");
-            } catch (err) {
-                alert("复制失败，请手动选中复制。");
-            }
-        }
-
-        // 清空
-        function clearTitle() {
-            document.getElementById("titleInput").value = "";
-            updateCounter();
-        }
-
-        // 搜索框防抖处理
-        function debounceFilter() {
-            clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(() => {
-                renderKeywords();
-            }, 200);
-        }
-        function goTitleOptimization(){
-
-    document.querySelector(".builder-card")
-    .scrollIntoView({
-        behavior:"smooth"
+    // 页面初始化
+    document.addEventListener("DOMContentLoaded", () => {
+        loadKeywords();
+        const textarea = document.getElementById("titleInput");
+        textarea.addEventListener("input", updateCounter);
     });
 
-}
+    // Fetch JSON 数据
+    async function loadKeywords(){
+        try{
+            const configResponse = await fetch('keywords/config.json?v=' + Date.now());
+            const files = await configResponse.json();
+            let allKeywords = [];
 
+            for(let file of files){
+                const response = await fetch('keywords/' + file + '?v=' + Date.now());
+                const data = await response.json();
+                allKeywords = allKeywords.concat(data);
+            }
 
-function goImageOptimization(){
-    window.location.href = "image-optimization.html";
-}
+            rawData = allKeywords;
 
-    </script>
+            buildFilters();
+            renderKeywords();
+
+        } catch(error){
+            document.getElementById("keywordsGrid").innerHTML = `
+                <div style="padding:40px; color:red; text-align:center">
+                    ⚠️ 词库加载失败<br>${error.message}
+                </div>
+            `;
+        }
+    }
+
+    // 动态构建与更新筛选按钮（含“通用”计算与禁用判断）
+    function buildFilters() {
+        // 1. 获取所有唯一的大类和属性
+        const categories = ['all', ...new Set(rawData.map(item => item.category))];
+        const allRealCategories = categories.filter(c => c !== 'all'); // 具体的品类列表
+        const subCategories = ['all', ...new Set(rawData.map(item => item.subCategory))];
+
+        // 2. 渲染【大类筛选】按钮
+        const catContainer = document.getElementById("categoryFilters");
+        catContainer.innerHTML = categories.map(cat => {
+            const name = cat === 'all' ? '全部品类' : cat;
+            return `<button class="filter-btn ${cat === selectedCategory ? 'active' : ''}" onclick="selectCategory('${escapeQuotes(cat)}', this)">${escapeHTML(name)}</button>`;
+        }).join('');
+
+        // 3. 计算哪些词属性是“通用属性”（即在所有具体大类中都存在的数据）
+        const universalSubCats = new Set();
+        subCategories.forEach(sub => {
+            if (sub === 'all') return;
+            // 检查这个 subCategory 是否包含在每一个具体 category 中
+            const isUniversal = allRealCategories.every(cat => 
+                rawData.some(item => item.category === cat && item.subCategory === sub)
+            );
+            if (isUniversal) {
+                universalSubCats.add(sub);
+            }
+        });
+
+        // 4. 根据当前选择的 selectedCategory 找出当前有效可选的 subCategory
+        const availableSubCats = new Set(
+            rawData
+                .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                .map(item => item.subCategory)
+        );
+
+        // 5. 渲染【词属性筛选】按钮
+        const subCatContainer = document.getElementById("subCategoryFilters");
+        subCatContainer.innerHTML = subCategories.map(sub => {
+            let name = sub === 'all' ? '全部属性' : sub;
+            
+            // 如果是通用属性，增加标记
+            if (universalSubCats.has(sub)) {
+                name += ' (通用)';
+            }
+
+            // 判断当前选择的大类下，该属性是否有词
+            const isAvailable = (sub === 'all') || availableSubCats.has(sub);
+            const isDisabled = !isAvailable;
+            const isActive = (sub === selectedSubCategory) && isAvailable;
+
+            return `
+                <button class="filter-btn ${isActive ? 'active' : ''} ${isDisabled ? 'disabled' : ''}" 
+                        ${isDisabled ? 'disabled' : ''} 
+                        onclick="selectSubCategory('${escapeQuotes(sub)}', this)">
+                    ${escapeHTML(name)}
+                </button>
+            `;
+        }).join('');
+    }
+
+    // 选择大类触发
+    function selectCategory(cat, btn) {
+        selectedCategory = cat;
+
+        // 获取当前大类下可用的词属性集合
+        const availableSubCats = new Set(
+            rawData
+                .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                .map(item => item.subCategory)
+        );
+
+        // 如果当前选中的词属性在新的大类下不可用，重置回 'all'
+        if (selectedSubCategory !== 'all' && !availableSubCats.has(selectedSubCategory)) {
+            selectedSubCategory = 'all';
+        }
+
+        // 重新构建/更新按钮状态
+        buildFilters();
+        renderKeywords();
+    }
+
+    // 选择词属性触发
+    function selectSubCategory(sub, btn) {
+        if (btn.classList.contains('disabled')) return; // 防止禁用时误点击
+        
+        selectedSubCategory = sub;
+        
+        // 重新渲染词属性的高亮样式
+        const subCatContainer = document.getElementById("subCategoryFilters");
+        subCatContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        renderKeywords();
+    }
+
+    // 渲染关键词列表
+    function renderKeywords() {
+        const grid = document.getElementById("keywordsGrid");
+        const filterText = document.getElementById("searchInput").value.toLowerCase().trim();
+
+        let filtered = rawData.filter(item => {
+            const matchCat = (selectedCategory === 'all' || item.category === selectedCategory);
+            const matchSub = (selectedSubCategory === 'all' || item.subCategory === selectedSubCategory);
+            const matchText = !filterText || 
+                              (item.en && item.en.toLowerCase().includes(filterText)) || 
+                              (item.cn && item.cn.toLowerCase().includes(filterText));
+            return matchCat && matchSub && matchText;
+        });
+
+        document.getElementById("statsBar").innerText = `当前展示 ${filtered.length} 个关键词 (总计 ${rawData.length} 个词汇)`;
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">未找到匹配的关键词</div>`;
+            return;
+        }
+
+        const groups = {};
+        filtered.forEach(item => {
+            const groupKey = `${item.category} - ${item.subCategory}`;
+            if (!groups[groupKey]) groups[groupKey] = [];
+            groups[groupKey].push(item);
+        });
+
+        grid.innerHTML = "";
+
+        Object.keys(groups).forEach(groupKey => {
+            const card = document.createElement("div");
+            card.className = "category-card";
+            
+            const wordsHTML = groups[groupKey].map(w => `
+                <div class="tag" onclick="appendWord('${escapeQuotes(w.en)}')">
+                    <span class="en">${escapeHTML(w.en)}</span>
+                    <span class="cn">${escapeHTML(w.cn)}</span>
+                </div>
+            `).join("");
+
+            card.innerHTML = `
+                <h3><span>${escapeHTML(groupKey)}</span><span class="count">${groups[groupKey].length}个</span></h3>
+                <div class="tag-group">${wordsHTML}</div>
+            `;
+
+            grid.appendChild(card);
+        });
+    }
+
+    function escapeQuotes(str) {
+        if (!str) return '';
+        return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    }
+
+    function escapeHTML(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, 
+            tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+        );
+    }
+
+    // 追加关键词到标题文本框
+    function appendWord(word) {
+        const textarea = document.getElementById("titleInput");
+        let currentText = textarea.value.trim();
+        
+        if (currentText === "") {
+            textarea.value = word + " ";
+        } else {
+            textarea.value = currentText + " " + word + " ";
+        }
+        updateCounter();
+        textarea.focus();
+    }
+
+    // 更新字符计数器
+    function updateCounter() {
+        const textarea = document.getElementById("titleInput");
+        const counter = document.getElementById("charCounter");
+        const length = textarea.value.length;
+        counter.innerText = `字符数: ${length} / 180 (建议 60-120 字符)`;
+        
+        if (length > 180) {
+            counter.style.color = "#d9534f";
+        } else {
+            counter.style.color = "#666";
+        }
+    }
+
+    // 一键复制
+    async function copyTitle() {
+        const textarea = document.getElementById("titleInput");
+        const textToCopy = textarea.value.trim();
+        if (!textToCopy) {
+            alert("标题内容为空！");
+            return;
+        }
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(textToCopy);
+            } else {
+                textarea.select();
+                document.execCommand("copy");
+            }
+            alert("标题已成功复制到剪贴板！");
+        } catch (err) {
+            alert("复制失败，请手动选中复制。");
+        }
+    }
+
+    // 清空
+    function clearTitle() {
+        document.getElementById("titleInput").value = "";
+        updateCounter();
+    }
+
+    // 搜索框防抖处理
+    function debounceFilter() {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            renderKeywords();
+        }, 200);
+    }
+
+    function goTitleOptimization(){
+        document.querySelector(".builder-card").scrollIntoView({
+            behavior:"smooth"
+        });
+    }
+
+    function goImageOptimization(){
+        alert("图片优化中心开发中，后续支持主图分析、卖点提取、视觉优化");
+    }
+</script>
 </body>
 </html>
 
