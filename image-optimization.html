@@ -163,10 +163,11 @@ document.querySelectorAll('#taskOptions .option').forEach(el=>{
   el.onclick=()=>{document.querySelectorAll('#taskOptions .option').forEach(x=>x.classList.remove('active'));el.classList.add('active');}
 });
 
+// ✅ 1. 修复平台规则逻辑：重命名内部变量，避免变量名称冲突导致的脚本中断
 function platformRules(){
- const p=$('platform').value;
- if(p==='amazon') return 'For Amazon marketplace compliance: main image should use a pure white background (#FFFFFF), show the actual product, avoid added text/logos/watermarks/graphics, and keep the product highly prominent in frame. For apparel, use a clear front or appropriate model/flat presentation according to the category rules.';
- if(p==='shein') return 'For SHEIN: keep product photos accurate to the listing, use a polished square or portrait presentation, show multiple angles, and use real-model/on-body imagery where useful. Keep the garment visually dominant.';
+ const platformVal = $('platform').value;
+ if(platformVal === 'amazon') return 'For Amazon marketplace compliance: main image should use a pure white background (#FFFFFF), show the actual product, avoid added text/logos/watermarks/graphics, and keep the product highly prominent in frame. For apparel, use a clear front or appropriate model/flat presentation according to the category rules.';
+ if(platformVal === 'shein') return 'For SHEIN: keep product photos accurate to the listing, use a polished square or portrait presentation, show multiple angles, and use real-model/on-body imagery where useful. Keep the garment visually dominant.';
  return 'For TEMU: prioritize clear product recognition, accurate product representation, strong first-glance hierarchy, and a practical image sequence that explains the garment, its details and use scenarios. Avoid invented product attributes.';
 }
 
@@ -174,7 +175,8 @@ function generatePrompt(){
  const p=selected('platform'), t=selected('imageType'), c=selected('category'), s=selected('style');
  const bg=selected('background'), li=selected('lighting'), ca=selected('camera'), co=selected('composition'), m=selected('model');
  const points=[...document.querySelectorAll('#sellingPoints input:checked')].map(x=>DATA.sellingPoints.find(y=>y.id===x.value));
- const task=document.querySelector('#taskOptions .active').dataset.task;
+ const taskEl=document.querySelector('#taskOptions .active');
+ const task=taskEl ? taskEl.dataset.task : 'retouch';
  const product=$('productInfo').value.trim() || c.name;
  const preserve=$('preserve').value.trim() || 'Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.';
  const extra=$('extra').value.trim();
@@ -226,7 +228,7 @@ Photorealistic commercial fashion photography, accurate fabric texture, realisti
 NEGATIVE PROMPT
 ${DATA.negative.join('; ')}.
 
-${extra ? 'ADDITIONAL SELLER REQUIREMENTS\\n'+extra : ''}
+${extra ? 'ADDITIONAL SELLER REQUIREMENTS\n'+extra : ''}
 
 FINAL CHECK
 Before rendering, verify that the garment remains the same product as the reference image. Do not add, remove or redesign any product feature. The image should make the product easier to understand within 1–2 seconds of viewing.`;
@@ -237,19 +239,41 @@ Before rendering, verify that the garment remains the same product as the refere
  renderStrategy();
 }
 
+// ✅ 2. 改进剪贴板兼容逻辑
 function copyPrompt(){
  const text=$('prompt').textContent;
  if(text.startsWith('请选择')) return alert('请先生成 Prompt');
- navigator.clipboard?.writeText(text).then(()=>alert('Prompt 已复制')).catch(()=>alert('复制失败，请手动选择复制'));
+ if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(()=>alert('Prompt 已复制')).catch(()=>fallbackCopy(text));
+ } else {
+    fallbackCopy(text);
+ }
 }
+
+function fallbackCopy(text) {
+ const textArea = document.createElement("textarea");
+ textArea.value = text;
+ document.body.appendChild(textArea);
+ textArea.select();
+ try {
+   document.execCommand('copy');
+   alert('Prompt 已复制');
+ } catch (err) {
+   alert('复制失败，请手动选择复制');
+ }
+ document.body.removeChild(textArea);
+}
+
 function resetAll(){
  $('productInfo').value='';$('preserve').value='';$('extra').value='';$('prompt').textContent='请选择商品特征后点击「生成优化 Prompt」。';$('chips').innerHTML='';$('stats').textContent='当前：待生成';
  document.querySelectorAll('#sellingPoints input').forEach(x=>x.checked=false);
 }
+
 function renderStrategy(){
  const p=selected('platform');
  $('platformStrategy').innerHTML=`<div class="notice" style="margin:0"><b>${p.name}：</b>${p.desc}<br><br>${platformRules()}</div>`;
 }
+
 $('platform').addEventListener('change',renderStrategy);
 renderStrategy();
 </script>
