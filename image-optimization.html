@@ -52,7 +52,7 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 </head>
 <body>
 <div class="header">
-  <div class="back" onclick="history.back()">← 返回标题优化中心</div>
+ <div class="back" onclick="goBackToTitleCenter()">← 返回标题优化中心</div>
   <h1>🖼️ 图片优化提示词中心</h1>
   <p>不直接生成图片：根据商品特征组合出可复制的 AI 视觉优化 Prompt，商家可用于 ChatGPT / Gemini / Midjourney / 即梦 / 可灵等图像工具。</p>
 </div>
@@ -200,6 +200,14 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="footer">TEMU Men's SEO Center · Image Optimization Prompt Library · 2026</div>
 
 <script>
+  function goBackToTitleCenter() {
+  // 优先尝试返回上一页；如果没有历史记录，则直接跳转到标题优化中心主页
+  if (document.referrer && document.referrer !== window.location.href) {
+    history.back();
+  } else {
+    window.location.href = "index.html"; // 请根据你主页的实际文件名修改（如 index (2).html）
+  }
+}
 window.addEventListener('DOMContentLoaded', () => {
   const DATA = {
     "platforms": [{"id": "temu", "name": "TEMU", "desc": "优先清晰、真实、突出商品；主图强调第一眼识别，详情图承担场景与卖点表达。"}, {"id": "amazon", "name": "Amazon", "desc": "主图合规优先：白底、真实商品、无额外文字/水印；服装重点展示版型与商品本体。"}, {"id": "shein", "name": "SHEIN", "desc": "兼顾商品展示与时尚感；支持方图/竖图、多角度及真人上身/使用场景。"}],
@@ -595,6 +603,7 @@ ${extra ? '【卖家自定义补充要求】\n'+extra : ''}
 
   renderStrategy();
 });
+  
 </script>
 </body>
 </html>
