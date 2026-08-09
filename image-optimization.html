@@ -20,19 +20,22 @@ body{background:var(--bg);color:var(--text);line-height:1.6;padding:16px;max-wid
 .field label{display:block;font-size:12px;font-weight:700;color:#555;margin-bottom:5px}
 select,input,textarea{width:100%;border:1px solid var(--border);border-radius:7px;padding:9px 10px;outline:none;font-size:13px;background:#fff}
 select:focus,input:focus,textarea:focus{border-color:var(--orange)}
-textarea{min-height:130px;resize:vertical;line-height:1.55}
+textarea{min-height:90px;resize:vertical;line-height:1.55}
 .option-row{display:flex;flex-wrap:wrap;gap:7px}
 .option{background:#f7f8fa;border:1px solid var(--border);padding:6px 9px;border-radius:16px;font-size:12px;cursor:pointer}
 .option.active{background:var(--tag);border-color:#ffb987;color:#c65300;font-weight:700}
 .checks{display:flex;flex-wrap:wrap;gap:7px}
 .check{display:flex;align-items:center;gap:5px;background:#fafafa;border:1px solid var(--border);border-radius:7px;padding:7px 9px;font-size:12px;cursor:pointer}
 .check input{width:auto}
+.preset-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.preset-tag{background:#f0f4f8;border:1px solid #d0d7de;color:#333;border-radius:12px;padding:3px 8px;font-size:11px;cursor:pointer}
+.preset-tag:hover{background:var(--tag);border-color:#ffb987;color:#c65300}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13px;cursor:pointer}
 .primary{background:var(--orange);color:#fff}.primary:hover{background:var(--orange2)}
 .secondary{background:#eef0f2;color:#333}.danger{background:#fff0f0;color:var(--red)}
 .result{position:sticky;top:12px}
-.prompt{background:#1f2328;color:#f5f7f9;border-radius:9px;padding:15px;min-height:300px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;white-space:pre-wrap;word-break:break-word}
+.prompt{background:#1f2328;color:#f5f7f9;border-radius:9px;padding:15px;min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;white-space:pre-wrap;word-break:break-word}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{background:var(--tag);border:1px solid #ffd8bf;color:#9b470f;border-radius:15px;padding:4px 8px;font-size:11px}
 .stats{font-size:12px;color:#777;margin-top:9px}
 .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
@@ -70,8 +73,8 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 
 <h3>你希望 AI 做什么？</h3>
 <div class="option-row" id="taskOptions">
-  <span class="option active" data-task="retouch">修图增强</span>
-  <span class="option" data-task="background">更换背景</span>
+  <span class="option" data-task="retouch">修图增强</span>
+  <span class="option active" data-task="background">更换背景</span>
   <span class="option" data-task="model">真人上身</span>
   <span class="option" data-task="lifestyle">生成场景</span>
   <span class="option" data-task="detail">强化细节</span>
@@ -89,29 +92,42 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="field"><label>模特</label><select id="model"></select></div>
 <div class="field"><label>输出比例</label>
 <select id="ratio">
-<option value="1:1">1:1 方图</option><option value="4:5">4:5 竖图</option>
-<option value="3:4">3:4 竖图</option><option value="16:9">16:9 横图</option>
+<option value="1:1" selected>1:1 方图</option>
+<option value="4:5">4:5 竖图</option>
+<option value="3:4">3:4 竖图</option>
+<option value="16:9">16:9 横图</option>
 </select></div>
 </div>
 
 <h3>补充商品信息</h3>
-<input id="productInfo" placeholder="例如：黑色轻薄防风跑步马甲，立领，拉链口袋，男款">
+<input id="productInfo" value="黑色轻薄防风跑步马甲，立领，拉链口袋，男款">
 </div>
 
 <div class="card">
 <h2>③ AI 生成控制</h2>
 <div class="field">
 <label>保留原图的关键元素</label>
-<textarea id="preserve" placeholder="例如：必须100%保留原服装颜色、版型、拉链、口袋位置、印花、logo和面料纹理，不改变商品结构。"></textarea>
+<textarea id="preserve">Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.</textarea>
+<div class="preset-tags" id="preservePresets">
+  <span class="preset-tag" data-val="Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.">默认（完全保留）</span>
+  <span class="preset-tag" data-val="Keep the garment structure and fabric texture unchanged, only replace environment.">仅保留服装结构与质感</span>
+  <span class="preset-tag" data-val="Maintain exact logo, pocket layout and zipper placement without modification.">强调保留Logo/口袋/拉链位置</span>
 </div>
-<div class="field" style="margin-top:10px">
+</div>
+
+<div class="field" style="margin-top:12px">
 <label>额外要求</label>
-<textarea id="extra" placeholder="例如：美国年轻男性审美、自然真实、不像棚拍广告、画面高级但不要过度奢华。"></textarea>
+<textarea id="extra">自然真实、美式年轻审美、高品质电商质感，不要过度奢华与浮夸加工。</textarea>
+<div class="preset-tags" id="extraPresets">
+  <span class="preset-tag" data-val="自然真实、美式年轻审美、高品质电商质感，不要过度奢华与浮夸加工。">默认（美式自然质感）</span>
+  <span class="preset-tag" data-val="极简高奢棚拍感，强调柔和的高级光影与干净背景。">高奢棚拍风</span>
+  <span class="preset-tag" data-val="真实户外阳光感，动态生活方式，避免生硬的假人感。">户外阳光生活风</span>
 </div>
+</div>
+
 <div class="actions">
-<button class="primary" onclick="generatePrompt()">✨ 生成优化 Prompt</button>
-<button class="secondary" onclick="copyPrompt()">📋 复制 Prompt</button>
-<button class="danger" onclick="resetAll()">↺ 重置</button>
+<button class="primary" id="btnGenerate">✨ 生成优化 Prompt</button>
+<button class="danger" id="btnReset">↺ 重置</button>
 </div>
 </div>
 </section>
@@ -122,6 +138,9 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="prompt" id="prompt">请选择商品特征后点击「生成优化 Prompt」。</div>
 <div class="chips" id="chips"></div>
 <div class="stats" id="stats">当前：待生成</div>
+<div class="actions" style="margin-top:14px">
+  <button class="primary" id="btnCopy" style="width:100%;padding:11px;font-size:14px">📋 复制 Prompt</button>
+</div>
 </div>
 
 <div class="card">
@@ -147,7 +166,6 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-  // 1. 静态数据定义
   const DATA = {
     "platforms": [{"id": "temu", "name": "TEMU", "desc": "优先清晰、真实、突出商品；主图强调第一眼识别，详情图承担场景与卖点表达。"}, {"id": "amazon", "name": "Amazon", "desc": "主图合规优先：白底、真实商品、无额外文字/水印；服装重点展示版型与商品本体。"}, {"id": "shein", "name": "SHEIN", "desc": "兼顾商品展示与时尚感；支持方图/竖图、多角度及真人上身/使用场景。"}],
     "imageTypes": [{"id": "main", "name": "主图 / 首图", "goal": "提高列表页识别度与点击欲望"}, {"id": "detail", "name": "卖点图", "goal": "把材质、版型、功能转化为可视化证据"}, {"id": "lifestyle", "name": "场景图", "goal": "让消费者快速理解穿着场景与生活方式"}, {"id": "model", "name": "真人上身图", "goal": "展示版型、比例、穿着效果"}, {"id": "detail_close", "name": "细节特写", "goal": "放大面料、拉链、口袋、缝线、功能结构"}, {"id": "comparison", "name": "对比/信息图", "goal": "用视觉层级表达功能差异或尺码信息"}],
@@ -162,29 +180,27 @@ window.addEventListener('DOMContentLoaded', () => {
     "negative": ["do not change the product's original design", "do not alter garment color", "do not change logo, label, print or graphic", "do not invent pockets, zippers or functional details", "do not change fabric texture into a different material", "no distorted hands or anatomy", "no extra fingers or limbs", "no duplicate product", "no floating objects", "no watermark", "no unrelated text", "no fake badges or platform logos", "no excessive HDR", "no oversaturated colors", "no plastic-looking fabric", "no unrealistic skin", "no cluttered background"]
   };
 
-  // 单选框与下拉菜单元素表映映射
   const CATEGORY_MAP = {
-    platform: 'platforms',
-    imageType: 'imageTypes',
-    category: 'categories',
-    style: 'styles',
-    background: 'backgrounds',
-    lighting: 'lighting',
-    camera: 'camera',
-    composition: 'composition',
-    model: 'models'
+    platform: 'platforms', imageType: 'imageTypes', category: 'categories',
+    style: 'styles', background: 'backgrounds', lighting: 'lighting',
+    camera: 'camera', composition: 'composition', model: 'models'
+  };
+
+  // 设置常用的默认勾选 ID 映射
+  const DEFAULTS = {
+    platform: 'temu', imageType: 'main', category: 'vest', style: 'clean',
+    background: 'white', lighting: 'soft', camera: 'front', composition: 'productfirst', model: 'neutral',
+    sellingPoints: ['quickdry', 'breathable'] // 默认勾选速干、透气
   };
 
   const $ = id => document.getElementById(id);
   
-  // 渲染选项列表
-  const fill = (id, arr) => { 
+  const fill = (id, arr, defaultId) => { 
     if ($(id) && Array.isArray(arr)) {
-      $(id).innerHTML = arr.map(x=>`<option value="${x.id}">${x.name}</option>`).join(''); 
+      $(id).innerHTML = arr.map(x=>`<option value="${x.id}" ${x.id===defaultId?'selected':''}>${x.name}</option>`).join(''); 
     }
   };
 
-  // 安全取值函数，防止 find 报 undefined 错误
   const selected = id => {
     const dataKey = CATEGORY_MAP[id] || id;
     const list = DATA[dataKey] || [];
@@ -193,21 +209,21 @@ window.addEventListener('DOMContentLoaded', () => {
     return list.find(x => x.id === el.value) || list[0] || { id: '', name: '', prompt: '' };
   };
 
-  // 初始化填充所有 Select 列表
-  fill('platform', DATA.platforms); 
-  fill('imageType', DATA.imageTypes); 
-  fill('category', DATA.categories);
-  fill('style', DATA.styles); 
-  fill('background', DATA.backgrounds); 
-  fill('lighting', DATA.lighting);
-  fill('camera', DATA.camera); 
-  fill('composition', DATA.composition); 
-  fill('model', DATA.models);
+  // 初始化填充（附带默认选中）
+  fill('platform', DATA.platforms, DEFAULTS.platform); 
+  fill('imageType', DATA.imageTypes, DEFAULTS.imageType); 
+  fill('category', DATA.categories, DEFAULTS.category);
+  fill('style', DATA.styles, DEFAULTS.style); 
+  fill('background', DATA.backgrounds, DEFAULTS.background); 
+  fill('lighting', DATA.lighting, DEFAULTS.lighting);
+  fill('camera', DATA.camera, DEFAULTS.camera); 
+  fill('composition', DATA.composition, DEFAULTS.composition); 
+  fill('model', DATA.models, DEFAULTS.model);
 
-  // 初始化卖点多选框
+  // 初始化卖点多选框（包含默认勾选）
   if ($('sellingPoints')) {
     $('sellingPoints').innerHTML = DATA.sellingPoints.map(x =>
-      `<label class="check"><input type="checkbox" value="${x.id}"> ${x.name}</label>`).join('');
+      `<label class="check"><input type="checkbox" value="${x.id}" ${DEFAULTS.sellingPoints.includes(x.id)?'checked':''}> ${x.name}</label>`).join('');
   }
 
   // 绑定任务选项卡切换
@@ -218,7 +234,14 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 平台策略逻辑
+  // 快捷标签点击填充功能
+  document.querySelectorAll('#preservePresets .preset-tag').forEach(tag => {
+    tag.onclick = () => $('preserve').value = tag.dataset.val;
+  });
+  document.querySelectorAll('#extraPresets .preset-tag').forEach(tag => {
+    tag.onclick = () => $('extra').value = tag.dataset.val;
+  });
+
   function platformRules(){
    const pVal = $('platform') ? $('platform').value : 'temu';
    if(pVal === 'amazon') return 'For Amazon marketplace compliance: main image should use a pure white background (#FFFFFF), show the actual product, avoid added text/logos/watermarks/graphics, and keep the product highly prominent in frame. For apparel, use a clear front or appropriate model/flat presentation according to the category rules.';
@@ -226,7 +249,6 @@ window.addEventListener('DOMContentLoaded', () => {
    return 'For TEMU: prioritize clear product recognition, accurate product representation, strong first-glance hierarchy, and a practical image sequence that explains the garment, its details and use scenarios. Avoid invented product attributes.';
   }
 
-  // 点击生成核心函数
   function generatePrompt(){
    const p=selected('platform'), t=selected('imageType'), c=selected('category'), s=selected('style');
    const bg=selected('background'), li=selected('lighting'), ca=selected('camera'), co=selected('composition'), m=selected('model');
@@ -236,7 +258,7 @@ window.addEventListener('DOMContentLoaded', () => {
      .filter(Boolean);
 
    const activeTask = document.querySelector('#taskOptions .option.active');
-   const task = activeTask ? activeTask.dataset.task : 'retouch';
+   const task = activeTask ? activeTask.dataset.task : 'background';
    
    const product = $('productInfo').value.trim() || c.name;
    const preserve = $('preserve').value.trim() || 'Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.';
@@ -328,13 +350,26 @@ Before rendering, verify that the garment remains the same product as the refere
   }
 
   function resetAll(){
-   $('productInfo').value = '';
-   $('preserve').value = '';
-   $('extra').value = '';
+   fill('platform', DATA.platforms, DEFAULTS.platform); 
+   fill('imageType', DATA.imageTypes, DEFAULTS.imageType); 
+   fill('category', DATA.categories, DEFAULTS.category);
+   fill('style', DATA.styles, DEFAULTS.style); 
+   fill('background', DATA.backgrounds, DEFAULTS.background); 
+   fill('lighting', DATA.lighting, DEFAULTS.lighting);
+   fill('camera', DATA.camera, DEFAULTS.camera); 
+   fill('composition', DATA.composition, DEFAULTS.composition); 
+   fill('model', DATA.models, DEFAULTS.model);
+   
+   $('productInfo').value = '黑色轻薄防风跑步马甲，立领，拉链口袋，男款';
+   $('preserve').value = 'Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.';
+   $('extra').value = '自然真实、美式年轻审美、高品质电商质感，不要过度奢华与浮夸加工。';
    $('prompt').textContent = '请选择商品特征后点击「生成优化 Prompt」。';
    $('chips').innerHTML = '';
    $('stats').textContent = '当前：待生成';
-   document.querySelectorAll('#sellingPoints input').forEach(x => x.checked = false);
+   
+   document.querySelectorAll('#sellingPoints input').forEach(x => {
+     x.checked = DEFAULTS.sellingPoints.includes(x.value);
+   });
   }
 
   function renderStrategy(){
@@ -344,14 +379,9 @@ Before rendering, verify that the garment remains the same product as the refere
    }
   }
 
-  // 重新绑定事件监听，避免 html 内联 onclick 失效
-  const generateBtn = document.querySelector('.primary');
-  const copyBtn = document.querySelector('.secondary');
-  const resetBtn = document.querySelector('.danger');
-
-  if (generateBtn) generateBtn.onclick = generatePrompt;
-  if (copyBtn) copyBtn.onclick = copyPrompt;
-  if (resetBtn) resetBtn.onclick = resetAll;
+  $('btnGenerate').onclick = generatePrompt;
+  $('btnCopy').onclick = copyPrompt;
+  $('btnReset').onclick = resetAll;
 
   if ($('platform')) {
     $('platform').addEventListener('change', renderStrategy);
