@@ -146,54 +146,115 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="footer">TEMU Men's SEO Center · Image Optimization Prompt Library · 2026</div>
 
 <script>
-const DATA = {"platforms": [{"id": "temu", "name": "TEMU", "desc": "优先清晰、真实、突出商品；主图强调第一眼识别，详情图承担场景与卖点表达。"}, {"id": "amazon", "name": "Amazon", "desc": "主图合规优先：白底、真实商品、无额外文字/水印；服装重点展示版型与商品本体。"}, {"id": "shein", "name": "SHEIN", "desc": "兼顾商品展示与时尚感；支持方图/竖图、多角度及真人上身/使用场景。"}], "imageTypes": [{"id": "main", "name": "主图 / 首图", "goal": "提高列表页识别度与点击欲望"}, {"id": "detail", "name": "卖点图", "goal": "把材质、版型、功能转化为可视化证据"}, {"id": "lifestyle", "name": "场景图", "goal": "让消费者快速理解穿着场景与生活方式"}, {"id": "model", "name": "真人上身图", "goal": "展示版型、比例、穿着效果"}, {"id": "detail_close", "name": "细节特写", "goal": "放大面料、拉链、口袋、缝线、功能结构"}, {"id": "comparison", "name": "对比/信息图", "goal": "用视觉层级表达功能差异或尺码信息"}], "categories": [{"id": "vest", "name": "男士马甲 / 跑步马甲", "keywords": ["men's vest", "running vest", "puffer vest", "utility vest"]}, {"id": "cycling", "name": "骑行服", "keywords": ["cycling jersey", "cycling bib shorts", "cycling skinsuit"]}, {"id": "overall", "name": "背带裤 / 连体服", "keywords": ["overalls", "bib pants", "jumpsuit", "bodysuit"]}, {"id": "workout", "name": "练功服 / 运动连体服", "keywords": ["workout bodysuit", "gymnastics leotard", "dance bodysuit"]}, {"id": "other", "name": "其他男装", "keywords": ["men's apparel", "streetwear", "casual wear"]}], "styles": [{"id": "clean", "name": "高级极简", "prompt": "clean premium e-commerce aesthetic, restrained composition, refined styling"}, {"id": "sport", "name": "运动机能", "prompt": "performance-oriented sports aesthetic, dynamic but controlled composition"}, {"id": "street", "name": "城市街头", "prompt": "modern urban streetwear aesthetic, natural attitude, editorial styling"}, {"id": "outdoor", "name": "户外探索", "prompt": "authentic outdoor lifestyle, functional adventure atmosphere"}, {"id": "resort", "name": "度假休闲", "prompt": "relaxed vacation lifestyle, bright natural atmosphere, effortless styling"}, {"id": "y2k", "name": "Y2K / 年轻潮流", "prompt": "youthful Y2K-inspired styling, energetic editorial fashion photography"}], "backgrounds": [{"id": "white", "name": "纯白电商背景", "prompt": "pure white seamless background, clean studio setup"}, {"id": "lightgray", "name": "浅灰棚拍", "prompt": "soft light-gray seamless studio background"}, {"id": "studio", "name": "高级摄影棚", "prompt": "minimal premium studio environment, controlled soft lighting"}, {"id": "urban", "name": "城市街景", "prompt": "clean modern urban environment with subtle architectural lines"}, {"id": "gym", "name": "健身房", "prompt": "modern clean gym environment, realistic training atmosphere"}, {"id": "road", "name": "骑行道路", "prompt": "authentic scenic cycling road, natural daylight"}, {"id": "mountain", "name": "户外山地", "prompt": "realistic mountain outdoor environment, natural daylight"}, {"id": "beach", "name": "海边度假", "prompt": "bright coastal vacation setting, natural sunlight"}], "lighting": [{"id": "soft", "name": "柔和商业光", "prompt": "soft diffused commercial lighting, balanced highlights, natural shadows"}, {"id": "daylight", "name": "自然日光", "prompt": "bright natural daylight, realistic skin and fabric tones"}, {"id": "highkey", "name": "高调明亮", "prompt": "high-key bright lighting, clean tonal range, crisp product separation"}, {"id": "contrast", "name": "立体对比", "prompt": "controlled directional lighting with subtle dimensional contrast"}], "camera": [{"id": "front", "name": "正面平视", "prompt": "straight-on eye-level front view, symmetrical product presentation"}, {"id": "45", "name": "45°视角", "prompt": "clean 45-degree three-quarter view showing front and side structure"}, {"id": "fullbody", "name": "全身上身", "prompt": "full-body fashion composition, garment silhouette clearly visible"}, {"id": "close", "name": "近距离细节", "prompt": "close-up product photography, sharp fabric and construction details"}, {"id": "dynamic", "name": "运动动态", "prompt": "natural dynamic movement with controlled motion, garment remains clearly visible"}], "models": [{"id": "neutral", "name": "自然男性模特", "prompt": "adult male model with natural expression and relaxed confident posture"}, {"id": "athletic", "name": "运动型男性模特", "prompt": "adult athletic male model, realistic proportions, functional sports posture"}, {"id": "streetmale", "name": "年轻街头男性模特", "prompt": "young adult male fashion model, authentic urban attitude"}, {"id": "no_model", "name": "不使用模特", "prompt": "no human model, product-only presentation"}], "sellingPoints": [{"id": "quickdry", "name": "速干", "prompt": "visibly communicate quick-dry performance through lightweight fabric presentation and active lifestyle context"}, {"id": "breathable", "name": "透气", "prompt": "visually communicate breathability with lightweight fabric drape and active outdoor context"}, {"id": "stretch", "name": "弹力", "prompt": "show natural stretch and mobility without distorting the garment"}, {"id": "water", "name": "防泼水", "prompt": "subtle realistic water-repellent visual cue on fabric, no exaggerated effects"}, {"id": "warm", "name": "保暖", "prompt": "communicate warmth through realistic cold-weather styling and fabric volume"}, {"id": "pockets", "name": "多口袋", "prompt": "clearly expose functional pocket layout and usable storage details"}, {"id": "zipper", "name": "拉链结构", "prompt": "sharp close-up showing zipper construction, stitching and finishing"}, {"id": "reflective", "name": "反光细节", "prompt": "subtle reflective trim detail visible under controlled light"}, {"id": "lightweight", "name": "轻量", "prompt": "visually emphasize lightweight construction through clean silhouette and active movement"}, {"id": "oversized", "name": "宽松版型", "prompt": "clearly show relaxed oversized silhouette and natural fabric drape"}, {"id": "slim", "name": "修身版型", "prompt": "clearly show streamlined slim fit and accurate body proportions"}], "composition": [{"id": "productfirst", "name": "商品优先", "prompt": "product remains the dominant visual subject, background and styling support rather than compete"}, {"id": "center", "name": "中心构图", "prompt": "clean centered composition with generous breathing room and strong silhouette recognition"}, {"id": "thirds", "name": "三分法", "prompt": "rule-of-thirds composition with clear visual hierarchy and intentional negative space"}, {"id": "detailgrid", "name": "主图+细节组合", "prompt": "one dominant product view supported by carefully arranged detail views"}, {"id": "motion", "name": "动作叙事", "name2": "动态场景", "prompt": "natural action-based composition that demonstrates how the garment is used"}], "negative": ["do not change the product's original design", "do not alter garment color", "do not change logo, label, print or graphic", "do not invent pockets, zippers or functional details", "do not change fabric texture into a different material", "no distorted hands or anatomy", "no extra fingers or limbs", "no duplicate product", "no floating objects", "no watermark", "no unrelated text", "no fake badges or platform logos", "no excessive HDR", "no oversaturated colors", "no plastic-looking fabric", "no unrealistic skin", "no cluttered background"]};
+window.addEventListener('DOMContentLoaded', () => {
+  // 1. 静态数据定义
+  const DATA = {
+    "platforms": [{"id": "temu", "name": "TEMU", "desc": "优先清晰、真实、突出商品；主图强调第一眼识别，详情图承担场景与卖点表达。"}, {"id": "amazon", "name": "Amazon", "desc": "主图合规优先：白底、真实商品、无额外文字/水印；服装重点展示版型与商品本体。"}, {"id": "shein", "name": "SHEIN", "desc": "兼顾商品展示与时尚感；支持方图/竖图、多角度及真人上身/使用场景。"}],
+    "imageTypes": [{"id": "main", "name": "主图 / 首图", "goal": "提高列表页识别度与点击欲望"}, {"id": "detail", "name": "卖点图", "goal": "把材质、版型、功能转化为可视化证据"}, {"id": "lifestyle", "name": "场景图", "goal": "让消费者快速理解穿着场景与生活方式"}, {"id": "model", "name": "真人上身图", "goal": "展示版型、比例、穿着效果"}, {"id": "detail_close", "name": "细节特写", "goal": "放大面料、拉链、口袋、缝线、功能结构"}, {"id": "comparison", "name": "对比/信息图", "goal": "用视觉层级表达功能差异或尺码信息"}],
+    "categories": [{"id": "vest", "name": "男士马甲 / 跑步马甲", "keywords": ["men's vest", "running vest", "puffer vest", "utility vest"]}, {"id": "cycling", "name": "骑行服", "keywords": ["cycling jersey", "cycling bib shorts", "cycling skinsuit"]}, {"id": "overall", "name": "背带裤 / 连体服", "keywords": ["overalls", "bib pants", "jumpsuit", "bodysuit"]}, {"id": "workout", "name": "练功服 / 运动连体服", "keywords": ["workout bodysuit", "gymnastics leotard", "dance bodysuit"]}, {"id": "other", "name": "其他男装", "keywords": ["men's apparel", "streetwear", "casual wear"]}],
+    "styles": [{"id": "clean", "name": "高级极简", "prompt": "clean premium e-commerce aesthetic, restrained composition, refined styling"}, {"id": "sport", "name": "运动机能", "prompt": "performance-oriented sports aesthetic, dynamic but controlled composition"}, {"id": "street", "name": "城市街头", "prompt": "modern urban streetwear aesthetic, natural attitude, editorial styling"}, {"id": "outdoor", "name": "户外探索", "prompt": "authentic outdoor lifestyle, functional adventure atmosphere"}, {"id": "resort", "name": "度假休闲", "prompt": "relaxed vacation lifestyle, bright natural atmosphere, effortless styling"}, {"id": "y2k", "name": "Y2K / 年轻潮流", "prompt": "youthful Y2K-inspired styling, energetic editorial fashion photography"}],
+    "backgrounds": [{"id": "white", "name": "纯白电商背景", "prompt": "pure white seamless background, clean studio setup"}, {"id": "lightgray", "name": "浅灰棚拍", "prompt": "soft light-gray seamless studio background"}, {"id": "studio", "name": "高级摄影棚", "prompt": "minimal premium studio environment, controlled soft lighting"}, {"id": "urban", "name": "城市街景", "prompt": "clean modern urban environment with subtle architectural lines"}, {"id": "gym", "name": "健身房", "prompt": "modern clean gym environment, realistic training atmosphere"}, {"id": "road", "name": "骑行道路", "prompt": "authentic scenic cycling road, natural daylight"}, {"id": "mountain", "name": "户外山地", "prompt": "realistic mountain outdoor environment, natural daylight"}, {"id": "beach", "name": "海边度假", "prompt": "bright coastal vacation setting, natural sunlight"}],
+    "lighting": [{"id": "soft", "name": "柔和商业光", "prompt": "soft diffused commercial lighting, balanced highlights, natural shadows"}, {"id": "daylight", "name": "自然日光", "prompt": "bright natural daylight, realistic skin and fabric tones"}, {"id": "highkey", "name": "高调明亮", "prompt": "high-key bright lighting, clean tonal range, crisp product separation"}, {"id": "contrast", "name": "立体对比", "prompt": "controlled directional lighting with subtle dimensional contrast"}],
+    "camera": [{"id": "front", "name": "正面平视", "prompt": "straight-on eye-level front view, symmetrical product presentation"}, {"id": "45", "name": "45°视角", "prompt": "clean 45-degree three-quarter view showing front and side structure"}, {"id": "fullbody", "name": "全身上身", "prompt": "full-body fashion composition, garment silhouette clearly visible"}, {"id": "close", "name": "近距离细节", "prompt": "close-up product photography, sharp fabric and construction details"}, {"id": "dynamic", "name": "运动动态", "prompt": "natural dynamic movement with controlled motion, garment remains clearly visible"}],
+    "models": [{"id": "neutral", "name": "自然男性模特", "prompt": "adult male model with natural expression and relaxed confident posture"}, {"id": "athletic", "name": "运动型男性模特", "prompt": "adult athletic male model, realistic proportions, functional sports posture"}, {"id": "streetmale", "name": "年轻街头男性模特", "prompt": "young adult male fashion model, authentic urban attitude"}, {"id": "no_model", "name": "不使用模特", "prompt": "no human model, product-only presentation"}],
+    "sellingPoints": [{"id": "quickdry", "name": "速干", "prompt": "visibly communicate quick-dry performance through lightweight fabric presentation and active lifestyle context"}, {"id": "breathable", "name": "透气", "prompt": "visually communicate breathability with lightweight fabric drape and active outdoor context"}, {"id": "stretch", "name": "弹力", "prompt": "show natural stretch and mobility without distorting the garment"}, {"id": "water", "name": "防泼水", "prompt": "subtle realistic water-repellent visual cue on fabric, no exaggerated effects"}, {"id": "warm", "name": "保暖", "prompt": "communicate warmth through realistic cold-weather styling and fabric volume"}, {"id": "pockets", "name": "多口袋", "prompt": "clearly expose functional pocket layout and usable storage details"}, {"id": "zipper", "name": "拉链结构", "prompt": "sharp close-up showing zipper construction, stitching and finishing"}, {"id": "reflective", "name": "反光细节", "prompt": "subtle reflective trim detail visible under controlled light"}, {"id": "lightweight", "name": "轻量", "prompt": "visually emphasize lightweight construction through clean silhouette and active movement"}, {"id": "oversized", "name": "宽松版型", "prompt": "clearly show relaxed oversized silhouette and natural fabric drape"}, {"id": "slim", "name": "修身版型", "prompt": "clearly show streamlined slim fit and accurate body proportions"}],
+    "composition": [{"id": "productfirst", "name": "商品优先", "prompt": "product remains the dominant visual subject, background and styling support rather than compete"}, {"id": "center", "name": "中心构图", "prompt": "clean centered composition with generous breathing room and strong silhouette recognition"}, {"id": "thirds", "name": "三分法", "prompt": "rule-of-thirds composition with clear visual hierarchy and intentional negative space"}, {"id": "detailgrid", "name": "主图+细节组合", "prompt": "one dominant product view supported by carefully arranged detail views"}, {"id": "motion", "name": "动作叙事", "name2": "动态场景", "prompt": "natural action-based composition that demonstrates how the garment is used"}],
+    "negative": ["do not change the product's original design", "do not alter garment color", "do not change logo, label, print or graphic", "do not invent pockets, zippers or functional details", "do not change fabric texture into a different material", "no distorted hands or anatomy", "no extra fingers or limbs", "no duplicate product", "no floating objects", "no watermark", "no unrelated text", "no fake badges or platform logos", "no excessive HDR", "no oversaturated colors", "no plastic-looking fabric", "no unrealistic skin", "no cluttered background"]
+  };
 
-const $ = id => document.getElementById(id);
-const fill = (id, arr) => { $(id).innerHTML = arr.map(x=>`<option value="${x.id}">${x.name}</option>`).join(''); };
-const selected = id => DATA[id].find(x=>x.id === $(id).value);
+  // 单选框与下拉菜单元素表映映射
+  const CATEGORY_MAP = {
+    platform: 'platforms',
+    imageType: 'imageTypes',
+    category: 'categories',
+    style: 'styles',
+    background: 'backgrounds',
+    lighting: 'lighting',
+    camera: 'camera',
+    composition: 'composition',
+    model: 'models'
+  };
 
-fill('platform', DATA.platforms); fill('imageType', DATA.imageTypes); fill('category', DATA.categories);
-fill('style', DATA.styles); fill('background', DATA.backgrounds); fill('lighting', DATA.lighting);
-fill('camera', DATA.camera); fill('composition', DATA.composition); fill('model', DATA.models);
+  const $ = id => document.getElementById(id);
+  
+  // 渲染选项列表
+  const fill = (id, arr) => { 
+    if ($(id) && Array.isArray(arr)) {
+      $(id).innerHTML = arr.map(x=>`<option value="${x.id}">${x.name}</option>`).join(''); 
+    }
+  };
 
-$('sellingPoints').innerHTML = DATA.sellingPoints.map(x =>
-  `<label class="check"><input type="checkbox" value="${x.id}"> ${x.name}</label>`).join('');
+  // 安全取值函数，防止 find 报 undefined 错误
+  const selected = id => {
+    const dataKey = CATEGORY_MAP[id] || id;
+    const list = DATA[dataKey] || [];
+    const el = $(id);
+    if (!el) return { id: '', name: '', prompt: '' };
+    return list.find(x => x.id === el.value) || list[0] || { id: '', name: '', prompt: '' };
+  };
 
-document.querySelectorAll('#taskOptions .option').forEach(el=>{
-  el.onclick=()=>{document.querySelectorAll('#taskOptions .option').forEach(x=>x.classList.remove('active'));el.classList.add('active');}
-});
+  // 初始化填充所有 Select 列表
+  fill('platform', DATA.platforms); 
+  fill('imageType', DATA.imageTypes); 
+  fill('category', DATA.categories);
+  fill('style', DATA.styles); 
+  fill('background', DATA.backgrounds); 
+  fill('lighting', DATA.lighting);
+  fill('camera', DATA.camera); 
+  fill('composition', DATA.composition); 
+  fill('model', DATA.models);
 
-// ✅ 1. 修复平台规则逻辑：重命名内部变量，避免变量名称冲突导致的脚本中断
-function platformRules(){
- const platformVal = $('platform').value;
- if(platformVal === 'amazon') return 'For Amazon marketplace compliance: main image should use a pure white background (#FFFFFF), show the actual product, avoid added text/logos/watermarks/graphics, and keep the product highly prominent in frame. For apparel, use a clear front or appropriate model/flat presentation according to the category rules.';
- if(platformVal === 'shein') return 'For SHEIN: keep product photos accurate to the listing, use a polished square or portrait presentation, show multiple angles, and use real-model/on-body imagery where useful. Keep the garment visually dominant.';
- return 'For TEMU: prioritize clear product recognition, accurate product representation, strong first-glance hierarchy, and a practical image sequence that explains the garment, its details and use scenarios. Avoid invented product attributes.';
-}
+  // 初始化卖点多选框
+  if ($('sellingPoints')) {
+    $('sellingPoints').innerHTML = DATA.sellingPoints.map(x =>
+      `<label class="check"><input type="checkbox" value="${x.id}"> ${x.name}</label>`).join('');
+  }
 
-function generatePrompt(){
- const p=selected('platform'), t=selected('imageType'), c=selected('category'), s=selected('style');
- const bg=selected('background'), li=selected('lighting'), ca=selected('camera'), co=selected('composition'), m=selected('model');
- const points=[...document.querySelectorAll('#sellingPoints input:checked')].map(x=>DATA.sellingPoints.find(y=>y.id===x.value));
- const taskEl=document.querySelector('#taskOptions .active');
- const task=taskEl ? taskEl.dataset.task : 'retouch';
- const product=$('productInfo').value.trim() || c.name;
- const preserve=$('preserve').value.trim() || 'Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.';
- const extra=$('extra').value.trim();
+  // 绑定任务选项卡切换
+  document.querySelectorAll('#taskOptions .option').forEach(el=>{
+    el.onclick=()=>{
+      document.querySelectorAll('#taskOptions .option').forEach(x=>x.classList.remove('active'));
+      el.classList.add('active');
+    }
+  });
 
- let taskText={
-   retouch:'Improve the existing product photo through professional retouching while preserving the exact product.',
-   background:'Replace only the background and environment while preserving the exact product pixels/shape as much as possible.',
-   model:'Place the exact original garment naturally on an adult male model with realistic body proportions and accurate fit.',
-   lifestyle:'Create a realistic lifestyle scene that communicates the intended use of the garment while keeping the product visually dominant.',
-   detail:'Create a premium close-up view that clearly reveals the real material, stitching and functional construction without inventing details.',
-   complete:'Plan a complete e-commerce image set: main image, model image, lifestyle image, detail image and back/side view.'
- }[task];
+  // 平台策略逻辑
+  function platformRules(){
+   const pVal = $('platform') ? $('platform').value : 'temu';
+   if(pVal === 'amazon') return 'For Amazon marketplace compliance: main image should use a pure white background (#FFFFFF), show the actual product, avoid added text/logos/watermarks/graphics, and keep the product highly prominent in frame. For apparel, use a clear front or appropriate model/flat presentation according to the category rules.';
+   if(pVal === 'shein') return 'For SHEIN: keep product photos accurate to the listing, use a polished square or portrait presentation, show multiple angles, and use real-model/on-body imagery where useful. Keep the garment visually dominant.';
+   return 'For TEMU: prioritize clear product recognition, accurate product representation, strong first-glance hierarchy, and a practical image sequence that explains the garment, its details and use scenarios. Avoid invented product attributes.';
+  }
 
- let pointText=points.length ? points.map(x=>x.prompt).join('; ') : 'No unverified features; do not invent performance claims.';
- let ratio=$('ratio').value;
+  // 点击生成核心函数
+  function generatePrompt(){
+   const p=selected('platform'), t=selected('imageType'), c=selected('category'), s=selected('style');
+   const bg=selected('background'), li=selected('lighting'), ca=selected('camera'), co=selected('composition'), m=selected('model');
+   
+   const points = [...document.querySelectorAll('#sellingPoints input:checked')]
+     .map(x => DATA.sellingPoints.find(y => y.id === x.value))
+     .filter(Boolean);
 
- const prompt=`ROLE
+   const activeTask = document.querySelector('#taskOptions .option.active');
+   const task = activeTask ? activeTask.dataset.task : 'retouch';
+   
+   const product = $('productInfo').value.trim() || c.name;
+   const preserve = $('preserve').value.trim() || 'Preserve the original product design, color, construction, branding, print, labels, material texture, proportions and functional details exactly.';
+   const extra = $('extra').value.trim();
+
+   let taskText = {
+     retouch:'Improve the existing product photo through professional retouching while preserving the exact product.',
+     background:'Replace only the background and environment while preserving the exact product pixels/shape as much as possible.',
+     model:'Place the exact original garment naturally on an adult male model with realistic body proportions and accurate fit.',
+     lifestyle:'Create a realistic lifestyle scene that communicates the intended use of the garment while keeping the product visually dominant.',
+     detail:'Create a premium close-up view that clearly reveals the real material, stitching and functional construction without inventing details.',
+     complete:'Plan a complete e-commerce image set: main image, model image, lifestyle image, detail image and back/side view.'
+   }[task] || '';
+
+   let pointText = points.length ? points.map(x=>x.prompt).join('; ') : 'No unverified features; do not invent performance claims.';
+   let ratio = $('ratio') ? $('ratio').value : '1:1';
+
+   const prompt=`ROLE
 You are a senior cross-border e-commerce fashion art director and product-retouching specialist.
 
 PLATFORM
@@ -233,49 +294,71 @@ ${extra ? 'ADDITIONAL SELLER REQUIREMENTS\n'+extra : ''}
 FINAL CHECK
 Before rendering, verify that the garment remains the same product as the reference image. Do not add, remove or redesign any product feature. The image should make the product easier to understand within 1–2 seconds of viewing.`;
 
- $('prompt').textContent=prompt;
- $('chips').innerHTML=[p.name,t.name,c.name,s.name,bg.name,li.name,ca.name,co.name].map(x=>`<span class="chip">${x}</span>`).join('');
- $('stats').textContent=`已生成：${prompt.length} 字符 · ${p.name} · ${t.name}`;
- renderStrategy();
-}
+   $('prompt').textContent = prompt;
+   $('chips').innerHTML = [p.name, t.name, c.name, s.name, bg.name, li.name, ca.name, co.name]
+     .filter(x => x)
+     .map(x => `<span class="chip">${x}</span>`).join('');
+   $('stats').textContent = `已生成：${prompt.length} 字符 · ${p.name} · ${t.name}`;
+   
+   renderStrategy();
+  }
 
-// ✅ 2. 改进剪贴板兼容逻辑
-function copyPrompt(){
- const text=$('prompt').textContent;
- if(text.startsWith('请选择')) return alert('请先生成 Prompt');
- if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(text).then(()=>alert('Prompt 已复制')).catch(()=>fallbackCopy(text));
- } else {
-    fallbackCopy(text);
- }
-}
+  function copyPrompt(){
+   const text = $('prompt').textContent;
+   if(text.startsWith('请选择')) return alert('请先生成 Prompt');
+   if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(()=>alert('Prompt 已复制')).catch(()=>fallbackCopy(text));
+   } else {
+      fallbackCopy(text);
+   }
+  }
 
-function fallbackCopy(text) {
- const textArea = document.createElement("textarea");
- textArea.value = text;
- document.body.appendChild(textArea);
- textArea.select();
- try {
-   document.execCommand('copy');
-   alert('Prompt 已复制');
- } catch (err) {
-   alert('复制失败，请手动选择复制');
- }
- document.body.removeChild(textArea);
-}
+  function fallbackCopy(text) {
+   const textArea = document.createElement("textarea");
+   textArea.value = text;
+   document.body.appendChild(textArea);
+   textArea.select();
+   try {
+     document.execCommand('copy');
+     alert('Prompt 已复制');
+   } catch (err) {
+     alert('复制失败，请手动选择复制');
+   }
+   document.body.removeChild(textArea);
+  }
 
-function resetAll(){
- $('productInfo').value='';$('preserve').value='';$('extra').value='';$('prompt').textContent='请选择商品特征后点击「生成优化 Prompt」。';$('chips').innerHTML='';$('stats').textContent='当前：待生成';
- document.querySelectorAll('#sellingPoints input').forEach(x=>x.checked=false);
-}
+  function resetAll(){
+   $('productInfo').value = '';
+   $('preserve').value = '';
+   $('extra').value = '';
+   $('prompt').textContent = '请选择商品特征后点击「生成优化 Prompt」。';
+   $('chips').innerHTML = '';
+   $('stats').textContent = '当前：待生成';
+   document.querySelectorAll('#sellingPoints input').forEach(x => x.checked = false);
+  }
 
-function renderStrategy(){
- const p=selected('platform');
- $('platformStrategy').innerHTML=`<div class="notice" style="margin:0"><b>${p.name}：</b>${p.desc}<br><br>${platformRules()}</div>`;
-}
+  function renderStrategy(){
+   const p = selected('platform');
+   if ($('platformStrategy')) {
+     $('platformStrategy').innerHTML = `<div class="notice" style="margin:0"><b>${p.name}：</b>${p.desc}<br><br>${platformRules()}</div>`;
+   }
+  }
 
-$('platform').addEventListener('change',renderStrategy);
-renderStrategy();
+  // 重新绑定事件监听，避免 html 内联 onclick 失效
+  const generateBtn = document.querySelector('.primary');
+  const copyBtn = document.querySelector('.secondary');
+  const resetBtn = document.querySelector('.danger');
+
+  if (generateBtn) generateBtn.onclick = generatePrompt;
+  if (copyBtn) copyBtn.onclick = copyPrompt;
+  if (resetBtn) resetBtn.onclick = resetAll;
+
+  if ($('platform')) {
+    $('platform').addEventListener('change', renderStrategy);
+  }
+
+  renderStrategy();
+});
 </script>
 </body>
 </html>
