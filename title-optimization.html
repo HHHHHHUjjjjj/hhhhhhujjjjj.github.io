@@ -525,7 +525,7 @@ Best、Cheap、Luxury、Official等。
         </div>
         <textarea id="titleInput" placeholder="点击下方的关键词，或在此处直接编辑你的商品标题..."></textarea>
         <div class="builder-controls">
-            <button class="btn-primary" onclick="copyTitle()">📋 一键复制标题</button>
+            <button class="btn-primary" onclick="copyTitle()">📋 复制 AI 标题提示词</button>
             <button class="btn-secondary" onclick="clearTitle()">🗑️ 清空内容</button>
         </div>
     </div>
@@ -763,7 +763,9 @@ Best、Cheap、Luxury、Official等。
             textarea.value = currentText + " " + word + " ";
         }
         updateCounter();
-        textarea.focus();
+        if (textarea.focus) {
+            textarea.focus({ preventScroll: true });
+        }
     }
 
     // 更新字符计数器
@@ -780,25 +782,56 @@ Best、Cheap、Luxury、Official等。
         }
     }
 
-    // 一键复制
+    // 生成 AI 标题提示词
+    function buildAIPromptFromTitle(title) {
+        const trimmed = title.trim();
+        if (!trimmed) return '';
+
+        return `你是一位男装标题优化大师。请根据以下词语组合，自动识别并整理人群、品类词、场景词、功能/图案、风格、季节/版型/腰型、细节/规格/材质/颜色、节日活动等有效信息。` +
+            `\n\n输入词语：${trimmed}` +
+            `\n\n请生成一个适用于电商平台的英文商品标题，遵循以下规则：` +
+            `\n- 标题结构按“人群 + 品类词 + 场景词 + 功能/图案 + 风格 + 季节/版型/腰型 + 细节/规格/材质/颜色 + 节日活动”的逻辑重组。` +
+            `\n- 仅优化 5-8 个核心维度，优先补充具有真实搜索价值的高相关关键词。` +
+            `\n- 根据男装品类调整关键词组合逻辑，突出商品核心属性。` +
+            `\n- 材质、颜色、规格等明确属性应合理保留并优先利用。` +
+            `\n- 不得添加原始商品不存在的功能、材质、款式或使用场景。` +
+            `\n- 避免使用 Best、Cheap、Luxury、Official 等治理黑词、违规促销词及任何侵权品牌词。` +
+            `\n- 结合消费者真实搜索习惯，参考 Amazon、SHEIN、TEMU 等平台热门标题风格。` +
+            `\n- 仅输出经过优化的英文商品标题，不解释、不分点、不输出分析过程。\n`;
+    }
+
     async function copyTitle() {
         const textarea = document.getElementById("titleInput");
         const textToCopy = textarea.value.trim();
         if (!textToCopy) {
-            alert("标题内容为空！");
+            alert("请先选择或拼装关键词，再点击复制生成提示词。");
             return;
         }
+
+        const promptText = buildAIPromptFromTitle(textToCopy);
         try {
             if (navigator.clipboard && window.isSecureContext) {
-                await navigator.clipboard.writeText(textToCopy);
+                await navigator.clipboard.writeText(promptText);
             } else {
-                textarea.select();
-                document.execCommand("copy");
+                fallbackCopyText(promptText);
             }
-            alert("标题已成功复制到剪贴板！");
+            alert("AI 标题优化提示词已复制到剪贴板！");
         } catch (err) {
             alert("复制失败，请手动选中复制。");
         }
+    }
+
+    function fallbackCopyText(text) {
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.style.position = 'fixed';
+        tempTextarea.style.top = '-9999px';
+        tempTextarea.style.left = '-9999px';
+        tempTextarea.value = text;
+        document.body.appendChild(tempTextarea);
+        tempTextarea.focus();
+        tempTextarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextarea);
     }
 
     // 清空
