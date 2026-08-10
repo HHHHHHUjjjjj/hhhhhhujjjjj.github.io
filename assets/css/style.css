@@ -233,8 +233,7 @@ body {
    Section
 ========================= */
 
-.function-section,
-.quick-section {
+.function-section {
     margin-bottom: 20px;
 }
 
@@ -465,86 +464,6 @@ body {
 
 
 /* =========================
-   快捷入口
-========================= */
-
-.quick-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(200px, 1fr));
-
-    gap: 12px;
-}
-
-.quick-card {
-    background: #fff;
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 8px;
-
-    padding: 12px 14px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    text-decoration: none;
-
-    color: #444;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    transition: all .2s ease;
-}
-
-.quick-card:hover {
-    border-color: var(--primary-color);
-
-    background: var(--light-orange);
-
-    color: var(--primary-color);
-}
-
-.quick-icon {
-    font-size: 18px;
-}
-
-.quick-arrow {
-    margin-left: auto;
-
-    color: var(--primary-color);
-}
-
-.quick-status {
-    margin-left: auto;
-
-    font-size: 9px;
-
-    color: #aaa;
-}
-
-.quick-card.disabled {
-    cursor: default;
-
-    color: #888;
-}
-
-.quick-card.disabled:hover {
-    background: #fff;
-
-    border-color: var(--border-color);
-
-    color: #888;
-}
-
-
-/* =========================
    Footer
 ========================= */
 
@@ -615,10 +534,6 @@ body {
     }
 
     .function-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .quick-grid {
         grid-template-columns: 1fr;
     }
 
