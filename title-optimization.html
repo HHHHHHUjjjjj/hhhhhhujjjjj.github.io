@@ -51,6 +51,39 @@
             color: #666;
             font-size: 13px;
         }
+        /* 返回首页按钮 */
+.page-nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 6px 12px;
+
+    color: var(--primary-color);
+    background: #fff3eb;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.back-home:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateX(-2px);
+}
 
         /* 标题拼装工作区 */
         .builder-card {
@@ -411,10 +444,23 @@
 </div>
 <body>
 
-    <header>
-        <h1>TEMU Men's SEO Center</h1>
-        <p>TEMU 男装类目 SEO 标题构建与关键词检索中心（马甲 | 背带裤 | 骑行服 | 连体服）</p>
-    </header>
+   <header>
+
+    <!-- 返回首页 -->
+    <div class="page-nav">
+        <a href="index.html" class="back-home">
+            ← 返回首页
+        </a>
+    </div>
+
+    <h1>TEMU Men's SEO Center</h1>
+
+    <p>
+        TEMU 男装类目 SEO 标题构建与检索中心
+        （马甲 | 背带裤 | 骑行服 | 连体服）
+    </p>
+
+</header>
 
     <!-- 标题拼装工作区 -->
     <!-- 标题优化方法论 -->
