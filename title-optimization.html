@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMU Men's SEO Center | 男装 SEO 关键词与标题优化中心</title>
+    <style>
+        :root {
+            --primary-color: #fb7701; /* TEMU Brand Orange */
+            --primary-hover: #e06800;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e1e4e8;
+            --tag-bg: #fff3eb;
+            --tag-hover: #ffe7d6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 16px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 15px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 13px;
+        }
+        /* 返回首页按钮 */
+.page-nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 6px 12px;
+
+    color: var(--primary-color);
+    background: #fff3eb;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.back-home:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateX(-2px);
+}
+
+        /* 标题拼装工作区 */
+        .builder-card {
+            background: var(--card-bg);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 2px solid var(--primary-color);
+        }
+        /* 优化方向入口 */
+.optimization-entry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.entry-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all .25s;
+}
+
+.entry-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.entry-card h2 {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.entry-card p {
+    color:#666;
+    font-size:13px;
+}
+
+.entry-icon {
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+
+/* 标题优化说明 */
+.methodology-card {
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:16px;
+    border-left:5px solid var(--primary-color);
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+
+.methodology-card h2 {
+    color:var(--primary-color);
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+
+.methodology-list {
+    font-size:14px;
+    color:#444;
+}
+
+
+.methodology-list li {
+    margin-bottom:10px;
+}
+
+
+.formula-box {
+    background:#fff3eb;
+    padding:12px;
+    border-radius:8px;
+    color:#fb7701;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+        .builder-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .builder-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 15px;
+        }
+
+        .char-counter {
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+        }
+
+        textarea {
+            width: 100%;
+            height: 90px;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        .builder-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-secondary {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* 搜索与筛选区 */
+        .search-section {
+            background: var(--card-bg);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 240px;
+            padding: 9px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+            min-width: 70px;
+        }
+
+        .filter-btn {
+            background: #f0f2f5;
+            border: 1px solid var(--border-color);
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            color: #444;
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .stats-bar {
+            font-size: 12px;
+            color: #777;
+            padding-top: 4px;
+        }
+
+        /* 词库网格 */
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-card h3 {
+            font-size: 14px;
+            border-bottom: 2px solid var(--tag-bg);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-card h3 .count {
+            font-size: 12px;
+            color: #888;
+            font-weight: normal;
+        }
+
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            border: 1px solid #ffd8bf;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+        }
+
+        .tag:hover {
+            border-color: var(--primary-color);
+            background: var(--tag-hover);
+            transform: translateY(-1px);
+        }
+
+        .tag .en {
+            font-weight: 600;
+            color: #222;
+            font-size: 13px;
+        }
+
+        .tag .cn {
+            font-size: 11px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            color: #888;
+            font-size: 12px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+            }
+            .builder-controls button {
+                flex: 1;
+            }
+        }
+        /* 词属性筛选 - 禁用不可选状态 */
+.filter-btn.disabled {
+    opacity: 0.35;
+    background: #e0e0e0 !important;
+    border-color: #d0d0d0 !important;
+    color: #888888 !important;
+    cursor: not-allowed;
+    pointer-events: none; /* 防止点击事件发生 */
+}
+
+/* 标记为通用的属性的小标样式 (可选优化) */
+.filter-btn .common-tag {
+    font-size: 10px;
+    color: #e06800;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.filter-btn.active .common-tag {
+    color: #ffffff; /* 激活时字体变白 */
+}
+    </style>
+</head>
+    </div>
+
+
+</div>
+<body>
+
+   <header>
+
+    <!-- 返回首页 -->
+    <div class="page-nav">
+        <a href="index.html" class="back-home">
+            ← 返回首页
+        </a>
+    </div>
+
+    <h1>TEMU Men's SEO Center</h1>
+
+    <p>
+        TEMU 男装类目 SEO 标题构建与检索中心
+        （马甲 | 背带裤 | 骑行服 | 连体服）
+    </p>
+
+</header>
+
+    <!-- 标题拼装工作区 -->
+    <!-- 标题优化方法论 -->
+
+<div class="methodology-card">
+
+<h2>
+📖 TEMU 男装标题优化方法论
+</h2>
+
+
+<div class="formula-box">
+
+推荐标题公式：
+
+[人群] + [品类词] + [场景词] + [功能/图案] 
++ [风格] + [季节/版型/腰型]
++ [细节/规格/面料/颜色]
++ [节日活动]
+
+</div>
+
+
+<ul class="methodology-list">
+
+
+<li>
+<b>① 标题数量：</b>
+标题优化维度建议控制在5-8个，避免关键词堆砌影响搜索体验。
+</li>
+
+
+<li>
+<b>② 核心逻辑：</b>
+优先补充消费者真实搜索关键词，而不是简单替换原标题。
+</li>
+
+
+<li>
+<b>③ 材质与颜色：</b>
+当前男装标题中材质、颜色词使用较少，可优先进行批量测试。
+</li>
+
+
+<li>
+<b>④ 分品类优化：</b>
+不同品类搜索逻辑不同，需要结合马甲、骑行服、背带裤、连体服特点优化。
+</li>
+
+
+<li>
+<b>⑤ 活动节日：</b>
+节日词、活动词、利益点前置通常具有更明显流量提升效果。
+</li>
+
+
+<li>
+<b>⑥ 增量优化：</b>
+建议以新增关键词为主，减少大批量修改原标题，降低对原有搜推流量影响。
+</li>
+
+
+<li>
+<b>⑦ 合规要求：</b>
+避免治理黑词、促销违规词、侵权品牌词，例如：
+Best、Cheap、Luxury、Official等。
+</li>
+
+
+</ul>
+
+</div>
+    <div class="builder-card">
+        <div class="builder-header">
+            <span class="builder-title">🛠️ 标题拼装生成器 (点击下方的关键词可直接插入)</span>
+            <span class="char-counter" id="charCounter">字符数: 0 / 180 (建议 60-120 字符)</span>
+        </div>
+        <textarea id="titleInput" placeholder="点击下方的关键词，或在此处直接编辑你的商品标题..."></textarea>
+        <div class="builder-controls">
+            <button class="btn-primary" onclick="copyTitle()">📋 一键复制标题</button>
+            <button class="btn-secondary" onclick="clearTitle()">🗑️ 清空内容</button>
+        </div>
+    </div>
+
+    <!-- 搜索与筛选区 -->
+    <div class="search-section">
+        <div class="search-row">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 输入中英文关键词检索 (如: Vest, 跑步, Quick Dry)..." oninput="debounceFilter()">
+        </div>
+        <div class="filter-group">
+            <span class="filter-label">大类筛选:</span>
+            <div id="categoryFilters" class="filter-group"></div>
+        </div>
+        <div class="filter-group">
+            <span class="filter-label">词属性筛选:</span>
+            <div id="subCategoryFilters" class="filter-group"></div>
+        </div>
+        <div class="stats-bar" id="statsBar">加载中...</div>
+    </div>
+
+    <!-- 关键词展示区 -->
+    <div class="keywords-grid" id="keywordsGrid">
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">正在读取 keywords.json 词库数据...</div>
+    </div>
+
+    <footer>
+        <p>© 2026 TEMU Men's Apparel Operations | 静态词库架构 - 支持一键通过 Excel 转换为 JSON 更新</p>
+    </footer>
+
+    <script>
+    let rawData = [];
+    let keywordFiles = [];
+    let selectedCategory = 'all';
+    let selectedSubCategory = 'all';
+    let debounceTimer = null;
+
+    // 页面初始化
+    document.addEventListener("DOMContentLoaded", () => {
+        loadKeywords();
+        const textarea = document.getElementById("titleInput");
+        textarea.addEventListener("input", updateCounter);
+    });
+
+    // Fetch JSON 数据
+    async function loadKeywords(){
+        try{
+            const configResponse = await fetch('keywords/config.json?v=' + Date.now());
+            const files = await configResponse.json();
+            let allKeywords = [];
+
+            for(let file of files){
+                const response = await fetch('keywords/' + file + '?v=' + Date.now());
+                const data = await response.json();
+                allKeywords = allKeywords.concat(data);
+            }
+
+            rawData = allKeywords;
+
+            buildFilters();
+            renderKeywords();
+
+        } catch(error){
+            document.getElementById("keywordsGrid").innerHTML = `
+                <div style="padding:40px; color:red; text-align:center">
+                    ⚠️ 词库加载失败<br>${error.message}
+                </div>
+            `;
+        }
+    }
+
+    // 动态构建与更新筛选按钮（含“通用”计算与禁用判断）
+    function buildFilters() {
+        // 1. 获取所有唯一的大类和属性
+        const categories = ['all', ...new Set(rawData.map(item => item.category))];
+        const allRealCategories = categories.filter(c => c !== 'all'); // 具体的品类列表
+        const subCategories = ['all', ...new Set(rawData.map(item => item.subCategory))];
+
+        // 2. 渲染【大类筛选】按钮
+        const catContainer = document.getElementById("categoryFilters");
+        catContainer.innerHTML = categories.map(cat => {
+            const name = cat === 'all' ? '全部品类' : cat;
+            return `<button class="filter-btn ${cat === selectedCategory ? 'active' : ''}" onclick="selectCategory('${escapeQuotes(cat)}', this)">${escapeHTML(name)}</button>`;
+        }).join('');
+
+        // 3. 计算哪些词属性是“通用属性”（即在所有具体大类中都存在的数据）
+        const universalSubCats = new Set();
+        subCategories.forEach(sub => {
+            if (sub === 'all') return;
+            // 检查这个 subCategory 是否包含在每一个具体 category 中
+            const isUniversal = allRealCategories.every(cat => 
+                rawData.some(item => item.category === cat && item.subCategory === sub)
+            );
+            if (isUniversal) {
+                universalSubCats.add(sub);
+            }
+        });
+
+        // 4. 根据当前选择的 selectedCategory 找出当前有效可选的 subCategory
+        const availableSubCats = new Set(
+            rawData
+                .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                .map(item => item.subCategory)
+        );
+
+        // 5. 渲染【词属性筛选】按钮
+        const subCatContainer = document.getElementById("subCategoryFilters");
+        subCatContainer.innerHTML = subCategories.map(sub => {
+            let name = sub === 'all' ? '全部属性' : sub;
+            
+            // 如果是通用属性，增加标记
+            if (universalSubCats.has(sub)) {
+                name += ' (通用)';
+            }
+
+            // 判断当前选择的大类下，该属性是否有词
+            const isAvailable = (sub === 'all') || availableSubCats.has(sub);
+            const isDisabled = !isAvailable;
+            const isActive = (sub === selectedSubCategory) && isAvailable;
+
+            return `
+                <button class="filter-btn ${isActive ? 'active' : ''} ${isDisabled ? 'disabled' : ''}" 
+                        ${isDisabled ? 'disabled' : ''} 
+                        onclick="selectSubCategory('${escapeQuotes(sub)}', this)">
+                    ${escapeHTML(name)}
+                </button>
+            `;
+        }).join('');
+    }
+
+    // 选择大类触发
+    function selectCategory(cat, btn) {
+        selectedCategory = cat;
+
+        // 获取当前大类下可用的词属性集合
+        const availableSubCats = new Set(
+            rawData
+                .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                .map(item => item.subCategory)
+        );
+
+        // 如果当前选中的词属性在新的大类下不可用，重置回 'all'
+        if (selectedSubCategory !== 'all' && !availableSubCats.has(selectedSubCategory)) {
+            selectedSubCategory = 'all';
+        }
+
+        // 重新构建/更新按钮状态
+        buildFilters();
+        renderKeywords();
+    }
+
+    // 选择词属性触发
+    function selectSubCategory(sub, btn) {
+        if (btn.classList.contains('disabled')) return; // 防止禁用时误点击
+        
+        selectedSubCategory = sub;
+        
+        // 重新渲染词属性的高亮样式
+        const subCatContainer = document.getElementById("subCategoryFilters");
+        subCatContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        renderKeywords();
+    }
+
+    // 渲染关键词列表
+    function renderKeywords() {
+        const grid = document.getElementById("keywordsGrid");
+        const filterText = document.getElementById("searchInput").value.toLowerCase().trim();
+
+        let filtered = rawData.filter(item => {
+            const matchCat = (selectedCategory === 'all' || item.category === selectedCategory);
+            const matchSub = (selectedSubCategory === 'all' || item.subCategory === selectedSubCategory);
+            const matchText = !filterText || 
+                              (item.en && item.en.toLowerCase().includes(filterText)) || 
+                              (item.cn && item.cn.toLowerCase().includes(filterText));
+            return matchCat && matchSub && matchText;
+        });
+
+        document.getElementById("statsBar").innerText = `当前展示 ${filtered.length} 个关键词 (总计 ${rawData.length} 个词汇)`;
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">未找到匹配的关键词</div>`;
+            return;
+        }
+
+        const groups = {};
+        filtered.forEach(item => {
+            const groupKey = `${item.category} - ${item.subCategory}`;
+            if (!groups[groupKey]) groups[groupKey] = [];
+            groups[groupKey].push(item);
+        });
+
+        grid.innerHTML = "";
+
+        Object.keys(groups).forEach(groupKey => {
+            const card = document.createElement("div");
+            card.className = "category-card";
+            
+            const wordsHTML = groups[groupKey].map(w => `
+                <div class="tag" onclick="appendWord('${escapeQuotes(w.en)}')">
+                    <span class="en">${escapeHTML(w.en)}</span>
+                    <span class="cn">${escapeHTML(w.cn)}</span>
+                </div>
+            `).join("");
+
+            card.innerHTML = `
+                <h3><span>${escapeHTML(groupKey)}</span><span class="count">${groups[groupKey].length}个</span></h3>
+                <div class="tag-group">${wordsHTML}</div>
+            `;
+
+            grid.appendChild(card);
+        });
+    }
+
+    function escapeQuotes(str) {
+        if (!str) return '';
+        return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    }
+
+    function escapeHTML(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, 
+            tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+        );
+    }
+
+    // 追加关键词到标题文本框
+    function appendWord(word) {
+        const textarea = document.getElementById("titleInput");
+        let currentText = textarea.value.trim();
+        
+        if (currentText === "") {
+            textarea.value = word + " ";
+        } else {
+            textarea.value = currentText + " " + word + " ";
+        }
+        updateCounter();
+        textarea.focus();
+    }
+
+    // 更新字符计数器
+    function updateCounter() {
+        const textarea = document.getElementById("titleInput");
+        const counter = document.getElementById("charCounter");
+        const length = textarea.value.length;
+        counter.innerText = `字符数: ${length} / 180 (建议 60-120 字符)`;
+        
+        if (length > 180) {
+            counter.style.color = "#d9534f";
+        } else {
+            counter.style.color = "#666";
+        }
+    }
+
+    // 一键复制
+    async function copyTitle() {
+        const textarea = document.getElementById("titleInput");
+        const textToCopy = textarea.value.trim();
+        if (!textToCopy) {
+            alert("标题内容为空！");
+            return;
+        }
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(textToCopy);
+            } else {
+                textarea.select();
+                document.execCommand("copy");
+            }
+            alert("标题已成功复制到剪贴板！");
+        } catch (err) {
+            alert("复制失败，请手动选中复制。");
+        }
+    }
+
+    // 清空
+    function clearTitle() {
+        document.getElementById("titleInput").value = "";
+        updateCounter();
+    }
+
+    // 搜索框防抖处理
+    function debounceFilter() {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            renderKeywords();
+        }, 200);
+    }
+
+    function goTitleOptimization(){
+        document.querySelector(".builder-card").scrollIntoView({
+            behavior:"smooth"
+        });
+    }
+
+ 
+</script>
+</body>
+</html>
+
+
