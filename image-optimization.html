@@ -116,6 +116,14 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="field"><label>模特人种/肤色</label><select id="modelEthnicity"></select></div>
 <div class="field"><label>模特年龄段</label><select id="modelAge"></select></div>
 <div class="field"><label>模特姿势风格</label><select id="modelPose"></select></div>
+<div class="field"><label>模特形体特征</label><select id="modelFitness"></select></div>
+<div class="field"><label>调性风格</label><select id="tone"></select></div>
+<div class="field"><label>动作类型</label><select id="action"></select></div>
+<div class="field"><label>场景类型</label><select id="scenarioType"></select></div>
+<div class="field"><label>道具/物件</label><select id="props"></select></div>
+<div class="field"><label>配饰搭配</label><select id="accessories"></select></div>
+<div class="field"><label>服饰搭配</label><select id="styling"></select></div>
+<div class="field"><label>拍摄指令</label><select id="shootingDirective"></select></div>
 <div class="field" style="grid-column: span 2;"><label>输出比例</label>
 <select id="ratio">
 <option value="1:1" selected>1:1 方图</option>
@@ -157,6 +165,10 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
   <span class="preset-tag" data-val="整体呈现自然真实的美式年轻审美与高品质电商视觉质感，切忌过度浮夸的后期修饰。">默认（美式自然质感）</span>
   <span class="preset-tag" data-val="呈现极简高奢高级棚拍感，强调柔和自然的光影与干净无瑕的背景。">高奢棚拍风</span>
   <span class="preset-tag" data-val="展现真实户外阳光感与动态生活方式，保持模特自然有精气神，避免生硬的假人感。">户外阳光生活风</span>
+  <span class="preset-tag" data-val="注重品质细节呈现，展现工业设计感与专业机能属性，强调技术含量。">专业机能风</span>
+  <span class="preset-tag" data-val="融合拉丁与北美的多元审美，展现热情活力与包容性，肤色与体型多样化呈现。">拉美北美多元风</span>
+  <span class="preset-tag" data-val="强调情侣配对与亲密关系，两人互动自然真挚，传达陪伴感与信任感。">情侣亲密风</span>
+  <span class="preset-tag" data-val="展现真实场景化穿搭故事，一件单品在多个生活场景中的应用，强化实用性。">场景化故事风</span>
 </div>
 </div>
 
@@ -185,7 +197,7 @@ button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;font-size:13p
 <div class="feature"><b>第一张图低干扰</b><p>主图优先商品本身，减少抢视觉焦点的道具和复杂背景。</p></div>
 <div class="feature"><b>真人上身证明版型</b><p>用真实人体比例帮助消费者判断长度、宽松度和穿着效果。</p></div>
 <div class="feature"><b>多角度补信息</b><p>正面、侧面、背面、45°和细节图分别解决不同疑问。</p></div>
-<div class="feature"><b>功能必须可视化</b><p>口袋、拉链、反光条、面料纹理等要用近景证据表达。</p></div>
+<div class="feature"><b>功能必须可视化</b><p>口袋、拉链、面料纹理等要用近景证据表达。</p></div>
 <div class="feature"><b>场景服务于商品</b><p>骑行、健身、城市通勤等背景要强化使用场景，而不是喧宾夺主。</p></div>
 </div>
 </div>
@@ -242,22 +254,36 @@ window.addEventListener('DOMContentLoaded', () => {
       {"id": "sports", "name": "专业运动姿势", "prompt": "跑步、热身或拉伸等运动姿态，展现服装的延伸性与功能性"},
       {"id": "looking_away", "name": "侧面/不看镜头", "prompt": "眼神微向侧方倾斜，带有商业杂志硬照的自然氛围感"}
     ],
-    "sellingPoints": [{"id": "quickdry", "name": "速干", "prompt": "通过轻盈的面料质感与运动场景，直观呈现卓越的速干透气性能"}, {"id": "breathable", "name": "透气", "prompt": "通过轻薄面料的悬垂感与户外环境，直观展现面料的透气呼吸感"}, {"id": "stretch", "name": "弹力", "prompt": "在不拉伸变形商品的前提下，展现面料自然的高弹力与活动舒适度"}, {"id": "water", "name": "防泼水", "prompt": "水珠在面料表面呈圆润珠状滑落的微观细节，展现真实防泼水性能"}, {"id": "warm", "name": "保暖", "prompt": "通过质感饱满的面料与秋冬场景，直观表达良好的保暖防风效果"}, {"id": "pockets", "name": "多口袋", "prompt": "清晰突出展示多功能口袋的位置布局、容量与实用收纳细节"}, {"id": "zipper", "name": "拉链结构", "prompt": "近景特写呈现高质量拉链做工、平整的缝线与精致的边缘处理"}, {"id": "reflective", "name": "反光细节", "prompt": "在特定光线照射下，清晰呈现服装上的反光条与夜间安全设计细节"}, {"id": "lightweight", "name": "轻量", "prompt": "通过轻盈的飘逸感与干净俐落的剪裁，展现极致轻薄无负担的穿感"}, {"id": "oversized", "name": "宽松版型", "prompt": "清晰展示宽松时尚的落肩版型与自然的面料悬垂褶皱"}, {"id": "slim", "name": "修身版型", "prompt": "清晰展现贴合人体工学剪裁的修身线条与干练体型"}],
+    "sellingPoints": [{"id": "quickdry", "name": "速干", "prompt": "通过轻盈的面料质感与运动场景，直观呈现卓越的速干透气性能"}, {"id": "breathable", "name": "透气", "prompt": "通过轻薄面料的悬垂感与户外环境，直观展现面料的透气呼吸感"}, {"id": "stretch", "name": "弹力", "prompt": "在不拉伸变形商品的前提下，展现面料自然的高弹力与活动舒适度"}, {"id": "warm", "name": "保暖", "prompt": "通过质感饱满的面料与秋冬场景，直观表达良好的保暖防风效果"}, {"id": "pockets", "name": "多口袋", "prompt": "清晰突出展示多功能口袋的位置布局、容量与实用收纳细节"}, {"id": "zipper", "name": "拉链结构", "prompt": "近景特写呈现高质量拉链做工、平整的缝线与精致的边缘处理"}, {"id": "lightweight", "name": "轻量", "prompt": "通过轻盈的飘逸感与干净俐落的剪裁，展现极致轻薄无负担的穿感"}, {"id": "oversized", "name": "宽松版型", "prompt": "清晰展示宽松时尚的落肩版型与自然的面料悬垂褶皱"}, {"id": "slim", "name": "修身版型", "prompt": "清晰展现贴合人体工学剪裁的修身线条与干练体型"}, {"id": "universal_fit", "name": "包容性版型", "prompt": "展现宽泛的尺码适配性与多体型友好度，展示服装对不同身材的包容与修饰效果"}, {"id": "versatility", "name": "多场景适配", "prompt": "一件单品在运动、日常、街头等多个场景中的完美演绎，强化实用性"}, {"id": "comfort", "name": "穿着舒适度", "prompt": "通过模特自然放松的表情与肢体语言，直观传达高舒适度与易活动的穿感"}],
     "composition": [{"id": "productfirst", "name": "商品优先", "prompt": "商品作为绝对的视觉核心，背景与搭配仅作衬托不抢眼"}, {"id": "center", "name": "中心构图", "prompt": "干净的居中构图，留有舒适的视觉呼吸感，第一眼辨识度极高"}, {"id": "thirds", "name": "三分法", "prompt": "经典九宫格三分法构图，具备清晰的视觉层级与自然留白"}, {"id": "detailgrid", "name": "主图+细节组合", "prompt": "以一个主视觉视角为主，辅以精致的局部细节展现"}, {"id": "motion", "name": "动作叙事", "name2": "动态场景", "prompt": "带有真实动作叙事感的画面构图，展示服装在实际穿着中的效果"}],
-    "negative": ["严禁改变原商品的原本设计与剪裁", "严禁修改服装颜色或产生色差", "严禁修改、添加或删除原本的Logo、印花、图案及标签", "严禁凭空虚构不存在的口袋、拉链或功能细节", "严禁改变面料材质与纹理表现", "禁止出现畸形的手部、肢体或不协调的人体结构", "禁止多余的手指或多余肢体", "禁止重复出现多个相同的商品", "禁止悬浮不合常理的物品", "禁止出现水印、无关文字或印章", "禁止添加虚假的电商标签或平台 Logo", "禁止过度HDR或饱和度过高的浮光色彩", "禁止塑料感严重的面料质感", "禁止不自然的AI假皮皮肤", "禁止杂乱抢眼的背景干扰"]
+    "modelFitness": [{"id": "lean", "name": "精瘦型", "prompt": "身材精瘦修长，肌肉线条清晰，低体脂率，呈现健康运动感"}, {"id": "athletic", "name": "运动健硕型", "prompt": "肌肉发达，身材匀称健硕，明显的肌肉线条与力量感，运动员气质"}, {"id": "muscular", "name": "健美肌肉型", "prompt": "肌肉发达明显，体型壮硕有力，线条清晰，力量感十足"}, {"id": "average", "name": "普通匀称型", "prompt": "身材普通匀称，比例协调，自然体型，无明显肌肉或脂肪"}, {"id": "relaxed", "name": "放松自然型", "prompt": "自然放松的身体状态，无刻意强调肌肉，呈现真实日常体型"}],
+    "tone": [{"id": "refined", "name": "精致高奢", "prompt": "精致、高端、极简优雅，强调品质感与设计感"}, {"id": "editorial", "name": "时尚杂志风", "prompt": "专业时尚摄影感，艺术性强，具备高级时尚大片质感"}, {"id": "lifestyle", "name": "生活方式风", "prompt": "自然真实的生活场景感，亲切感强，强调实际穿搭意义"}, {"id": "sporty", "name": "专业运动感", "prompt": "专业运动属性突出，动感十足，功能性视觉明显"}, {"id": "street", "name": "街头潮流感", "prompt": "年轻有活力，街头感强，时尚前卫，态度感足"}, {"id": "minimalist", "name": "极简冷调", "prompt": "纯净极简，冷调高级，线条感强，无多余元素"}, {"id": "warm", "name": "温暖质感", "prompt": "柔和温暖的调性，亲切感强，给人舒适放松的感受"}],
+    "action": [{"id": "stationary", "name": "静止展示", "prompt": "静止站立，完整展示服装版型与细节"}, {"id": "walking", "name": "行走", "prompt": "自然步伐行走，展现服装在动态下的流线感"}, {"id": "running", "name": "跑步", "prompt": "跑步姿态，展现速干、透气等运动功能性"}, {"id": "stretching", "name": "拉伸运动", "prompt": "做拉伸或热身动作，展现面料的弹力与延伸性"}, {"id": "cycling", "name": "骑行姿态", "prompt": "骑行站姿或骑行状态，展现骑行服的功能性"}, {"id": "casual_sitting", "name": "随意坐姿", "prompt": "放松的坐姿，展现休闲穿搭中的舒适感"}, {"id": "active_pose", "name": "活跃姿态", "prompt": "充满活力的动态姿态，展现年轻有朝气"}],
+    "scenarioType": [{"id": "studio", "name": "影棚/棚拍", "prompt": "专业摄影棚，可控光影环境"}, {"id": "gym", "name": "健身房", "prompt": "现代健身房环境，运动训练氛围"}, {"id": "outdoor_street", "name": "城市街景", "prompt": "干净整洁的城市街景、街道或广场"}, {"id": "park", "name": "公园/绿地", "prompt": "开放的绿色公园或草地环境"}, {"id": "cycling_road", "name": "骑行道路", "prompt": "开阔的公路或骑行路线"}, {"id": "beach", "name": "海滨度假", "prompt": "明亮阳光的海边、沙滩环境"}, {"id": "mountain", "name": "山地户外", "prompt": "真实的户外山野、爬山环境"}, {"id": "urban_rooftop", "name": "城市屋顶", "prompt": "现代城市屋顶或高楼背景"}, {"id": "lifestyle_home", "name": "生活居家", "prompt": "自然的家居或室内生活场景"}, {"id": "commute", "name": "城市通勤", "prompt": "通勤场景，地铁站、街道、办公楼周边"}],
+    "props": [{"id": "none", "name": "无道具", "prompt": "不添加道具，专注于服装本身"}, {"id": "sports_eq", "name": "运动器材", "prompt": "哑铃、瑜伽垫、运动器械等运动道具"}, {"id": "bike", "name": "自行车", "prompt": "自行车或骑行相关道具"}, {"id": "casual_accessories", "name": "日常配件", "prompt": "背包、手机、钥匙等日常随身物品"}, {"id": "beverage", "name": "饮品/水", "prompt": "运动饮料、水杯等健身相关饮品"}, {"id": "tech", "name": "科技产品", "prompt": "手机、手表、耳机等科技产品"}, {"id": "lifestyle_minimal", "name": "极简生活", "prompt": "简约的日常物品，强调品质感"}],
+    "accessories": [{"id": "none", "name": "无配饰", "prompt": "不添加配饰，专注于服装"}, {"id": "watch", "name": "手表", "prompt": "精致的运动手表或时尚手表，彰显品味"}, {"id": "cap", "name": "帽子/棒球帽", "prompt": "运动帽或棒球帽，增强街头运动感"}, {"id": "sunglasses", "name": "太阳镜", "prompt": "太阳镜，增强户外运动或度假感"}, {"id": "backpack", "name": "背包", "prompt": "运动背包或时尚背包，强调功能性"}, {"id": "wristband", "name": "腕带/护腕", "prompt": "运动腕带或护腕，突出运动属性"}, {"id": "chain", "name": "项链/链条", "prompt": "简约项链或链条饰品，增添时尚气质"}, {"id": "shoes_featured", "name": "突出鞋类", "prompt": "强调配套运动鞋，展现整体搭配"}],
+    "styling": [{"id": "single", "name": "单件展示", "prompt": "仅展示本件服装，不添加其他服饰，专注商品本身"}, {"id": "basic_layer", "name": "基础分层", "prompt": "穿着基础内衣或打底层，展现层次感与修身效果"}, {"id": "contrast_top", "name": "上下搭配", "prompt": "配套搭配下装或裤子，展现完整穿搭效果"}, {"id": "lifestyle_outfit", "name": "生活全搭", "prompt": "配搭完整日常搭配，展现实际穿着场景与生活方式"}, {"id": "monochrome", "name": "同色系搭配", "prompt": "同色系搭配，强调服装本身的设计与色彩"}, {"id": "contrasting", "name": "撞色搭配", "prompt": "对比色搭配，增强视觉冲击力与时尚感"}],
+    "shootingDirective": [{"id": "natural", "name": "自然真实风", "prompt": "追求自然真实的效果，还原真实穿着体验"}, {"id": "professional", "name": "专业棚拍风", "prompt": "专业商业摄影，严谨的打光与构图，极高的工业标准"}, {"id": "editorial", "name": "时尚大片风", "prompt": "时尚杂志级别的艺术指导，具备高级视觉冲击力"}, {"id": "documentary", "name": "纪实风格", "prompt": "纪实风格抓拍，捕捉真实的动作与表情，生活感强"}, {"id": "high_energy", "name": "高能量感", "prompt": "充满活力与朝气的拍摄，动感十足，年轻有为"}, {"id": "minimalist_moody", "name": "极简气质风", "prompt": "极简构图，冷调高级，强调气质而非热闹"}, {"id": "cinematic", "name": "电影感", "prompt": "具备电影般的光影与色调，营造故事感与代入感"}],
+    "negative": ["严禁改变原商品的原本设计与剪裁", "严禁修改服装颜色或产生色差", "严禁修改、添加或删除原本的Logo、印花、图案及标签", "严禁凭空虚构不存在的口袋、拉链或功能细节", "严禁改变面料材质与纹理表现", "禁止出现畸形的手部、肢体或不协调的人体结构", "禁止多余的手指或多余肢体", "禁止重复出现多个相同的商品", "禁止悬浮不合常理的物品", "禁止出现水印、无关文字或印章", "禁止添加虚假的电商标签或平台 Logo", "禁止过度HDR或饱和度过高的浮光色彩", "禁止塑料感严重的面料质感", "禁止不自然的AI假皮皮肤", "禁止杂乱抢眼的背景干扰", "禁止性别特征的过度强调或不适当呈现", "禁止身体部位的不当暴露或不尊重表达", "禁止刻板印象的文化代表性错误", "禁止两个人物的年龄差距显著不当", "禁止场景中出现违法违规的活动", "禁止面部识别失败或表情呆滞不自然", "禁止模特穿着与配饰不搭或明显冲突", "禁止真人模特与虚拟元素混合的混乱表达"]
   };
 
   const CATEGORY_MAP = {
     platform: 'platforms', imageType: 'imageTypes', category: 'categories',
     style: 'styles', background: 'backgrounds', lighting: 'lighting',
     camera: 'camera', composition: 'composition', model: 'models',
-    modelEthnicity: 'modelEthnicities', modelAge: 'modelAges', modelPose: 'modelPoses'
+    modelEthnicity: 'modelEthnicities', modelAge: 'modelAges', modelPose: 'modelPoses',
+    modelFitness: 'modelFitness', tone: 'tone', action: 'action',
+    scenarioType: 'scenarioType', props: 'props', accessories: 'accessories',
+    styling: 'styling', shootingDirective: 'shootingDirective'
   };
 
   const DEFAULTS = {
     platform: 'temu', imageType: 'main', category: 'vest', style: 'clean',
     background: 'white', lighting: 'soft', camera: 'front', composition: 'productfirst',
     model: 'neutral', modelEthnicity: 'caucasian', modelAge: 'adult', modelPose: 'standing',
+    modelFitness: 'athletic', tone: 'lifestyle', action: 'stationary',
+    scenarioType: 'studio', props: 'none', accessories: 'none',
+    styling: 'single', shootingDirective: 'professional',
     sellingPoints: ['quickdry', 'breathable']
   };
 
@@ -289,6 +315,14 @@ window.addEventListener('DOMContentLoaded', () => {
   fill('modelEthnicity', DATA.modelEthnicities, DEFAULTS.modelEthnicity);
   fill('modelAge', DATA.modelAges, DEFAULTS.modelAge);
   fill('modelPose', DATA.modelPoses, DEFAULTS.modelPose);
+  fill('modelFitness', DATA.modelFitness, DEFAULTS.modelFitness);
+  fill('tone', DATA.tone, DEFAULTS.tone);
+  fill('action', DATA.action, DEFAULTS.action);
+  fill('scenarioType', DATA.scenarioType, DEFAULTS.scenarioType);
+  fill('props', DATA.props, DEFAULTS.props);
+  fill('accessories', DATA.accessories, DEFAULTS.accessories);
+  fill('styling', DATA.styling, DEFAULTS.styling);
+  fill('shootingDirective', DATA.shootingDirective, DEFAULTS.shootingDirective);
 
   if ($('sellingPoints')) {
     $('sellingPoints').innerHTML = DATA.sellingPoints.map(x =>
@@ -417,6 +451,14 @@ window.addEventListener('DOMContentLoaded', () => {
       modelEthnicity: $('modelEthnicity').value,
       modelAge: $('modelAge').value,
       modelPose: $('modelPose').value,
+      modelFitness: $('modelFitness').value,
+      tone: $('tone').value,
+      action: $('action').value,
+      scenarioType: $('scenarioType').value,
+      props: $('props').value,
+      accessories: $('accessories').value,
+      styling: $('styling').value,
+      shootingDirective: $('shootingDirective').value,
       ratio: $('ratio').value,
       productInfo: $('productInfo').value
     }),
@@ -429,6 +471,14 @@ window.addEventListener('DOMContentLoaded', () => {
       if(data.modelEthnicity) $('modelEthnicity').value = data.modelEthnicity;
       if(data.modelAge) $('modelAge').value = data.modelAge;
       if(data.modelPose) $('modelPose').value = data.modelPose;
+      if(data.modelFitness) $('modelFitness').value = data.modelFitness;
+      if(data.tone) $('tone').value = data.tone;
+      if(data.action) $('action').value = data.action;
+      if(data.scenarioType) $('scenarioType').value = data.scenarioType;
+      if(data.props) $('props').value = data.props;
+      if(data.accessories) $('accessories').value = data.accessories;
+      if(data.styling) $('styling').value = data.styling;
+      if(data.shootingDirective) $('shootingDirective').value = data.shootingDirective;
       if(data.ratio) $('ratio').value = data.ratio;
       if(data.productInfo !== undefined) $('productInfo').value = data.productInfo;
     }
@@ -459,6 +509,9 @@ window.addEventListener('DOMContentLoaded', () => {
    const p=selected('platform'), t=selected('imageType'), c=selected('category'), s=selected('style');
    const bg=selected('background'), li=selected('lighting'), ca=selected('camera'), co=selected('composition'), m=selected('model');
    const mEth=selected('modelEthnicity'), mAge=selected('modelAge'), mPose=selected('modelPose');
+   const mFit=selected('modelFitness'), tone=selected('tone'), action=selected('action');
+   const scenario=selected('scenarioType'), prop=selected('props'), acc=selected('accessories');
+   const styling=selected('styling'), directive=selected('shootingDirective');
 
    const points = [...document.querySelectorAll('#sellingPoints input:checked')]
      .map(x => DATA.sellingPoints.find(y => y.id === x.value))
@@ -482,7 +535,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
    let modelPromptText = m.id === 'no_model' 
      ? m.prompt 
-     : `${m.prompt}（${mEth.prompt}，${mAge.prompt}，呈现${mPose.prompt}）`;
+     : `${m.prompt}（${mEth.prompt}，${mAge.prompt}，呈现${mPose.prompt}，${mFit.prompt}）`;
 
    let pointText = points.length ? points.map(x=>x.prompt).join('；') : '仅展示商品真实具备的品质，严禁虚构未验证的功能卖点。';
    let ratio = $('ratio') ? $('ratio').value : '1:1';
@@ -502,12 +555,18 @@ ${platformRules()}
 ${taskText}
 
 【视觉方向】
+整体调性：${tone.prompt}
 视觉风格：${s.prompt}
-背景环境：${bg.prompt}
+背景环境：${scenario.prompt}
 灯光效果：${li.prompt}
 镜头角度：${ca.prompt}
 画面构图：${co.prompt}
 模特设定：${modelPromptText}
+${prop.id !== 'none' ? `道具搭配：${prop.prompt}` : ''}
+${acc.id !== 'none' ? `配饰搭配：${acc.prompt}` : ''}
+${styling.id !== 'single' ? `服饰搭配：${styling.prompt}` : ''}
+动作演绎：${action.prompt}
+拍摄风格：${directive.prompt}
 输出比例：${ratio}
 
 【核心卖点视觉化】
@@ -528,7 +587,7 @@ ${extra ? '【卖家自定义补充要求】\n'+extra : ''}
 在生成图像前，请再次确认服装商品与原图保持完全一致。严禁添加、修改或改动任何产品的原有特征，确保买家在1-2秒内即可清晰识别产品本体。`;
 
    $('prompt').textContent = prompt;
-   $('chips').innerHTML = [p.name, t.name, c.name, s.name, bg.name, li.name, ca.name, co.name, mEth.name, mPose.name]
+   $('chips').innerHTML = [p.name, t.name, c.name, s.name, bg.name, li.name, ca.name, co.name, mEth.name, mPose.name, mFit.name, tone.name, action.name, scenario.name, directive.name]
      .filter(x => x)
      .map(x => `<span class="chip">${x}</span>`).join('');
    $('stats').textContent = `已生成：${prompt.length} 字符 · ${p.name} · ${t.name}`;
