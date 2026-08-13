@@ -499,6 +499,45 @@ body {
 
 
 /* =========================
+   PDF 加载优化
+========================= */
+
+/* PDF 卡片特殊样式 */
+.function-card[href*=".pdf"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.function-card[href*=".pdf"]::after {
+    content: '📥';
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.function-card[href*=".pdf"]:hover::after {
+    opacity: 1;
+}
+
+/* 网络状态提示（中国用户） */
+.pdf-link[data-network-slow]::before {
+    content: '⚡ 网络优化加载';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ffe8cc;
+    color: #b35900;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================
    移动端
 ========================= */
 
