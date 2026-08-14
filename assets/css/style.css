@@ -226,6 +226,41 @@ body {
 .hero-description {
     color: #777;
     font-size: 13px;
+    line-height: 1.8;
+}
+
+.hero-subtitle {
+    color: #666;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.category-group {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.category-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.category-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff5a00;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff3eb;
+}
+
+.category-items p {
+    margin: 8px 0;
+    padding-left: 12px;
+    border-left: 3px solid #fff3eb;
+    color: #777;
 }
 
 
