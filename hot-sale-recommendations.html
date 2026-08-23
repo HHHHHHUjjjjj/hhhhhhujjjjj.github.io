@@ -92,7 +92,34 @@
 
         .toolbar-title { font-size: 18px; font-weight: 750; }
 
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .category-tab {
+            padding: 8px 14px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: #fff;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .category-tab:hover,
+        .category-tab.active {
+            border-color: var(--orange);
+            background: var(--orange);
+            color: #fff;
+        }
+
         .back-link:focus-visible,
+        .category-tab:focus-visible,
         .close-button:focus-visible { outline: 3px solid #ffbf91; outline-offset: 3px; }
 
         .gallery {
@@ -188,7 +215,7 @@
     <main>
         <section class="intro">
             <p class="eyebrow">BEST SELLERS · LAST OCTOBER</p>
-            <h1>去年10热卖推荐</h1>
+            <h1>去年10月热卖推荐</h1>
             <p>集中查看去年10月热卖商品图片，点击任意图片即可放大浏览。</p>
         </section>
 
@@ -196,10 +223,11 @@
             <div class="toolbar">
                 <h2 class="toolbar-title" id="galleryTitle">热卖图片</h2>
             </div>
+            <div class="category-tabs" id="categoryTabs" aria-label="热卖分类"></div>
             <div class="gallery" id="gallery">
                 <div class="empty-state" id="emptyState">
-                    <strong>还没有热卖图片</strong>
-                    <span>请将商品图片添加到 assets/hot-sale/ 文件夹，并在页面中登记图片路径。</span>
+                    <strong>正在加载热卖图片</strong>
+                    <span>请稍候，正在读取各分类的商品主图。</span>
                 </div>
             </div>
         </section>
@@ -213,12 +241,14 @@
     <script>
         const gallery = document.getElementById('gallery');
         const emptyState = document.getElementById('emptyState');
+        const categoryTabs = document.getElementById('categoryTabs');
+        const galleryTitle = document.getElementById('galleryTitle');
         const lightbox = document.getElementById('lightbox');
         const lightboxImage = document.getElementById('lightboxImage');
         const closeLightbox = document.getElementById('closeLightbox');
 
-        // Add project images here after placing them in assets/hot-sale/.
-        const imageFiles = [];
+        let categoryData = {};
+        let activeCategory = '';
 
         function openLightbox(src, alt) {
             lightboxImage.src = src;
@@ -239,14 +269,70 @@
                 <button class="image-button" type="button" aria-label="放大查看 ${name}">
                     <img src="${src}" alt="${name}">
                 </button>
-                <figcaption class="image-name">${name}</figcaption>
             `;
             card.querySelector('.image-button').addEventListener('click', () => openLightbox(src, name));
             gallery.appendChild(card);
         }
 
-        imageFiles.forEach(({ src, name }) => addImage(src, name));
-        if (imageFiles.length) emptyState.hidden = true;
+        function renderCategory(category) {
+            activeCategory = category;
+            const images = categoryData[category] || [];
+            galleryTitle.textContent = `${category} · 热卖图片`;
+            gallery.replaceChildren();
+
+            images.forEach(({ image_url: src, rank }) => {
+                addImage(src);
+            });
+
+            emptyState.hidden = images.length > 0;
+            if (!images.length) gallery.appendChild(emptyState);
+
+            categoryTabs.querySelectorAll('.category-tab').forEach((tab) => {
+                tab.classList.toggle('active', tab.dataset.category === activeCategory);
+                tab.setAttribute('aria-selected', tab.dataset.category === activeCategory ? 'true' : 'false');
+            });
+        }
+
+        function renderCategoryTabs() {
+            categoryTabs.replaceChildren();
+            Object.keys(categoryData).forEach((category) => {
+                const tab = document.createElement('button');
+                tab.className = 'category-tab';
+                tab.type = 'button';
+                tab.dataset.category = category;
+                tab.textContent = category;
+                tab.setAttribute('aria-selected', 'false');
+                tab.addEventListener('click', () => renderCategory(category));
+                categoryTabs.appendChild(tab);
+            });
+        }
+
+        async function loadHotSaleData() {
+            try {
+                const response = await fetch('assets/hot-sale/hot-sale.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                const data = await response.json();
+                categoryData = data.hot_sale || {};
+                renderCategoryTabs();
+
+                const firstCategory = Object.keys(categoryData)[0];
+                if (firstCategory) {
+                    renderCategory(firstCategory);
+                } else {
+                    emptyState.hidden = false;
+                    emptyState.querySelector('strong').textContent = '暂无热卖图片';
+                    emptyState.querySelector('span').textContent = 'JSON 中暂时没有可展示的分类。';
+                }
+            } catch (error) {
+                console.error('热卖图片加载失败:', error);
+                emptyState.hidden = false;
+                emptyState.querySelector('strong').textContent = '热卖图片加载失败';
+                emptyState.querySelector('span').textContent = '请通过本地服务器打开页面，并检查 hot-sale.json 是否可访问。';
+            }
+        }
+
+        loadHotSaleData();
 
         closeLightbox.addEventListener('click', hideLightbox);
         lightbox.addEventListener('click', (event) => {

@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="TEMU 招品回品商品展示">
+
+    <title>招品回品 | TEMU 楚古月</title>
+
+    <style>
+        :root {
+            --orange: #ff5a00;
+            --ink: #222;
+            --muted: #707070;
+            --line: #e5e7eb;
+            --page: #f6f7f9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--page);
+            color: var(--ink);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Microsoft YaHei",
+                sans-serif;
+        }
+
+        /* =========================
+           顶部导航
+        ========================= */
+
+        .page-header {
+            background: #fff;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .header-inner,
+        main {
+            width: min(1180px, calc(100% - 32px));
+            margin: 0 auto;
+        }
+
+        .header-inner {
+            min-height: 66px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 16px;
+        }
+
+        .back-link {
+            color: var(--orange);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .brand {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           页面主体
+        ========================= */
+
+        main {
+            padding: 42px 0 64px;
+        }
+
+        .intro {
+            margin-bottom: 28px;
+        }
+
+        .eyebrow {
+            margin: 0 0 8px;
+
+            color: var(--orange);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            margin: 0;
+
+            font-size: clamp(28px, 5vw, 44px);
+
+            line-height: 1.15;
+        }
+
+        .intro p {
+            max-width: 760px;
+
+            margin: 12px 0 0;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+        /* =========================
+           工具栏
+        ========================= */
+
+        .toolbar {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 16px;
+
+            margin-bottom: 18px;
+        }
+
+        .toolbar-title {
+            font-size: 18px;
+            font-weight: 750;
+        }
+
+        /* =========================
+           分类按钮
+        ========================= */
+
+        .category-tabs {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 28px;
+        }
+
+        .category-tab {
+            padding: 8px 14px;
+
+            border: 1px solid var(--line);
+
+            border-radius: 999px;
+
+            background: #fff;
+
+            color: var(--muted);
+
+            cursor: pointer;
+
+            font: inherit;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+        .category-tab:hover,
+        .category-tab.active {
+            border-color: var(--orange);
+
+            background: var(--orange);
+
+            color: #fff;
+        }
+
+        .category-tab:focus-visible,
+        .back-link:focus-visible,
+        .close-button:focus-visible {
+            outline: 3px solid #ffbf91;
+
+            outline-offset: 3px;
+        }
+
+        /* =========================
+           当前分类信息
+        ========================= */
+
+        .category-info {
+            margin-bottom: 18px;
+
+            padding: 18px 20px;
+
+            border: 1px solid var(--line);
+
+            border-radius: 10px;
+
+            background: #fff;
+        }
+
+        .category-info-title {
+            margin: 0 0 10px;
+
+            font-size: 22px;
+
+            font-weight: 800;
+        }
+
+        .category-path {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+            word-break: break-all;
+        }
+
+        .category-path-label {
+            display: block;
+
+            margin-bottom: 6px;
+
+            color: var(--orange);
+
+            font-weight: 800;
+        }
+
+        .category-path-list {
+            margin: 0;
+        }
+
+        .category-path-item {
+            margin-bottom: 6px;
+
+            padding-left: 4px;
+
+            line-height: 1.7;
+
+            word-break: break-all;
+        }
+
+        .category-path-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           商品图片区域
+        ========================= */
+
+        .gallery {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fill,
+                    minmax(220px, 1fr)
+                );
+
+            gap: 16px;
+        }
+
+        /* =========================
+           商品卡片
+        ========================= */
+
+        .image-card {
+            overflow: hidden;
+
+            margin: 0;
+
+            border: 1px solid var(--line);
+
+            border-radius: 10px;
+
+            background: #fff;
+
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, .04);
+        }
+
+        /* =========================
+           商品图片
+        ========================= */
+
+        .image-button {
+            display: block;
+
+            width: 100%;
+
+            padding: 0;
+
+            border: 0;
+
+            background: #f1f2f4;
+
+            cursor: zoom-in;
+        }
+
+        .image-button img {
+            display: block;
+
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+
+            transition:
+                transform .25s ease;
+        }
+
+        .image-button:hover img {
+            transform: scale(1.03);
+        }
+
+        /* =========================
+           Task ID
+        ========================= */
+
+        .task-id {
+            padding: 10px 12px;
+
+            border-top: 1px solid var(--line);
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            text-align: center;
+
+            word-break: break-all;
+        }
+
+        /* =========================
+           空状态
+        ========================= */
+
+        .empty-state {
+            grid-column: 1 / -1;
+
+            padding: 70px 24px;
+
+            border: 1px dashed #d5d9df;
+
+            border-radius: 10px;
+
+            background: #fff;
+
+            text-align: center;
+        }
+
+        .empty-state strong {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: 17px;
+        }
+
+        .empty-state span {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        /* =========================
+           图片放大
+        ========================= */
+
+        .lightbox {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 10;
+
+            display: grid;
+
+            place-items: center;
+
+            padding: 24px;
+
+            background:
+                rgba(15, 18, 22, .88);
+        }
+
+        .lightbox[hidden] {
+            display: none;
+        }
+
+        .lightbox img {
+            max-width:
+                min(1100px, 94vw);
+
+            max-height: 86vh;
+
+            object-fit: contain;
+        }
+
+        .close-button {
+            position: fixed;
+
+            top: 18px;
+
+            right: 22px;
+
+            width: 42px;
+
+            height: 42px;
+
+            border:
+                1px solid rgba(255,255,255,.45);
+
+            border-radius: 50%;
+
+            background:
+                rgba(0,0,0,.25);
+
+            color: #fff;
+
+            cursor: pointer;
+
+            font-size: 25px;
+
+            line-height: 1;
+        }
+
+        /* =========================
+           手机端
+        ========================= */
+
+        @media (max-width: 560px) {
+
+            .header-inner,
+            main {
+                width:
+                    min(
+                        100% - 24px,
+                        1180px
+                    );
+            }
+
+            main {
+                padding-top: 30px;
+            }
+
+            .gallery {
+                grid-template-columns:
+                    repeat(
+                        2,
+                        minmax(0, 1fr)
+                    );
+
+                gap: 10px;
+            }
+
+            .category-info {
+                padding: 14px;
+            }
+
+            .category-info-title {
+                font-size: 18px;
+            }
+
+            .category-path {
+                font-size: 11px;
+            }
+
+            .category-path-item {
+                line-height: 1.6;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     顶部导航
+========================= -->
+
+<header class="page-header">
+
+    <div class="header-inner">
+
+        <a
+            class="back-link"
+            href="index.html">
+
+            ← 返回首页
+
+        </a>
+
+        <span class="brand">
+
+            TEMU 楚古月 · 招品回品
+
+        </span>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- =========================
+         页面标题
+    ========================= -->
+
+    <section class="intro">
+
+        <p class="eyebrow">
+
+            PRODUCT RECRUITMENT · RECYCLE
+
+        </p>
+
+        <h1>
+
+            招品回品
+
+        </h1>
+
+        <p>
+
+            集中查看招品回品商品图片及对应上品类目。
+
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         商品区域
+    ========================= -->
+
+    <section aria-labelledby="galleryTitle">
+
+        <div class="toolbar">
+
+            <h2
+                class="toolbar-title"
+                id="galleryTitle">
+
+                招品回品商品
+
+            </h2>
+
+        </div>
+
+
+        <!-- 分类按钮 -->
+
+        <div
+            class="category-tabs"
+            id="categoryTabs"
+            aria-label="招品回品分类">
+
+        </div>
+
+
+        <!-- =========================
+             当前分类 + 上品路径
+        ========================= -->
+
+        <div
+            class="category-info"
+            id="categoryInfo"
+            hidden>
+
+            <h3
+                class="category-info-title"
+                id="currentCategory">
+
+            </h3>
+
+            <div
+                class="category-path"
+                id="currentCategoryPath">
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             商品图片
+        ========================= -->
+
+        <div
+            class="gallery"
+            id="gallery">
+
+            <div
+                class="empty-state"
+                id="emptyState">
+
+                <strong>
+
+                    正在加载招品回品商品
+
+                </strong>
+
+                <span>
+
+                    请稍候，正在读取商品数据。
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     图片放大
+========================= -->
+
+<div
+    class="lightbox"
+    id="lightbox"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="图片预览">
+
+    <button
+        class="close-button"
+        id="closeLightbox"
+        type="button"
+        aria-label="关闭图片预览">
+
+        ×
+
+    </button>
+
+    <img
+        id="lightboxImage"
+        alt="商品放大预览">
+
+</div>
+
+
+<script>
+
+    /* =========================
+       获取页面元素
+    ========================= */
+
+    const gallery =
+        document.getElementById(
+            'gallery'
+        );
+
+    const emptyState =
+        document.getElementById(
+            'emptyState'
+        );
+
+    const categoryTabs =
+        document.getElementById(
+            'categoryTabs'
+        );
+
+    const galleryTitle =
+        document.getElementById(
+            'galleryTitle'
+        );
+
+    const categoryInfo =
+        document.getElementById(
+            'categoryInfo'
+        );
+
+    const currentCategory =
+        document.getElementById(
+            'currentCategory'
+        );
+
+    const currentCategoryPath =
+        document.getElementById(
+            'currentCategoryPath'
+        );
+
+    const lightbox =
+        document.getElementById(
+            'lightbox'
+        );
+
+    const lightboxImage =
+        document.getElementById(
+            'lightboxImage'
+        );
+
+    const closeLightbox =
+        document.getElementById(
+            'closeLightbox'
+        );
+
+
+    /* =========================
+       数据
+    ========================= */
+
+    let categoryData = {};
+
+    let activeCategory = '';
+
+
+    /* =========================
+       HTML 转义
+    ========================= */
+
+    function escapeHtml(value) {
+
+        return String(value || '')
+            .replace(
+                /&/g,
+                '&amp;'
+            )
+            .replace(
+                /</g,
+                '&lt;'
+            )
+            .replace(
+                />/g,
+                '&gt;'
+            )
+            .replace(
+                /"/g,
+                '&quot;'
+            )
+            .replace(
+                /'/g,
+                '&#039;'
+            );
+
+    }
+
+
+    /* =========================
+       打开图片
+    ========================= */
+
+    function openLightbox(
+        src,
+        alt
+    ) {
+
+        lightboxImage.src =
+            src;
+
+        lightboxImage.alt =
+            alt || '商品图片';
+
+        lightbox.hidden =
+            false;
+
+        closeLightbox.focus();
+
+    }
+
+
+    /* =========================
+       关闭图片
+    ========================= */
+
+    function hideLightbox() {
+
+        lightbox.hidden =
+            true;
+
+        lightboxImage.removeAttribute(
+            'src'
+        );
+
+    }
+
+
+    /* =========================
+       创建商品图片卡片
+       
+       图片下面显示 Task ID
+    ========================= */
+
+    function addImage(item) {
+
+        const card =
+            document.createElement(
+                'figure'
+            );
+
+
+        card.className =
+            'image-card';
+
+
+        const imageUrl =
+            item.image_url || '';
+
+
+        const categoryName =
+            item.category_name ||
+            '商品';
+
+
+        const taskId =
+            item.task_id ||
+            '暂无任务ID';
+
+
+        card.innerHTML = `
+
+            <button
+                class="image-button"
+                type="button"
+                aria-label="放大查看 ${escapeHtml(categoryName)}">
+
+                <img
+                    src="${escapeHtml(imageUrl)}"
+                    alt="${escapeHtml(categoryName)}"
+                    loading="lazy">
+
+            </button>
+
+
+            <div class="task-id">
+
+                Task ID：${escapeHtml(taskId)}
+
+            </div>
+
+        `;
+
+
+        card
+            .querySelector(
+                '.image-button'
+            )
+            .addEventListener(
+                'click',
+                () => {
+
+                    openLightbox(
+                        imageUrl,
+                        categoryName
+                    );
+
+                }
+            );
+
+
+        gallery.appendChild(
+            card
+        );
+
+    }
+
+
+    /* =========================
+       获取当前分类的所有路径
+       
+       category_path 是数组
+    ========================= */
+
+    function getCategoryPath(images) {
+
+        if (
+            !images ||
+            !images.length
+        ) {
+
+            return [];
+
+        }
+
+
+        /*
+         * 找到当前分类中所有商品的
+         * category_path
+         *
+         * 并合并成一个数组
+         */
+
+        const allPaths = [];
+
+
+        images.forEach(
+            (item) => {
+
+                if (
+                    Array.isArray(
+                        item.category_path
+                    )
+                ) {
+
+                    item.category_path.forEach(
+                        (path) => {
+
+                            if (
+                                path &&
+                                !allPaths.includes(path)
+                            ) {
+
+                                allPaths.push(
+                                    path
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+
+            }
+        );
+
+
+        return allPaths;
+
+    }
+
+
+    /* =========================
+       渲染当前分类
+    ========================= */
+
+    function renderCategory(
+        category
+    ) {
+
+        activeCategory =
+            category;
+
+
+        const images =
+            categoryData[
+                category
+            ] || [];
+
+
+        /* 更新标题 */
+
+        galleryTitle.textContent =
+            `${category} · 招品回品`;
+
+
+        /* 当前分类名称 */
+
+        currentCategory.textContent =
+            category;
+
+
+        /* 获取当前分类所有上品路径 */
+
+        const categoryPaths =
+            getCategoryPath(
+                images
+            );
+
+
+        /*
+         * 显示上品路径
+         */
+
+        if (
+            categoryPaths.length
+        ) {
+
+            currentCategoryPath.innerHTML = `
+
+                <span
+                    class="category-path-label">
+
+                    上品路径：
+
+                </span>
+
+
+                <div
+                    class="category-path-list">
+
+                    ${categoryPaths
+                        .map(
+                            (path, index) => `
+
+                                <div
+                                    class="category-path-item">
+
+                                    ${index + 1}.
+                                    ${escapeHtml(path)}
+
+                                </div>
+
+                            `
+                        )
+                        .join('')}
+
+                </div>
+
+            `;
+
+        } else {
+
+            currentCategoryPath.innerHTML = `
+
+                <span
+                    class="category-path-label">
+
+                    上品路径：
+
+                </span>
+
+                暂无对应上品路径
+
+            `;
+
+        }
+
+
+        /* 显示分类信息 */
+
+        categoryInfo.hidden =
+            false;
+
+
+        /* 清空图片 */
+
+        gallery.replaceChildren();
+
+
+        /* 加载图片 */
+
+        images.forEach(
+            (item) => {
+
+                addImage(item);
+
+            }
+        );
+
+
+        /* 空状态 */
+
+        emptyState.hidden =
+            images.length > 0;
+
+
+        if (
+            !images.length
+        ) {
+
+            gallery.appendChild(
+                emptyState
+            );
+
+        }
+
+
+        /* 更新分类按钮 */
+
+        categoryTabs
+            .querySelectorAll(
+                '.category-tab'
+            )
+            .forEach(
+                (tab) => {
+
+                    const isActive =
+                        tab.dataset.category ===
+                        activeCategory;
+
+
+                    tab.classList.toggle(
+                        'active',
+                        isActive
+                    );
+
+
+                    tab.setAttribute(
+                        'aria-selected',
+                        isActive
+                            ? 'true'
+                            : 'false'
+                    );
+
+                }
+            );
+
+    }
+
+
+    /* =========================
+       创建分类按钮
+       
+       按 category_name 自动分类
+    ========================= */
+
+    function renderCategoryTabs() {
+
+        categoryTabs.replaceChildren();
+
+
+        Object.keys(
+            categoryData
+        ).forEach(
+            (category) => {
+
+                const tab =
+                    document.createElement(
+                        'button'
+                    );
+
+
+                tab.className =
+                    'category-tab';
+
+
+                tab.type =
+                    'button';
+
+
+                tab.dataset.category =
+                    category;
+
+
+                tab.textContent =
+                    category;
+
+
+                tab.setAttribute(
+                    'aria-selected',
+                    'false'
+                );
+
+
+                tab.addEventListener(
+                    'click',
+                    () => {
+
+                        renderCategory(
+                            category
+                        );
+
+                    }
+                );
+
+
+                categoryTabs.appendChild(
+                    tab
+                );
+
+            }
+        );
+
+    }
+
+
+    /* =========================
+       加载 JSON
+       
+       文件：
+       assets/recycle/recycle.json
+    ========================= */
+
+    async function loadRecycleData() {
+
+        try {
+
+            const response =
+                await fetch(
+                    'assets/recycle/recycle.json'
+                );
+
+
+            if (!response.ok) {
+
+                throw new Error(
+                    `HTTP ${response.status}`
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            /*
+             * 支持：
+             *
+             * {
+             *   "recycle": [...]
+             * }
+             *
+             * 也支持直接：
+             *
+             * [...]
+             */
+
+            const items =
+                Array.isArray(data)
+                    ? data
+                    : (
+                        data.recycle ||
+                        []
+                    );
+
+
+            /*
+             * 按 category_name 分类
+             */
+
+            categoryData = {};
+
+
+            items.forEach(
+                (item) => {
+
+                    const category =
+                        item.category_name ||
+                        '其他';
+
+
+                    if (
+                        !categoryData[
+                            category
+                        ]
+                    ) {
+
+                        categoryData[
+                            category
+                        ] = [];
+
+                    }
+
+
+                    categoryData[
+                        category
+                    ].push(
+                        item
+                    );
+
+                }
+            );
+
+
+            /* 创建分类按钮 */
+
+            renderCategoryTabs();
+
+
+            /* 默认打开第一个分类 */
+
+            const firstCategory =
+                Object.keys(
+                    categoryData
+                )[0];
+
+
+            if (
+                firstCategory
+            ) {
+
+                renderCategory(
+                    firstCategory
+                );
+
+            } else {
+
+                emptyState.hidden =
+                    false;
+
+
+                emptyState.querySelector(
+                    'strong'
+                ).textContent =
+                    '暂无招品回品商品';
+
+
+                emptyState.querySelector(
+                    'span'
+                ).textContent =
+                    'recycle.json 中暂时没有可展示的商品。';
+
+            }
+
+
+        } catch (error) {
+
+            console.error(
+                '招品回品数据加载失败：',
+                error
+            );
+
+
+            emptyState.hidden =
+                false;
+
+
+            emptyState.querySelector(
+                'strong'
+            ).textContent =
+                '招品回品加载失败';
+
+
+            emptyState.querySelector(
+                'span'
+            ).textContent =
+                '请检查 assets/recycle/recycle.json 是否存在，以及 JSON 格式是否正确。';
+
+        }
+
+    }
+
+
+    /* =========================
+       初始化
+    ========================= */
+
+    loadRecycleData();
+
+
+    /* =========================
+       关闭图片
+    ========================= */
+
+    closeLightbox.addEventListener(
+        'click',
+        hideLightbox
+    );
+
+
+    lightbox.addEventListener(
+        'click',
+        (event) => {
+
+            if (
+                event.target ===
+                lightbox
+            ) {
+
+                hideLightbox();
+
+            }
+
+        }
+    );
+
+
+    /* =========================
+       ESC关闭
+    ========================= */
+
+    document.addEventListener(
+        'keydown',
+        (event) => {
+
+            if (
+                event.key === 'Escape' &&
+                !lightbox.hidden
+            ) {
+
+                hideLightbox();
+
+            }
+
+        }
+    );
+
+</script>
+
+</body>
+</html>
