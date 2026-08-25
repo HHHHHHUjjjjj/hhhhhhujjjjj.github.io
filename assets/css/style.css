@@ -615,3 +615,294 @@ body {
         padding: 14px;
     }
 }
+/* =========================
+   招商类目专业介绍
+========================= */
+
+.category-intro {
+    margin: 12px 0 20px;
+    padding: 18px 20px;
+    background: #f8f9fc;
+    border: 1px solid #e8eaf0;
+    border-left: 3px solid #3a47d5;
+    border-radius: 10px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.intro-headline {
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.category-intro > p {
+    margin: 0;
+}
+
+.category-intro strong {
+    color: #222;
+    font-weight: 600;
+}
+
+.intro-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid #e8eaf0;
+}
+
+.intro-label {
+    flex: 0 0 68px;
+    color: #3a47d5;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.intro-section p {
+    flex: 1;
+    margin: 0;
+}
+
+.intro-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    flex: 1;
+}
+
+.intro-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 9px;
+    background: #fff;
+    border: 1px solid #e1e4ec;
+    border-radius: 5px;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.brand-links {
+    line-height: 2;
+}
+
+.brand-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #3a47d5;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed #3a47d5;
+    transition: all 0.2s ease;
+}
+
+.brand-links a:hover {
+    color: #e84b00;
+    border-bottom-color: #e84b00;
+}
+
+/* 招商路径 */
+
+.category-items {
+    margin-top: 10px;
+}
+
+.category-items p {
+    margin: 7px 0;
+}
+
+
+/* =========================
+   移动端
+========================= */
+
+@media (max-width: 640px) {
+
+    .category-intro {
+        padding: 15px;
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .intro-headline {
+        font-size: 14px;
+    }
+
+    .intro-section {
+        display: block;
+    }
+
+    .intro-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .intro-tags {
+        gap: 5px;
+    }
+
+    .intro-tags span {
+        font-size: 11px;
+        padding: 3px 7px;
+    }
+
+    .brand-links a {
+        margin-right: 7px;
+    }
+
+}
+/* =========================
+   上品路径推荐
+========================= */
+
+.product-path-section {
+    margin: 0 0 30px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+}
+
+.product-path-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.product-path-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.product-path-subtitle {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.style-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.style-tab {
+    padding: 7px 13px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: #f8f9fa;
+    color: #555;
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.style-tab:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.style-tab.active {
+    border-color: var(--orange);
+    background: var(--orange);
+    color: #fff;
+}
+
+.path-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.path-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 12px;
+    border: 1px solid #eceef1;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: all .2s ease;
+}
+
+.path-item:hover {
+    border-color: #ffb58a;
+    background: #fffaf7;
+}
+
+.path-text {
+    flex: 1;
+    min-width: 0;
+    color: #444;
+    font-size: 12px;
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+.path-copy-btn {
+    flex: 0 0 auto;
+    padding: 5px 11px;
+    border: 0;
+    border-radius: 6px;
+    background: #fff0e8;
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.path-copy-btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.path-copy-btn.copied {
+    background: #11998e;
+    color: #fff;
+}
+
+.path-empty {
+    padding: 25px;
+    border: 1px dashed #d5d9df;
+    border-radius: 8px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 560px) {
+
+    .product-path-section {
+        padding: 16px;
+    }
+
+    .product-path-header {
+        align-items: flex-start;
+    }
+
+    .path-item {
+        align-items: flex-start;
+    }
+
+    .path-copy-btn {
+        padding: 5px 8px;
+    }
+
+    .path-text {
+        font-size: 11px;
+    }
+}

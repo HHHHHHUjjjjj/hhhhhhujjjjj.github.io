@@ -9,23 +9,35 @@
     <title>招品回品 | TEMU 楚古月</title>
 
     <style>
+
         :root {
             --orange: #ff5a00;
+            --orange-light: #fff3ed;
+            --orange-border: #ffb38a;
+
             --ink: #222;
             --muted: #707070;
+
             --line: #e5e7eb;
+
             --page: #f6f7f9;
         }
+
 
         * {
             box-sizing: border-box;
         }
 
+
         body {
             margin: 0;
+
             min-height: 100vh;
+
             background: var(--page);
+
             color: var(--ink);
+
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -34,46 +46,66 @@
                 sans-serif;
         }
 
+
         /* =========================
            顶部导航
         ========================= */
 
         .page-header {
             background: #fff;
-            border-bottom: 1px solid var(--line);
+
+            border-bottom:
+                1px solid var(--line);
         }
+
 
         .header-inner,
         main {
-            width: min(1180px, calc(100% - 32px));
+            width:
+                min(
+                    1180px,
+                    calc(100% - 32px)
+                );
+
             margin: 0 auto;
         }
+
 
         .header-inner {
             min-height: 66px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
 
             gap: 16px;
         }
 
+
         .back-link {
             color: var(--orange);
+
             font-size: 13px;
+
             font-weight: 700;
+
             text-decoration: none;
         }
+
 
         .back-link:hover {
             text-decoration: underline;
         }
 
+
         .brand {
             color: var(--muted);
+
             font-size: 12px;
         }
+
 
         /* =========================
            页面主体
@@ -83,9 +115,11 @@
             padding: 42px 0 64px;
         }
 
+
         .intro {
             margin-bottom: 28px;
         }
+
 
         .eyebrow {
             margin: 0 0 8px;
@@ -93,18 +127,26 @@
             color: var(--orange);
 
             font-size: 11px;
+
             font-weight: 800;
 
             letter-spacing: 1.5px;
         }
 
+
         h1 {
             margin: 0;
 
-            font-size: clamp(28px, 5vw, 44px);
+            font-size:
+                clamp(
+                    28px,
+                    5vw,
+                    44px
+                );
 
             line-height: 1.15;
         }
+
 
         .intro p {
             max-width: 760px;
@@ -114,7 +156,10 @@
             color: var(--muted);
 
             font-size: 14px;
+
+            line-height: 1.7;
         }
+
 
         /* =========================
            工具栏
@@ -124,6 +169,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: space-between;
 
             gap: 16px;
@@ -131,10 +177,13 @@
             margin-bottom: 18px;
         }
 
+
         .toolbar-title {
             font-size: 18px;
+
             font-weight: 750;
         }
+
 
         /* =========================
            分类按钮
@@ -150,10 +199,12 @@
             margin-bottom: 28px;
         }
 
+
         .category-tab {
             padding: 8px 14px;
 
-            border: 1px solid var(--line);
+            border:
+                1px solid var(--line);
 
             border-radius: 999px;
 
@@ -168,7 +219,11 @@
             font-size: 13px;
 
             font-weight: 700;
+
+            transition:
+                all .18s ease;
         }
+
 
         .category-tab:hover,
         .category-tab.active {
@@ -179,13 +234,17 @@
             color: #fff;
         }
 
+
         .category-tab:focus-visible,
         .back-link:focus-visible,
-        .close-button:focus-visible {
-            outline: 3px solid #ffbf91;
+        .close-button:focus-visible,
+        .copy-path-btn:focus-visible {
+            outline:
+                3px solid #ffbf91;
 
             outline-offset: 3px;
         }
+
 
         /* =========================
            当前分类信息
@@ -196,20 +255,27 @@
 
             padding: 18px 20px;
 
-            border: 1px solid var(--line);
+            border:
+                1px solid var(--line);
 
             border-radius: 10px;
 
             background: #fff;
         }
 
+
         .category-info-title {
-            margin: 0 0 10px;
+            margin: 0 0 14px;
 
             font-size: 22px;
 
             font-weight: 800;
         }
+
+
+        /* =========================
+           上品路径区域
+        ========================= */
 
         .category-path {
             margin: 0;
@@ -223,33 +289,138 @@
             word-break: break-all;
         }
 
+
         .category-path-label {
             display: block;
 
-            margin-bottom: 6px;
+            margin-bottom: 10px;
 
             color: var(--orange);
 
             font-weight: 800;
+
+            font-size: 13px;
         }
 
+
         .category-path-list {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+
             margin: 0;
         }
 
-        .category-path-item {
-            margin-bottom: 6px;
 
-            padding-left: 4px;
+        /*
+         * 每一条路径 + 复制按钮
+         */
+
+        .category-path-item {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 10px;
+
+            padding: 10px 12px;
+
+            border:
+                1px solid #edf0f2;
+
+            border-radius: 8px;
+
+            background: #fafafa;
+
+            transition:
+                border-color .18s ease,
+                background .18s ease;
+        }
+
+
+        .category-path-item:hover {
+            border-color:
+                var(--orange-border);
+
+            background:
+                var(--orange-light);
+        }
+
+
+        /*
+         * 路径文字
+         */
+
+        .category-path-text {
+            flex: 1;
+
+            min-width: 0;
+
+            color: #555;
 
             line-height: 1.7;
 
             word-break: break-all;
         }
 
-        .category-path-item:last-child {
-            margin-bottom: 0;
+
+        /*
+         * 复制按钮
+         */
+
+        .copy-path-btn {
+            flex:
+                0 0 auto;
+
+            padding: 5px 11px;
+
+            border:
+                1px solid var(--orange-border);
+
+            border-radius: 6px;
+
+            background: #fff;
+
+            color: var(--orange);
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+
+            transition:
+                all .18s ease;
         }
+
+
+        .copy-path-btn:hover {
+            background: var(--orange);
+
+            border-color: var(--orange);
+
+            color: #fff;
+        }
+
+
+        /*
+         * 已复制状态
+         */
+
+        .copy-path-btn.copied {
+            border-color: #22a06b;
+
+            background: #22a06b;
+
+            color: #fff;
+        }
+
 
         /* =========================
            商品图片区域
@@ -267,6 +438,7 @@
             gap: 16px;
         }
 
+
         /* =========================
            商品卡片
         ========================= */
@@ -276,15 +448,18 @@
 
             margin: 0;
 
-            border: 1px solid var(--line);
+            border:
+                1px solid var(--line);
 
             border-radius: 10px;
 
             background: #fff;
 
             box-shadow:
-                0 2px 8px rgba(0, 0, 0, .04);
+                0 2px 8px
+                rgba(0, 0, 0, .04);
         }
+
 
         /* =========================
            商品图片
@@ -304,6 +479,7 @@
             cursor: zoom-in;
         }
 
+
         .image-button img {
             display: block;
 
@@ -317,9 +493,11 @@
                 transform .25s ease;
         }
 
+
         .image-button:hover img {
             transform: scale(1.03);
         }
+
 
         /* =========================
            Task ID
@@ -328,7 +506,8 @@
         .task-id {
             padding: 10px 12px;
 
-            border-top: 1px solid var(--line);
+            border-top:
+                1px solid var(--line);
 
             color: var(--muted);
 
@@ -341,6 +520,7 @@
             word-break: break-all;
         }
 
+
         /* =========================
            空状态
         ========================= */
@@ -350,7 +530,8 @@
 
             padding: 70px 24px;
 
-            border: 1px dashed #d5d9df;
+            border:
+                1px dashed #d5d9df;
 
             border-radius: 10px;
 
@@ -358,6 +539,7 @@
 
             text-align: center;
         }
+
 
         .empty-state strong {
             display: block;
@@ -367,11 +549,13 @@
             font-size: 17px;
         }
 
+
         .empty-state span {
             color: var(--muted);
 
             font-size: 13px;
         }
+
 
         /* =========================
            图片放大
@@ -394,9 +578,11 @@
                 rgba(15, 18, 22, .88);
         }
 
+
         .lightbox[hidden] {
             display: none;
         }
+
 
         .lightbox img {
             max-width:
@@ -406,6 +592,7 @@
 
             object-fit: contain;
         }
+
 
         .close-button {
             position: fixed;
@@ -419,7 +606,8 @@
             height: 42px;
 
             border:
-                1px solid rgba(255,255,255,.45);
+                1px solid
+                rgba(255,255,255,.45);
 
             border-radius: 50%;
 
@@ -434,6 +622,7 @@
 
             line-height: 1;
         }
+
 
         /* =========================
            手机端
@@ -450,9 +639,11 @@
                     );
             }
 
+
             main {
                 padding-top: 30px;
             }
+
 
             .gallery {
                 grid-template-columns:
@@ -464,20 +655,41 @@
                 gap: 10px;
             }
 
+
             .category-info {
                 padding: 14px;
             }
+
 
             .category-info-title {
                 font-size: 18px;
             }
 
+
             .category-path {
                 font-size: 11px;
             }
 
+
             .category-path-item {
+                gap: 6px;
+
+                padding: 8px;
+
                 line-height: 1.6;
+            }
+
+
+            .category-path-text {
+                line-height: 1.6;
+            }
+
+
+            .copy-path-btn {
+                padding:
+                    4px 8px;
+
+                font-size: 11px;
             }
 
         }
@@ -485,7 +697,9 @@
     </style>
 </head>
 
+
 <body>
+
 
 <!-- =========================
      顶部导航
@@ -503,6 +717,7 @@
 
         </a>
 
+
         <span class="brand">
 
             TEMU 楚古月 · 招品回品
@@ -514,7 +729,9 @@
 </header>
 
 
+
 <main>
+
 
     <!-- =========================
          页面标题
@@ -528,11 +745,13 @@
 
         </p>
 
+
         <h1>
 
             招品回品
 
         </h1>
+
 
         <p>
 
@@ -543,11 +762,13 @@
     </section>
 
 
+
     <!-- =========================
          商品区域
     ========================= -->
 
     <section aria-labelledby="galleryTitle">
+
 
         <div class="toolbar">
 
@@ -562,7 +783,10 @@
         </div>
 
 
-        <!-- 分类按钮 -->
+
+        <!-- =========================
+             分类按钮
+        ========================= -->
 
         <div
             class="category-tabs"
@@ -570,6 +794,7 @@
             aria-label="招品回品分类">
 
         </div>
+
 
 
         <!-- =========================
@@ -581,11 +806,13 @@
             id="categoryInfo"
             hidden>
 
+
             <h3
                 class="category-info-title"
                 id="currentCategory">
 
             </h3>
+
 
             <div
                 class="category-path"
@@ -593,7 +820,9 @@
 
             </div>
 
+
         </div>
+
 
 
         <!-- =========================
@@ -604,9 +833,11 @@
             class="gallery"
             id="gallery">
 
+
             <div
                 class="empty-state"
                 id="emptyState">
+
 
                 <strong>
 
@@ -614,11 +845,13 @@
 
                 </strong>
 
+
                 <span>
 
                     请稍候，正在读取商品数据。
 
                 </span>
+
 
             </div>
 
@@ -627,6 +860,7 @@
     </section>
 
 </main>
+
 
 
 <!-- =========================
@@ -641,6 +875,7 @@
     aria-modal="true"
     aria-label="图片预览">
 
+
     <button
         class="close-button"
         id="closeLightbox"
@@ -651,6 +886,7 @@
 
     </button>
 
+
     <img
         id="lightboxImage"
         alt="商品放大预览">
@@ -658,7 +894,9 @@
 </div>
 
 
+
 <script>
+
 
     /* =========================
        获取页面元素
@@ -669,50 +907,60 @@
             'gallery'
         );
 
+
     const emptyState =
         document.getElementById(
             'emptyState'
         );
+
 
     const categoryTabs =
         document.getElementById(
             'categoryTabs'
         );
 
+
     const galleryTitle =
         document.getElementById(
             'galleryTitle'
         );
+
 
     const categoryInfo =
         document.getElementById(
             'categoryInfo'
         );
 
+
     const currentCategory =
         document.getElementById(
             'currentCategory'
         );
+
 
     const currentCategoryPath =
         document.getElementById(
             'currentCategoryPath'
         );
 
+
     const lightbox =
         document.getElementById(
             'lightbox'
         );
+
 
     const lightboxImage =
         document.getElementById(
             'lightboxImage'
         );
 
+
     const closeLightbox =
         document.getElementById(
             'closeLightbox'
         );
+
 
 
     /* =========================
@@ -722,6 +970,7 @@
     let categoryData = {};
 
     let activeCategory = '';
+
 
 
     /* =========================
@@ -755,6 +1004,7 @@
     }
 
 
+
     /* =========================
        打开图片
     ========================= */
@@ -767,15 +1017,20 @@
         lightboxImage.src =
             src;
 
+
         lightboxImage.alt =
-            alt || '商品图片';
+            alt ||
+            '商品图片';
+
 
         lightbox.hidden =
             false;
 
+
         closeLightbox.focus();
 
     }
+
 
 
     /* =========================
@@ -787,11 +1042,156 @@
         lightbox.hidden =
             true;
 
+
         lightboxImage.removeAttribute(
             'src'
         );
 
     }
+
+
+
+    /* =========================
+       复制上品路径
+    ========================= */
+
+    async function copyCategoryPath(
+        path,
+        button
+    ) {
+
+        try {
+
+            /*
+             * 优先使用现代 Clipboard API
+             */
+
+            if (
+                navigator.clipboard &&
+                window.isSecureContext
+            ) {
+
+                await navigator.clipboard.writeText(
+                    path
+                );
+
+            } else {
+
+                /*
+                 * GitHub Pages / 部分浏览器
+                 * 的备用复制方案
+                 */
+
+                const textarea =
+                    document.createElement(
+                        'textarea'
+                    );
+
+                textarea.value =
+                    path;
+
+                textarea.style.position =
+                    'fixed';
+
+                textarea.style.left =
+                    '-9999px';
+
+                textarea.style.top =
+                    '-9999px';
+
+                document.body.appendChild(
+                    textarea
+                );
+
+                textarea.focus();
+
+                textarea.select();
+
+                textarea.setSelectionRange(
+                    0,
+                    textarea.value.length
+                );
+
+                const success =
+                    document.execCommand(
+                        'copy'
+                    );
+
+                textarea.remove();
+
+                if (!success) {
+
+                    throw new Error(
+                        '复制失败'
+                    );
+
+                }
+
+            }
+
+
+            /*
+             * 修改按钮状态
+             */
+
+            const originalText =
+                button.textContent;
+
+
+            button.textContent =
+                '✓ 已复制';
+
+
+            button.classList.add(
+                'copied'
+            );
+
+
+            /*
+             * 1.5 秒后恢复
+             */
+
+            setTimeout(
+                () => {
+
+                    button.textContent =
+                        originalText;
+
+                    button.classList.remove(
+                        'copied'
+                    );
+
+                },
+                1500
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                '复制失败：',
+                error
+            );
+
+
+            button.textContent =
+                '复制失败';
+
+
+            setTimeout(
+                () => {
+
+                    button.textContent =
+                        '复制';
+
+                },
+                1500
+            );
+
+        }
+
+    }
+
 
 
     /* =========================
@@ -813,7 +1213,8 @@
 
 
         const imageUrl =
-            item.image_url || '';
+            item.image_url ||
+            '';
 
 
         const categoryName =
@@ -843,7 +1244,8 @@
 
             <div class="task-id">
 
-                Task ID：${escapeHtml(taskId)}
+                Task ID：
+                ${escapeHtml(taskId)}
 
             </div>
 
@@ -874,13 +1276,16 @@
     }
 
 
+
     /* =========================
        获取当前分类的所有路径
        
        category_path 是数组
     ========================= */
 
-    function getCategoryPath(images) {
+    function getCategoryPath(
+        images
+    ) {
 
         if (
             !images ||
@@ -891,13 +1296,6 @@
 
         }
 
-
-        /*
-         * 找到当前分类中所有商品的
-         * category_path
-         *
-         * 并合并成一个数组
-         */
 
         const allPaths = [];
 
@@ -916,7 +1314,9 @@
 
                             if (
                                 path &&
-                                !allPaths.includes(path)
+                                !allPaths.includes(
+                                    path
+                                )
                             ) {
 
                                 allPaths.push(
@@ -939,6 +1339,7 @@
     }
 
 
+
     /* =========================
        渲染当前分类
     ========================= */
@@ -957,19 +1358,27 @@
             ] || [];
 
 
-        /* 更新标题 */
+        /* =========================
+           更新标题
+        ========================= */
 
         galleryTitle.textContent =
             `${category} · 招品回品`;
 
 
-        /* 当前分类名称 */
+
+        /* =========================
+           当前分类名称
+        ========================= */
 
         currentCategory.textContent =
             category;
 
 
-        /* 获取当前分类所有上品路径 */
+
+        /* =========================
+           获取上品路径
+        ========================= */
 
         const categoryPaths =
             getCategoryPath(
@@ -977,9 +1386,10 @@
             );
 
 
-        /*
-         * 显示上品路径
-         */
+
+        /* =========================
+           显示上品路径
+        ========================= */
 
         if (
             categoryPaths.length
@@ -1005,8 +1415,23 @@
                                 <div
                                     class="category-path-item">
 
-                                    ${index + 1}.
-                                    ${escapeHtml(path)}
+                                    <div
+                                        class="category-path-text">
+
+                                        ${index + 1}.
+                                        ${escapeHtml(path)}
+
+                                    </div>
+
+
+                                    <button
+                                        type="button"
+                                        class="copy-path-btn"
+                                        data-path="${escapeHtml(path)}">
+
+                                        复制
+
+                                    </button>
 
                                 </div>
 
@@ -1017,6 +1442,38 @@
                 </div>
 
             `;
+
+
+            /*
+             * 给每一个复制按钮
+             * 添加点击事件
+             */
+
+            currentCategoryPath
+                .querySelectorAll(
+                    '.copy-path-btn'
+                )
+                .forEach(
+                    (button) => {
+
+                        button.addEventListener(
+                            'click',
+                            () => {
+
+                                const path =
+                                    button.dataset.path;
+
+                                copyCategoryPath(
+                                    path,
+                                    button
+                                );
+
+                            }
+                        );
+
+                    }
+                );
+
 
         } else {
 
@@ -1036,29 +1493,43 @@
         }
 
 
-        /* 显示分类信息 */
+
+        /* =========================
+           显示分类信息
+        ========================= */
 
         categoryInfo.hidden =
             false;
 
 
-        /* 清空图片 */
+
+        /* =========================
+           清空图片
+        ========================= */
 
         gallery.replaceChildren();
 
 
-        /* 加载图片 */
+
+        /* =========================
+           加载图片
+        ========================= */
 
         images.forEach(
             (item) => {
 
-                addImage(item);
+                addImage(
+                    item
+                );
 
             }
         );
 
 
-        /* 空状态 */
+
+        /* =========================
+           空状态
+        ========================= */
 
         emptyState.hidden =
             images.length > 0;
@@ -1075,7 +1546,10 @@
         }
 
 
-        /* 更新分类按钮 */
+
+        /* =========================
+           更新分类按钮
+        ========================= */
 
         categoryTabs
             .querySelectorAll(
@@ -1106,6 +1580,7 @@
             );
 
     }
+
 
 
     /* =========================
@@ -1174,6 +1649,7 @@
     }
 
 
+
     /* =========================
        加载 JSON
        
@@ -1191,7 +1667,9 @@
                 );
 
 
-            if (!response.ok) {
+            if (
+                !response.ok
+            ) {
 
                 throw new Error(
                     `HTTP ${response.status}`
@@ -1204,17 +1682,18 @@
                 await response.json();
 
 
-            /*
-             * 支持：
-             *
-             * {
-             *   "recycle": [...]
-             * }
-             *
-             * 也支持直接：
-             *
-             * [...]
-             */
+
+            /* =========================
+               支持两种 JSON
+               
+               {
+                   "recycle": [...]
+               }
+               
+               或
+               
+               [...]
+            ========================= */
 
             const items =
                 Array.isArray(data)
@@ -1225,9 +1704,10 @@
                     );
 
 
-            /*
-             * 按 category_name 分类
-             */
+
+            /* =========================
+               按 category_name 分类
+            ========================= */
 
             categoryData = {};
 
@@ -1263,12 +1743,18 @@
             );
 
 
-            /* 创建分类按钮 */
+
+            /* =========================
+               创建分类按钮
+            ========================= */
 
             renderCategoryTabs();
 
 
-            /* 默认打开第一个分类 */
+
+            /* =========================
+               默认打开第一个分类
+            ========================= */
 
             const firstCategory =
                 Object.keys(
@@ -1332,11 +1818,13 @@
     }
 
 
+
     /* =========================
        初始化
     ========================= */
 
     loadRecycleData();
+
 
 
     /* =========================
@@ -1348,6 +1836,11 @@
         hideLightbox
     );
 
+
+
+    /* =========================
+       点击背景关闭
+    ========================= */
 
     lightbox.addEventListener(
         'click',
@@ -1364,6 +1857,7 @@
 
         }
     );
+
 
 
     /* =========================
@@ -1387,6 +1881,7 @@
     );
 
 </script>
+
 
 </body>
 </html>
