@@ -26,6 +26,55 @@
         rel="stylesheet"
         href="assets/css/style.css"
     >
+
+<style>
+/* =========================
+   招商类目复制按钮
+========================= */
+
+.category-items p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.category-copy-btn {
+    flex: 0 0 auto;
+    border: 0;
+    border-radius: 6px;
+    padding: 4px 10px;
+    background: #eef0ff;
+    color: #3a47d5;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.category-copy-btn:hover {
+    background: #3a47d5;
+    color: #fff;
+}
+
+.category-copy-btn.copied {
+    background: #11998e;
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .category-items p {
+        align-items: flex-start;
+    }
+
+    .category-copy-btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+</style>
+
 </head>
 
 <body>
@@ -86,49 +135,49 @@
                     <div class="category-group">
                         <div class="category-title">🚴 骑行服</div>
                         <div class="category-items">
-                            <p>运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>骑行背带裤</p>
-                            <p>运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服</p>
-                            <p>运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服</p>
-                            <p>运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带裤</p>
-                            <p>运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</p>
-                            <p>运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤</p>
-                            <p>运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</p>
-                            <p>运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</p>
+                            <p><span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>骑行背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
                         </div>
                     </div>
 
                     <div class="category-group">
                         <div class="category-title">🦺 马甲</div>
                         <div class="category-items">
-                            <p>服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲</p>
-                            <p>运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲</p>
-                            <p>运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲</p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
                         </div>
                     </div>
 
                     <div class="category-group">
                         <div class="category-title">👖 背带裤</div>
                         <div class="category-items">
-                            <p>服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤</p>
-                            <p>运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</p>
-                            <p>运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</p>
-                            <p>运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤</p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
                         </div>
                     </div>
 
                     <div class="category-group">
                         <div class="category-title">🎭 练功服</div>
                         <div class="category-items">
-                            <p>运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>连体练功服</p>
-                            <p>服装、鞋靴和珠宝饰品>体育专用服装>舞蹈服>男士舞蹈服>紧身连衣裤</p>
-                            <p>运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>紧身连衣裤</p>
-                            <p>运动与户外用品>运动服装和器材>团队运动>体操>服装>男士体操服>男士体操连体练功服</p>
-                            <p>运动与户外用品>运动与户外休闲用品>运动场设备>体操装备>服装>男士体操服>男士体操连体练功服</p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>连体练功服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>舞蹈服>男士舞蹈服>紧身连衣裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>紧身连衣裤</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动服装和器材>团队运动>体操>服装>男士体操服>男士体操连体练功服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
+                            <p><span class="category-text">运动与户外用品>运动与户外休闲用品>运动场设备>体操装备>服装>男士体操服>男士体操连体练功服</span><button type="button" class="category-copy-btn" aria-label="复制招商类目">复制</button></p>
                         </div>
                     </div>
                 </div>
@@ -628,6 +677,67 @@
     <script
         src="assets/js/app.js"
     ></script>
+
+
+<script>
+/* =========================
+   招商类目一键复制
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const buttons = document.querySelectorAll(".category-copy-btn");
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const textElement = this.parentElement.querySelector(".category-text");
+
+            if (!textElement) return;
+
+            const text = textElement.innerText.trim();
+
+            try {
+
+                await navigator.clipboard.writeText(text);
+
+            } catch (error) {
+
+                const textarea = document.createElement("textarea");
+
+                textarea.value = text;
+
+                textarea.style.position = "fixed";
+                textarea.style.opacity = "0";
+
+                document.body.appendChild(textarea);
+
+                textarea.select();
+
+                document.execCommand("copy");
+
+                textarea.remove();
+            }
+
+            const originalText = this.innerText;
+
+            this.innerText = "已复制";
+            this.classList.add("copied");
+
+            setTimeout(() => {
+
+                this.innerText = originalText;
+                this.classList.remove("copied");
+
+            }, 1200);
+
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>
