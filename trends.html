@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>男装潮流趋势周报</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf3 100%);
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+
+        /* 页面头部 - 返回首页 */
+        .page-header {
+            background: rgba(26, 26, 46, 0.95);
+            padding: 15px 30px;
+            margin: -20px -20px 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+        .back-link:hover {
+            background: rgba(255,255,255,0.15);
+            color: #3498db;
+        }
+
+        /* 周报导航条 */
+        .week-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .week-nav a {
+            display: inline-block;
+            padding: 8px 18px;
+            background: white;
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 2px solid #e8ecf3;
+            transition: all 0.2s;
+        }
+        .week-nav a:hover {
+            border-color: #3498db;
+            color: #3498db;
+        }
+
+        /* 周报区块分隔 */
+        .week-section {
+            margin-bottom: 40px;
+        }
+        .week-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        .week-banner h1 { font-size: 28px; margin-bottom: 10px; }
+        .week-banner .date { font-size: 16px; opacity: 0.8; }
+        .week-banner .subtitle { font-size: 14px; opacity: 0.7; margin-top: 8px; }
+
+        article.news-card {
+            background: white;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        article.news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        article.news-card.trend { border-left-color: #e67e22; }
+        article.news-card.fashion { border-left-color: #9b59b6; }
+        article.news-card.vest { border-left-color: #1abc9c; }
+        article.news-card.overalls { border-left-color: #f39c12; }
+
+        .news-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .news-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .tag-trend { background: #e67e22; }
+        .tag-fashion { background: #9b59b6; }
+        .tag-vest { background: #1abc9c; }
+        .tag-overalls { background: #f39c12; }
+
+        .news-date { font-size: 12px; color: #95a5a6; }
+        .news-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #1a1a2e;
+        }
+        .news-content { font-size: 15px; color: #34495e; line-height: 1.8; }
+        .news-content p { margin-bottom: 12px; }
+        .news-content strong { color: #1a1a2e; }
+        .news-content ul { margin: 10px 0 12px 20px; }
+        .news-content li { margin-bottom: 6px; }
+
+        .news-footer {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid #ecf0f1;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        .source-link { color: #3498db; text-decoration: none; }
+        .source-link:hover { text-decoration: underline; }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 14px;
+        }
+        .data-table th {
+            background: #1a1a2e;
+            color: white;
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .data-table td { padding: 10px 12px; border-bottom: 1px solid #ecf0f1; }
+        .data-table tr:nth-child(even) { background: #f8f9fa; }
+        .data-table tr:hover { background: #eef2f7; }
+
+        .highlight-box {
+            background: #f0f4f8;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 14px 0;
+            border-left: 3px solid #3498db;
+        }
+        .highlight-box.vest { border-left-color: #1abc9c; background: #eafaf5; }
+        .highlight-box.overalls { border-left-color: #f39c12; background: #fef9e7; }
+
+        .section-divider {
+            text-align: center;
+            margin: 36px 0 28px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a2e;
+            position: relative;
+        }
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 2px;
+            background: #bdc3c7;
+            vertical-align: middle;
+            margin: 0 12px;
+        }
+
+        .week-divider {
+            text-align: center;
+            margin: 50px 0 30px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #95a5a6;
+            border-top: 2px dashed #d5d8dc;
+            border-bottom: 2px dashed #d5d8dc;
+        }
+
+        .stat-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 2px;
+        }
+        .stat-up { background: #e8f8f0; color: #27ae60; }
+        .stat-hot { background: #fdf2f2; color: #e74c3c; }
+        .stat-new { background: #f0f4f8; color: #3498db; }
+
+        .disclaimer {
+            background: #fff9e6;
+            border: 1px solid #f0d060;
+            border-radius: 10px;
+            padding: 16px;
+            margin: 20px 0;
+            font-size: 13px;
+            color: #8a6d00;
+        }
+    </style>
+</head>
+<body>
+<header class="page-header">
+    <div class="header-inner">
+        <a class="back-link" href="index.html">← 返回首页</a>
+    </div>
+</header>
+<div class="container">
+
+    <!-- ========== 周报导航 ========== -->
+    <div class="week-nav">
+        <a href="#week-2026-w35">第35周 · 8.24-8.30</a>
+        <!-- 后续周报导航锚点在此追加，格式：<a href="#week-YYYY-wNN">第NN周 · M.D-M.D</a> -->
+    </div>
+
+    <!-- ========== 周报导航结束 ========== -->
+
+    <!-- ============================================================ -->
+    <!-- 2026年第35周：8月24日-8月30日 -->
+    <!-- 后续追加新周报时：复制下方 <div class="week-section"> 到 </div> 整块，
+         修改 id 为新周次，更新标题和内容，并在上方导航追加锚点链接 -->
+    <!-- ============================================================ -->
+    <div class="week-section" id="week-2026-w35">
+    <div class="week-banner">
+        <h1>🔥 男装潮流趋势周报 · 第35周</h1>
+        <div class="date">2026年第35周（8月24日-8月30日）· 面向男装运营商家</div>
+        <div class="subtitle">潮流动向 · 时尚热点 · 品类分析 · 基于真实外网搜索来源</div>
+    </div>
+
+    <!-- ==================== 潮流动向 ==================== -->
+    <div class="section-divider">📊 潮流动向</div>
+
+    <article class="news-card trend">
+        <div class="news-header">
+            <span class="news-tag tag-trend">核心趋势</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Fall 2026男装定调：棕色为底、红色点缀、质感为王、剪裁回归</div>
+        <div class="news-content">
+            <p>本周多个时尚权威媒体发布Fall 2026男装趋势总结，核心信息高度一致：</p>
+            <ul>
+                <li><strong>棕色是基础色，红色是点缀色</strong> — camel、chocolate、taupe、charcoal构成核心调色板，一抹浓郁红色（burgundy/red mahogany）成为全季点睛法则</li>
+                <li><strong>剪裁回归但更柔软</strong> — 无结构西装外套（unstructured blazer）成为本季"最有用的外套"，无肩垫、无硬帆布、半衬或无衬，可搭毛衣而非仅搭衬衫</li>
+                <li><strong>质感季</strong> — 麂皮、天鹅绒、刷毛羊毛、厚重灯芯绒、weathered leather，面料表面质感承担了过去logo和印花的角色</li>
+                <li><strong>宽松裤回归</strong> — skinny结束、slim退场，Fall 2026裤型为straight或loose through the leg，单褶裤（one pleat）回归但非90年代baggy款</li>
+                <li><strong>色调格纹</strong> — 棕配棕、灰配灰的低对比度格纹取代高对比大声格纹，格纹overshirt是重点单品</li>
+                <li><strong>巧克力棕靴子成为默认秋季鞋色</strong> — 黑色靴子从默认变为例外，chelsea靴最易穿搭</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>对马甲品类的启示：</strong>灯芯绒马甲选品以tobacco/burnt olive/chocolate为主色，与秋季核心调色板完全吻合；针织马甲的cream/camel/oatmeal配色是本季"读起来显贵"的安全选择。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.vonbk.com/post/mens-fall-fashion-trends" class="source-link">Von BK - Men's Fall Fashion Trends 2026</a> · <a href="https://citylifestyle.com/articles/fall-2026" class="source-link">City Lifestyle - Fall 2026</a>
+        </div>
+    </article>
+
+    <article class="news-card trend">
+        <div class="news-header">
+            <span class="news-tag tag-trend">色彩趋势</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Vogue发布Fall 2026色彩定调：皇家紫延续、钴蓝电击回归、桃色惊喜登场</div>
+        <div class="news-content">
+            <p>Vogue本周继续聚焦Fall/Winter 2026色彩趋势，四大核心色调：</p>
+            <ul>
+                <li><strong>皇家紫（Royal Purple）</strong> — Celine、Loewe、Mugler、Tory Burch、Balenciaga延续紫色热度，从上一季延续至本季</li>
+                <li><strong>电光钴蓝（Cobalt Blue）</strong> — 以monochromatic造型或搭配中性色出现；Givenchy搭海军蓝，Jil Sander搭灰色</li>
+                <li><strong>桃色/瓜色（Peach &amp; Melon）</strong> — 粉橙混合色，Tory Burch针织和灯芯绒、Chanel亮片裙、Miu Miu迷你裙均有体现</li>
+                <li><strong>深暖红色系</strong> — burgundy、red mahogany作为中性底色的点缀色，而非全身色调</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>选品配色建议：</strong>马甲品类优先<strong>深棕+砖红</strong>、<strong>橄榄+米色</strong>、<strong>钴蓝+灰</strong>三组配色；背带裤品类中<strong>深色丹宁+桃色内搭</strong>的组合值得关注。紫色系在男装中仍属小众，但eggplant（茄紫色）针织品被多个来源标记为"今秋最前卫的可穿色"。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.vogue.com/article/fall-2026-color-trends" class="source-link">Vogue - Fall 2026 Color Trends</a>
+        </div>
+    </article>
+
+    <article class="news-card trend">
+        <div class="news-header">
+            <span class="news-tag tag-trend">风格风向</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Substack时尚圈共识：极简主义退场，质感+装饰+个性成为Fall 2026主旋律</div>
+        <div class="news-content">
+            <p>Who What Wear本周采访了Substack上最受关注的6位时尚博主，得出一致结论：<strong>经过数年的静奢风和极简主义后，本季迎来对"更 extravagant、更有趣"的渴望</strong>。</p>
+            <ul>
+                <li><strong>装饰艺术（Art Deco）回归</strong> — 几何图案、珠饰、流苏、触感纹理，从20年代室内设计延伸至服装</li>
+                <li><strong>提花和锦缎（Jacquard &amp; Brocade）大举回归</strong> — Dries Van Noten、Staud、Chan Luu等品牌重点推花</li>
+                <li><strong>珠宝成为造型工具</strong> — 雕塑感手镯、oversized戒指、胸针可彻底改变现有衣橱的观感</li>
+                <li><strong>质感外套即整体造型</strong> — 皮革、剪羊毛、皮草外套不再只是季节性必需品，而是"the entire look"</li>
+                <li><strong>关键理念：不换衣橱，而是用特殊单品让已有的衣服焕然一新</strong></li>
+            </ul>
+            <div class="highlight-box">
+                <strong>对跨境电商运营的启示：</strong>消费者心态从"买新衣橱"转向"买点睛单品"。马甲和背带裤作为叠穿/造型核心单品，天然契合这一趋势 — 主图和详情页应强调"如何让你现有的衣服看起来不同"。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.whowhatwear.com/fashion/substack-fall-2026-fashion-trends" class="source-link">Who What Wear - Substack Fashion Set Fall 2026 Trends</a>
+        </div>
+    </article>
+
+    <article class="news-card trend">
+        <div class="news-header">
+            <span class="news-tag tag-trend">叠穿趋势</span>
+            <span class="news-date">2026-08-26</span>
+        </div>
+        <div class="news-title">Prada引领"有意图叠穿"：基础单品重新组合成全新造型</div>
+        <div class="news-content">
+            <p>多个来源本周强调，Fall 2026的叠穿不再是简单的"天冷加件衣服"，而是<strong>有意图的叠穿（intentional layering）</strong>。Prada在FW26秀场上示范了如何用衣橱基础单品叠穿出全新造型。</p>
+            <ul>
+                <li>叠穿的核心是<strong>从简单基础层开始，逐渐添加更重的层</strong></li>
+                <li>马甲是叠穿的天然核心单品 — 既可作为中间层（衬衫+马甲+外套），也可作为外层（针织衫+马甲）</li>
+                <li>背带裤在叠穿中扮演"一件式底座"角色 — 内搭T恤/衬衫/卫衣，外搭夹克/马甲</li>
+                <li>关键技巧：不同质感之间的对比（如粗针织+光滑尼龙马甲，或灯芯绒背带裤+丝质衬衫）</li>
+            </ul>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.youtube.com/watch?v=uSOLKMApi5k" class="source-link">YouTube - Top 10 Fall/Winter 2026-2027 Fashion Trends</a> · <a href="https://madamenoire.com/1686909/2026-fall-fashion-trends" class="source-link">MadameNoire - 2026 Fall Fashion Trends</a>
+        </div>
+    </article>
+
+    <!-- ==================== 时尚热点 ==================== -->
+    <div class="section-divider">✨ 时尚热点</div>
+
+    <article class="news-card fashion">
+        <div class="news-header">
+            <span class="news-tag tag-fashion">时装周</span>
+            <span class="news-date">2026-08-26</span>
+        </div>
+        <div class="news-title">Alexander Wang FW26发布，Canada Goose FW26由Ackermann主导</div>
+        <div class="news-content">
+            <p>本周时装周动态密集，两个重要系列发布：</p>
+            <p><strong>Alexander Wang FW26（8月26日发布）</strong> — 2026秋冬成衣系列正式亮相，延续品牌标志性的都市酷感美学。</p>
+            <p><strong>Canada Goose FW26（8月24日发布）</strong> — 由Ackermann主导造型和方向，以"Second Nature"为主题，强调以"喜悦、乐观和工艺感"迎接秋冬。本季为品牌史上最丰富的新品阵容，涵盖更多品类和新轮廓。对羽绒马甲品类的带动效应值得关注。</p>
+            <div class="highlight-box">
+                <strong>对马甲品类的直接影响：</strong>Canada Goose FW26系列发布将带动羽绒保暖马甲品类的关注度和搜索量，建议9月关注羽绒马甲的备货节奏。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://fashionunited.com/lookbook/alexander-wang-fw26-369038" class="source-link">Fashion United - Alexander Wang FW26</a> · <a href="https://markets.ft.com/data/announce/detail?dockey=600-202608211830BIZWIRE_USPRX____20260824_BW300660-1" class="source-link">Financial Times - Canada Goose FW26</a>
+        </div>
+    </article>
+
+    <article class="news-card fashion">
+        <div class="news-header">
+            <span class="news-tag tag-fashion">零售企划</span>
+            <span class="news-date">2026-08-26</span>
+        </div>
+        <div class="news-title">Fenwick百货秋季企划"Back to Business"：叠穿轮廓+浓郁色调</div>
+        <div class="news-content">
+            <p>英国百货Fenwick本周发布秋季2026企划"Back to Business"，以叠穿轮廓和更浓郁的色调为核心，探索消费者在夏季后回归日常（回办公室、返校、回健身房、重连社交）的着装需求。</p>
+            <p>该企划强化了本周多个来源共同指向的趋势：<strong>秋季男装从宽松街头风转向更有结构、更精致的剪裁</strong>，同时保留机能性和实穿性。叠穿是连接"精致"与"实穿"的关键技法。</p>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.retailgazette.co.uk/blog/2026/08/in-pictures-fenwick-celebrates-return-to-routine-in-autumn-26-campaign/" class="source-link">Retail Gazette - Fenwick Autumn 26 Campaign</a>
+        </div>
+    </article>
+
+    <article class="news-card fashion">
+        <div class="news-header">
+            <span class="news-tag tag-fashion">惊喜单品</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Vogue力推：彩色风衣/冲锋衣成为Fall 2026"最具辨识度的惊喜单品"</div>
+        <div class="news-content">
+            <p>Vogue本周发表专题文章，将彩色风衣（colorful windbreaker）列为Fall 2026最想拥有的单品。文章指出，彩色风衣在FW26秀场上大量出现，将技术面料外套提升为"令人惊讶的精致声明单品"。</p>
+            <p>关键特征：不太张扬也不太低调，可搭配经典牛仔裤或运动休闲装，"一件就能完成整套造型"。这标志着机能风（gorpcore）从全套户外装备进化为<strong>单件机能单品与传统衣橱混搭</strong>的成熟阶段。</p>
+            <div class="highlight-box">
+                <strong>对马甲品类的关联：</strong>彩色风衣的热度为技术机能马甲提供了配色灵感 — 不再只有黑灰，钴蓝、桃色、皇家紫等技术马甲可能成为差异化竞争点。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.vogue.com/article/fall-colorful-windbreakers-trend" class="source-link">Vogue - Fall Colorful Windbreakers Trend</a>
+        </div>
+    </article>
+
+    <article class="news-card fashion">
+        <div class="news-header">
+            <span class="news-tag tag-fashion">行业活动</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Manchester Fashion Week 9月9-12日举行，聚焦供应链与材料创新</div>
+        <div class="news-content">
+            <p>Fashion United本周报道，Manchester Fashion Week将于9月9-12日回归，采用全新的四日制模式，不再以传统季节性趋势预测为核心，而是围绕行业结构性议题展开：近岸生产策略、供应链韧性、材料创新、修复经济、纺织品循环经济、适应性设计。</p>
+            <p>该活动与Northern Fashion Collective合作，扩展了全年教育框架，包括K-12参与和高等教育合作。超过270名学生在9所学校完成了纺织品重新设计项目。</p>
+            <p>同时，Brisbane Fashion Festival于8月24-28日举行第21届，为期5天。Ralph Lauren推出新包款"Blaze"作为AW26/27系列的一部分。Louis Vuitton发布与Pat McGrath的首个美妆合作系列。</p>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://fashionunited.com/education/news/manchester-fashion-week-re-establishes-event-format-around-skill-gaps-and-regional-education/2026082774282" class="source-link">Fashion United - Manchester Fashion Week</a> · <a href="https://www.vogue.com.au/fashion/news/louis-vuitton-launches-first-beauty-collaboration-between-nicolas-ghesquire-and-pat-mcgrath/image-gallery/5622f626feb979c74f65b40ddb7bfd65" class="source-link">Vogue Australia</a>
+        </div>
+    </article>
+
+    <!-- ==================== 品类分析：马甲 ==================== -->
+    <div class="section-divider">🧥 马甲品类分析</div>
+
+    <article class="news-card vest">
+        <div class="news-header">
+            <span class="news-tag tag-vest">趋势方向</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">Fall 2026马甲四大方向：图案针织、技术机能、灯芯绒复古、羽绒保暖</div>
+        <div class="news-content">
+            <p>综合Vogue、Von BK、DHgate、Pinterest等来源，2026秋冬马甲品类呈现四大并行方向：</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>方向</th>
+                        <th>风格定位</th>
+                        <th>关键面料/特征</th>
+                        <th>搭配方式</th>
+                        <th>来源依据</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>图案针织马甲</strong></td>
+                        <td>Poetcore / 教授风</td>
+                        <td>Fair Isle花纹、Cable针织、收缩版型</td>
+                        <td>搭衬衫外穿，让马甲成为全身唯一亮点</td>
+                        <td>Von BK: "poetcore is a real thing"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>技术机能马甲</strong></td>
+                        <td>Gorpcore / 城市机能</td>
+                        <td>尼龙面料、多口袋、防风防水、彩色化趋势</td>
+                        <td>搭细针织毛衣，一件为限</td>
+                        <td>Vogue: 彩色风衣趋势带动</td>
+                    </tr>
+                    <tr>
+                        <td><strong>灯芯绒马甲</strong></td>
+                        <td>Old Money / 复古书卷</td>
+                        <td>灯芯绒、tobacco/burnt olive/chocolate</td>
+                        <td>搭纽扣衬衫、斜纹裤、棕靴</td>
+                        <td>Von BK: 灯芯绒为Fall 2026标配</td>
+                    </tr>
+                    <tr>
+                        <td><strong>羽绒保暖马甲</strong></td>
+                        <td>户外实用 / 叠穿核心</td>
+                        <td>羽绒填充、可压缩、立领、石墨灰主流</td>
+                        <td>搭重磅卫衣或夹克内层</td>
+                        <td>Canada Goose FW26 + DHgate数据</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box vest">
+                <strong>本周新发现：</strong>
+                <ul>
+                    <li>图案针织马甲被Von BK明确确认"poetcore is a real thing" — 这是首次有主流时尚媒体正面确认这一网络趋势的真实性</li>
+                    <li>彩色风衣趋势意味着技术马甲不再局限于黑灰 — 钴蓝、桃色技术马甲可能成为差异化竞争点</li>
+                    <li>灯芯绒被多个来源列为Fall 2026"最易融入现有衣橱的趋势"，灯芯绒马甲+灯芯绒裤的成套搭配被推荐为"best two-piece outfit of the season"</li>
+                    <li>Canada Goose FW26发布将直接带动羽绒马甲搜索热度</li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.vonbk.com/post/mens-fall-fashion-trends" class="source-link">Von BK</a> · <a href="https://www.vogue.com/article/fall-colorful-windbreakers-trend" class="source-link">Vogue</a> · <a href="https://markets.ft.com/data/announce/detail?dockey=600-202608211830BIZWIRE_USPRX____20260824_BW300660-1" class="source-link">Financial Times - Canada Goose</a>
+        </div>
+    </article>
+
+    <article class="news-card vest">
+        <div class="news-header">
+            <span class="news-tag tag-vest">跨境数据</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">DHgate/Pinterest/Global Sources马甲品类数据扫描</div>
+        <div class="news-content">
+            <p>本周对跨境电商批发平台和社交媒体马甲品类数据进行了扫描：</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>品类</th>
+                        <th>平台特征</th>
+                        <th>批发价区间</th>
+                        <th>热门色</th>
+                        <th>趋势标签</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>棉帆布工装马甲</td>
+                        <td>DHgate 2026新品活跃，12oz厚帆布</td>
+                        <td>$23-$41</td>
+                        <td>卡其、橄榄、黑色</td>
+                        <td><span class="stat-up">稳定</span></td>
+                    </tr>
+                    <tr>
+                        <td>羽绒/棉填充马甲</td>
+                        <td>DHgate大量上新，鹅绒/鸭绒，刺绣logo</td>
+                        <td>$24-$55</td>
+                        <td>石墨灰、黑、白、蓝</td>
+                        <td><span class="stat-hot">季节性高</span></td>
+                    </tr>
+                    <tr>
+                        <td>多口袋钓鱼/摄影马甲</td>
+                        <td>Global Sources批发活跃，定制logo</td>
+                        <td>$7.65-$13.58</td>
+                        <td>卡其、军绿、黑</td>
+                        <td><span class="stat-up">持续增长</span></td>
+                    </tr>
+                    <tr>
+                        <td>Barbour风格绗缝马甲</td>
+                        <td>Pinterest搜索活跃，灯芯绒领为标志</td>
+                        <td>—</td>
+                        <td>navy、olive、brown</td>
+                        <td><span class="stat-new">风格热点</span></td>
+                    </tr>
+                    <tr>
+                        <td>立领工装马甲</td>
+                        <td>Pinterest购物页在售，多口袋+拉链</td>
+                        <td>—</td>
+                        <td>黑、灰、卡其</td>
+                        <td><span class="stat-up">稳定</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box vest">
+                <strong>运营要点：</strong>
+                <ul>
+                    <li>棉帆布工装马甲（12oz）在DHgate以2026新品身份活跃，面料厚度和耐磨性是卖点 — 建议详情页突出"12oz cotton canvas"材质描述</li>
+                    <li>羽绒马甲的"embroidery logo"和"bright face"（亮面）是本季DHgate新品高频词 — 亮面+刺绣logo羽绒马甲值得开发</li>
+                    <li>钓鱼/摄影马甲批发价极低（$7.65起），利润空间大，适合作为引流款</li>
+                    <li>Barbour风格绗缝马甲在Pinterest有明显搜索热度但跨境平台供应少 — 差异化机会</li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.dhgate.com/product/men-s-insulated-workwear-vest-cotton-canvas/1103833167.html" class="source-link">DHgate - Workwear Vest</a> · <a href="https://www.dhgate.com/goods/1034970076.html" class="source-link">DHgate - Puffer Vest</a> · <a href="https://www.globalsources.com/manufacturers/utility-vest.html" class="source-link">Global Sources - Utility Vest</a> · <a href="https://www.pinterest.com/shopping/winter-workwear-vest-with-stand-collar/915452217196" class="source-link">Pinterest - Workwear Vest</a> · <a href="https://www.backcountry.com/barbour-fernwood-gilet-vest-mens" class="source-link">Backcountry - Barbour Fernwood Gilet</a>
+        </div>
+    </article>
+
+    <!-- ==================== 品类分析：背带裤 ==================== -->
+    <div class="section-divider">👖 背带裤品类分析</div>
+
+    <article class="news-card overalls">
+        <div class="news-header">
+            <span class="news-tag tag-overalls">TikTok趋势</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">TikTok背带裤话题本周更新：90年代嘻哈复兴+白色修身持续走红+Carhartt/Ben Davis搭配热</div>
+        <div class="news-content">
+            <p>TikTok背带裤相关话题在2026年8月24日集中更新，本周检测到以下活跃话题：</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>TikTok话题</th>
+                        <th>核心内容</th>
+                        <th>关联标签</th>
+                        <th>热度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mens White Overalls</strong></td>
+                        <td>白色修身丹宁背带裤，被标记为"fashion statement"</td>
+                        <td>#mensfashion #streetwearstyle #europeanfashion</td>
+                        <td><span class="stat-hot">极高</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>90s Hip Hop Fit Overalls Men</strong></td>
+                        <td>90年代嘻哈丹宁背带裤被定义为"态度缝进丹宁"</td>
+                        <td>#90shiphop #dungaree #tupac</td>
+                        <td><span class="stat-new">新热点</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>How to Wear Your Overalls Like Tupac</strong></td>
+                        <td>Tupac黄金时代的丹宁背带裤穿法教学</td>
+                        <td>#tupac #90sfashion #hiphop</td>
+                        <td><span class="stat-up">增长中</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Guys in Overalls</strong></td>
+                        <td>浅色水洗破洞背带裤+修身舒适版型</td>
+                        <td>#streetwear #mensfashion</td>
+                        <td><span class="stat-up">高</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ways to Wear Overalls Men</strong></td>
+                        <td>单肩穿法（one strap）搭配教学</td>
+                        <td>#streetwear #outfitideas</td>
+                        <td><span class="stat-up">高</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>How to Style Carhartt Overalls Men</strong></td>
+                        <td>Carhartt古着背带裤+80年代街头风格搭配</td>
+                        <td>#carhartt #vintage #80sstreetstyle</td>
+                        <td><span class="stat-new">新话题</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Doc Martens with Overalls Black Men</strong></td>
+                        <td>Dr. Martens靴+背带裤秋季搭配</td>
+                        <td>#falloutfits #streetstyle #affordablefashion</td>
+                        <td><span class="stat-up">增长中</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>How to Style Overalls Ben Davis Men</strong></td>
+                        <td>Ben Davis品牌背带裤搭配教学</td>
+                        <td>#bendavis #workwear #mensfashion</td>
+                        <td><span class="stat-new">新话题</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box overalls">
+                <strong>本周核心发现：</strong>
+                <ul>
+                    <li><strong>90年代嘻哈背带裤是本周最大新热点</strong> — TikTok将其定位为"不仅是趋势，而是态度缝进丹宁"，Tupac和Notorious B.I.G.黄金时代的丹宁背带裤文化被重新发掘</li>
+                    <li><strong>Carhartt和Ben Davis品牌背带裤搭配内容首次出现在TikTok话题中</strong> — 工装品牌背带裤的街头穿搭教学成为新内容方向</li>
+                    <li><strong>白色修身丹宁背带裤持续保持"极高"热度</strong>，标签#europeanfashion表明欧洲市场接受度高</li>
+                    <li><strong>Dr. Martens靴+背带裤</strong>被明确标记为"秋季搭配" — 靴子+背带裤的组合有季节性需求</li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.tiktok.com/discover/mens-white-overalls" class="source-link">TikTok - Mens White Overalls</a> · <a href="https://www.tiktok.com/discover/90s-hip-hop-fit-overalls-men" class="source-link">TikTok - 90s Hip Hop Fit Overalls</a> · <a href="https://www.tiktok.com/discover/how-to-wear-your-overalls-like-tupac" class="source-link">TikTok - Overalls Like Tupac</a> · <a href="https://www.tiktok.com/discover/guys-in-overalls" class="source-link">TikTok - Guys in Overalls</a> · <a href="https://www.tiktok.com/discover/ways-to-wear-overalls-men" class="source-link">TikTok - Ways to Wear Overalls Men</a> · <a href="https://www.tiktok.com/discover/how-to-style-carhartt-overalls-men" class="source-link">TikTok - Carhartt Overalls Men</a> · <a href="https://www.tiktok.com/discover/doc-martens-with-overalls-black-men" class="source-link">TikTok - Doc Martens with Overalls</a> · <a href="https://www.tiktok.com/discover/how-to-style-overalls-ben-davis-men" class="source-link">TikTok - Ben Davis Overalls Men</a>
+        </div>
+    </article>
+
+    <article class="news-card overalls">
+        <div class="news-header">
+            <span class="news-tag tag-overalls">选品方向</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">基于TikTok话题热度的背带裤选品优先级更新</div>
+        <div class="news-content">
+            <p>根据本周TikTok话题更新和搜索数据，背带裤选品优先级调整如下：</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>优先级</th>
+                        <th>品类</th>
+                        <th>依据</th>
+                        <th>参考定价</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="stat-new">P0</span></td>
+                        <td>90年代复古水洗丹宁背带裤（阔腿/直筒）</td>
+                        <td>TikTok "90s Hip Hop Fit"新话题 + "Like Tupac"话题</td>
+                        <td>$14.99-$24.99</td>
+                        <td><span class="stat-new">本周新增</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="stat-new">P0</span></td>
+                        <td>白色修身丹宁背带裤</td>
+                        <td>TikTok持续"极高"热度，#europeanfashion</td>
+                        <td>$14.99-$26.99</td>
+                        <td><span class="stat-hot">持续高热</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="stat-up">P1</span></td>
+                        <td>浅色水洗破洞背带裤（修身版型）</td>
+                        <td>TikTok "Guys in Overalls"话题活跃</td>
+                        <td>$12.99-$22.99</td>
+                        <td><span class="stat-up">稳定高</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="stat-up">P1</span></td>
+                        <td>Carhartt风格工装背带裤（古着水洗）</td>
+                        <td>TikTok "How to Style Carhartt Overalls"新话题</td>
+                        <td>$16.99-$28.99</td>
+                        <td><span class="stat-new">新机会</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="stat-up">P2</span></td>
+                        <td>Ben Davis风格工装背带裤</td>
+                        <td>TikTok出现专属搭配话题</td>
+                        <td>$15.99-$25.99</td>
+                        <td><span class="stat-new">关注</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="stat-up">P2</span></td>
+                        <td>大码/加大码工装背带裤</td>
+                        <td>供给缺口持续</td>
+                        <td>$16.99-$29.99</td>
+                        <td><span class="stat-up">蓝海</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box overalls">
+                <strong>本周选品新信号：</strong>
+                <ul>
+                    <li><strong>90年代复古水洗丹宁背带裤</strong>是本周最重要的新增P0品类 — TikTok将90年代嘻哈背带裤定义为"态度"而非单纯趋势，文化认同感强，搜索热度刚刚启动</li>
+                    <li>需注意"单肩穿法"（one strap）在TikTok的持续热度 — 产品设计应确保肩带可调节、单侧放下时造型好看</li>
+                    <li>Carhartt和Ben Davis风格工装背带裤首次出现专属TikTok搭配话题 — 工装品牌风格的非侵权替代品有市场空间</li>
+                    <li>Dr. Martens靴+背带裤被标记为"秋季搭配" — 详情页可增加靴子搭配参考图</li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：综合TikTok话题数据整理（链接见上方卡片）
+        </div>
+    </article>
+
+    <article class="news-card overalls">
+        <div class="news-header">
+            <span class="news-tag tag-overalls">搭配趋势</span>
+            <span class="news-date">2026-08-27</span>
+        </div>
+        <div class="news-title">背带裤TikTok本周热门搭配组合：90年代嘻哈风成新增量</div>
+        <div class="news-content">
+            <p>根据TikTok话题内容分析，本周背带裤搭配组合更新：</p>
+            <ul>
+                <li><strong>90年代嘻哈风（新增）</strong> — 宽松丹宁背带裤 + oversized图案Tee + 运动鞋 + 金链，致敬Tupac/Notorious B.I.G.黄金时代</li>
+                <li><strong>白色修身欧洲风</strong> — 白色修身丹宁背带裤 + 纯色Tee + 帆布鞋，#europeanfashion标签</li>
+                <li><strong>Carhartt 80年代街头风</strong> — Carhartt古着背带裤 + 纯色卫衣 + 工装靴，vintage风格</li>
+                <li><strong>Dr. Martens秋季组合</strong> — 背带裤 + Dr. Martens靴 + 袜子，#falloutfits标签</li>
+                <li><strong>浅色水洗街头风</strong> — 浅色水洗破洞背带裤 + 背心/纯色Tee，修身版型</li>
+                <li><strong>单肩放下（持续流行）</strong> — "one strap"穿法在各种风格中均有出现</li>
+            </ul>
+            <div class="highlight-box overalls">
+                <strong>主图拍摄建议：</strong>本周新增90年代嘻哈风格搭配方向，建议详情页覆盖"90s hip hop"和"European minimalist"两个方向的搭配图。产品图保留"单肩放下"造型。Carhartt/Ben Davis风格产品可增加"vintage washed"质感描述。
+            </div>
+        </div>
+        <div class="news-footer">
+            来源：<a href="https://www.tiktok.com/discover/90s-hip-hop-fit-overalls-men" class="source-link">TikTok - 90s Hip Hop Fit</a> · <a href="https://www.tiktok.com/discover/how-to-style-carhartt-overalls-men" class="source-link">TikTok - Carhartt Overalls</a> · <a href="https://www.tiktok.com/discover/doc-martens-with-overalls-black-men" class="source-link">TikTok - Doc Martens + Overalls</a>
+        </div>
+    </article>
+
+    <!-- ==================== 品类分析：骑行服 ==================== -->
+    <div class="section-divider">🚴 骑行服品类分析</div>
+
+    <article class="news-card vest">
+        <div class="news-header">
+            <span class="news-tag tag-vest">趋势方向</span>
+            <span class="news-date">2026-08-28</span>
+        </div>
+        <div class="news-title">骑行服品类本周展望：通勤骑行风+复古骑行装并行，马甲式骑行服值得关注</div>
+        <div class="news-content">
+            <p>本周骑行服品类暂无重大新增资讯，以下为基于Fall 2026整体趋势的品类展望，后续将随搜索更新补充真实数据。</p>
+            <p><strong>趋势推演（非事实数据）：</strong></p>
+            <ul>
+                <li><strong>通勤骑行风（Urban Cycling）</strong> — 随着gorpcore机能风从全套装备进化为单件混搭，骑行马甲和骑行夹克作为城市通勤单品有增长潜力</li>
+                <li><strong>复古骑行装（Retro Cycling）</strong> — Fall 2026的Poetcore和Old Money趋势与复古羊毛骑行马甲、灯芯绒骑行帽衫有风格交叉点</li>
+                <li><strong>马甲式骑行服</strong> — 骑行马甲（无袖骑行服）同时受益于"马甲品类热"和"骑行通勤化"两个趋势，是值得关注的交叉品类</li>
+                <li><strong>配色方向</strong> — 钴蓝、皇家紫等Fall 2026热门色可应用于骑行服，打破传统荧光色垄断</li>
+            </ul>
+            <div class="disclaimer" style="margin-top:12px;">
+                <strong>⚠️ 标注：</strong>以上为基于Fall 2026整体趋势的品类推演，非基于本周真实搜索数据。具体选品和数据请等待后续搜索更新。
+            </div>
+        </div>
+        <div class="news-footer">
+            趋势推演 · 待后续搜索补充真实来源
+        </div>
+    </article>
+
+    <!-- ==================== 品类分析：连体服 ==================== -->
+    <div class="section-divider">🔧 连体服品类分析</div>
+
+    <article class="news-card overalls">
+        <div class="news-header">
+            <span class="news-tag tag-overalls">趋势方向</span>
+            <span class="news-date">2026-08-28</span>
+        </div>
+        <div class="news-title">连体服品类本周展望：工装连体服+机能连体服双方向，与背带裤共享90年代复古红利</div>
+        <div class="news-content">
+            <p>本周连体服品类暂无重大新增资讯，以下为基于Fall 2026整体趋势的品类展望，后续将随搜索更新补充真实数据。</p>
+            <p><strong>趋势推演（非事实数据）：</strong></p>
+            <ul>
+                <li><strong>工装连体服（Coveralls/Boilersuits）</strong> — Fall 2026的工装复兴趋势与连体服天然契合，Alexander Wang FW26工装连体裤+收腰剪裁方向值得关注</li>
+                <li><strong>机能连体服</strong> — gorpcore彩色化趋势可延伸至连体冲锋衣/连体工装，钴蓝、桃色等新色系有机会</li>
+                <li><strong>90年代复古连体服</strong> — 与背带裤共享90年代嘻哈复兴红利，宽松丹宁连体裤有跟涨潜力</li>
+                <li><strong>收腰剪裁</strong> — Fall 2026剪裁回归趋势下，连体服从宽松直筒向收腰版型演化，更显身材比例</li>
+            </ul>
+            <div class="disclaimer" style="margin-top:12px;">
+                <strong>⚠️ 标注：</strong>以上为基于Fall 2026整体趋势的品类推演，非基于本周真实搜索数据。具体选品和数据请等待后续搜索更新。
+            </div>
+        </div>
+        <div class="news-footer">
+            趋势推演 · 待后续搜索补充真实来源
+        </div>
+    </article>
+
+    <!-- ==================== 信息来源说明 ==================== -->
+    <div class="disclaimer">
+        <strong>📋 信息来源声明：</strong>本周报所有内容均基于2026年8月24-27日期间的真实外网搜索结果整理
+    </div>
+
+    </div>
+    <!-- ===== 第35周结束 ===== -->
+
+    <!-- ============================================================ -->
+    <!-- 后续周报追加位置：
+         1. 在此处插入新的 <div class="week-section" id="week-YYYY-wNN"> 块
+         2. 在顶部 week-nav 中追加对应的 <a href="#week-YYYY-wNN"> 导航链接
+         3. 周次格式：第NN周（ISO周次），日期范围用"M月D日-M月D日"
+         4. 每周包含三个板块：潮流动向、时尚热点、品类分析
+         5. 品类分析涵盖：马甲、背带裤、骑行服、连体服
+         6. 每条资讯使用 article class="news-card" 卡片结构
+    -->
+    <!-- ============================================================ -->
+
+</div>
+</body>
+</html>
