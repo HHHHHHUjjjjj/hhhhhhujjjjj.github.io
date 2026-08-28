@@ -907,50 +907,6 @@ body {
     }
 }
 /* =========================
-   顶部趋势资讯入口
-========================= */
-
-.hero-title-with-trends {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.trends-entry {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: #fff3ed;
-    color: #ff5a00;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1px solid rgba(255, 90, 0, 0.15);
-    transition: all 0.2s ease;
-}
-
-.trends-entry:hover {
-    background: #ff5a00;
-    color: #fff;
-    transform: translateY(-1px);
-}
-
-/* 移动端 */
-@media (max-width: 640px) {
-    .hero-title-with-trends {
-        align-items: flex-start;
-    }
-
-    .trends-entry {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-}
-/* =========================
    顶部独立功能入口
    趋势资讯
 ========================= */
