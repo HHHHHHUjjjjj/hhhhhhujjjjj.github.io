@@ -1,2086 +1,1355 @@
 {
+  "categoryPathMap": {
+    "男士骑行背带短裤": [
+      "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
+      "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
+      "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
+      "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
+    ],
+    "男装单马甲": [
+      "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
+    ],
+    "男士跑步马甲": [
+      "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
+      "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
+      "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
+    ],
+    "男士滑雪背带裤": [
+      "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
+      "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
+      "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
+      "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
+    ],
+    "男士背带裤": [
+      "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
+    ]
+  },
   "recycle": [
     {
-      "task_id": "6742043195",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/07/23/24/1753251239ede7a6dc6edb893eb08901a64729c215_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "task_id": "7646769365",
+      "category_name": "男士背带裤",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_300x.webp"
     },
     {
-      "task_id": "6743193920",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2025/04/07/c8/17439950130a860d7cf09102766bba6695dbf6c380_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6742750475",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41otD+B4D-L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6743006003",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61Y0-ry+GhL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6743210122",
-      "category_name": "男士骑行连体服",
-      "image_url": "https://m.media-amazon.com/images/I/41DVcLx5TPL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服"
-      ]
-    },
-    {
-      "task_id": "6742752256",
-      "category_name": "男士骑行背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/31vEEVPL8vL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>骑行背带裤"
-      ]
-    },
-    {
-      "task_id": "6743317048",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41zgsOWpVPL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6740756655",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/04/02/33/1775095603e89575149d6377e7eda8ea199fd5ed11_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6741458997",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/26/4f/1774500837c8c874eabd7e92fd68806c87921ade62_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6738815215",
-      "category_name": "男装单马甲",
-      "image_url": "http://img.ltwebstatic.com/images3_pi/2025/04/02/0b/1743563727395bc00f51fc311a7a22697f1dfdc5d5.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7648014656",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41IMZvBMKlS._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7644720230",
+      "task_id": "7648933551",
       "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/61eH4d3U67L._AC_SY606_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7621757236",
+      "task_id": "7648895897",
       "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/61jylOHwysL._AC_SY741_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7612534001",
+      "task_id": "7648946051",
       "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/61KnCF4nRDL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7621751775",
+      "task_id": "7648903881",
       "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/816Fa16C7sL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61Yi7ZffzzL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7598282883",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61gkvB4JFxL._SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61gkvB4JFxL._AC_SX300_.jpg"
     },
     {
       "task_id": "7648009125",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/31IZ1SsgbfL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647989778",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71fF99WD5bL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7648008244",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/412G0EkIGGL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7648025175",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/519zn6MHYeL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647976866",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41Rfx8tNc0L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31IZ1SsgbfL._AC_SX300_.jpg"
     },
     {
       "task_id": "7647990784",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/41fMsnf5tXL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41fMsnf5tXL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7648001548",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81hlDsm43BL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646373175",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31tIk4jP2XL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646351386",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61kBjqNT2+L._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616607603",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71UKBLjGDyL._AC_SY550_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647974056",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/314bC5b92BL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647961926",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71qeednrltL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647973026",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41bs3T0wN+L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646376139",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41+2EnCZOEL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646507316",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/09/04/33/1693821882a12d9d45965ab120a7e64bae3ab79d75.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646156050",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/718-jVBSGbL._AC_SY500._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646143053",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/311Sz5k+pNL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646126104",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71roUqtCozL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646136289",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/91dkzTaAdeL._AC_SY550._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646156004",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/611syiJ0yUL._AC_SX466._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646149030",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81589cW9s+L._AC_SX466._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7647671211",
-      "category_name": "男装单马甲",
-      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7629306756",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7644769018",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41qlRTsBcdL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7634935570",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51jw4ya9qpL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7629310411",
-      "category_name": "男士背带裤",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/02/05/e1/17702760077dddb37f7fb3f7026e2daf5d7b855636_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7645584884",
-      "category_name": "男士背带裤",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7646807554",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41vV-wiLRWL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646822370",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/S76cd711d04294a209b099ebdad5e557ad/Maden-Unisex-Denim-Overalls-Vintage-Jumpsuits-Baggy-Navy-Deck-Overalls-For-Female-Male-Wide-leg-Oversize.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7646786595",
-      "category_name": "男装单马甲",
-      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646338622",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/4143qB0Rk5L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7621641270",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61rGHJyzQyL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646501153",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71SlodHyhOL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646335672",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81drC5TnFRL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616806987",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51eKQA0wDAL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616642637",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71LssiOJg+L._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "task_id": "7648615241",
+      "category_name": "男士骑行背带短裤",
+      "image_url": "https://m.media-amazon.com/images/I/61nEtP1fkSL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61nEtP1fkSL._AC_SX300_.jpg"
     },
     {
       "task_id": "7646357215",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/718wMvzWHgL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646324837",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71uai6ftvML._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646327835",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61ooSXVVlQL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646374023",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41uTEKZzX0L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646375204",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41QlD6XuX3L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646360384",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61iPPquvzUL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646317931",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/618NHMk-jrL._AC_SY741_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7621683512",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51hy7uM+9hL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616726751",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41K2QkM7H1L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616723068",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61big0VWRkL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616606524",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61Rmegmws0S._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7597979255",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71BjHJeSUVL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7599760667",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41eo66KEQ-L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7619981210",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31VARFEFQIL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645487032",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41RpAs-S8KL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7641054430",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41TnLhx4RcL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7644171013",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31+v76D2H1L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645486055",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41HLdphpmLL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7644702240",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61BLwBbJDpL._AC_SY679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7614045011",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51ZCIjd5hYL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7614363570",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31u1NL5M0fL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7613037298",
-      "category_name": "男装单马甲",
-      "image_url": "http://img.ltwebstatic.com/v4/j/pi/2025/09/11/7c/1757577486b985c3bc0d7dbddbde90c5cde3fa430c_thumbnail_405x552.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7646191767",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41Upo9795LL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645483049",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/31hIXcJosZL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7644719215",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31XEPb5Ug8L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7644161366",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31M+lKPF8rL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/718wMvzWHgL._AC_SX300_.jpg"
     },
     {
       "task_id": "7644720229",
       "category_name": "男士跑步马甲",
       "image_url": "https://m.media-amazon.com/images/I/717r1b4+kPL._AC_SY741_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/717r1b4+kPL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7645243464",
-      "category_name": "男士背带裤",
-      "image_url": "https://i.ebayimg.com/images/g/GhcAAeSwTLlpizct/s-l1600.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7618954538",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51nqPDl+54L._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7595164700",
-      "category_name": "男士骑行背带短裤",
-      "image_url": "https://m.media-amazon.com/images/I/51TeZrWgkfL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
-      ]
-    },
-    {
-      "task_id": "7645468412",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/S76cd711d04294a209b099ebdad5e557ad/Maden-Unisex-Denim-Overalls-Vintage-Jumpsuits-Baggy-Navy-Deck-Overalls-For-Female-Male-Wide-leg-Oversize.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7644165145",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614015538",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/91niAQ2ZgmL._AC_SY450_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7614056207",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51nNpLsP00L._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7596112080",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71feQ0lmJwL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7644125998",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61J0qSHGkxL._AC_SX385._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7603302144",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61gqakOstmL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7596754496",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71WKTuH5qFL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7597338195",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71oZxHdEQsL._AC_SY450_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7613938625",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41YpjwYab-L._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7614210254",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41S9ezoT-DL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645482159",
-      "category_name": "男士骑行背带短裤",
-      "image_url": "https://m.media-amazon.com/images/I/41TsMz5S6uL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
-      ]
-    },
-    {
-      "task_id": "7615876641",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51vrWs-L7qL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7630949998",
+      "task_id": "7621757236",
       "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/51wrxWPkUHL._AC_SY606_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/61jylOHwysL._AC_SY741_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61jylOHwysL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7645478174",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41iTFTKFrkL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7645615626",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81pCfZi3tLL._AC_SY879_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7615918807",
+      "task_id": "7619981210",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/31VARFEFQIL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31VARFEFQIL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7644944611",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7613783613",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71YXjeRcmyL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7640735652",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51YQkRKezuL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7644166153",
+      "task_id": "7641054430",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31KqbzK+lHL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/41TnLhx4RcL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41TnLhx4RcL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7596710357",
-      "category_name": "男士骑行背带短裤",
-      "image_url": "https://m.media-amazon.com/images/I/71gNg2AWfEL._AC_SX385._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
-      ]
-    },
-    {
-      "task_id": "7630156067",
-      "category_name": "男士骑行连体服",
-      "image_url": "https://static01.galaxus.com/productimages/3/6/8/1/4/9/9/2/9/1/6/9/7/9/0/6/4/9/9/30706a79-281e-453a-a7cc-284644ff1302_cropped.jpg_720.jpeg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服"
-      ]
-    },
-    {
-      "task_id": "7603698351",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71+lYEaJHXL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7645472319",
-      "category_name": "男士骑行背带短裤",
-      "image_url": "https://m.media-amazon.com/images/I/71m01mhc5lL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
-      ]
-    },
-    {
-      "task_id": "7611741837",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/71Ox169ARjL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7621807729",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71-thptrteL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7645445685",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61ViqFGTXuL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7609940182",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/b3987931ef0d37cfa174a24d758edd9b/c00cc8404fc74a05b999b389d373d9b2.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7644156597",
+      "task_id": "7648627135",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/41Jy0HlUdjL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41Jy0HlUdjL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7615999586",
+      "task_id": "7614363570",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31u1NL5M0fL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31u1NL5M0fL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646376139",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61-EVlHUzJL._AC_SY741_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7613941914",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/91MBi9ASvvL._AC_SY445_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7644962251",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/31U7uqJ5nEL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7616023760",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61FuD4HsZ8L._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614051270",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81NNop7vd3L._AC_SY550_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7629513814",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/5c74c26ce68a45bfa6367871215091b3/ff826c444eb748edadaa2204b1e25cf6.jpg?imwidth=200",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7644719209",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51P0XhfLTKL._AC_SX342._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7603644836",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/419oyOINI4L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7616659198",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81m8hxSWl9L._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7629569654",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/40d5afe8c71f4cac9980fab9f30cea1b/336e71eeb617466694a1006623393c9d.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7629530187",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/e5296ca343123e6dbf91fecc8add50aa/203d4ce0083c463a8b2fd5f37657c588.jpg?imwidth=200",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7613934233",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61zuMd9wb6L._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7602791890",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51P4ZJtZ5uL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7621958113",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7613813094",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31THbredZuL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7596483528",
-      "category_name": "男士骑行背带短裤",
-      "image_url": "https://m.media-amazon.com/images/I/61ahmS-EN5L._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤"
-      ]
-    },
-    {
-      "task_id": "7644149403",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41FGpSJPl7L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7636751711",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/8d55ac698ea44304abc52d731b66a828/5f8e677dcbb544f6a5fea668aa566648.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7645448641",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/41aY67b8-LL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7629258608",
-      "category_name": "男装单马甲",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/b04f9f93aa80460185404843cf047b24/83a1f0fe6b3f43838c262897daabd172.jpg?imwidth=200",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614230952",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/318NdK7nrbL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7621745077",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61ydzBSkyyL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645488014",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81DVowqidHL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7645444818",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/91AEFQ0NlTL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7645476004",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/51O6wi9M4wL._AC_SY355_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7614275722",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81Emgt863NL._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7644585543",
-      "category_name": "男装单马甲",
-      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7599767201",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41nQUxgGJnL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7614215748",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51u4dlVuQZL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7635463623",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/05/08/1683510610bcb463e66fe9151f5ad95ffa635bbb00.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7630933411",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/51O6wi9M4wL._AC_SY355_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7645450828",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/Sf4c8805e170c4e0cb12b2e8860615908T.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7616619089",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/311ZKVubQIL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "7612419200",
-      "category_name": "男士背带裤",
-      "image_url": "https://img01.ztat.net/article/spp-media-p1/9e6efb47e7424858ab1a4a2b8ceaae93/547380f40a334cc2a92569cdf521bca0.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7621089513",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41ZnKqfn1DL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7596581687",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61RU6g1HkHL._AC_SY679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7644375374",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61AjcOOZSbL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614207230",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81sKwk48b3L._AC_SY606_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7616381922",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://static01.galaxus.com/productimages/1/7/0/9/8/9/5/5/6/3/4/6/8/6/8/2/5/5/019b462d-2d41-7e84-8580-fd3231891484_720.jpeg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7597000935",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81OvaMmLAhL._AC_SY450_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7640681635",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61z1ADGLzSL._AC_SX679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7596550988",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61gkvB4JFxL._SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7645455442",
-      "category_name": "男士背带裤",
-      "image_url": "https://a.allegroimg.com/s720/118574/e240b5a249508ab314b16e25cee3/Panske-pracovni-kalhoty-ZAHRADNIKY-CLASSIC-pro-NIZKE-TUHY-zesilene-velikost-25",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7621759743",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61UPrn26RqL._AC_SY879_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614118264",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41HgXssV4mL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/41+2EnCZOEL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41+2EnCZOEL._AC_SX300_.jpg"
     },
     {
       "task_id": "7613778819",
       "category_name": "男士跑步马甲",
       "image_url": "https://m.media-amazon.com/images/I/81XHpDFLvlL._AC_SX385._SX._UX._SY._UY_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81XHpDFLvlL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7644158258",
+      "task_id": "7611741837",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/71Ox169ARjL._AC_SX425_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71Ox169ARjL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646191767",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/41Upo9795LL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41Upo9795LL._AC_SX300_.jpg"
     },
     {
-      "task_id": "7596246498",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71BLoT9ovPL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "7615846888",
+      "task_id": "7644585543",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51L-F+1ImFL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_300x300.png_.webp"
+    },
+    {
+      "task_id": "7621659301",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41bBOxdZ7eL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41bBOxdZ7eL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616607603",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71UKBLjGDyL._AC_SY550_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71UKBLjGDyL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7629310411",
+      "category_name": "男士背带裤",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/02/05/e1/17702760077dddb37f7fb3f7026e2daf5d7b855636_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/02/05/e1/17702760077dddb37f7fb3f7026e2daf5d7b855636_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "7646360384",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61iPPquvzUL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61iPPquvzUL._AC_SX300_.jpg"
     },
     {
       "task_id": "7629541888",
       "category_name": "男士背带裤",
       "image_url": "https://img01.ztat.net/article/spp-media-p1/05b9bafc0c1e49cd9ab378f3c33bf5e7/bcb9509ee4fe49cfb780c83ce3eeb2ba.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/05b9bafc0c1e49cd9ab378f3c33bf5e7/bcb9509ee4fe49cfb780c83ce3eeb2ba.jpg?imwidth=300&filter=packshot"
+    },
+    {
+      "task_id": "7645322408",
+      "category_name": "男装单马甲",
+      "image_url": "https://images-eu.ssl-images-amazon.com/images/I/71gg0wq09eL._AC_UL600_SR600,400_.jpg",
+      "thumbnail_url": "https://images-eu.ssl-images-amazon.com/images/I/71gg0wq09eL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644165145",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646324789",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41zongrcwaL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41zongrcwaL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7621683512",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51hy7uM+9hL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51hy7uM+9hL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7595164700",
+      "category_name": "男士骑行背带短裤",
+      "image_url": "https://m.media-amazon.com/images/I/51TeZrWgkfL._AC_SX569_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51TeZrWgkfL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646766638",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/416RatwfUcL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/416RatwfUcL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7615846888",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51L-F+1ImFL._AC_SX425_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51L-F+1ImFL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7647989778",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71fF99WD5bL._AC_SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71fF99WD5bL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7635463623",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/05/08/1683510610bcb463e66fe9151f5ad95ffa635bbb00.jpg",
+      "thumbnail_url": "https://img.ltwebstatic.com/images3_pi/2023/05/08/1683510610bcb463e66fe9151f5ad95ffa635bbb00.jpg"
+    },
+    {
+      "task_id": "7648527960",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/410uRERTjqL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/410uRERTjqL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648549101",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71qv3AAiltL._AC_SX425_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71qv3AAiltL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648562087",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/714ZCwBFZvL._AC_SY445_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/714ZCwBFZvL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648549100",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51AojcMVZaL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51AojcMVZaL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648615197",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31pZbXDVO4L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31pZbXDVO4L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648551048",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61LWj7rRwEL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61LWj7rRwEL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648615254",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/410uRERTjqL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/410uRERTjqL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648608226",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71qv3AAiltL._AC_SX425_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71qv3AAiltL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648605442",
+      "category_name": "男士骑行背带短裤",
+      "image_url": "https://m.media-amazon.com/images/I/613QPCjUEHL._AC_SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/613QPCjUEHL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648635109",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51VjLKPGO1L._AC_SY445_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51VjLKPGO1L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648618209",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71hxiPKT3PL._AC_SY606_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71hxiPKT3PL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648632110",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31pZbXDVO4L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31pZbXDVO4L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648625089",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41a0BSmVmPL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41a0BSmVmPL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648247305",
+      "category_name": "男士背带裤",
+      "image_url": "https://img.ltwebstatic.com/images3_spmp/2024/08/21/7d/1724241960f8e6d384163616eacd23b3cd1fbd0ca4_thumbnail_405x552.jpg",
+      "thumbnail_url": "https://img.ltwebstatic.com/images3_spmp/2024/08/21/7d/1724241960f8e6d384163616eacd23b3cd1fbd0ca4_thumbnail_300x409.jpg"
+    },
+    {
+      "task_id": "7616183004",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61gjfxvS26L._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61gjfxvS26L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648633056",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41ZnKqfn1DL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41ZnKqfn1DL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648113441",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "7648106483",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "7648652240",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "7648117419",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "7648866002",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41LADJdGQ5L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41LADJdGQ5L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648785996",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51E92x8dINL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51E92x8dINL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614625645",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/612ubrpdekL._AC_SX425._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/612ubrpdekL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648770653",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/711MKM9dgrL._AC_SX425_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/711MKM9dgrL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648790793",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81dTrVX0hTL._AC_SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81dTrVX0hTL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648810773",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41k4oGAEUmL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41k4oGAEUmL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648789864",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/712e9CPldwL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/712e9CPldwL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648778900",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/716HOK4AQXL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/716HOK4AQXL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7597846828",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51VICl8aagL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51VICl8aagL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7634935570",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51jw4ya9qpL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51jw4ya9qpL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7645584884",
+      "category_name": "男士背带裤",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "7647973026",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41bs3T0wN+L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41bs3T0wN+L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646317931",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/618NHMk-jrL._AC_SY741_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/618NHMk-jrL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7630215775",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41XMQcSGUrL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41XMQcSGUrL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614031395",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41JGcLnaUZL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41JGcLnaUZL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646317919",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/412sRSCFVPL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/412sRSCFVPL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644720230",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/61eH4d3U67L._AC_SY606_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61eH4d3U67L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7612534001",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/61KnCF4nRDL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61KnCF4nRDL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7621751775",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/816Fa16C7sL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/816Fa16C7sL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648008244",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/412G0EkIGGL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/412G0EkIGGL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648025175",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/519zn6MHYeL._AC_SX569_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/519zn6MHYeL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7647976866",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41Rfx8tNc0L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41Rfx8tNc0L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7648001548",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81hlDsm43BL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81hlDsm43BL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646373175",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31tIk4jP2XL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31tIk4jP2XL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646351386",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61kBjqNT2+L._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61kBjqNT2+L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7647974056",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/314bC5b92BL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/314bC5b92BL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7647961926",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71qeednrltL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71qeednrltL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646143053",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/311Sz5k+pNL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/311Sz5k+pNL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646126104",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71roUqtCozL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71roUqtCozL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646136289",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/91dkzTaAdeL._AC_SY550._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/91dkzTaAdeL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646156004",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/611syiJ0yUL._AC_SX466._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/611syiJ0yUL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646149030",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81589cW9s+L._AC_SX466._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81589cW9s+L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7647671211",
+      "category_name": "男装单马甲",
+      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_300x300.png_.webp"
+    },
+    {
+      "task_id": "7644769018",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41qlRTsBcdL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41qlRTsBcdL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646807554",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41vV-wiLRWL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41vV-wiLRWL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646786595",
+      "category_name": "男装单马甲",
+      "image_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_960x960.png_.webp",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Hd8768ef1b7ee4226abb564f7a911b778x.png_300x300.png_.webp"
+    },
+    {
+      "task_id": "7646338622",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/4143qB0Rk5L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/4143qB0Rk5L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7621641270",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61rGHJyzQyL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61rGHJyzQyL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646501153",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71SlodHyhOL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71SlodHyhOL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646335672",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81drC5TnFRL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81drC5TnFRL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616806987",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51eKQA0wDAL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51eKQA0wDAL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646324837",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71uai6ftvML._AC_SX569_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71uai6ftvML._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646327835",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61ooSXVVlQL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61ooSXVVlQL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646374023",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41uTEKZzX0L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41uTEKZzX0L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7646375204",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41QlD6XuX3L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41QlD6XuX3L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616726751",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41K2QkM7H1L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41K2QkM7H1L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616723068",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61big0VWRkL._AC_SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61big0VWRkL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616606524",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61Rmegmws0S._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61Rmegmws0S._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7597979255",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71BjHJeSUVL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71BjHJeSUVL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7599760667",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41eo66KEQ-L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41eo66KEQ-L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644171013",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31+v76D2H1L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31+v76D2H1L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644702240",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61BLwBbJDpL._AC_SY679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61BLwBbJDpL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614045011",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51ZCIjd5hYL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51ZCIjd5hYL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644161366",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31M+lKPF8rL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31M+lKPF8rL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7645243464",
+      "category_name": "男士背带裤",
+      "image_url": "https://i.ebayimg.com/images/g/GhcAAeSwTLlpizct/s-l1600.jpg",
+      "thumbnail_url": "https://i.ebayimg.com/images/g/GhcAAeSwTLlpizct/s-l300.jpg"
+    },
+    {
+      "task_id": "7618954538",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51nqPDl+54L._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51nqPDl+54L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614015538",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/91niAQ2ZgmL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/91niAQ2ZgmL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614056207",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51nNpLsP00L._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51nNpLsP00L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644125998",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61J0qSHGkxL._AC_SX385._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61J0qSHGkxL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7603302144",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61gqakOstmL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61gqakOstmL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596754496",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71WKTuH5qFL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71WKTuH5qFL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7613938625",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41YpjwYab-L._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41YpjwYab-L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7630949998",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/51wrxWPkUHL._AC_SY606_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51wrxWPkUHL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7645615626",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81pCfZi3tLL._AC_SY879_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81pCfZi3tLL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644944611",
+      "category_name": "男士背带裤",
+      "image_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg"
+    },
+    {
+      "task_id": "7613783613",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71YXjeRcmyL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71YXjeRcmyL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644166153",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31KqbzK+lHL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31KqbzK+lHL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596710357",
+      "category_name": "男士骑行背带短裤",
+      "image_url": "https://m.media-amazon.com/images/I/71gNg2AWfEL._AC_SX385._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71gNg2AWfEL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7603698351",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71+lYEaJHXL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71+lYEaJHXL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7609940182",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/b3987931ef0d37cfa174a24d758edd9b/c00cc8404fc74a05b999b389d373d9b2.jpg?imwidth=200&filter=packshot",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/b3987931ef0d37cfa174a24d758edd9b/c00cc8404fc74a05b999b389d373d9b2.jpg?imwidth=300&filter=packshot"
+    },
+    {
+      "task_id": "7644156597",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41OSK1W3n0L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7615999586",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61-EVlHUzJL._AC_SY741_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61-EVlHUzJL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7613941914",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/91MBi9ASvvL._AC_SY445_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/91MBi9ASvvL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644962251",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/31U7uqJ5nEL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31U7uqJ5nEL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616023760",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61FuD4HsZ8L._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61FuD4HsZ8L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614051270",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81NNop7vd3L._AC_SY550_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81NNop7vd3L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7629513814",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/5c74c26ce68a45bfa6367871215091b3/ff826c444eb748edadaa2204b1e25cf6.jpg?imwidth=200",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/5c74c26ce68a45bfa6367871215091b3/ff826c444eb748edadaa2204b1e25cf6.jpg?imwidth=300"
+    },
+    {
+      "task_id": "7644719209",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51P0XhfLTKL._AC_SX342._SX._UX._SY._UY_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51P0XhfLTKL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7603644836",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/419oyOINI4L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/419oyOINI4L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616659198",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81m8hxSWl9L._AC_SX569_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81m8hxSWl9L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7629569654",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/40d5afe8c71f4cac9980fab9f30cea1b/336e71eeb617466694a1006623393c9d.jpg?imwidth=200&filter=packshot",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/40d5afe8c71f4cac9980fab9f30cea1b/336e71eeb617466694a1006623393c9d.jpg?imwidth=300&filter=packshot"
+    },
+    {
+      "task_id": "7629530187",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/e5296ca343123e6dbf91fecc8add50aa/203d4ce0083c463a8b2fd5f37657c588.jpg?imwidth=200",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/e5296ca343123e6dbf91fecc8add50aa/203d4ce0083c463a8b2fd5f37657c588.jpg?imwidth=300"
+    },
+    {
+      "task_id": "7613934233",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61zuMd9wb6L._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61zuMd9wb6L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7602791890",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51P4ZJtZ5uL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51P4ZJtZ5uL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7621958113",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7613813094",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/31THbredZuL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/31THbredZuL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596483528",
+      "category_name": "男士骑行背带短裤",
+      "image_url": "https://m.media-amazon.com/images/I/61ahmS-EN5L._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61ahmS-EN5L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644149403",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41FGpSJPl7L._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41FGpSJPl7L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7636751711",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/8d55ac698ea44304abc52d731b66a828/5f8e677dcbb544f6a5fea668aa566648.jpg?imwidth=200&filter=packshot",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/8d55ac698ea44304abc52d731b66a828/5f8e677dcbb544f6a5fea668aa566648.jpg?imwidth=300&filter=packshot"
+    },
+    {
+      "task_id": "7629258608",
+      "category_name": "男装单马甲",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/b04f9f93aa80460185404843cf047b24/83a1f0fe6b3f43838c262897daabd172.jpg?imwidth=200",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/b04f9f93aa80460185404843cf047b24/83a1f0fe6b3f43838c262897daabd172.jpg?imwidth=300"
+    },
+    {
+      "task_id": "7614230952",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/318NdK7nrbL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/318NdK7nrbL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614275722",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81Emgt863NL._AC_SX342_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81Emgt863NL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7599767201",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41nQUxgGJnL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41nQUxgGJnL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614215748",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/51u4dlVuQZL._AC_SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51u4dlVuQZL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7630933411",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/51O6wi9M4wL._AC_SY355_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51O6wi9M4wL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616619089",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/311ZKVubQIL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/311ZKVubQIL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7612419200",
+      "category_name": "男士背带裤",
+      "image_url": "https://img01.ztat.net/article/spp-media-p1/9e6efb47e7424858ab1a4a2b8ceaae93/547380f40a334cc2a92569cdf521bca0.jpg?imwidth=200&filter=packshot",
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/9e6efb47e7424858ab1a4a2b8ceaae93/547380f40a334cc2a92569cdf521bca0.jpg?imwidth=300&filter=packshot"
+    },
+    {
+      "task_id": "7621089513",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41ZnKqfn1DL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41ZnKqfn1DL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596581687",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61RU6g1HkHL._AC_SY679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61RU6g1HkHL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644375374",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61AjcOOZSbL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61AjcOOZSbL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7614207230",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81sKwk48b3L._AC_SY606_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81sKwk48b3L._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7616381922",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://static01.galaxus.com/productimages/1/7/0/9/8/9/5/5/6/3/4/6/8/6/8/2/5/5/019b462d-2d41-7e84-8580-fd3231891484_720.jpeg",
+      "thumbnail_url": "https://static01.galaxus.com/productimages/1/7/0/9/8/9/5/5/6/3/4/6/8/6/8/2/5/5/019b462d-2d41-7e84-8580-fd3231891484_720.jpeg"
+    },
+    {
+      "task_id": "7597000935",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81OvaMmLAhL._AC_SY450_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81OvaMmLAhL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7640681635",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61z1ADGLzSL._AC_SX679_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61z1ADGLzSL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596550988",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61gkvB4JFxL._SX385_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61gkvB4JFxL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7621759743",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/61UPrn26RqL._AC_SY879_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61UPrn26RqL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7644158258",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "7596246498",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://m.media-amazon.com/images/I/71BLoT9ovPL._AC_SX466_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71BLoT9ovPL._AC_SX300_.jpg"
     },
     {
       "task_id": "7613954876",
       "category_name": "男士跑步马甲",
       "image_url": "https://m.media-amazon.com/images/I/41SM5Ky2gLL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41SM5Ky2gLL._AC_SX300_.jpg"
     },
     {
       "task_id": "7612182928",
       "category_name": "男士背带裤",
       "image_url": "http://img.ltwebstatic.com/v4/j/pi/2026/02/05/e1/17702760077dddb37f7fb3f7026e2daf5d7b855636.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7637963359",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.pddpic.com/mms-material-img/2024-07-08/79b07a60-c05b-4949-afed-a8c603193a6f.jpeg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7621392242",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/05/23/1684806668a4d826d7c1fcee2957044e0990f58645_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "http://img.ltwebstatic.com/v4/j/pi/2026/02/05/e1/17702760077dddb37f7fb3f7026e2daf5d7b855636.jpg"
     },
     {
       "task_id": "7597969991",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/51eKQA0wDAL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51eKQA0wDAL._AC_SX300_.jpg"
     },
     {
       "task_id": "7641102023",
       "category_name": "男装单马甲",
       "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/05/20/9e/177924048994d73e7492f20d1d5b099d1a959da4ce_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7636899833",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/24/1a/1774332105b9ab9d0e0c5e54a06d7bc23d755b647c_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7612785919",
-      "category_name": "男装单马甲",
-      "image_url": "http://img.ltwebstatic.com/v4/j/pi/2026/01/17/fa/17686190736d6c9684c2d51aa14d4a58df9bdd8e85.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7635485489",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7630873993",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7622673153",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/05/23/1684806668a4d826d7c1fcee2957044e0990f58645_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/05/20/9e/177924048994d73e7492f20d1d5b099d1a959da4ce_thumbnail_300x.webp"
     },
     {
       "task_id": "7616003887",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/91pHcO6o6WL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7630923364",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7642033904",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7630874852",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/04/04/1680615736a6fdac1b578e2d0a2385340924b9210a.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/91pHcO6o6WL._AC_SX300_.jpg"
     },
     {
       "task_id": "7640775284",
       "category_name": "男士背带裤",
       "image_url": "https://ae01.alicdn.com/kf/Sf4c8805e170c4e0cb12b2e8860615908T.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7621521131",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/05/23/1684806668a4d826d7c1fcee2957044e0990f58645_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7610047314",
-      "category_name": "男装单马甲",
-      "image_url": "https://s13emagst.akamaized.net/products/17440/17439765/images/res_e7970284d5e075981d7d229b39ea5ca2.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7621862868",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71QC8XGYWmL._AC_SY550_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7614176073",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41aczicX48L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7622680003",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/04/04/1680615736a6fdac1b578e2d0a2385340924b9210a.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "7616467488",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/04/04/1680615736a6fdac1b578e2d0a2385340924b9210a.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sf4c8805e170c4e0cb12b2e8860615908T.jpg"
     },
     {
       "task_id": "7615636153",
       "category_name": "男士背带裤",
       "image_url": "https://img01.ztat.net/article/spp-media-p1/dcb6f54a90d4466d981c44a97b2a134e/2e0e18524c6544388bd6cbab7779519f.jpg?imwidth=200&filter=packshot",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "7640860465",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/12/24/9f/1766560943726484b22a0565705ea2d19351ec8392_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://img01.ztat.net/article/spp-media-p1/dcb6f54a90d4466d981c44a97b2a134e/2e0e18524c6544388bd6cbab7779519f.jpg?imwidth=300&filter=packshot"
     },
     {
       "task_id": "7620289548",
       "category_name": "男装单马甲",
       "image_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/F17796.jpg?im=Resize,width=450",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/F17796.jpg?im=Resize,width=300"
     },
     {
       "task_id": "7620289538",
       "category_name": "男装单马甲",
       "image_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/Y48831.jpg?im=Resize,width=450",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/Y48831.jpg?im=Resize,width=300"
     },
     {
       "task_id": "7620291460",
       "category_name": "男装单马甲",
       "image_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/H85659.jpg?im=Resize,width=450",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/H85659.jpg?im=Resize,width=300"
     },
     {
-      "task_id": "6761254722",
+      "task_id": "6740756655",
       "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/12/22/6a/1703233943ab9e1fe54dd1a53cec94e7c89b6f136a_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/04/02/33/1775095603e89575149d6377e7eda8ea199fd5ed11_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/04/02/33/1775095603e89575149d6377e7eda8ea199fd5ed11_thumbnail_300x.webp"
     },
     {
-      "task_id": "6756833214",
+      "task_id": "6743767901",
+      "category_name": "男士背带裤",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/04/03/0c/17751804415bc68414795910baefd912aa9b1ce796_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/04/03/0c/17751804415bc68414795910baefd912aa9b1ce796_thumbnail_300x.webp"
+    },
+    {
+      "task_id": "6743317048",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/91Fo5oJv+yL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/41zgsOWpVPL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41zgsOWpVPL._AC_SX300_.jpg"
     },
     {
-      "task_id": "6751528366",
+      "task_id": "6741458997",
       "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/26/4f/1774500837c8c874eabd7e92fd68806c87921ade62_thumbnail_900x.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/26/4f/1774500837c8c874eabd7e92fd68806c87921ade62_thumbnail_300x.webp"
     },
     {
-      "task_id": "6751119536",
+      "task_id": "6743007003",
       "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://m.media-amazon.com/images/I/71TXAS9BIeL._AC_SY550_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/71TXAS9BIeL._AC_SX300_.jpg"
     },
     {
-      "task_id": "6753135378",
-      "category_name": "男装单马甲",
-      "image_url": "https://image.coupangcdn.com/image/vendor_inventory/63bd/1828bd935371952585e47e8e9e3d082c51a4b0bcbe60fb95e15e51890512.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6770440308",
-      "category_name": "男装单马甲",
-      "image_url": "https://image.coupangcdn.com/image/vendor_inventory/9fdb/4d93a49d9648a86335c192de3e70a459146e14b99eba13e3f9143c8c0a73.png",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6770455281",
-      "category_name": "男装单马甲",
-      "image_url": "https://image7.coupangcdn.com/image/vendor_inventory/c807/d7d6f008608f0a1b1382a189947ba5f855f3bd054c9df5b04708a5ec9137.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6770035217",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
-    },
-    {
-      "task_id": "6770042283",
+      "task_id": "6743795680",
       "category_name": "男士跑步马甲",
       "image_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg"
     },
     {
-      "task_id": "6752270447",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/Sb6e5d77919224a86a05b43015d10dfb7W.png",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6757010729",
+      "task_id": "6743193920",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81SBHG5dflL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://img.ltwebstatic.com/images3_pi/2025/04/07/c8/17439950130a860d7cf09102766bba6695dbf6c380_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/images3_pi/2025/04/07/c8/17439950130a860d7cf09102766bba6695dbf6c380_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "6742043195",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/07/23/24/1753251239ede7a6dc6edb893eb08901a64729c215_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/07/23/24/1753251239ede7a6dc6edb893eb08901a64729c215_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "6743701314",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX522_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/81Dm8PxA2aL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "6738815215",
+      "category_name": "男装单马甲",
+      "image_url": "http://img.ltwebstatic.com/images3_pi/2025/04/02/0b/1743563727395bc00f51fc311a7a22697f1dfdc5d5.jpg",
+      "thumbnail_url": "http://img.ltwebstatic.com/images3_pi/2025/04/02/0b/1743563727395bc00f51fc311a7a22697f1dfdc5d5.jpg"
     },
     {
       "task_id": "6759408167",
       "category_name": "男士背带裤",
       "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/f3/1773976405cb401b0b952707b92935cf2d8d30d2de_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6752587768",
-      "category_name": "男装单马甲",
-      "image_url": "https://tshop.r10s.jp/auc-marks-run/cabinet/suruzou_452/330226146_1.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/f3/1773976405cb401b0b952707b92935cf2d8d30d2de_thumbnail_300x.webp"
     },
     {
       "task_id": "6769622061",
       "category_name": "男士背带裤",
       "image_url": "https://ae01.alicdn.com/kf/Sf4c8805e170c4e0cb12b2e8860615908T.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6770462519",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/Sdcd8177683d540f0a04175d920611149u.jpg_960x960.jpg_.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6756816702",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41cWPsh6myL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6752735228",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://tshop.r10s.jp/jiggys-shop/cabinet/sp139/218170_m01.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
-    },
-    {
-      "task_id": "6769725169",
-      "category_name": "男装单马甲",
-      "image_url": "https://image7.coupangcdn.com/image/vendor_inventory/4d5e/d908e7fd713696ab248dc1f3e4f9034cd6d62941e7d8f67cdf32a1598be0.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6769731020",
-      "category_name": "男装单马甲",
-      "image_url": "https://image10.coupangcdn.com/image/vendor_inventory/d708/bdd7d22a558760d4e56be8cb7ad0c0c92c5b8abf9fe54ca5cce744cf6a42.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6769710418",
-      "category_name": "男装单马甲",
-      "image_url": "https://image6.coupangcdn.com/image/vendor_inventory/186c/c1309adacd52b0cf4e354640d46389ba50d861c716350ae0b58112984ff1.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6750951838",
-      "category_name": "男装单马甲",
-      "image_url": "http://img.ltwebstatic.com/v4/j/pi/2025/10/16/2b/1760609894db76f058f9857bb3ab411f2aee9cd8b2.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6769609043",
-      "category_name": "男士背带裤",
-      "image_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6756875824",
-      "category_name": "男士滑雪背带裤",
-      "image_url": "https://m.media-amazon.com/images/I/416LFYLumaL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤",
-        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤"
-      ]
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sf4c8805e170c4e0cb12b2e8860615908T.jpg"
     },
     {
       "task_id": "6743386361",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/kyoetsu-orosiya/cabinet/01100738/imgrc0106814169.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/kyoetsu-orosiya/cabinet/01100738/imgrc0106814169.jpg"
     },
     {
-      "task_id": "6769522801",
-      "category_name": "男士背带裤",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/03/20/d6/1773998289d336f2104e6d862f3e4f5f4b7cecb9fc_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6743132797",
+      "task_id": "6769710418",
       "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61Z8yebcTjL._AC_SX425_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "image_url": "https://image6.coupangcdn.com/image/vendor_inventory/186c/c1309adacd52b0cf4e354640d46389ba50d861c716350ae0b58112984ff1.jpg",
+      "thumbnail_url": "https://image6.coupangcdn.com/image/vendor_inventory/186c/c1309adacd52b0cf4e354640d46389ba50d861c716350ae0b58112984ff1.jpg"
+    },
+    {
+      "task_id": "6770779584",
+      "category_name": "男装单马甲",
+      "image_url": "https://image.coupangcdn.com/image/vendor_inventory/0cd8/1ad595eac8c600c8bd6c6ca75520e4b7b1932625ec88f2bb05a714be2b74.jpg",
+      "thumbnail_url": "https://image.coupangcdn.com/image/vendor_inventory/0cd8/1ad595eac8c600c8bd6c6ca75520e4b7b1932625ec88f2bb05a714be2b74.jpg"
+    },
+    {
+      "task_id": "6756875824",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://m.media-amazon.com/images/I/416LFYLumaL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/416LFYLumaL._AC_SX300_.jpg"
+    },
+    {
+      "task_id": "6770042283",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg"
+    },
+    {
+      "task_id": "6752587768",
+      "category_name": "男装单马甲",
+      "image_url": "https://tshop.r10s.jp/auc-marks-run/cabinet/suruzou_452/330226146_1.jpg",
+      "thumbnail_url": "https://tshop.r10s.jp/auc-marks-run/cabinet/suruzou_452/330226146_1.jpg"
+    },
+    {
+      "task_id": "6770455281",
+      "category_name": "男装单马甲",
+      "image_url": "https://image7.coupangcdn.com/image/vendor_inventory/c807/d7d6f008608f0a1b1382a189947ba5f855f3bd054c9df5b04708a5ec9137.jpg",
+      "thumbnail_url": "https://image7.coupangcdn.com/image/vendor_inventory/c807/d7d6f008608f0a1b1382a189947ba5f855f3bd054c9df5b04708a5ec9137.jpg"
+    },
+    {
+      "task_id": "6769609043",
+      "category_name": "男士背带裤",
+      "image_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/S6a5b5ef792f244fbb6e8086ef552b8bcf.jpg"
+    },
+    {
+      "task_id": "6761254722",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/images3_pi/2023/12/22/6a/1703233943ab9e1fe54dd1a53cec94e7c89b6f136a_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/images3_pi/2023/12/22/6a/1703233943ab9e1fe54dd1a53cec94e7c89b6f136a_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "6752270447",
+      "category_name": "男士背带裤",
+      "image_url": "https://ae01.alicdn.com/kf/Sb6e5d77919224a86a05b43015d10dfb7W.png",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sb6e5d77919224a86a05b43015d10dfb7W.png"
+    },
+    {
+      "task_id": "6770035217",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg"
+    },
+    {
+      "task_id": "6751528366",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "6769731020",
+      "category_name": "男装单马甲",
+      "image_url": "https://image10.coupangcdn.com/image/vendor_inventory/d708/bdd7d22a558760d4e56be8cb7ad0c0c92c5b8abf9fe54ca5cce744cf6a42.jpg",
+      "thumbnail_url": "https://image10.coupangcdn.com/image/vendor_inventory/d708/bdd7d22a558760d4e56be8cb7ad0c0c92c5b8abf9fe54ca5cce744cf6a42.jpg"
+    },
+    {
+      "task_id": "6770897146",
+      "category_name": "男士背带裤",
+      "image_url": "https://ae-pic-a1.aliexpress-media.com/kf/S19645b6b52664fed83f2df4000d4292dY.jpg",
+      "thumbnail_url": "https://ae-pic-a1.aliexpress-media.com/kf/S19645b6b52664fed83f2df4000d4292dY.jpg"
+    },
+    {
+      "task_id": "6764267062",
+      "category_name": "男装单马甲",
+      "image_url": "https://image.coupangcdn.com/image/retail/images/1744174732870900-39cda998-8302-4622-94e2-37dcf447700a.jpg",
+      "thumbnail_url": "https://image.coupangcdn.com/image/retail/images/1744174732870900-39cda998-8302-4622-94e2-37dcf447700a.jpg"
+    },
+    {
+      "task_id": "6752735228",
+      "category_name": "男士滑雪背带裤",
+      "image_url": "https://tshop.r10s.jp/jiggys-shop/cabinet/sp139/218170_m01.jpg",
+      "thumbnail_url": "https://tshop.r10s.jp/jiggys-shop/cabinet/sp139/218170_m01.jpg"
+    },
+    {
+      "task_id": "6769725169",
+      "category_name": "男装单马甲",
+      "image_url": "https://image7.coupangcdn.com/image/vendor_inventory/4d5e/d908e7fd713696ab248dc1f3e4f9034cd6d62941e7d8f67cdf32a1598be0.jpg",
+      "thumbnail_url": "https://image7.coupangcdn.com/image/vendor_inventory/4d5e/d908e7fd713696ab248dc1f3e4f9034cd6d62941e7d8f67cdf32a1598be0.jpg"
     },
     {
       "task_id": "6761954740",
       "category_name": "男装单马甲",
       "image_url": "https://img.ltwebstatic.com/v4/j/pi/2026/05/20/9e/177924048994d73e7492f20d1d5b099d1a959da4ce_thumbnail_900x.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2026/05/20/9e/177924048994d73e7492f20d1d5b099d1a959da4ce_thumbnail_300x.webp"
     },
     {
-      "task_id": "6765695219",
-      "category_name": "男士跑步马甲",
-      "image_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "task_id": "6751119536",
+      "category_name": "男装单马甲",
+      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_750x999.webp",
+      "thumbnail_url": "https://img.ltwebstatic.com/v4/j/pi/2025/08/04/99/1754274534e0d183b91a257afe8df1eb07b32a0a21_thumbnail_300x400.webp"
+    },
+    {
+      "task_id": "6770462519",
+      "category_name": "男士背带裤",
+      "image_url": "https://ae01.alicdn.com/kf/Sdcd8177683d540f0a04175d920611149u.jpg_960x960.jpg_.webp",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sdcd8177683d540f0a04175d920611149u.jpg_300x300.jpg_.webp"
+    },
+    {
+      "task_id": "6751180725",
+      "category_name": "男装单马甲",
+      "image_url": "https://m.media-amazon.com/images/I/41HidkZSWkL._AC_.jpg",
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41HidkZSWkL._AC_SX300_.jpg"
     },
     {
       "task_id": "6765689439",
       "category_name": "男士跑步马甲",
       "image_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲",
-        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲",
-        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲"
-      ]
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Se409abc31ca64a628e847f71c4853b35p.jpg"
+    },
+    {
+      "task_id": "6765695219",
+      "category_name": "男士跑步马甲",
+      "image_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg",
+      "thumbnail_url": "https://ae01.alicdn.com/kf/Sa63500f730c94c60a97d2c25e07ec846M.jpg"
+    },
+    {
+      "task_id": "6757722260",
+      "category_name": "男装单马甲",
+      "image_url": "http://img.ltwebstatic.com/v4/j/pi/2026/01/09/74/176795446006c5f5b1acdd608e9ea609cb8f18ee8d.jpg",
+      "thumbnail_url": "http://img.ltwebstatic.com/v4/j/pi/2026/01/09/74/176795446006c5f5b1acdd608e9ea609cb8f18ee8d.jpg"
+    },
+    {
+      "task_id": "6771217127",
+      "category_name": "男装单马甲",
+      "image_url": "https://image9.coupangcdn.com/image/vendor_inventory/1aad/58331e28bb12be03acefbb9833468f2ec6e0e082dc74ebfc12a0d2bee14f.jpg",
+      "thumbnail_url": "https://image9.coupangcdn.com/image/vendor_inventory/1aad/58331e28bb12be03acefbb9833468f2ec6e0e082dc74ebfc12a0d2bee14f.jpg"
+    },
+    {
+      "task_id": "6753135378",
+      "category_name": "男装单马甲",
+      "image_url": "https://image.coupangcdn.com/image/vendor_inventory/63bd/1828bd935371952585e47e8e9e3d082c51a4b0bcbe60fb95e15e51890512.jpg",
+      "thumbnail_url": "https://image.coupangcdn.com/image/vendor_inventory/63bd/1828bd935371952585e47e8e9e3d082c51a4b0bcbe60fb95e15e51890512.jpg"
     },
     {
       "task_id": "6769398748",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/tc-mart/cabinet/23ss/csk-mt3-as-0540.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756675625",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/31br4e1bs5L._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756779219",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/718015Pth6L._AC_SY679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/tc-mart/cabinet/23ss/csk-mt3-as-0540.jpg"
     },
     {
       "task_id": "6752753390",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/lag-onlinestore/cabinet/tatras2/123746.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/lag-onlinestore/cabinet/tatras2/123746.jpg"
     },
     {
       "task_id": "6752744742",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/lag-onlinestore/cabinet/tatras3/123650.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6751133188",
-      "category_name": "男装单马甲",
-      "image_url": "https://img.ltwebstatic.com/v4/j/pi/2025/07/29/96/1753755078dab42c0d976bc1c258076cfa0023dd76_thumbnail_750x999.webp",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6761360943",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/710q26erUjL._AC_SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756655900",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41Hz61VhsHL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756835911",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/51a9hB54jxL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756850731",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/710UQ-P7XCL._AC_SX385_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/lag-onlinestore/cabinet/tatras3/123650.jpg"
     },
     {
       "task_id": "6756806871",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/61JKIu4OWEL._AC_SX569_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756818943",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71M7nR471pL._AC_SY550_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/61JKIu4OWEL._AC_SX300_.jpg"
     },
     {
       "task_id": "6744332737",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/51oO2L6fBEL._SX466_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/51oO2L6fBEL._AC_SX300_.jpg"
     },
     {
       "task_id": "6752580955",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/asian-asian/cabinet/p213/2130017.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/asian-asian/cabinet/p213/2130017.jpg"
     },
     {
       "task_id": "6751228000",
       "category_name": "男装单马甲",
       "image_url": "https://m.media-amazon.com/images/I/41TR3waPDnL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756812100",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/81PA9BnaMrL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://m.media-amazon.com/images/I/41TR3waPDnL._AC_SX300_.jpg"
     },
     {
       "task_id": "6752592405",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/asian-asian/cabinet/p213/2130017ll.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/asian-asian/cabinet/p213/2130017ll.jpg"
     },
     {
       "task_id": "6752573603",
       "category_name": "男装单马甲",
       "image_url": "https://tshop.r10s.jp/alpha-cashmere/cabinet/06821995/imgrc0077818097.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756795820",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71FsqHCvwlL._AC_SX522_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6757028157",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/71SjUMioc8L._AC_SX342_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://tshop.r10s.jp/alpha-cashmere/cabinet/06821995/imgrc0077818097.jpg"
     },
     {
       "task_id": "6753048069",
       "category_name": "男装单马甲",
       "image_url": "https://image8.coupangcdn.com/image/retail/images/7958665898734412-c5b7602f-4b4d-48f6-b510-16ea1d175be3.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6751277402",
-      "category_name": "男士背带裤",
-      "image_url": "http://img.ltwebstatic.com/v4/j/pi/2026/01/26/83/17693922590659b20be30372495407ebb9df954ca8.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤"
-      ]
-    },
-    {
-      "task_id": "6756874817",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/61eS4Zh9QHL._AC_SY679_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
-    },
-    {
-      "task_id": "6756805097",
-      "category_name": "男装单马甲",
-      "image_url": "https://m.media-amazon.com/images/I/41LRwJCHWoL._AC_.jpg",
-      "category_path": [
-        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲"
-      ]
+      "thumbnail_url": "https://image8.coupangcdn.com/image/retail/images/7958665898734412-c5b7602f-4b4d-48f6-b510-16ea1d175be3.jpg"
     }
   ]
 }

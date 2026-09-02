@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
 
@@ -10,1075 +11,2443 @@
 
     <meta
         name="description"
-        content="TEMU 楚古月(isaac.hu) - 男装运营工具中心"
+        content="TEMU 楚古月(isaac.hu) - 男装运营工作站"
     >
 
-    <title>TEMU 楚古月(isaac.hu)</title>
+    <title>TEMU 楚古月（isaac.hu）｜男装运营工作站</title>
 
-    <!-- ✨ 网络性能优化：DNS预解析和预连接 -->
+    <!-- =========================
+         网络性能优化
+    ========================== -->
     <link rel="dns-prefetch" href="//github.com">
     <link rel="preconnect" href="https://github.com" crossorigin>
-    <link rel="prefetch" href="assets/pdf/Operation%20Demonstration.pdf" as="document">
-    <link rel="prefetch" href="assets/pdf/picture.pdf" as="document">
 
-    <!-- 全局 CSS -->
+    <link
+        rel="prefetch"
+        href="assets/pdf/Operation%20Demonstration.pdf"
+        as="document"
+    >
+
+    <link
+        rel="prefetch"
+        href="assets/pdf/picture.pdf"
+        as="document"
+    >
+
+    <!-- =========================
+         全局 CSS
+    ========================== -->
     <link
         rel="stylesheet"
         href="assets/css/style.css"
     >
 
-<style>
-/* =========================
-   招商类目复制按钮
-========================= */
+    <!-- =========================
+         首页专用样式
+    ========================== -->
+    <style>
 
-.category-items p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap;
-}
+        /* =====================================================
+           基础变量
+        ===================================================== */
 
-.category-copy-btn {
-    flex: 0 0 auto;
-    border: 0;
-    border-radius: 6px;
-    padding: 4px 10px;
-    background: #eef0ff;
-    color: #3a47d5;
-    font-size: 12px;
-    line-height: 1.4;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-}
+        :root {
+            --work-orange: #ff5a00;
+            --work-orange-dark: #e84b00;
+            --work-orange-light: #fff3ed;
 
-.category-copy-btn:hover {
-    background: #3a47d5;
-    color: #fff;
-}
+            --work-bg: #f5f6f8;
+            --work-card: #ffffff;
 
-.category-copy-btn.copied {
-    background: #11998e;
-    color: #fff;
-}
+            --work-text: #202124;
+            --work-text-secondary: #62666d;
+            --work-text-light: #92979f;
 
-@media (max-width: 640px) {
-    .category-items p {
-        align-items: flex-start;
-    }
+            --work-border: #e7e9ed;
 
-    .category-copy-btn {
-        padding: 4px 8px;
-        font-size: 11px;
-    }
-}
-</style>
+            --work-shadow:
+                0 10px 30px rgba(20, 24, 32, 0.06);
+
+            --work-radius: 16px;
+        }
+
+
+        /* =====================================================
+           页面基础
+        ===================================================== */
+
+        body {
+            font-size: 16px;
+            color: var(--work-text);
+            background: var(--work-bg);
+        }
+
+
+        /* =====================================================
+           顶部 Header
+        ===================================================== */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(16px);
+
+            border-bottom: 1px solid var(--work-border);
+
+            box-shadow:
+                0 4px 18px rgba(0, 0, 0, 0.04);
+        }
+
+
+        .header-container {
+            width: min(1440px, calc(100% - 48px));
+            min-height: 74px;
+
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 24px;
+        }
+
+
+        /* =====================================================
+           Logo
+        ===================================================== */
+
+        .site-logo {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            text-decoration: none;
+            color: inherit;
+
+            min-width: 0;
+        }
+
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+
+            flex: 0 0 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--work-orange),
+                    var(--work-orange-dark)
+                );
+
+            color: #fff;
+
+            font-size: 21px;
+            font-weight: 900;
+
+            box-shadow:
+                0 7px 16px rgba(255, 90, 0, 0.22);
+        }
+
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+
+            line-height: 1.2;
+        }
+
+
+        .logo-text strong {
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+
+        .logo-text span {
+            margin-top: 4px;
+
+            font-size: 12px;
+            color: var(--work-text-light);
+
+            letter-spacing: 0.5px;
+        }
+
+
+        /* =====================================================
+           Header 状态
+        ===================================================== */
+
+        .header-status {
+            display: flex;
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 8px 14px;
+
+            border: 1px solid #e7e9ed;
+            border-radius: 999px;
+
+            background: #fafbfc;
+
+            font-size: 13px;
+            color: #70757d;
+        }
+
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #19a974;
+
+            box-shadow:
+                0 0 0 4px rgba(25, 169, 116, 0.10);
+        }
+
+
+        /* =====================================================
+           主体宽度
+        ===================================================== */
+
+        .main-container {
+            width: min(1440px, calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           工作站工具栏
+        ===================================================== */
+
+        .tools-bar {
+            margin-top: 26px;
+        }
+
+
+        .tools-bar-content {
+            display: grid;
+
+            grid-template-columns:
+                repeat(6, minmax(0, 1fr));
+
+            gap: 12px;
+
+            padding: 12px;
+
+            background: #fff;
+
+            border: 1px solid var(--work-border);
+            border-radius: 20px;
+
+            box-shadow: var(--work-shadow);
+        }
+
+
+        /* =====================================================
+           工具按钮
+        ===================================================== */
+
+        .tool-item {
+            position: relative;
+
+            min-height: 82px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 13px;
+
+            padding: 14px 16px;
+
+            text-decoration: none;
+            color: var(--work-text);
+
+            border-radius: 14px;
+
+            background: #fafbfc;
+
+            border: 1px solid transparent;
+
+            transition:
+                transform 0.22s ease,
+                background 0.22s ease,
+                border-color 0.22s ease,
+                box-shadow 0.22s ease;
+        }
+
+
+        .tool-item:hover {
+            transform: translateY(-3px);
+
+            background: #fff;
+
+            border-color:
+                rgba(255, 90, 0, 0.20);
+
+            box-shadow:
+                0 9px 24px rgba(20, 24, 32, 0.08);
+        }
+
+
+        .tool-item::after {
+            content: "→";
+
+            position: absolute;
+
+            right: 14px;
+            bottom: 10px;
+
+            color: #c2c5ca;
+
+            font-size: 13px;
+
+            transition:
+                transform 0.2s ease,
+                color 0.2s ease;
+        }
+
+
+        .tool-item:hover::after {
+            color: var(--work-orange);
+            transform: translateX(3px);
+        }
+
+
+        .tool-icon {
+            width: 42px;
+            height: 42px;
+
+            flex: 0 0 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: var(--work-orange-light);
+
+            font-size: 20px;
+        }
+
+
+        .tool-info {
+            display: flex;
+            flex-direction: column;
+
+            min-width: 0;
+        }
+
+
+        .tool-name {
+            font-size: 15px;
+            font-weight: 800;
+
+            line-height: 1.35;
+        }
+
+
+        .tool-desc {
+            margin-top: 4px;
+
+            font-size: 11px;
+
+            color: var(--work-text-light);
+
+            white-space: nowrap;
+        }
+
+
+        /* =====================================================
+           趋势入口
+        ===================================================== */
+
+        .trend-tool {
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff8f3,
+                    #fff3ed
+                );
+
+            border-color:
+                rgba(255, 90, 0, 0.12);
+        }
+
+
+        .trend-tool .tool-icon {
+            background: #fff;
+            box-shadow:
+                0 4px 12px rgba(255, 90, 0, 0.10);
+        }
+
+
+        .trend-tool .tool-name {
+            color: var(--work-orange-dark);
+        }
+
+
+        /* =====================================================
+           类目快捷导航
+        ===================================================== */
+
+        .category-nav {
+            margin-top: 16px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 12px 14px;
+
+            background: #fff;
+
+            border: 1px solid var(--work-border);
+            border-radius: 16px;
+
+            box-shadow:
+                0 6px 20px rgba(20, 24, 32, 0.035);
+
+            overflow-x: auto;
+        }
+
+
+        .category-nav-label {
+            flex: 0 0 auto;
+
+            padding-right: 6px;
+
+            color: #888e96;
+
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+
+        .category-nav-link {
+            flex: 0 0 auto;
+
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            padding: 9px 15px;
+
+            border-radius: 10px;
+
+            background: #f7f8fa;
+
+            border: 1px solid transparent;
+
+            color: #555a62;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: all 0.2s ease;
+        }
+
+
+        .category-nav-link:hover,
+        .category-nav-link.active {
+            color: var(--work-orange-dark);
+
+            background: var(--work-orange-light);
+
+            border-color:
+                rgba(255, 90, 0, 0.16);
+
+            transform: translateY(-1px);
+        }
+
+
+        /* =====================================================
+           Hero
+        ===================================================== */
+
+        .hero-section {
+            margin-top: 24px;
+
+            padding: 48px 50px 42px;
+
+            background:
+                radial-gradient(
+                    circle at 90% 15%,
+                    rgba(255, 90, 0, 0.09),
+                    transparent 30%
+                ),
+                #fff;
+
+            border:
+                1px solid var(--work-border);
+
+            border-radius: 22px;
+
+            box-shadow: var(--work-shadow);
+        }
+
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 7px 12px;
+
+            background: var(--work-orange-light);
+
+            color: var(--work-orange-dark);
+
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        .hero-title {
+            margin: 18px 0 0;
+
+            font-size: clamp(32px, 4vw, 48px);
+
+            line-height: 1.15;
+
+            letter-spacing: -1.5px;
+        }
+
+
+        .hero-title span {
+            color: var(--work-orange);
+        }
+
+
+        .hero-subtitle {
+            margin-top: 16px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #646a72;
+        }
+
+
+        /* =====================================================
+           Hero 趋势卡
+        ===================================================== */
+
+        .hero-trend-card {
+            margin-top: 28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 18px 20px;
+
+            background:
+                linear-gradient(
+                    100deg,
+                    #fff5ee,
+                    #fffaf7
+                );
+
+            border:
+                1px solid rgba(255, 90, 0, 0.16);
+
+            border-radius: 16px;
+
+            text-decoration: none;
+
+            color: inherit;
+
+            transition:
+                transform 0.22s ease,
+                box-shadow 0.22s ease;
+        }
+
+
+        .hero-trend-card:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 28px rgba(255, 90, 0, 0.10);
+        }
+
+
+        .hero-trend-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+
+        .hero-trend-icon {
+            width: 46px;
+            height: 46px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #fff;
+
+            border-radius: 13px;
+
+            font-size: 22px;
+
+            box-shadow:
+                0 5px 14px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .hero-trend-title {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+
+        .hero-trend-desc {
+            margin-top: 4px;
+
+            font-size: 12px;
+
+            color: #858a91;
+        }
+
+
+        .hero-trend-arrow {
+            font-size: 23px;
+
+            color: var(--work-orange);
+
+            transition:
+                transform 0.2s ease;
+        }
+
+
+        .hero-trend-card:hover .hero-trend-arrow {
+            transform: translateX(5px);
+        }
+
+
+        /* =====================================================
+           类目内容
+        ===================================================== */
+
+        .hero-description {
+            margin-top: 42px;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 28px;
+        }
+
+
+        .category-group {
+            scroll-margin-top: 110px;
+
+            padding: 30px;
+
+            background: #fff;
+
+            border: 1px solid var(--work-border);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 24px rgba(20, 24, 32, 0.045);
+
+            transition:
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .category-group.highlight {
+            border-color:
+                rgba(255, 90, 0, 0.35);
+
+            box-shadow:
+                0 12px 34px rgba(255, 90, 0, 0.10);
+        }
+
+
+        /* =====================================================
+           类目标题
+        ===================================================== */
+
+        .category-title {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 22px;
+
+            font-size: 25px;
+            font-weight: 900;
+
+            letter-spacing: -0.4px;
+        }
+
+
+        .category-title::after {
+            content: "";
+
+            flex: 1;
+
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #e7e9ed,
+                    transparent
+                );
+        }
+
+
+        /* =====================================================
+           类目简介
+        ===================================================== */
+
+        .category-intro {
+            font-size: 16px;
+
+            line-height: 1.9;
+
+            color: #555b63;
+        }
+
+
+        .intro-headline {
+            margin-bottom: 12px;
+
+            font-size: 18px;
+
+            font-weight: 850;
+
+            color: #25282d;
+        }
+
+
+        .category-intro p {
+            margin: 0;
+        }
+
+
+        .category-intro strong {
+            color: #2d3137;
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           信息模块
+        ===================================================== */
+
+        .intro-section {
+            margin-top: 24px;
+
+            padding-top: 20px;
+
+            border-top:
+                1px dashed #e5e7eb;
+        }
+
+
+        .intro-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--work-orange-dark);
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            letter-spacing: 0.8px;
+        }
+
+
+        /* =====================================================
+           标签
+        ===================================================== */
+
+        .intro-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+
+        .intro-tags span {
+            padding: 7px 12px;
+
+            border-radius: 8px;
+
+            background: #f6f7f9;
+
+            border:
+                1px solid #e8e9ed;
+
+            color: #555a62;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           品牌链接
+        ===================================================== */
+
+        .brand-links {
+            line-height: 2.15 !important;
+        }
+
+
+        .brand-links a {
+            display: inline-block;
+
+            margin-right: 10px;
+
+            color: #555b63;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid transparent;
+
+            transition:
+                color 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+
+        .brand-links a:hover {
+            color: var(--work-orange);
+
+            border-bottom-color:
+                var(--work-orange);
+        }
+
+
+        /* =====================================================
+           类目路径
+        ===================================================== */
+
+        .category-items {
+            margin-top: 28px;
+
+            padding: 18px;
+
+            background: #f8f9fa;
+
+            border-radius: 14px;
+
+            border:
+                1px solid #eceef1;
+        }
+
+
+        .category-items p {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            margin: 0;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid #e8eaed;
+        }
+
+
+        .category-items p:last-child {
+            border-bottom: none;
+        }
+
+
+        .category-text {
+            flex: 1;
+
+            min-width: 0;
+
+            color: #666c74;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            word-break: break-all;
+        }
+
+
+        /* =====================================================
+           复制按钮
+        ===================================================== */
+
+        .category-copy-btn {
+            flex: 0 0 auto;
+
+            border: 0;
+
+            border-radius: 8px;
+
+            padding: 7px 12px;
+
+            background: #eef0ff;
+
+            color: #3a47d5;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            line-height: 1.4;
+
+            cursor: pointer;
+
+            white-space: nowrap;
+
+            transition:
+                all 0.2s ease;
+        }
+
+
+        .category-copy-btn:hover {
+            background: #3a47d5;
+            color: #fff;
+
+            transform: translateY(-1px);
+        }
+
+
+        .category-copy-btn.copied {
+            background: #11998e;
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           Footer
+        ===================================================== */
+
+        .site-footer {
+            margin-top: 50px;
+
+            padding: 32px 0;
+
+            background: #fff;
+
+            border-top:
+                1px solid var(--work-border);
+        }
+
+
+        .footer-container {
+            width: min(1440px, calc(100% - 48px));
+
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+
+        .footer-container strong {
+            display: block;
+
+            font-size: 15px;
+        }
+
+
+        .footer-container > div:first-child > span {
+            display: block;
+
+            margin-top: 5px;
+
+            color: #858a91;
+
+            font-size: 12px;
+        }
+
+
+        .footer-version {
+            padding: 7px 11px;
+
+            border-radius: 8px;
+
+            background: #f5f6f8;
+
+            color: #8a8f96;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           响应式
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .tools-bar-content {
+                grid-template-columns:
+                    repeat(3, minmax(0, 1fr));
+            }
+
+        }
+
+
+        @media (max-width: 760px) {
+
+            .header-container,
+            .main-container,
+            .footer-container {
+                width: min(
+                    100% - 28px,
+                    1440px
+                );
+            }
+
+
+            .header-container {
+                min-height: 66px;
+            }
+
+
+            .header-status {
+                display: none;
+            }
+
+
+            .tools-bar-content {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 8px;
+
+                padding: 9px;
+            }
+
+
+            .tool-item {
+                min-height: 72px;
+
+                padding: 11px;
+            }
+
+
+            .tool-icon {
+                width: 36px;
+                height: 36px;
+
+                flex-basis: 36px;
+
+                font-size: 17px;
+            }
+
+
+            .tool-name {
+                font-size: 14px;
+            }
+
+
+            .tool-desc {
+                display: none;
+            }
+
+
+            .hero-section {
+                padding: 32px 22px;
+            }
+
+
+            .hero-title {
+                font-size: 34px;
+            }
+
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+
+            .category-group {
+                padding: 22px 18px;
+            }
+
+
+            .category-title {
+                font-size: 22px;
+            }
+
+
+            .category-intro {
+                font-size: 15px;
+
+                line-height: 1.85;
+            }
+
+
+            .category-items {
+                padding: 12px;
+            }
+
+
+            .category-items p {
+                align-items: flex-start;
+            }
+
+
+            .category-copy-btn {
+                padding: 6px 9px;
+                font-size: 11px;
+            }
+
+
+            .footer-container {
+                align-items: flex-start;
+
+                flex-direction: column;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+
+
+            .logo-text span {
+                font-size: 10px;
+            }
+
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+
+                flex-basis: 36px;
+            }
+
+
+            .category-nav {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+
+            .hero-section {
+                margin-top: 18px;
+            }
+
+
+            .hero-trend-card {
+                padding: 14px;
+            }
+
+
+            .hero-trend-desc {
+                display: none;
+            }
+
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
-    <!-- =========================
+
+    <!-- =====================================================
          顶部导航
-    ========================== -->
+    ====================================================== -->
+
     <header class="site-header">
 
         <div class="header-container">
 
-            <!-- Logo / 首页 -->
+            <!-- Logo -->
             <a
                 href="index.html"
                 class="site-logo"
-                aria-label="TEMU 楚古月(isaac.hu) 首页"
+                aria-label="TEMU 楚古月首页"
             >
+
                 <div class="logo-icon">
                     T
                 </div>
 
                 <div class="logo-text">
-                    <strong>TEMU 楚古月(isaac.hu)</strong>
-                    <span>男装运营工具中心</span>
+
+                    <strong>
+                        TEMU 楚古月（isaac.hu）
+                    </strong>
+
+                    <span>
+                        MEN'S FASHION OPERATION WORKSTATION
+                    </span>
+
                 </div>
+
             </a>
 
+
+            <!-- 工作站状态 -->
+
+            <div class="header-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    工作站运行中
+                </span>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- =========================
-         主体内容
-    ========================== -->
+
+    <!-- =====================================================
+         主体
+    ====================================================== -->
+
     <main class="main-container">
 
-        <!-- Hero -->
-        <section class="hero-section">       
+
+        <!-- =================================================
+             核心工具栏
+        ================================================== -->
+
+        <section class="tools-bar">
+
+            <div class="tools-bar-content">
+
+
+                <!-- 去年热卖 -->
+
+                <a
+                    href="hot-sale-recommendations.html"
+                    class="tool-item"
+                >
+
+                    <span class="tool-icon">
+                        🔥
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            去年热卖
+                        </span>
+
+                        <span class="tool-desc">
+                            HOT PRODUCTS
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- 招品回品 -->
+
+                <a
+                    href="recycle.html"
+                    class="tool-item"
+                >
+
+                    <span class="tool-icon">
+                        🔄
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            招品回品
+                        </span>
+
+                        <span class="tool-desc">
+                            PRODUCT RECYCLING
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- 趋势资讯 -->
+
+                <a
+                    href="trends.html"
+                    class="tool-item trend-tool"
+                >
+
+                    <span class="tool-icon">
+                        📈
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            趋势资讯
+                        </span>
+
+                        <span class="tool-desc">
+                            FASHION TRENDS
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- 标题优化 -->
+
+                <a
+                    href="title-optimization.html"
+                    class="tool-item"
+                >
+
+                    <span class="tool-icon">
+                        📝
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            标题优化
+                        </span>
+
+                        <span class="tool-desc">
+                            TITLE OPTIMIZATION
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- 图片优化 -->
+
+                <a
+                    href="image-optimization.html"
+                    class="tool-item"
+                >
+
+                    <span class="tool-icon">
+                        🖼️
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            图片优化
+                        </span>
+
+                        <span class="tool-desc">
+                            IMAGE OPTIMIZATION
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <!-- 使用演示 -->
+
+                <a
+                    href="assets/pdf/Operation%20Demonstration.pdf"
+                    class="tool-item"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <span class="tool-icon">
+                        📖
+                    </span>
+
+                    <span class="tool-info">
+
+                        <span class="tool-name">
+                            使用演示
+                        </span>
+
+                        <span class="tool-desc">
+                            USER GUIDE
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             招商类目快速导航
+        ================================================== -->
+
+        <nav
+            class="category-nav"
+            aria-label="招商类目快速导航"
+        >
+
+            <span class="category-nav-label">
+                招商类目
+            </span>
+
+
+            <a
+                href="#category-vest"
+                class="category-nav-link"
+                data-target="category-vest"
+            >
+                🦺
+                马甲
+            </a>
+
+
+            <a
+                href="#category-overall"
+                class="category-nav-link"
+                data-target="category-overall"
+            >
+                👖
+                背带裤
+            </a>
+
+
+            <a
+                href="#category-cycling"
+                class="category-nav-link"
+                data-target="category-cycling"
+            >
+                🚴
+                骑行服
+            </a>
+
+
+            <a
+                href="#category-coverall"
+                class="category-nav-link"
+                data-target="category-coverall"
+            >
+                👨‍🔧
+                连体服
+            </a>
+
+        </nav>
+
+
+
+        <!-- =================================================
+             Hero
+        ================================================== -->
+
+        <section class="hero-section">
+
 
             <div class="hero-content">
 
+
                 <div class="hero-badge">
-                    TEMU 楚古月（isaac.hu）
+                    TEMU 男装运营工作站
                 </div>
-                <h1 class="hero-title-with-trends">
 
-                        <span class="hero-main-title">
-                            楚古月（isaac.hu）
-                            <span>招商类目</span>
-                        </span>
 
-                        <a
-                            href="trends.html"
-                            class="trends-entry"
-                            aria-label="进入趋势资讯中心"
-                        >
-                            <span class="trends-icon">📈</span>
-
-                            <span class="trends-info">
-                                <strong>趋势资讯</strong>
-                                <small>FASHION TRENDS</small>
-                            </span>
-
-                            <span class="trends-arrow">→</span>
-                        </a>
-
+                <h1 class="hero-title">
+                    楚古月（isaac.hu）
+                    <span>
+                        招商类目中心
+                    </span>
                 </h1>
+
+
                 <p class="hero-subtitle">
-                    马甲、骑行服、背带裤、练功服上品路径：
+                    男装招商 · 爆品研究 · 趋势洞察 · 标题优化 · 图片优化
                 </p>
 
-<div class="hero-description">
- 
-    <!-- =========================
-         马甲
-    ========================== -->
-    <div class="category-group">
- 
-        <div class="category-title">🦺 马甲</div>
- 
-        <div class="category-intro">
- 
-            <div class="intro-headline">
-                从"保暖层"升级为「叠穿 + 功能 + 风格」单品
-            </div>
- 
-            <p>
-                马甲正在从传统保暖服向
-                <strong>日常叠穿、户外功能、运动机能和街头风格</strong>
-                延伸，是秋冬男装中比较适合做产品延展的品类。
-                欧美市场尤其适合通过不同材质、版型和文化风格做细分。
-            </p>
- 
-            <div class="intro-section">
-                <span class="intro-label">重点方向</span>
- 
-                <div class="intro-tags">
-                    <span>户外马甲</span>
-                    <span>皮马甲</span>
-                    <span>运动马甲</span>
-                    <span>秋冬保暖马甲</span>
+
+
+                <!-- 趋势资讯入口 -->
+
+                <a
+                    href="trends.html"
+                    class="hero-trend-card"
+                >
+
+                    <div class="hero-trend-left">
+
+                        <div class="hero-trend-icon">
+                            📈
+                        </div>
+
+                        <div>
+
+                            <div class="hero-trend-title">
+                                趋势资讯中心
+                            </div>
+
+                            <div class="hero-trend-desc">
+                                FASHION TRENDS · 市场趋势 · 热点资讯 · 品类机会
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-trend-arrow">
+                        →
+                    </div>
+
+                </a>
+
+
+                <div class="hero-description">
+
+
+                    <!-- =================================================
+                         马甲
+                    ================================================== -->
+
+                    <div
+                        class="category-group"
+                        id="category-vest"
+                    >
+
+                        <div class="category-title">
+                            🦺 马甲
+                        </div>
+
+
+                        <div class="category-intro">
+
+                            <div class="intro-headline">
+                                从“保暖层”升级为「叠穿 + 功能 + 风格」单品
+                            </div>
+
+
+                            <p>
+                                马甲正在从传统保暖服向
+                                <strong>
+                                    日常叠穿、户外功能、运动机能和街头风格
+                                </strong>
+                                延伸，是秋冬男装中比较适合做产品延展的品类。
+                                欧美市场尤其适合通过不同材质、版型和文化风格做细分。
+                            </p>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    重点方向
+                                </span>
+
+                                <div class="intro-tags">
+
+                                    <span>户外马甲</span>
+                                    <span>皮马甲</span>
+                                    <span>运动马甲</span>
+                                    <span>秋冬保暖马甲</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    品牌参考
+                                </span>
+
+
+                                <p class="brand-links">
+
+                                    户外：
+
+                                    <a href="https://www.patagonia.com/" target="_blank" rel="noopener">
+                                        Patagonia
+                                    </a>
+
+                                    <a href="https://www.thenorthface.com/" target="_blank" rel="noopener">
+                                        The North Face
+                                    </a>
+
+                                    <a href="https://www.columbia.com/" target="_blank" rel="noopener">
+                                        Columbia
+                                    </a>
+
+                                    <a href="https://www.filson.com/" target="_blank" rel="noopener">
+                                        Filson
+                                    </a>
+
+                                    <br>
+
+                                    皮革：
+
+                                    <a href="https://www.schottnyc.com/" target="_blank" rel="noopener">
+                                        Schott NYC
+                                    </a>
+
+                                    <a href="https://www.harley-davidson.com/" target="_blank" rel="noopener">
+                                        Harley-Davidson
+                                    </a>
+
+                                    <a href="https://www.ariat.com/" target="_blank" rel="noopener">
+                                        Ariat
+                                    </a>
+
+                                    <br>
+
+                                    运动：
+
+                                    <a href="https://www.nike.com/" target="_blank" rel="noopener">
+                                        Nike
+                                    </a>
+
+                                    <a href="https://www.adidas.com/" target="_blank" rel="noopener">
+                                        adidas
+                                    </a>
+
+                                    <a href="https://www.rapha.cc/" target="_blank" rel="noopener">
+                                        Rapha
+                                    </a>
+
+                                    <a href="https://www.castelli-cycling.com/" target="_blank" rel="noopener">
+                                        Castelli
+                                    </a>
+
+                                    <a href="https://shop.lululemon.com/" target="_blank" rel="noopener">
+                                        Lululemon
+                                    </a>
+
+                                    <br>
+
+                                    秋冬：
+
+                                    <a href="https://www.carhartt.com/" target="_blank" rel="noopener">
+                                        Carhartt
+                                    </a>
+
+                                    <a href="https://www.thenorthface.com/" target="_blank" rel="noopener">
+                                        The North Face
+                                    </a>
+
+                                    <a href="https://www.patagonia.com/" target="_blank" rel="noopener">
+                                        Patagonia
+                                    </a>
+
+                                    <a href="https://www.columbia.com/" target="_blank" rel="noopener">
+                                        Columbia
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    开发建议
+                                </span>
+
+                                <p>
+                                    优先测试
+                                    <strong>
+                                        黑色、军绿、卡其、棕色、牛仔色
+                                    </strong>，
+                                    产品可以沿着
+                                    <strong>
+                                        工装马甲 → 户外马甲 → 保暖马甲 → 加热马甲
+                                    </strong>
+                                    做阶梯式延展。
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-items">
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         背带裤
+                    ================================================== -->
+
+                    <div
+                        class="category-group"
+                        id="category-overall"
+                    >
+
+                        <div class="category-title">
+                            👖 背带裤
+                        </div>
+
+
+                        <div class="category-intro">
+
+                            <div class="intro-headline">
+                                Carpenter、Denim、Cargo、Vintage 正在融合
+                            </div>
+
+
+                            <p>
+                                背带裤正在从传统工作服向
+                                <strong>
+                                    Workwear + Streetwear + Vintage
+                                </strong>
+                                方向扩展，宽松版型、工装结构和复古水洗是目前值得关注的产品语言。
+                                对 TEMU 商家而言，这类产品最大的优势是
+                                <strong>
+                                    可以直接复用工装裤、牛仔裤和户外裤的成熟供应链
+                                </strong>。
+                            </p>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    重点方向
+                                </span>
+
+                                <div class="intro-tags">
+
+                                    <span>Carpenter Bib</span>
+                                    <span>Cargo Bib</span>
+                                    <span>Baggy Denim Overall</span>
+                                    <span>Vintage Washed</span>
+                                    <span>Brown Workwear</span>
+                                    <span>Insulated Bib</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    品牌参考
+                                </span>
+
+                                <p class="brand-links">
+
+                                    工装：
+
+                                    <a href="https://www.carhartt.com/" target="_blank" rel="noopener">
+                                        Carhartt
+                                    </a>
+
+                                    <a href="https://www.dickies.com/" target="_blank" rel="noopener">
+                                        Dickies
+                                    </a>
+
+                                    <a href="https://www.keyapparel.com/" target="_blank" rel="noopener">
+                                        Key Apparel
+                                    </a>
+
+                                    <br>
+
+                                    功能：
+
+                                    <a href="https://www.duluthtrading.com/" target="_blank" rel="noopener">
+                                        Duluth Trading
+                                    </a>
+
+                                    <br>
+
+                                    Western：
+
+                                    <a href="https://www.ariat.com/" target="_blank" rel="noopener">
+                                        Ariat
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    开发建议
+                                </span>
+
+                                <p>
+                                    优先从现有
+                                    <strong>
+                                        工装裤、牛仔裤、Cargo Pants、户外裤
+                                    </strong>
+                                    做版型延改，再通过
+                                    <strong>
+                                        多口袋、锤袋、工具袋、宽松裤腿、水洗做旧
+                                    </strong>
+                                    增加产品差异化。
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-items">
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         骑行服
+                    ================================================== -->
+
+                    <div
+                        class="category-group"
+                        id="category-cycling"
+                    >
+
+                        <div class="category-title">
+                            🚴 骑行服
+                        </div>
+
+
+                        <div class="category-intro">
+
+                            <div class="intro-headline">
+                                从“专业竞技”向「运动 + 潮流 + 城市生活」扩张
+                            </div>
+
+
+                            <p>
+                                骑行服正在突破传统紧身竞技服的单一定位，
+                                向
+                                <strong>
+                                    赛车文化、MTB、户外运动、城市通勤和街头潮流
+                                </strong>
+                                延伸。
+                                对 TEMU 商家来说，不建议只围绕传统专业骑行套装开发，
+                                而应该通过
+                                <strong>
+                                    版型宽松化、视觉复古化和场景生活化
+                                </strong>
+                                扩大消费人群。
+                            </p>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    重点方向
+                                </span>
+
+                                <div class="intro-tags">
+
+                                    <span>Retro Racing</span>
+                                    <span>MTB</span>
+                                    <span>骑行背带短裤</span>
+                                    <span>骑行马甲</span>
+                                    <span>秋冬长袖</span>
+                                    <span>反光骑行</span>
+                                    <span>城市通勤</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    品牌参考
+                                </span>
+
+                                <p class="brand-links">
+
+                                    专业骑行：
+
+                                    <a href="https://www.rapha.cc/" target="_blank" rel="noopener">
+                                        Rapha
+                                    </a>
+
+                                    <a href="https://www.castelli-cycling.com/" target="_blank" rel="noopener">
+                                        Castelli
+                                    </a>
+
+                                    <a href="https://pearlizumi.com/" target="_blank" rel="noopener">
+                                        PEARL iZUMi
+                                    </a>
+
+                                    <br>
+
+                                    年轻化：
+
+                                    <a href="https://maap.cc/" target="_blank" rel="noopener">
+                                        MAAP
+                                    </a>
+
+                                    <a href="https://pasnormalstudios.com/" target="_blank" rel="noopener">
+                                        Pas Normal Studios
+                                    </a>
+
+                                    <br>
+
+                                    MTB / 户外：
+
+                                    <a href="https://www.foxracing.com/" target="_blank" rel="noopener">
+                                        Fox Racing
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    开发建议
+                                </span>
+
+                                <p>
+                                    可以从传统紧身骑行服进一步延展至
+                                    <strong>
+                                        复古赛车、MTB 宽松骑行、骑行背带短裤、骑行马甲、
+                                        秋冬长袖、反光骑行和城市通勤
+                                    </strong>，
+                                    重点强化运动与日常生活方式之间的结合。
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-items">
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>骑行背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         连体服
+                    ================================================== -->
+
+                    <div
+                        class="category-group"
+                        id="category-coverall"
+                    >
+
+                        <div class="category-title">
+                            👨‍🔧 连体服
+                        </div>
+
+
+                        <div class="category-intro">
+
+                            <div class="intro-headline">
+                                Mechanic、Racing、Vintage：从工作服变成“文化型单品”
+                            </div>
+
+
+                            <p>
+                                连体服最大的优势不是单纯的功能，而是背后非常强的
+                                <strong>
+                                    美国工装、机械师、赛车、农场、户外劳动和复古文化
+                                </strong>。
+                                因此非常适合通过 TikTok、社交媒体和场景化图片进行内容营销，
+                                也是工装类目中比较适合进行风格延展的产品。
+                            </p>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    重点方向
+                                </span>
+
+                                <div class="intro-tags">
+
+                                    <span>Mechanic Coverall</span>
+                                    <span>Racing Coverall</span>
+                                    <span>Vintage Workwear</span>
+                                    <span>Denim Coverall</span>
+                                    <span>Utility Coverall</span>
+                                    <span>Insulated Coverall</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    品牌参考
+                                </span>
+
+                                <p class="brand-links">
+
+                                    美式工装：
+
+                                    <a href="https://www.dickies.com/" target="_blank" rel="noopener">
+                                        Dickies
+                                    </a>
+
+                                    <a href="https://www.carhartt.com/" target="_blank" rel="noopener">
+                                        Carhartt
+                                    </a>
+
+                                    <br>
+
+                                    汽修 / 工业：
+
+                                    <a href="https://www.redkap.com/" target="_blank" rel="noopener">
+                                        Red Kap
+                                    </a>
+
+                                    <a href="https://bendavis.com/" target="_blank" rel="noopener">
+                                        Ben Davis
+                                    </a>
+
+                                    <br>
+
+                                    Western：
+
+                                    <a href="https://www.ariat.com/" target="_blank" rel="noopener">
+                                        Ariat
+                                    </a>
+
+                                    <br>
+
+                                    技术工装：
+
+                                    <a href="https://truewerk.com/" target="_blank" rel="noopener">
+                                        Truewerk
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="intro-section">
+
+                                <span class="intro-label">
+                                    开发建议
+                                </span>
+
+                                <p>
+                                    重点测试
+                                    <strong>
+                                        水洗黑、棕色、军绿、牛仔蓝、卡其
+                                    </strong>，
+                                    并通过
+                                    <strong>
+                                        多口袋、工具袋、胸袋、锤袋、拉链、耐磨面料
+                                    </strong>
+                                    强化工装属性，再向
+                                    <strong>
+                                        Mechanic → Racing → Vintage → Outdoor → Insulated
+                                    </strong>
+                                    做产品延展。
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-items">
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>连体练功服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    服装、鞋靴和珠宝饰品>体育专用服装>舞蹈服>男士舞蹈服>紧身连衣裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>紧身连衣裤
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动服装和器材>团队运动>体操>服装>男士体操服>男士体操连体练功服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+
+                            <p>
+                                <span class="category-text">
+                                    运动与户外用品>运动与户外休闲用品>运动场设备>体操装备>服装>男士体操服>男士体操连体练功服
+                                </span>
+
+                                <button type="button" class="category-copy-btn">
+                                    复制
+                                </button>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">品牌参考</span>
- 
-                <p class="brand-links">
-                    户外：
-                    <a href="https://www.patagonia.com/shop/mens/jackets-vests/vests" target="_blank" rel="noopener">Patagonia</a>
-                    <a href="https://www.thenorthface.com/en-us/c/mens/mens-jackets-and-vests/mens-vests-299291" target="_blank" rel="noopener">The North Face</a>
-                    <a href="https://www.columbia.com/c/mens-vest-jackets/?refine=c_warmth%3DLight%20Warmth" target="_blank" rel="noopener">Columbia</a>
-                    <a href="https://www.filson.com/collections/vests" target="_blank" rel="noopener">Filson</a>
-                    <br>
- 
-                    皮革：
-                    <a href="https://www.schottnyc.com/collections/mens-outerwear?filter.p.product_type=Vest&sort_by=manual" target="_blank" rel="noopener">Schott NYC</a>
-                    <a href="https://www.harley-davidson.com/us/en/shop/c/mens-motorcycle-vests?format=json&locale=en_US&q=mens-motorcycle-vests&page=1&sp_c=48" target="_blank" rel="noopener">Harley-Davidson</a>
-                    <a href="https://www.ariat.com/mens-vests" target="_blank" rel="noopener">Ariat</a>
-                    <br>
- 
-                    运动：
-                    <a href="https://www.nike.com/w/mens-vests-5mq3hznik1" target="_blank" rel="noopener">Nike</a>
-                    <a href="https://www.adidas.com.cn/plp/men_app_vest?page=1" target="_blank" rel="noopener">adidas</a>
-                    <a href="https://www.rapha.cc/tw/zh/shop/jackets" target="_blank" rel="noopener">Rapha</a>
-                    <a href="https://www.castelli-cycling.com/US/en/Men/Cycling/Top/Vests/c/Man-Cyc-Top-Ves" target="_blank" rel="noopener">Castelli</a>
-                    <a href="https://www.lululemon.com.au/en-au/c/men/coats-and-jackets?pmid=regularPricedPromotion&prefn1=Type&prefv1=Vests" target="_blank" rel="noopener">Lululemon</a>
-                    <br>
- 
-                    秋冬：
-                    <a href="https://www.carhartt.com/c/men-vests?icid=2025-10-09_plp_shops-tool_rank2_clickable_plp_evrgn_m-ow-wdgt-vsts_allvisitors_copy_18585" target="_blank" rel="noopener">Carhartt</a>
-                    <a href="https://www.thenorthface.com/en-us/c/mens/mens-jackets-and-vests/mens-vests-299291" target="_blank" rel="noopener">The North Face</a>
-                    <a href="https://www.patagonia.com/shop/mens/jackets-vests/vests" target="_blank" rel="noopener">Patagonia</a>
-                    <a href="https://www.columbia.com/c/mens-vest-jackets/?refine=c_warmth%3DLight%20Warmth" target="_blank" rel="noopener">Columbia</a>
-                </p>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">开发建议</span>
- 
-                <p>
-                    优先测试
-                    <strong>黑色、军绿、卡其、棕色、牛仔色</strong>，
-                    产品可以沿着
-                    <strong>工装马甲 → 户外马甲 → 保暖马甲 → 加热马甲</strong>
-                    做阶梯式延展。
-                </p>
-            </div>
- 
-        </div>
- 
-        <div class="category-items">
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男装单马甲</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步马甲</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步马甲</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步马甲</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-        </div>
- 
-    </div>
- 
- 
-    <!-- =========================
-         背带裤
-    ========================== -->
-    <div class="category-group">
- 
-        <div class="category-title">👖 背带裤</div>
- 
-        <div class="category-intro">
- 
-            <div class="intro-headline">
-                Carpenter、Denim、Cargo、Vintage 正在融合
-            </div>
- 
-            <p>
-                背带裤正在从传统工作服向
-                <strong>Workwear + Streetwear + Vintage</strong>
-                方向扩展，宽松版型、工装结构和复古水洗是目前值得关注的产品语言。
-                对 TEMU 商家而言，这类产品最大的优势是
-                <strong>可以直接复用工装裤、牛仔裤和户外裤的成熟供应链</strong>。
-            </p>
- 
-            <div class="intro-section">
-                <span class="intro-label">重点方向</span>
- 
-                <div class="intro-tags">
-                    <span>Carpenter Bib</span>
-                    <span>Cargo Bib</span>
-                    <span>Baggy Denim Overall</span>
-                    <span>Vintage Washed</span>
-                    <span>Brown Workwear</span>
-                    <span>Insulated Bib</span>
-                </div>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">品牌参考</span>
- 
-                <p class="brand-links">
-                    工装：
-                    <a href="https://www.carhartt.com/c/men-bibs-coveralls-overalls" target="_blank" rel="noopener">Carhartt</a>
-                    <a href="https://www.dickies.com/en-us/collections/mens-coveralls-overalls" target="_blank" rel="noopener">Dickies</a>
-                    <a href="https://www.keyapparel.com/men/bib-overalls-coveralls/" target="_blank" rel="noopener">Key Apparel</a>
-                    <br>
- 
-                    功能：
-                    <a href="https://www.duluthtrading.com/men/bottoms/overalls/" target="_blank" rel="noopener">Duluth Trading</a>
-                    <br>
- 
-                    Western：
-                    <a href="https://www.ariat.com/" target="_blank" rel="noopener">Ariat</a>
-                    <br>
-                    
-                    滑雪：
-                    <a href="https://www.burton.com/" target="_blank" rel="noopener">Burton</a>
-                    <a href="https://www.686.com/" target="_blank" rel="noopener">686</a>
-                    <a href="https://flylowgear.com/" target="_blank" rel="noopener">Flylow</a>
-                    <a href="https://www.thenorthface.com/en-us/c/mens/mens-snow-226110" target="_blank" rel="noopener">The North Face</a>
-                </p>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">开发建议</span>
- 
-                <p>
-                    优先从现有
-                    <strong>工装裤、牛仔裤、Cargo Pants、户外裤</strong>
-                    做版型延改，再通过
-                    <strong>多口袋、锤袋、工具袋、宽松裤腿、水洗做旧</strong>
-                    增加产品差异化。
-                </p>
-            </div>
- 
-        </div>
- 
-        <div class="category-items">
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>男士时尚>男装>男士背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>滑雪服>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>户外休闲>冬季运动>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>冰雪运动用品>滑雪用品>服装>男士滑雪服>男士滑雪裤>男士滑雪背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>滑雪>男士滑雪背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-        </div>
- 
-    </div>
- 
- 
-    <!-- =========================
-         骑行服
-    ========================== -->
-    <div class="category-group">
- 
-        <div class="category-title">🚴 骑行服</div>
- 
-        <div class="category-intro">
- 
-            <div class="intro-headline">
-                从"专业竞技"向「运动 + 潮流 + 城市生活」扩张
-            </div>
- 
-            <p>
-                骑行服正在突破传统紧身竞技服的单一定位，
-                向<strong>赛车文化、MTB、户外运动、城市通勤和街头潮流</strong>延伸。
-                对 TEMU 商家来说，不建议只围绕传统专业骑行套装开发，
-                而应该通过<strong>版型宽松化、视觉复古化和场景生活化</strong>扩大消费人群。
-            </p>
- 
-            <div class="intro-section">
-                <span class="intro-label">重点方向</span>
- 
-                <div class="intro-tags">
-                    <span>Retro Racing</span>
-                    <span>MTB</span>
-                    <span>骑行背带短裤</span>
-                    <span>骑行马甲</span>
-                    <span>秋冬长袖</span>
-                    <span>反光骑行</span>
-                    <span>城市通勤</span>
-                </div>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">品牌参考</span>
- 
-                <p class="brand-links">
-                    专业骑行：
-                    <a href="https://www.rapha.cc/" target="_blank" rel="noopener">Rapha</a>
-                    <a href="https://www.castelli-cycling.com/" target="_blank" rel="noopener">Castelli</a>
-                    <a href="https://pearlizumi.com/" target="_blank" rel="noopener">PEARL iZUMi</a>
-                    <br>
- 
-                    年轻化：
-                    <a href="https://maap.cc/" target="_blank" rel="noopener">MAAP</a>
-                    <a href="https://pasnormalstudios.com/" target="_blank" rel="noopener">Pas Normal Studios</a>
-                    <br>
- 
-                    MTB / 户外：
-                    <a href="https://www.foxracing.com/" target="_blank" rel="noopener">Fox Racing</a>
-                </p>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">开发建议</span>
- 
-                <p>
-                    可以从传统紧身骑行服进一步延展至
-                    <strong>复古赛车、MTB 宽松骑行、骑行背带短裤、骑行马甲、
-                    秋冬长袖、反光骑行和城市通勤</strong>，
-                    重点强化运动与日常生活方式之间的结合。
-                </p>
-            </div>
- 
-        </div>
- 
-        <div class="category-items">
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲裤>骑行背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行背带短裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行连体服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行连体服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行连体服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行背带短裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行背带短裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-        </div>
- 
-    </div>
- 
- 
-    <!-- =========================
-         连体服
-    ========================== -->
-    <div class="category-group">
- 
-        <div class="category-title">👨‍🔧 连体服</div>
- 
-        <div class="category-intro">
- 
-            <div class="intro-headline">
-                Mechanic、Racing、Vintage：从工作服变成"文化型单品"
-            </div>
- 
-            <p>
-                连体服最大的优势不是单纯的功能，而是背后非常强的
-                <strong>美国工装、机械师、赛车、农场、户外劳动和复古文化</strong>。
-                因此非常适合通过 TikTok、社交媒体和场景化图片进行内容营销，
-                也是工装类目中比较适合进行风格延展的产品。
-            </p>
- 
-            <div class="intro-section">
-                <span class="intro-label">重点方向</span>
- 
-                <div class="intro-tags">
-                    <span>Mechanic Coverall</span>
-                    <span>Racing Coverall</span>
-                    <span>Vintage Workwear</span>
-                    <span>Denim Coverall</span>
-                    <span>Utility Coverall</span>
-                    <span>Insulated Coverall</span>
-                </div>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">品牌参考</span>
- 
-                <p class="brand-links">
-                    美式工装：
-                    <a href="https://www.dickies.com/" target="_blank" rel="noopener">Dickies</a>
-                    <a href="https://www.carhartt.com/" target="_blank" rel="noopener">Carhartt</a>
-                    <br>
- 
-                    汽修 / 工业：
-                    <a href="https://www.redkap.com/" target="_blank" rel="noopener">Red Kap</a>
-                    <a href="https://bendavis.com/" target="_blank" rel="noopener">Ben Davis</a>
-                    <br>
- 
-                    Western：
-                    <a href="https://www.ariat.com/" target="_blank" rel="noopener">Ariat</a>
-                    <br>
- 
-                    技术工装：
-                    <a href="https://truewerk.com/" target="_blank" rel="noopener">Truewerk</a>
-                </p>
-            </div>
- 
-            <div class="intro-section">
-                <span class="intro-label">开发建议</span>
- 
-                <p>
-                    重点测试
-                    <strong>水洗黑、棕色、军绿、牛仔蓝、卡其</strong>，
-                    并通过
-                    <strong>多口袋、工具袋、胸袋、锤袋、拉链、耐磨面料</strong>
-                    强化工装属性，再向
-                    <strong>Mechanic → Racing → Vintage → Outdoor → Insulated</strong>
-                    做产品延展。
-                </p>
-            </div>
- 
-        </div>
- 
-        <div class="category-items">
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>连体练功服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">服装、鞋靴和珠宝饰品>体育专用服装>舞蹈服>男士舞蹈服>紧身连衣裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>其他运动类型>舞蹈用品>服装>男士舞蹈服>紧身连衣裤</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动服装和器材>团队运动>体操>服装>男士体操服>男士体操连体练功服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-            <p>
-                <span class="category-text">运动与户外用品>运动与户外休闲用品>运动场设备>体操装备>服装>男士体操服>男士体操连体练功服</span>
-                <button type="button" class="category-copy-btn">复制</button>
-            </p>
- 
-        </div>
- 
-    </div>
- 
-</div>
-
-
-
-        </section>
-
-
-        <!-- =========================
-             核心功能
-        ========================== -->
-        <section class="function-section">
-
-            <div class="section-header">
-
-                <div>
-                    <div class="section-label">
-                        CORE TOOLS
-                    </div>
-
-                    <h2>
-                        核心工具
-                    </h2>
-                </div>
 
             </div>
-
-
-            <div class="function-grid">
-
-
-                <!-- =====================
-                     标题优化
-                ====================== -->
-                <a
-                    href="title-optimization.html"
-                    class="function-card"
-                >
-
-                    <div class="function-icon">
-                        📝
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                标题优化中心
-                            </h3>
-
-                            <span class="status-badge active">
-                                可用
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Title Optimization Center
-                        </p>
-
-                        <p class="function-description">
-                            男装商品标题优化、关键词组合、
-                            标题优化提示词生成。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                进入工具
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     图片优化
-                ====================== -->
-                <a
-                    href="image-optimization.html"
-                    class="function-card"
-                >
-
-                    <div class="function-icon">
-                        🖼️
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                图片优化中心
-                            </h3>
-
-                            <span class="status-badge active">
-                                可用
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Image Optimization Center
-                        </p>
-
-                        <p class="function-description">
-                            主图、详情页、卖点视觉优化、
-                            图片检查与 AI 图片优化工具。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                进入工具
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     网页使用演示
-                ====================== -->
-                <a
-                    href="assets/pdf/Operation Demonstration.pdf"
-                    class="function-card"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <div class="function-icon">
-                        📖
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                网页使用演示
-                            </h3>
-
-                            <span class="status-badge active">
-                                可用
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Operation Demonstration
-                        </p>
-
-                        <p class="function-description">
-                            网页功能详细演示、操作指南、
-                            工具使用方法与技巧。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                查看教程
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     视觉优化灵感
-                ====================== -->
-                <a
-                    href="assets/pdf/picture.pdf"
-                    class="function-card"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <div class="function-icon">
-                        🎨
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                视觉优化灵感
-                            </h3>
-
-                            <span class="status-badge active">
-                                可用
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Visual Inspiration
-                        </p>
-
-                        <p class="function-description">
-                            爆款图片参考、视觉优化案例、
-                            摄影构图灵感与设计参考。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                浏览灵感
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     上新推荐
-                ====================== -->
-                <a
-                    href="assets/pdf/store.pdf"
-                    class="function-card"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <div class="function-icon">
-                        ✨
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                上新推荐
-                            </h3>
-
-                            <span class="status-badge active">
-                                持续更新
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Store Recommendations
-                        </p>
-
-                        <p class="function-description">
-                            热推新品、爆款推荐、
-                            店铺运营最佳实践与案例。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                查看推荐
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     节日营销中心
-                ====================== -->
-                <a
-                    class="function-card"
-                    href="assets/pdf/festival-calendar.pdf"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <div class="function-icon">
-                        📅
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                节日营销中心
-                            </h3>
-
-                            <span class="status-badge active">
-                                可用
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Festival Marketing
-                        </p>
-
-                        <p class="function-description">
-                            美洲节日营销节点、热门关键词、
-                            商品推荐与营销规划。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                进入工具
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-                <!-- =====================
-                     去年10月热卖推荐
-                ====================== -->
-                <a
-                    href="hot-sale-recommendations.html"
-                    class="function-card"
-                >
-
-                    <div class="function-icon">
-                        🔥
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                去年10月热卖推荐
-                            </h3>
-
-                            <span class="status-badge active">
-                                持续更新
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Last October Best Sellers
-                        </p>
-
-                        <p class="function-description">
-                            浏览去年10月热卖商品图片，
-                            点击图片即可放大查看。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                查看热卖推荐
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-                    
-
-                     <!-- =====================
-                     去年10月热卖推荐
-                ====================== -->
-                <a
-                    href="recycle.html"
-                    class="function-card"
-                >
-
-                    <div class="function-icon">
-                        🔥
-                    </div>
-
-                    <div class="function-content">
-
-                        <div class="function-top">
-
-                            <h3>
-                                招品回品（流量加持）
-                            </h3>
-
-                            <span class="status-badge active">
-                                持续更新
-                            </span>
-
-                        </div>
-
-                        <p class="function-en">
-                            Promoting Products and Recalling Products (Boosted by Traffic)
-                        </p>
-
-                        <p class="function-description">
-                            浏览招品回品商品图片，
-                            点击图片即可放大查看。
-                        </p>
-
-                        <div class="function-footer">
-
-                            <span>
-                                查看商品推荐
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-
-            </div>
-
-        </section>
-
 
         </section>
 
     </main>
 
 
-    <!-- =========================
+
+    <!-- =====================================================
          Footer
-    ========================== -->
+    ====================================================== -->
+
     <footer class="site-footer">
 
         <div class="footer-container">
 
             <div>
+
                 <strong>
                     TEMU 楚古月（isaac.hu）
                 </strong>
 
                 <span>
-                    男装运营工具中心
+                    男装运营工作站
                 </span>
 
-                <p style="font-size: 12px; color: #999; margin-top: 8px; line-height: 1.6;">
+                <p
+                    style="
+                        font-size: 12px;
+                        color: #999;
+                        margin-top: 10px;
+                        line-height: 1.7;
+                    "
+                >
                     本网页所有功能只提供建议，不负任何法律责任，所有资源来源于互联网。<br>
                     如果有功能更新需求请联系楚古月（isaac.hu）
                 </p>
+
             </div>
 
-            <div>
-                V1.0
+
+            <div class="footer-version">
+                V2.0
             </div>
 
         </div>
@@ -1086,71 +2455,303 @@
     </footer>
 
 
-    <!-- 全局 JS -->
-    <script
-        src="assets/js/app.js"
-    ></script>
+
+    <!-- =====================================================
+         全局 JS
+    ====================================================== -->
+
+    <script src="assets/js/app.js"></script>
 
 
-<script>
-/* =========================
-   招商类目一键复制
-========================= */
 
-document.addEventListener("DOMContentLoaded", function () {
+    <!-- =====================================================
+         首页交互
+    ====================================================== -->
 
-    const buttons = document.querySelectorAll(".category-copy-btn");
+    <script>
 
-    buttons.forEach(function (button) {
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
 
-        button.addEventListener("click", async function () {
 
-            const textElement = this.parentElement.querySelector(".category-text");
+                /* =================================================
+                   一、招商类目复制
+                ================================================= */
 
-            if (!textElement) return;
+                const buttons =
+                    document.querySelectorAll(
+                        ".category-copy-btn"
+                    );
 
-            const text = textElement.innerText.trim();
 
-            try {
+                buttons.forEach(function (button) {
 
-                await navigator.clipboard.writeText(text);
+                    button.addEventListener(
+                        "click",
+                        async function () {
 
-            } catch (error) {
+                            const textElement =
+                                this.parentElement.querySelector(
+                                    ".category-text"
+                                );
 
-                const textarea = document.createElement("textarea");
 
-                textarea.value = text;
+                            if (!textElement) return;
 
-                textarea.style.position = "fixed";
-                textarea.style.opacity = "0";
 
-                document.body.appendChild(textarea);
+                            const text =
+                                textElement.innerText.trim();
 
-                textarea.select();
 
-                document.execCommand("copy");
+                            try {
 
-                textarea.remove();
+                                await navigator.clipboard.writeText(
+                                    text
+                                );
+
+                            } catch (error) {
+
+                                const textarea =
+                                    document.createElement(
+                                        "textarea"
+                                    );
+
+                                textarea.value = text;
+
+                                textarea.style.position =
+                                    "fixed";
+
+                                textarea.style.opacity =
+                                    "0";
+
+                                document.body.appendChild(
+                                    textarea
+                                );
+
+                                textarea.select();
+
+                                document.execCommand(
+                                    "copy"
+                                );
+
+                                textarea.remove();
+
+                            }
+
+
+                            const originalText =
+                                this.innerText;
+
+
+                            this.innerText =
+                                "已复制";
+
+                            this.classList.add(
+                                "copied"
+                            );
+
+
+                            setTimeout(
+                                () => {
+
+                                    this.innerText =
+                                        originalText;
+
+                                    this.classList.remove(
+                                        "copied"
+                                    );
+
+                                },
+                                1200
+                            );
+
+                        }
+                    );
+
+                });
+
+
+
+                /* =================================================
+                   二、类目快速跳转
+                ================================================= */
+
+                const categoryLinks =
+                    document.querySelectorAll(
+                        ".category-nav-link"
+                    );
+
+
+                categoryLinks.forEach(function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function (event) {
+
+                            event.preventDefault();
+
+
+                            const targetId =
+                                this.dataset.target;
+
+
+                            const target =
+                                document.getElementById(
+                                    targetId
+                                );
+
+
+                            if (!target) return;
+
+
+                            target.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+
+
+                            /* 当前类目高亮 */
+
+                            document
+                                .querySelectorAll(
+                                    ".category-group"
+                                )
+                                .forEach(
+                                    function (item) {
+
+                                        item.classList.remove(
+                                            "highlight"
+                                        );
+
+                                    }
+                                );
+
+
+                            target.classList.add(
+                                "highlight"
+                            );
+
+
+                            setTimeout(
+                                function () {
+
+                                    target.classList.remove(
+                                        "highlight"
+                                    );
+
+                                },
+                                1500
+                            );
+
+                        }
+                    );
+
+                });
+
+
+
+                /* =================================================
+                   三、滚动时自动识别当前类目
+                ================================================= */
+
+                const categorySections =
+                    document.querySelectorAll(
+                        ".category-group"
+                    );
+
+
+                const observer =
+                    new IntersectionObserver(
+                        function (entries) {
+
+                            entries.forEach(
+                                function (entry) {
+
+                                    if (!entry.isIntersecting) {
+                                        return;
+                                    }
+
+
+                                    const id =
+                                        entry.target.id;
+
+
+                                    categoryLinks.forEach(
+                                        function (link) {
+
+                                            link.classList.toggle(
+                                                "active",
+                                                link.dataset.target === id
+                                            );
+
+                                        }
+                                    );
+
+                                }
+                            );
+
+                        },
+                        {
+                            threshold: 0.35
+                        }
+                    );
+
+
+                categorySections.forEach(
+                    function (section) {
+
+                        observer.observe(
+                            section
+                        );
+
+                    }
+                );
+
+
+
+                /* =================================================
+                   四、浏览器后退 / 前进定位
+                ================================================= */
+
+                if (window.location.hash) {
+
+                    const id =
+                        window.location.hash.substring(
+                            1
+                        );
+
+
+                    const target =
+                        document.getElementById(
+                            id
+                        );
+
+
+                    if (target) {
+
+                        setTimeout(
+                            function () {
+
+                                target.scrollIntoView({
+                                    behavior: "smooth",
+                                    block: "start"
+                                });
+
+                            },
+                            150
+                        );
+
+                    }
+
+                }
+
             }
+        );
 
-            const originalText = this.innerText;
+    </script>
 
-            this.innerText = "已复制";
-            this.classList.add("copied");
-
-            setTimeout(() => {
-
-                this.innerText = originalText;
-                this.classList.remove("copied");
-
-            }, 1200);
-
-        });
-
-    });
-
-});
-</script>
 
 </body>
+
 </html>
