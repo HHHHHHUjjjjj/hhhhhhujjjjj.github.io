@@ -907,50 +907,6 @@ body {
     }
 }
 /* =========================
-   顶部趋势资讯入口
-========================= */
-
-.hero-title-with-trends {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.trends-entry {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: #fff3ed;
-    color: #ff5a00;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1px solid rgba(255, 90, 0, 0.15);
-    transition: all 0.2s ease;
-}
-
-.trends-entry:hover {
-    background: #ff5a00;
-    color: #fff;
-    transform: translateY(-1px);
-}
-
-/* 移动端 */
-@media (max-width: 640px) {
-    .hero-title-with-trends {
-        align-items: flex-start;
-    }
-
-    .trends-entry {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-}
-/* =========================
    顶部独立功能入口
    趋势资讯
 ========================= */
@@ -986,7 +942,7 @@ body {
         #ff7a2f 100%
     );
 
-    color: #fff;
+    color: #ffffff; /* 确保整个入口内部所有继承文字为白色 */
 
     border-radius: 12px;
 
@@ -1001,7 +957,7 @@ body {
 }
 
 .trends-entry:hover {
-    color: #fff;
+    color: #ffffff; /* 悬停时保持纯白色 */
 
     transform: translateY(-3px);
 
@@ -1025,6 +981,7 @@ body {
     border-radius: 9px;
 
     font-size: 21px;
+    color: #ffffff; /* 强制图标颜色为白色 */
 }
 
 
@@ -1042,12 +999,14 @@ body {
     font-size: 15px;
     font-weight: 700;
     line-height: 1.2;
+    color: #ffffff; /* 主标题文字为白色 */
 }
 
 .trends-info small {
     font-size: 9px;
     letter-spacing: 1px;
-    opacity: 0.82;
+    color: #ffffff; /* 副标题文字为纯白色 */
+    opacity: 1;    /* 取消原有的 0.82 透明度，实现 100% 纯白 */
 }
 
 
@@ -1056,6 +1015,7 @@ body {
 .trends-arrow {
     font-size: 20px;
     font-weight: 600;
+    color: #ffffff; /* 箭头为白色 */
 
     transition: transform 0.2s ease;
 }
