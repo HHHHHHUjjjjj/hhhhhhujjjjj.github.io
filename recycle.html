@@ -969,6 +969,8 @@
 
     let categoryData = {};
 
+    let categoryPathMap = {};
+
     let activeCategory = '';
 
 
@@ -1212,6 +1214,11 @@
             'image-card';
 
 
+        const thumbnailUrl =
+            item.thumbnail_url ||
+            item.image_url ||
+            '';
+
         const imageUrl =
             item.image_url ||
             '';
@@ -1235,7 +1242,7 @@
                 aria-label="放大查看 ${escapeHtml(categoryName)}">
 
                 <img
-                    src="${escapeHtml(imageUrl)}"
+                    src="${escapeHtml(thumbnailUrl)}"
                     alt="${escapeHtml(categoryName)}"
                     loading="lazy">
 
@@ -1280,61 +1287,23 @@
     /* =========================
        获取当前分类的所有路径
        
-       category_path 是数组
+       从 categoryPathMap 中获取
     ========================= */
 
     function getCategoryPath(
-        images
+        category
     ) {
 
         if (
-            !images ||
-            !images.length
+            !category ||
+            !categoryPathMap[category]
         ) {
 
             return [];
 
         }
 
-
-        const allPaths = [];
-
-
-        images.forEach(
-            (item) => {
-
-                if (
-                    Array.isArray(
-                        item.category_path
-                    )
-                ) {
-
-                    item.category_path.forEach(
-                        (path) => {
-
-                            if (
-                                path &&
-                                !allPaths.includes(
-                                    path
-                                )
-                            ) {
-
-                                allPaths.push(
-                                    path
-                                );
-
-                            }
-
-                        }
-                    );
-
-                }
-
-            }
-        );
-
-
-        return allPaths;
+        return categoryPathMap[category] || [];
 
     }
 
@@ -1382,7 +1351,7 @@
 
         const categoryPaths =
             getCategoryPath(
-                images
+                category
             );
 
 
@@ -1684,7 +1653,14 @@
 
 
             /* =========================
-               支持两种 JSON
+               支持多种 JSON 格式
+               
+               {
+                   "categoryPathMap": {...},
+                   "recycle": [...]
+               }
+               
+               或
                
                {
                    "recycle": [...]
@@ -1702,6 +1678,11 @@
                         data.recycle ||
                         []
                     );
+
+            /* 保存分类路径映射 */
+            if (data.categoryPathMap) {
+                categoryPathMap = data.categoryPathMap;
+            }
 
 
 

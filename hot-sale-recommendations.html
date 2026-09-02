@@ -11,10 +11,10 @@
 
     <meta
         name="description"
-        content="去年10月热卖商品图片推荐"
+        content="去年11月热卖商品图片推荐"
     >
 
-    <title>去年10月热卖推荐 | TEMU 楚古月</title>
+    <title>去年11月热卖推荐 | TEMU 楚古月</title>
 
     <style>
 
@@ -601,11 +601,11 @@
         </p>
 
         <h1>
-            去年10月热卖推荐
+            去年11月热卖推荐
         </h1>
 
         <p>
-            集中查看去年10月热卖商品图片。
+            集中查看去年11月热卖商品图片。
             选择对应款式后，可直接查看 TEMU 上品路径并一键复制。
         </p>
 
@@ -1073,7 +1073,7 @@ function hideLightbox() {
    添加图片
 ========================================================= */
 
-function addImage(src, name, index) {
+function addImage(thumbnailSrc, fullSrc, name, index) {
 
     const card =
         document.createElement('figure');
@@ -1132,7 +1132,7 @@ function addImage(src, name, index) {
 
     img.decoding = 'async';
 
-    img.src = src;
+    img.src = thumbnailSrc;
 
     img.alt =
         name || `${activeCategory} 热卖商品 ${index + 1}`;
@@ -1168,7 +1168,7 @@ function addImage(src, name, index) {
     button.addEventListener(
         'click',
         () => openLightbox(
-            src,
+            fullSrc,
             img.alt
         )
     );
@@ -1250,10 +1250,11 @@ function renderCategory(category) {
          */
 
         images.forEach(
-            ({ image_url: src, rank }, index) => {
+            ({ thumbnail_url: thumbnailSrc, image_url: fullSrc, rank }, index) => {
 
                 addImage(
-                    src,
+                    thumbnailSrc,
+                    fullSrc,
                     `${category} · TOP ${rank || index + 1}`,
                     index
                 );
