@@ -247,6 +247,61 @@
             flex-direction: column;
 
             gap: 8px;
+
+            max-height: 240px;
+
+            overflow-y: auto;
+
+            padding-right: 4px;
+
+            scrollbar-color: #ffb08a transparent;
+            scrollbar-width: thin;
+        }
+
+        .path-list.expanded {
+            max-height: none;
+            overflow-y: visible;
+        }
+
+        .path-list::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .path-list::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: #ffb08a;
+        }
+
+        .path-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .path-expand-btn {
+            display: block;
+
+            width: 100%;
+
+            margin-top: 10px;
+            padding: 8px 12px;
+
+            border: 1px solid #ffc5a8;
+            border-radius: 7px;
+
+            background: #fff;
+            color: var(--orange);
+
+            cursor: pointer;
+
+            font: inherit;
+            font-size: 12px;
+            font-weight: 700;
+
+            transition: background .2s ease, border-color .2s ease;
+        }
+
+        .path-expand-btn:hover {
+            border-color: var(--orange);
+            background: #fff8f4;
         }
 
         .path-item {
@@ -495,7 +550,8 @@
         .back-link:focus-visible,
         .category-tab:focus-visible,
         .close-button:focus-visible,
-        .path-copy-btn:focus-visible {
+        .path-copy-btn:focus-visible,
+        .path-expand-btn:focus-visible {
             outline: 3px solid #ffbf91;
             outline-offset: 3px;
         }
@@ -666,6 +722,14 @@
                 id="pathList"
             ></div>
 
+            <button
+                class="path-expand-btn"
+                id="pathExpandBtn"
+                type="button"
+                hidden
+                aria-expanded="false"
+            ></button>
+
         </div>
 
 
@@ -754,6 +818,9 @@ const categoryPaths =
 
 const pathList =
     document.getElementById('pathList');
+
+const pathExpandBtn =
+    document.getElementById('pathExpandBtn');
 
 const lightbox =
     document.getElementById('lightbox');
@@ -892,6 +959,92 @@ const categoryPathsData = {
 
         "运动与户外用品>运动与户外休闲用品>运动场设备>体操装备>服装>男士体操服>男士体操连体练功服"
 
+    ],
+
+
+    /* =========================
+       外套夹克
+    ========================== */
+
+    "外套夹克": [
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士休闲运动服>男士休闲运动风衣、夹克"
+
+    ],
+
+
+    /* =========================
+       风衣
+    ========================== */
+
+    "风衣": [
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士外套>男士风衣、雨衣>男士风衣"
+
+    ],
+
+
+    /* =========================
+       防晒衫
+    ========================== */
+
+    "防晒衫": [
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士时尚泳衣>男士泳装防晒套装",
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士时尚泳衣>男士防晒衫",
+
+        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲泳装、冲浪装和潜水服>防晒衣"
+
+    ],
+
+
+    /* =========================
+       短裤
+    ========================== */
+
+    "短裤": [
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男士休闲运动服>男士休闲运动短裤",
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男装短裤>男士工装短裤",
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男装短裤>男士无褶短裤",
+
+        "服装、鞋靴和珠宝饰品>男士时尚>男装>男装短裤>男士打褶短裤",
+
+        "服装、鞋靴和珠宝饰品>体育专用服装>户外服饰>男士户外服饰>男士户外短裤",
+
+        "服装、鞋靴和珠宝饰品>体育专用服装>篮球服>男士篮球服>短裤",
+
+        "服装、鞋靴和珠宝饰品>体育专用服装>跑步服>男士跑步服>男士跑步短裤",
+
+        "服装、鞋靴和珠宝饰品>体育专用服装>骑行服>男士骑行服>男士骑行裤装>男士骑行短裤",
+
+        "服装、鞋靴和珠宝饰品>体育专用服装>瑜伽服>男士瑜伽服>短裤",
+
+        "服装、鞋靴和珠宝饰品>新奇物品>新奇服装和产品>新奇服装>男士新奇服装>男士新奇短裤",
+
+        "运动与户外用品>户外休闲>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行短裤",
+
+        "运动与户外用品>户外休闲>徒步和户外休闲服装>男士户外服饰>男士户外短裤",
+
+        "运动与户外用品>健身、训练用品>健身服>男士>男士休闲运动短裤",
+
+        "运动与户外用品>健身、训练用品>跑步>服装>男士跑步服>男士跑步短裤",
+
+        "运动与户外用品>健身、训练用品>瑜伽用品>服装>男士瑜伽服>短裤",
+
+        "运动与户外用品>运动服装和器材>跑步用品>服装>男士跑步服>男士跑步短裤",
+
+        "运动与户外用品>运动服装和器材>骑行用品>服装>男士骑行服>男士骑行裤装>男士骑行短裤",
+
+        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>骑行短裤",
+
+        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>徒步和户外休闲",
+
+        "运动与户外用品>运动户外服饰>男士运动户外服饰>男士运动休闲短裤和长裤>男士运动休闲短裤>运动服"
+
     ]
 
 };
@@ -982,6 +1135,25 @@ function renderCategoryPaths(category) {
             paths = categoryPathsData['练功服'];
         }
 
+        else if (category.includes('防晒')) {
+            paths = categoryPathsData['防晒衫'];
+        }
+
+        else if (category.includes('风衣')) {
+            paths = categoryPathsData['风衣'];
+        }
+
+        else if (
+            category.includes('外套') ||
+            category.includes('夹克')
+        ) {
+            paths = categoryPathsData['外套夹克'];
+        }
+
+        else if (category.includes('短裤')) {
+            paths = categoryPathsData['短裤'];
+        }
+
     }
 
 
@@ -997,6 +1169,12 @@ function renderCategoryPaths(category) {
 
 
     categoryPaths.hidden = false;
+
+    pathList.classList.remove('expanded');
+
+    pathExpandBtn.hidden = paths.length <= 5;
+    pathExpandBtn.setAttribute('aria-expanded', 'false');
+    pathExpandBtn.textContent = `展开全部路径（${paths.length}条）`;
 
 
     paths.forEach((path) => {
@@ -1040,6 +1218,13 @@ function renderCategoryPaths(category) {
     });
 
 }
+
+pathExpandBtn.addEventListener('click', () => {
+    const expanded = pathList.classList.toggle('expanded');
+
+    pathExpandBtn.setAttribute('aria-expanded', String(expanded));
+    pathExpandBtn.textContent = expanded ? '收起路径' : `展开全部路径（${pathList.children.length}条）`;
+});
 
 
 /* =========================================================
